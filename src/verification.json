@@ -1,0 +1,78 @@
+{
+  "model": {
+    "domain_entities": 8,
+    "service_entities": 1,
+    "foreign_keys": 12,
+    "requirements": 33,
+    "tests": 23,
+    "functions": 5,
+    "components": 6,
+    "modules": 11,
+    "software_acceptance_tests_run": false
+  },
+  "reference_arithmetic": {
+    "transfer_total": "11000.00",
+    "concurrent_final_balance": "3000.00",
+    "interest": [
+      "1223.01",
+      "736.44",
+      "407.67"
+    ],
+    "interest_sum": "2367.12",
+    "rounding_parts": [
+      "33.33",
+      "33.33",
+      "33.35"
+    ],
+    "software_tests_run": false
+  },
+  "diagrams": {
+    "diagrams": 30,
+    "all_12_foreign_keys_drawn": true,
+    "all_attributes_present": true,
+    "all_components_and_modules_present": true,
+    "minimum_font_on_paper_pt": 7.93
+  },
+  "documents": {
+    "main_docx_sha256": "83150c1e03926159d8ce609ec918e8a5c6408941f5fe326056610e5cf510d394",
+    "guide_docx_sha256": "d03fcef23fec7c671b5563619d0d3fd8c229be12ffab561c43e9ceef2c85314e",
+    "figures": 30,
+    "tables": 41,
+    "appendices": 6,
+    "author": "Салихо Р. Р.",
+    "group": "М8О-309БВ",
+    "images_match_sources": true
+  },
+  "pdfs": [
+    {
+      "file": "Банковская система — Пояснительная записка.pdf",
+      "pages": 83,
+      "outline_present": true,
+      "no_blank_pages": true,
+      "page_numbers_sequential": true,
+      "fonts_embedded": {
+        "/BCDEEE+TimesNewRomanPSMT": true,
+        "/BCDFEE+TimesNewRomanPSMT": true,
+        "/BCDGEE+TimesNewRomanPS-BoldMT": true,
+        "/BCDHEE+TimesNewRomanPS-BoldMT": true,
+        "/BCDIEE+Cambria": true
+      },
+      "sha256": "19a4afe54cf6e419079c0c1460f46e11c2400b55ba2f543dd4dd67f9dc75a8f6"
+    },
+    {
+      "file": "Защита за 3 минуты и пояснения.pdf",
+      "pages": 4,
+      "outline_present": true,
+      "no_blank_pages": true,
+      "page_numbers_sequential": true,
+      "fonts_embedded": {
+        "/BCDEEE+TimesNewRomanPS-BoldMT": true,
+        "/BCDFEE+TimesNewRomanPS-BoldMT": true,
+        "/BCDGEE+TimesNewRomanPSMT": true,
+        "/BCDHEE+TimesNewRomanPSMT": true
+      },
+      "sha256": "2da07a3194e4b1e8a431516df797afbd5db537d4d052d320ff59c4bf1b1eba39"
+    }
+  ],
+  "scope": "Проверка проектных артефактов и независимых эталонов. Приёмочные испытания банковского ПО не проводились."
+}

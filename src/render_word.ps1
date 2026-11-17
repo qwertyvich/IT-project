@@ -22,8 +22,8 @@ try {
     foreach ($toc in $doc.TablesOfContents) { $toc.UpdatePageNumbers() }
     $doc.Save()
   }
-  # Keep a navigable heading outline for PDF readers, including Preview on Mac.
-  $doc.ExportAsFixedFormat($OutputPdf, 17, $false, 0, 0, 1, 1, 0, $true, $true, 1, $true, $true, $false)
+  # PDF/A embeds both Latin and Cyrillic font resources; bookmarks work in Preview.
+  $doc.ExportAsFixedFormat($OutputPdf, 17, $false, 0, 0, 1, 1, 0, $true, $true, 1, $true, $true, $true)
   [PSCustomObject]@{Pages=$doc.ComputeStatistics(2); Pdf=$OutputPdf} | ConvertTo-Json -Compress
   $doc.Close(0)
   $doc = $null

@@ -5,20 +5,20 @@
 <polyline points="180,115 180,1025" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8 5"/>
 <rect x="495" y="15" width="310" height="100" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
 <text x="650.0" y="57.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
-<tspan x="650.0" dy="0">М09 / М04</tspan>
+<tspan x="650.0" dy="0">М09</tspan>
 <tspan x="650.0" dy="29.120000000000005">Интерфейс и запрос</tspan>
 </text>
 <polyline points="650,115 650,1025" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8 5"/>
 <rect x="1035" y="15" width="310" height="100" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
 <text x="1190.0" y="57.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
-<tspan x="1190.0" dy="0">М05 / М10</tspan>
+<tspan x="1190.0" dy="0">М04 / М05 / М10</tspan>
 <tspan x="1190.0" dy="29.120000000000005">Сервис и права</tspan>
 </text>
 <polyline points="1190,115 1190,1025" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8 5"/>
 <rect x="1615" y="15" width="310" height="100" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
 <text x="1770.0" y="57.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
-<tspan x="1770.0" dy="0">БД / М11</tspan>
-<tspan x="1770.0" dy="29.120000000000005">Правила и аудит</tspan>
+<tspan x="1770.0" dy="0">М05: функция БД</tspan>
+<tspan x="1770.0" dy="29.120000000000005">М11: аудит</tspan>
 </text>
 <polyline points="1770,115 1770,1025" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8 5"/>
 <polyline points="180,180 650,180" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
@@ -27,9 +27,9 @@
 <tspan x="415.0" dy="0">1. Ключ, реквизиты, команда</tspan>
 </text>
 <polyline points="650,280 1190,280" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="727.0" y="232.56" width="386.0" height="30.880000000000003" fill="white"/>
+<rect x="712.4921875" y="232.56" width="415.015625" height="30.880000000000003" fill="white"/>
 <text x="920.0" y="254.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
-<tspan x="920.0" dy="0">2. Проверенный сеанс, transfer_id</tspan>
+<tspan x="920.0" dy="0">2. Сеанс и transfer_id; проверка М10</tspan>
 </text>
 <polyline points="1190,380 1770,380" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1309.5" y="332.56" width="341.0" height="30.880000000000003" fill="white"/>

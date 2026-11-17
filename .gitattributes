@@ -10,4 +10,5 @@
 *.dot -text whitespace=cr-at-eol
 *.png binary
 *.docx binary
+*.pdf binary
 *.zip binary

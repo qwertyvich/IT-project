@@ -15,16 +15,16 @@
 <rect x="580" y="260" width="430" height="200" rx="0" fill="#FFF2B2" stroke="black" stroke-width="2"/>
 <text x="795.0" y="324.50" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
 <tspan x="795.0" dy="0">app: Python, FastAPI</tspan>
-<tspan x="795.0" dy="28.000000000000004">М01–М04, М06–М10</tspan>
-<tspan x="795.0" dy="28.000000000000004">Правила маршрутизации</tspan>
-<tspan x="795.0" dy="28.000000000000004">и граница транзакции</tspan>
+<tspan x="795.0" dy="28.000000000000004">М01–М10; формы М09</tspan>
+<tspan x="795.0" dy="28.000000000000004">М05: координатор транзакции</tspan>
+<tspan x="795.0" dy="28.000000000000004">Маршрутизация и права</tspan>
 </text>
 <rect x="1190" y="260" width="450" height="200" rx="0" fill="#D9EAD3" stroke="black" stroke-width="2"/>
 <text x="1415.0" y="324.50" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
 <tspan x="1415.0" dy="0">db: PostgreSQL</tspan>
-<tspan x="1415.0" dy="28.000000000000004">Д1–Д5; М05, М11</tspan>
-<tspan x="1415.0" dy="28.000000000000004">Ограничения; функции;</tspan>
-<tspan x="1415.0" dy="28.000000000000004">представления</tspan>
+<tspan x="1415.0" dy="28.000000000000004">Д1–Д5; М05: функция</tspan>
+<tspan x="1415.0" dy="28.000000000000004">М11: аудит; ограничения</tspan>
+<tspan x="1415.0" dy="28.000000000000004">и представления</tspan>
 </text>
 <polyline points="360,270 580,330" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="384.0" y="201.12" width="162.0" height="57.760000000000005" fill="white"/>

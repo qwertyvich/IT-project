@@ -308,24 +308,24 @@
     "width": 1800,
     "height": 1000,
     "min_font_px": 24,
-    "sha256_svg": "8b21058971f162a4439cdac7b148fce50a4ca49e46969a6d7d36e2d676aa9f08",
+    "sha256_svg": "15907a20c8646383dffb3941ac0c7223f5439131186653d5f14d2bccabe2a70d",
     "source": "svg",
     "paper": "A3",
     "caption": "Рисунок Д.1 — Техническое размещение компонентов",
     "min_font_on_paper_pt": 14.17,
-    "sha256_png": "5406ae55a2c773ad3dc80b0505460462e4cfa3870a80ef5814c0687b0be76006"
+    "sha256_png": "e2a23c7d367476d8b090df7fc1c89d59d0f29a9785eda9b3cf2e2f3df91efe10"
   },
   {
     "name": "D2_realization",
     "width": 2700,
     "height": 1550,
     "min_font_px": 26,
-    "sha256_svg": "5398b64d07e3ad776f5c62a1654c5928fabebad4a2a0d921220aa122aee06682",
+    "sha256_svg": "6ef5fe870a0e62c8ec769f3a4e0cbf754ec7c761071b061004dba87a89fa1870",
     "source": "svg",
     "paper": "A3",
     "caption": "Рисунок Д.2 — Раскрытие компонентов архитектуры в программные модули",
     "min_font_on_paper_pt": 10.24,
-    "sha256_png": "f2e276c54d5f2114890605a4d39438d2455fb506820366562691f4131299a9f1"
+    "sha256_png": "59d352a5dfab8163c63ed30580b4ef3ce58e7c8464aa3a6f3a194308851682e5"
   },
   {
     "name": "D3_transfer",
@@ -368,12 +368,12 @@
     "width": 2100,
     "height": 1120,
     "min_font_px": 24,
-    "sha256_svg": "cf980229aac95685ed29043badfca4add92520b5bb9eac7bf83db041285f9cb1",
+    "sha256_svg": "deb8f620d72ac7936ea4143f3f6cebec40e57c322a714b6e16a42aa04da5969b",
     "source": "svg",
     "paper": "A3",
     "caption": "Рисунок Д.6 — Последовательность сквозного проведения перевода",
     "min_font_on_paper_pt": 12.15,
-    "sha256_png": "c364103892bff2a7417ae0da2a0a8e429caa70ce3c0bd9a31cb7c7cc29670512"
+    "sha256_png": "ac99384275b6cab821024bb7ced4bfc897227520dec76e9677d90306df284f8d"
   },
   {
     "name": "E1_quality",

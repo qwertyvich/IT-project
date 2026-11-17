@@ -1,0 +1,10 @@
+{
+  "diagrams": 30,
+  "generated_files_compared": 72,
+  "all_hashes_match": true,
+  "python": "3.12.14",
+  "node": "v24.22.1",
+  "arial_sha256": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+  "times_sha256": "2cff2a03d8034801979dd6d16f09b9a825c3d710fcf068f2ebfbf0e1425c87cf",
+  "scope": "Воспроизводимость графических артефактов на исходной машине; не испытания банковского ПО."
+}

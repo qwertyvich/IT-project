@@ -17,7 +17,7 @@
 </text>
 <rect x="770" y="150" width="1000" height="150" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
 <text x="1270.0" y="216.60" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
-<tspan x="1270.0" dy="0">М01 Клиенты и отделения</tspan>
+<tspan x="1270.0" dy="0">М01 Клиенты и справочники</tspan>
 <tspan x="1270.0" dy="31.360000000000003">М02 Счета</tspan>
 </text>
 <rect x="1950" y="150" width="700" height="150" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
