@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="930" viewBox="0 0 1900 930"><defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 4 L 0 8" fill="none" stroke="black" stroke-width="1.7"/></marker></defs><rect width="100%" height="100%" fill="white"/><rect x="650" y="10" width="600" height="110" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<path d="M662,10 H1238 Q1250,10 1250,22 V47 H650 V22 Q650,10 662,10" fill="#F7A547" stroke="black" stroke-width="2"/>
+<text x="950.0" y="36.54" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
+<tspan x="950.0" dy="0">0</tspan>
+</text>
+<text x="950.0" y="91.04" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
+<tspan x="950.0" dy="0">Обеспечивать банковское обслуживание</tspan>
+</text>
+<polyline points="950,120 950,175" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="190,175 1710,175" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="190,175 190,220" fill="none" stroke="black" stroke-width="2"/>
+<rect x="15" y="220" width="350" height="145" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<path d="M27,220 H353 Q365,220 365,232 V257 H15 V232 Q15,220 27,220" fill="#F7A547" stroke="black" stroke-width="2"/>
+<text x="190.0" y="245.50" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<tspan x="190.0" dy="0">F1</tspan>
+</text>
+<text x="190.0" y="303.50" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<tspan x="190.0" dy="0">Вести клиентов, счета и</tspan>
+<tspan x="190.0" dy="28.000000000000004">отделения</tspan>
+</text>
+<polyline points="190,365 190,395 30,395 30,825" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="30,470 60,470" fill="none" stroke="black" stroke-width="2"/>
+<rect x="60" y="420" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="212.5" y="468.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="212.5" dy="0">F1.1 Проверить и</tspan>
+<tspan x="212.5" dy="26.880000000000003">сохранить клиента</tspan>
+</text>
+<polyline points="30,610 60,610" fill="none" stroke="black" stroke-width="2"/>
+<rect x="60" y="560" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="212.5" y="608.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="212.5" dy="0">F1.2 Открыть /</tspan>
+<tspan x="212.5" dy="26.880000000000003">отключить счёт</tspan>
+</text>
+<polyline points="30,750 60,750" fill="none" stroke="black" stroke-width="2"/>
+<rect x="60" y="700" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="212.5" y="748.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="212.5" dy="0">F1.3 Вести отделения и</tspan>
+<tspan x="212.5" dy="26.880000000000003">сотрудников</tspan>
+</text>
+<polyline points="570,175 570,220" fill="none" stroke="black" stroke-width="2"/>
+<rect x="395" y="220" width="350" height="145" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<path d="M407,220 H733 Q745,220 745,232 V257 H395 V232 Q395,220 407,220" fill="#F7A547" stroke="black" stroke-width="2"/>
+<text x="570.0" y="245.50" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<tspan x="570.0" dy="0">F2</tspan>
+</text>
+<text x="570.0" y="317.50" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<tspan x="570.0" dy="0">Вести банковские карты</tspan>
+</text>
+<polyline points="570,365 570,395 410,395 410,825" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="410,470 440,470" fill="none" stroke="black" stroke-width="2"/>
+<rect x="440" y="420" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="592.5" y="468.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="592.5" dy="0">F2.1 Зарегистрировать</tspan>
+<tspan x="592.5" dy="26.880000000000003">карту</tspan>
+</text>
+<polyline points="410,610 440,610" fill="none" stroke="black" stroke-width="2"/>
+<rect x="440" y="560" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="592.5" y="608.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="592.5" dy="0">F2.2 Изменить</tspan>
+<tspan x="592.5" dy="26.880000000000003">состояние карты</tspan>
+</text>
+<polyline points="410,750 440,750" fill="none" stroke="black" stroke-width="2"/>
+<rect x="440" y="700" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="592.5" y="748.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="592.5" dy="0">F2.3 Показать</tspan>
+<tspan x="592.5" dy="26.880000000000003">доступность карты</tspan>
+</text>
+<polyline points="950,175 950,220" fill="none" stroke="black" stroke-width="2"/>
+<rect x="775" y="220" width="350" height="145" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<path d="M787,220 H1113 Q1125,220 1125,232 V257 H775 V232 Q775,220 787,220" fill="#F7A547" stroke="black" stroke-width="2"/>
+<text x="950.0" y="245.50" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<tspan x="950.0" dy="0">F3</tspan>
+</text>
+<text x="950.0" y="303.50" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<tspan x="950.0" dy="0">Учитывать и проводить</tspan>
+<tspan x="950.0" dy="28.000000000000004">переводы</tspan>
+</text>
+<polyline points="950,365 950,395 790,395 790,825" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="790,470 820,470" fill="none" stroke="black" stroke-width="2"/>
+<rect x="820" y="420" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="972.5" y="468.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="972.5" dy="0">F3.1 Подготовить /</tspan>
+<tspan x="972.5" dy="26.880000000000003">отменить перевод</tspan>
+</text>
+<polyline points="790,610 820,610" fill="none" stroke="black" stroke-width="2"/>
+<rect x="820" y="560" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="972.5" y="608.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="972.5" dy="0">F3.2 Проверить и</tspan>
+<tspan x="972.5" dy="26.880000000000003">провести перевод</tspan>
+</text>
+<polyline points="790,750 820,750" fill="none" stroke="black" stroke-width="2"/>
+<rect x="820" y="700" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="972.5" y="748.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="972.5" dy="0">F3.3 Показать итог и</tspan>
+<tspan x="972.5" dy="26.880000000000003">распознать повтор</tspan>
+</text>
+<polyline points="1330,175 1330,220" fill="none" stroke="black" stroke-width="2"/>
+<rect x="1155" y="220" width="350" height="145" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<path d="M1167,220 H1493 Q1505,220 1505,232 V257 H1155 V232 Q1155,220 1167,220" fill="#F7A547" stroke="black" stroke-width="2"/>
+<text x="1330.0" y="245.50" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<tspan x="1330.0" dy="0">F4</tspan>
+</text>
+<text x="1330.0" y="317.50" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<tspan x="1330.0" dy="0">Вести кредитные договоры</tspan>
+</text>
+<polyline points="1330,365 1330,395 1170,395 1170,825" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1170,470 1200,470" fill="none" stroke="black" stroke-width="2"/>
+<rect x="1200" y="420" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1352.5" y="468.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1352.5" dy="0">F4.1 Проверить условия</tspan>
+<tspan x="1352.5" dy="26.880000000000003">договора</tspan>
+</text>
+<polyline points="1170,610 1200,610" fill="none" stroke="black" stroke-width="2"/>
+<rect x="1200" y="560" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1352.5" y="608.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1352.5" dy="0">F4.2 Построить и</tspan>
+<tspan x="1352.5" dy="26.880000000000003">сохранить график</tspan>
+</text>
+<polyline points="1170,750 1200,750" fill="none" stroke="black" stroke-width="2"/>
+<rect x="1200" y="700" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1352.5" y="748.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1352.5" dy="0">F4.3 Закрыть договор по</tspan>
+<tspan x="1352.5" dy="26.880000000000003">основанию</tspan>
+</text>
+<polyline points="1710,175 1710,220" fill="none" stroke="black" stroke-width="2"/>
+<rect x="1535" y="220" width="350" height="145" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<path d="M1547,220 H1873 Q1885,220 1885,232 V257 H1535 V232 Q1535,220 1547,220" fill="#F7A547" stroke="black" stroke-width="2"/>
+<text x="1710.0" y="245.50" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<tspan x="1710.0" dy="0">F5</tspan>
+</text>
+<text x="1710.0" y="303.50" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<tspan x="1710.0" dy="0">Выдавать сведения и</tspan>
+<tspan x="1710.0" dy="28.000000000000004">отчёты</tspan>
+</text>
+<polyline points="1710,365 1710,395 1550,395 1550,825" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="1550,470 1580,470" fill="none" stroke="black" stroke-width="2"/>
+<rect x="1580" y="420" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1732.5" y="468.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1732.5" dy="0">F5.1 Сформировать</tspan>
+<tspan x="1732.5" dy="26.880000000000003">карточку и выписку</tspan>
+</text>
+<polyline points="1550,610 1580,610" fill="none" stroke="black" stroke-width="2"/>
+<rect x="1580" y="560" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1732.5" y="608.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1732.5" dy="0">F5.2 Свести карты,</tspan>
+<tspan x="1732.5" dy="26.880000000000003">переводы и кредиты</tspan>
+</text>
+<polyline points="1550,750 1580,750" fill="none" stroke="black" stroke-width="2"/>
+<rect x="1580" y="700" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1732.5" y="748.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1732.5" dy="0">F5.3 Показать аудит и</tspan>
+<tspan x="1732.5" dy="26.880000000000003">сверку</tspan>
+</text>
+<text x="950" y="901.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="950" dy="0">Каждый лист имеет вход, результат и проверку; порядок исполнения раскрывается процессной моделью.</tspan>
+</text></svg>

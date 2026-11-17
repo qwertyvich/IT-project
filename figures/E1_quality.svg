@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1100" viewBox="0 0 2400 1100"><defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 4 L 0 8" fill="none" stroke="black" stroke-width="1.7"/></marker></defs><rect width="100%" height="100%" fill="white"/><rect x="20" y="90" width="540" height="225" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="290.0" y="193.80" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
+<tspan x="290.0" dy="0">Потребность пользователя</tspan>
+<tspan x="290.0" dy="32.480000000000004">и требования назначения</tspan>
+</text>
+<rect x="620" y="90" width="540" height="225" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<text x="890.0" y="193.80" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
+<tspan x="890.0" dy="0">Критерии качества:</tspan>
+<tspan x="890.0" dy="32.480000000000004">метрика, норма, метод</tspan>
+</text>
+<rect x="1220" y="90" width="540" height="225" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<text x="1490.0" y="193.80" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
+<tspan x="1490.0" dy="0">Проверка:</tspan>
+<tspan x="1490.0" dy="32.480000000000004">данные, действия, эталон</tspan>
+</text>
+<rect x="1820" y="90" width="540" height="225" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="2090.0" y="193.80" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
+<tspan x="2090.0" dy="0">Запуск:</tspan>
+<tspan x="2090.0" dy="32.480000000000004">сборка, среда, исполнитель</tspan>
+</text>
+<rect x="1820" y="670" width="540" height="225" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<text x="2090.0" y="773.80" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
+<tspan x="2090.0" dy="0">Наблюдение:</tspan>
+<tspan x="2090.0" dy="32.480000000000004">факт, время, действия</tspan>
+</text>
+<rect x="1220" y="670" width="540" height="225" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
+<text x="1490.0" y="773.80" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
+<tspan x="1490.0" dy="0">Свидетельства:</tspan>
+<tspan x="1490.0" dy="32.480000000000004">снимки, журналы, SHA-256</tspan>
+</text>
+<rect x="620" y="670" width="540" height="225" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<text x="890.0" y="773.80" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
+<tspan x="890.0" dy="0">Сравнение с нормой</tspan>
+<tspan x="890.0" dy="32.480000000000004">по каждому требованию</tspan>
+</text>
+<rect x="20" y="670" width="540" height="225" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
+<text x="290.0" y="757.56" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
+<tspan x="290.0" dy="0">Решение по назначению:</tspan>
+<tspan x="290.0" dy="32.480000000000004">принять / исправить /</tspan>
+<tspan x="290.0" dy="32.480000000000004">недостаточно свидетельств</tspan>
+</text>
+<polyline points="560,202 620,202" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1160,202 1220,202" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1760,202 1820,202" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="2090,315 2090,670" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="2134.0" y="472.88" width="152.0" height="34.24" fill="white"/>
+<text x="2210" y="497.02" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<tspan x="2210" dy="0">Измерение</tspan>
+</text>
+<polyline points="1820,782 1760,782" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1220,782 1160,782" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="620,782 560,782" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="890,315 890,670" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="914.0" y="457.76" width="212.0" height="64.48" fill="white"/>
+<text x="1020" y="481.90" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<tspan x="1020" dy="0">Заранее</tspan>
+<tspan x="1020" dy="30.240000000000002">заданный порог</tspan>
+</text>
+<text x="1200" y="1027.02" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<tspan x="1200" dy="0">Для приёмки нужны все обязательные критерии и три сквозные задачи. До запуска фактический результат неизвестен.</tspan>
+</text></svg>

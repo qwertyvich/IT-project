@@ -1,0 +1,24 @@
+{
+  "model": {
+    "domain_entities": 8,
+    "service_entities": 1,
+    "foreign_keys": 12,
+    "requirements": 33,
+    "tests": 23,
+    "functions": 5,
+    "components": 6,
+    "modules": 11,
+    "software_acceptance_tests_run": false
+  },
+  "document": {
+    "main": "C:\\Users\\user\\Desktop\\IT\\_work\\IT-project\\Готовая работа\\Банковская система — Пояснительная записка.docx",
+    "figures": 30,
+    "tables": 39,
+    "appendices": 6,
+    "sources": 15
+  },
+  "guide": {
+    "guide": "C:\\Users\\user\\Desktop\\IT\\_work\\IT-project\\Готовая работа\\Защита за 3 минуты и пояснения.docx",
+    "speech_words": 292
+  }
+}

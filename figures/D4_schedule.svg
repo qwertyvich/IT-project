@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1110" viewBox="0 0 1600 1110"><defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 4 L 0 8" fill="none" stroke="black" stroke-width="1.7"/></marker></defs><rect width="100%" height="100%" fill="white"/><rect x="80" y="20" width="580" height="65" rx="26" fill="white" stroke="black" stroke-width="2"/>
+<text x="370.0" y="59.26" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="370.0" dy="0">Начало</tspan>
+</text>
+<polygon points="98,130 660,130 642,225 80,225" fill="white" stroke="black" stroke-width="2"/>
+<text x="370.0" y="169.70" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="370.0" dy="0">principal, annual_rate,</tspan>
+<tspan x="370.0" dy="29.120000000000005">issued_on, даты платежей</tspan>
+</text>
+<polygon points="370.0,290 580,355.0 370.0,420 160,355.0" fill="white" stroke="black" stroke-width="2"/>
+<text x="370.0" y="347.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="370.0" dy="0">Входные данные</tspan>
+<tspan x="370.0" dy="29.120000000000005">корректны?</tspan>
+</text>
+<rect x="80" y="485" width="580" height="95" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="370.0" y="524.70" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="370.0" dy="0">Вычислить базовую долю</tspan>
+<tspan x="370.0" dy="29.120000000000005">в целых копейках</tspan>
+</text>
+<rect x="80" y="645" width="580" height="105" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="370.0" y="690.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<tspan x="370.0" dy="0">Для каждой даты: проценты HALF_UP;</tspan>
+<tspan x="370.0" dy="28.000000000000004">последней доле — остаток</tspan>
+</text>
+<polygon points="370.0,825 580,890.0 370.0,955 160,890.0" fill="white" stroke="black" stroke-width="2"/>
+<text x="370.0" y="882.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="370.0" dy="0">Сумма и сроки</tspan>
+<tspan x="370.0" dy="29.120000000000005">согласованы?</tspan>
+</text>
+<polyline points="370,85 370,130" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="370,225 370,290" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="370,420 370,485" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="370,580 370,645" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="370,750 370,825" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="389.5" y="439.56" width="41.0" height="30.880000000000003" fill="white"/>
+<text x="410" y="461.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="410" dy="0">Да</tspan>
+</text>
+<circle cx="790" cy="355" r="22" fill="white" stroke="black" stroke-width="2"/>
+<text x="790" y="361.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="790" dy="0">Б</tspan>
+</text>
+<polyline points="580,355 768,355" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="648.5078125" y="307.56" width="52.984375" height="30.880000000000003" fill="white"/>
+<text x="675" y="329.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="675" dy="0">Нет</tspan>
+</text>
+<circle cx="80" cy="890" r="22" fill="white" stroke="black" stroke-width="2"/>
+<text x="80" y="896.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="80" dy="0">Б</tspan>
+</text>
+<polyline points="160,890 102,890" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="93.5078125" y="834.56" width="52.984375" height="30.880000000000003" fill="white"/>
+<text x="120" y="856.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="120" dy="0">Нет</tspan>
+</text>
+<circle cx="1200" cy="355" r="22" fill="white" stroke="black" stroke-width="2"/>
+<text x="1200" y="361.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1200" dy="0">Б</tspan>
+</text>
+<rect x="920" y="475" width="580" height="120" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1210.0" y="527.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="1210.0" dy="0">Отклонить; договор</tspan>
+<tspan x="1210.0" dy="29.120000000000005">и строки не записывать</tspan>
+</text>
+<polyline points="1200,377 1200,475" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1020" y="655" width="360" height="65" rx="26" fill="white" stroke="black" stroke-width="2"/>
+<text x="1200.0" y="694.26" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="1200.0" dy="0">Отказ</tspan>
+</text>
+<polyline points="1200,595 1200,655" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polygon points="938,825 1500,825 1482,955 920,955" fill="white" stroke="black" stroke-width="2"/>
+<text x="1210.0" y="882.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="1210.0" dy="0">Вернуть полный план</tspan>
+<tspan x="1210.0" dy="29.120000000000005">для атомарной записи М06</tspan>
+</text>
+<polyline points="580,890 920,890" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="729.5" y="839.56" width="41.0" height="30.880000000000003" fill="white"/>
+<text x="750" y="861.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="750" dy="0">Да</tspan>
+</text>
+<rect x="1020" y="995" width="360" height="65" rx="26" fill="white" stroke="black" stroke-width="2"/>
+<text x="1200.0" y="1034.26" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="1200.0" dy="0">Конец</tspan>
+</text>
+<polyline points="1200,955 1200,995" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="800" y="1095.98" text-anchor="middle" font-family="Arial" font-size="23" fill="black">
+<tspan x="800" dy="0">Проценты: долг × ставка/100 × дни/365. Пара соединителей Б ведёт к общему отказу.</tspan>
+</text></svg>

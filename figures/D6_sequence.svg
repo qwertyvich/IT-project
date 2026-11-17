@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2100" height="1120" viewBox="0 0 2100 1120"><defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 4 L 0 8" fill="none" stroke="black" stroke-width="1.7"/></marker></defs><rect width="100%" height="100%" fill="white"/><rect x="25" y="15" width="310" height="100" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="180.0" y="71.76" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="180.0" dy="0">Оператор</tspan>
+</text>
+<polyline points="180,115 180,1025" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8 5"/>
+<rect x="495" y="15" width="310" height="100" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="650.0" y="57.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="650.0" dy="0">М09 / М04</tspan>
+<tspan x="650.0" dy="29.120000000000005">Интерфейс и запрос</tspan>
+</text>
+<polyline points="650,115 650,1025" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8 5"/>
+<rect x="1035" y="15" width="310" height="100" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="1190.0" y="57.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="1190.0" dy="0">М05 / М10</tspan>
+<tspan x="1190.0" dy="29.120000000000005">Сервис и права</tspan>
+</text>
+<polyline points="1190,115 1190,1025" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8 5"/>
+<rect x="1615" y="15" width="310" height="100" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="1770.0" y="57.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="1770.0" dy="0">БД / М11</tspan>
+<tspan x="1770.0" dy="29.120000000000005">Правила и аудит</tspan>
+</text>
+<polyline points="1770,115 1770,1025" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8 5"/>
+<polyline points="180,180 650,180" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="247.5078125" y="132.56" width="334.984375" height="30.880000000000003" fill="white"/>
+<text x="415.0" y="154.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="415.0" dy="0">1. Ключ, реквизиты, команда</tspan>
+</text>
+<polyline points="650,280 1190,280" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="727.0" y="232.56" width="386.0" height="30.880000000000003" fill="white"/>
+<text x="920.0" y="254.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="920.0" dy="0">2. Проверенный сеанс, transfer_id</tspan>
+</text>
+<polyline points="1190,380 1770,380" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1309.5" y="332.56" width="341.0" height="30.880000000000003" fill="white"/>
+<text x="1480.0" y="354.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1480.0" dy="0">3. BEGIN; вызов post_transfer</tspan>
+</text>
+<polyline points="1770,500 2030,500 2030,570 1770,570" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1262.515625" y="481.12" width="474.96875" height="57.760000000000005" fill="white"/>
+<text x="1500" y="502.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1500" dy="0">4. Блокировки; проверки; остатки; статус;</tspan>
+<tspan x="1500" dy="26.880000000000003">аудит</tspan>
+</text>
+<polyline points="1770,650 1190,650" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1233.0625" y="602.56" width="493.875" height="30.880000000000003" fill="white"/>
+<text x="1480.0" y="624.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1480.0" dy="0">5. Подготовленный результат либо ошибка</tspan>
+</text>
+<polyline points="1190,760 1770,760" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1314.0" y="712.56" width="332.0" height="30.880000000000003" fill="white"/>
+<text x="1480.0" y="734.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1480.0" dy="0">6. COMMIT либо ROLLBACK</tspan>
+</text>
+<polyline points="1190,890 650,890" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="662.0078125" y="842.56" width="515.984375" height="30.880000000000003" fill="white"/>
+<text x="920.0" y="864.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="920.0" dy="0">7. Итог только после завершения транзакции</tspan>
+</text>
+<polyline points="650,1000 180,1000" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="206.515625" y="952.56" width="416.96875" height="30.880000000000003" fill="white"/>
+<text x="415.0" y="974.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="415.0" dy="0">8. ID, статус, понятный отказ / успех</tspan>
+</text>
+<text x="1050" y="1086.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1050" dy="0">Соответствие: К3 → М04/М05; К6 → М10/М11. Интерфейс получает согласованный итог, а не промежуточное списание.</tspan>
+</text></svg>
