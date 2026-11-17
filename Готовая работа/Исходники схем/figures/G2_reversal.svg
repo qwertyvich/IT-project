@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1550" height="810" viewBox="0 0 1550 810"><defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 4 L 0 8" fill="none" stroke="black" stroke-width="1.7"/></marker></defs><rect width="100%" height="100%" fill="white"/><rect x="25" y="20" width="340" height="55" rx="26" fill="white" stroke="black" stroke-width="2"/>
+<text x="195.0" y="53.74" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="195.0" dy="0">Начало</tspan>
+</text>
+<polygon points="43,110 365,110 347,190 25,190" fill="white" stroke="black" stroke-width="2"/>
+<text x="195.0" y="142.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="195.0" dy="0">original_id, request_key,</tspan>
+<tspan x="195.0" dy="26.880000000000003">причина; проверенный actor</tspan>
+</text>
+<rect x="25" y="225" width="340" height="80" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="195.0" y="257.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="195.0" dy="0">Проверить controller; BEGIN;</tspan>
+<tspan x="195.0" dy="26.880000000000003">блокировать оригинал</tspan>
+</text>
+<polygon points="195.0,345 325,400.0 195.0,455 65,400.0" fill="white" stroke="black" stroke-width="2"/>
+<text x="195.0" y="392.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="195.0" dy="0">Есть результат</tspan>
+<tspan x="195.0" dy="26.880000000000003">этого ключа?</tspan>
+</text>
+<rect x="25" y="515" width="340" height="95" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="195.0" y="555.30" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="195.0" dy="0">Проверить совпадение</tspan>
+<tspan x="195.0" dy="26.880000000000003">параметров и автора</tspan>
+</text>
+<polygon points="43,660 365,660 347,755 25,755" fill="white" stroke="black" stroke-width="2"/>
+<text x="195.0" y="700.30" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="195.0" dy="0">Прежний id; COMMIT</tspan>
+<tspan x="195.0" dy="26.880000000000003">либо BT005; ROLLBACK</tspan>
+</text>
+<polyline points="195,75 195,110" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="195,190 195,225" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="195,305 195,345" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="195,455 195,515" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="214.5" y="470.12" width="41.0" height="29.76" fill="white"/>
+<text x="235" y="490.98" text-anchor="middle" font-family="Arial" font-size="23" fill="black">
+<tspan x="235" dy="0">Да</tspan>
+</text>
+<polyline points="195,610 195,660" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="495" y="205" width="385" height="105" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="687.5" y="236.86" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="687.5" dy="0">Проверить regular и отсутствие</tspan>
+<tspan x="687.5" dy="26.880000000000003">возврата; блокировать счета</tspan>
+<tspan x="687.5" dy="26.880000000000003">по возрастанию account_id</tspan>
+</text>
+<polyline points="325,400 430,400 430,258 495,258" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="368.5078125" y="348.12" width="52.984375" height="29.76" fill="white"/>
+<text x="395" y="368.98" text-anchor="middle" font-family="Arial" font-size="23" fill="black">
+<tspan x="395" dy="0">Нет</tspan>
+</text>
+<polygon points="687.5,365 835,422.5 687.5,480 540,422.5" fill="white" stroke="black" stroke-width="2"/>
+<text x="687.5" y="401.86" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="687.5" dy="0">Активные счета;</tspan>
+<tspan x="687.5" dy="26.880000000000003">достаточно</tspan>
+<tspan x="687.5" dy="26.880000000000003">средств?</tspan>
+</text>
+<polyline points="687,310 687,365" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1090" y="200" width="405" height="100" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1292.5" y="242.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1292.5" dy="0">Создать обратный transfer;</tspan>
+<tspan x="1292.5" dy="26.880000000000003">изменить оба остатка</tspan>
+</text>
+<rect x="1090" y="350" width="405" height="105" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1292.5" y="395.30" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1292.5" dy="0">Создать transfer_reversal;</tspan>
+<tspan x="1292.5" dy="26.880000000000003">записать аудит; COMMIT</tspan>
+</text>
+<polygon points="1108,515 1495,515 1477,595 1090,595" fill="white" stroke="black" stroke-width="2"/>
+<text x="1292.5" y="561.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1292.5" dy="0">Вернуть reversal_transfer_id</tspan>
+</text>
+<polyline points="835,423 980,423 980,250 1090,250" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="919.5" y="371.12" width="41.0" height="29.76" fill="white"/>
+<text x="940" y="391.98" text-anchor="middle" font-family="Arial" font-size="23" fill="black">
+<tspan x="940" dy="0">Да</tspan>
+</text>
+<polyline points="1292,300 1292,350" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1292,455 1292,515" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="495" y="560" width="385" height="90" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="687.5" y="597.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="687.5" dy="0">ROLLBACK; BT003 / BT006</tspan>
+<tspan x="687.5" dy="26.880000000000003">либо ошибка состояния</tspan>
+</text>
+<polyline points="687,480 687,560" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="703.5078125" y="508.12" width="52.984375" height="29.76" fill="white"/>
+<text x="730" y="528.98" text-anchor="middle" font-family="Arial" font-size="23" fill="black">
+<tspan x="730" dy="0">Нет</tspan>
+</text>
+<rect x="1090" y="690" width="405" height="60" rx="26" fill="white" stroke="black" stroke-width="2"/>
+<text x="1292.5" y="726.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1292.5" dy="0">Конец</tspan>
+</text>
+<polyline points="1292,595 1292,690" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="880,605 990,605 990,720 1090,720" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="365,707 420,707 420,780 1292,780 1292,750" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/></svg>

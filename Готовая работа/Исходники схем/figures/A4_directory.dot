@@ -1,0 +1,23 @@
+digraph A4_directory {
+graph [rankdir=LR, bgcolor="white", pad=.12, nodesep=.35, ranksep=.65, splines=polyline, outputorder=edgesfirst];
+node [fontname="Arial", fontsize=18, margin=".12,.08", penwidth=1.3];
+edge [fontname="Arial", fontsize=17, color="#333333", penwidth=1.2, arrowsize=.75];
+"E1" [label="E1 Оператор", shape="box", style="filled", fillcolor="#A4C8EA", width="1.958"];
+"E3" [label="E3 Администратор", shape="box", style="filled", fillcolor="#A4C8EA", width="2.625"];
+"F11" [label="F1.1\nПроверить реквизиты\nи полномочия", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="2.972"];
+"F12" [label="F1.2\nСохранить клиента,\nсчёт или получателя", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="2.875"];
+"F13" [label="F1.3\nЗарегистрировать\nаудит", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="2.556"];
+"D1" [label="D1\nКлиенты, счета,\nсотрудники,\nполучатели", shape="record", style="filled", fillcolor="#D9EAD3", width="2.292"];
+"D4" [label="D4\nСобытия\nаудита", shape="record", style="filled", fillcolor="#D9EAD3", width="1.472"];
+E1 -> F11 [label="Карточка;\nреквизиты"];
+E3 -> F11 [label="Справочники; права"];
+D1 -> F11 [label="Дубли; состояние;\nроль"];
+F11 -> E1 [label="Ошибки реквизитов"];
+F11 -> E3 [label="Отказ доступа"];
+F11 -> F12 [label="Проверенные\nзначения"];
+F12 -> D1 [label="Карточка /\nизменение"];
+F12 -> F13 [label="Изменение account;\nавтор"];
+F13 -> D4 [label="old/new; ключ;\nвремя"];
+F12 -> E1 [label="Карточка и\nидентификатор"];
+F12 -> E3 [label="Подтверждение\nнастройки"];
+}

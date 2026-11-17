@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="830" viewBox="0 0 1800 830"><defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 4 L 0 8" fill="none" stroke="black" stroke-width="1.7"/></marker></defs><rect width="100%" height="100%" fill="white"/><rect x="10" y="25" width="1780" height="695" fill="white" stroke="black" stroke-width="2"/>
+<polyline points="90,25.0 1790,25.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="90,25.0 90,256.66666666666663" fill="none" stroke="black" stroke-width="2"/>
+<text x="50" y="140.83333333333331" text-anchor="middle" transform="rotate(-90 50 140.83333333333331)" font-family="Arial" font-size="24">Оператор</text>
+<rect x="90" y="256.66666666666663" width="1700" height="231.66666666666666" fill="#F7F7F7"/>
+<polyline points="90,256.66666666666663 1790,256.66666666666663" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="90,256.66666666666663 90,488.33333333333326" fill="none" stroke="black" stroke-width="2"/>
+<text x="50" y="372.49999999999994" text-anchor="middle" transform="rotate(-90 50 372.49999999999994)" font-family="Arial" font-size="24">Прикладной сервис</text>
+<polyline points="90,488.3333333333333 1790,488.3333333333333" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="90,488.3333333333333 90,720.0" fill="none" stroke="black" stroke-width="2"/>
+<text x="50" y="604.1666666666666" text-anchor="middle" transform="rotate(-90 50 604.1666666666666)" font-family="Arial" font-size="24">PostgreSQL</text>
+<circle cx="140" cy="140.83333333333331" r="22" fill="white" stroke="black" stroke-width="2"/>
+<text x="195" y="206.81" text-anchor="middle" font-family="Arial" font-size="23" fill="black">
+<tspan x="195" dy="0">Обращение</tspan>
+</text>
+<rect x="235" y="92.83333333333331" width="255" height="96" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<text x="362.5" y="120.19" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="362.5" dy="0">Ввести данные</tspan>
+<tspan x="362.5" dy="26.880000000000003">клиента</tspan>
+<tspan x="362.5" dy="26.880000000000003">и реквизиты счёта</tspan>
+</text>
+<rect x="570" y="324.49999999999994" width="245" height="96" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="692.5" y="365.30" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="692.5" dy="0">Проверить сеанс,</tspan>
+<tspan x="692.5" dy="26.880000000000003">формат и дубли</tspan>
+</text>
+<polygon points="924.0,338.49999999999994 958,372.49999999999994 924.0,406.49999999999994 890,372.49999999999994" fill="white" stroke="black" stroke-width="2"/>
+<text x="924.0" y="381.34" text-anchor="middle" font-family="Arial" font-size="34" fill="black">
+<tspan x="924.0" dy="0">×</tspan>
+</text>
+<text x="924" y="308.48" text-anchor="middle" font-family="Arial" font-size="23" fill="black">
+<tspan x="924" dy="0">Допустимы?</tspan>
+</text>
+<rect x="1050" y="556.1666666666666" width="280" height="96" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="1190.0" y="583.53" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1190.0" dy="0">Создать клиента /</tspan>
+<tspan x="1190.0" dy="26.880000000000003">счёт;</tspan>
+<tspan x="1190.0" dy="26.880000000000003">аудит; COMMIT</tspan>
+</text>
+<rect x="1410" y="92.83333333333331" width="235" height="96" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<text x="1527.5" y="133.63" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1527.5" dy="0">Получить карточку</tspan>
+<tspan x="1527.5" dy="26.880000000000003">и номер счёта</tspan>
+</text>
+<circle cx="1725" cy="140.83333333333331" r="22" fill="white" stroke="black" stroke-width="4"/>
+<text x="1685" y="206.81" text-anchor="middle" font-family="Arial" font-size="23" fill="black">
+<tspan x="1685" dy="0">Зарегистрирован</tspan>
+</text>
+<rect x="1070" y="324.49999999999994" width="235" height="96" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="1187.5" y="365.30" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1187.5" dy="0">Показать причины</tspan>
+<tspan x="1187.5" dy="26.880000000000003">отклонения</tspan>
+</text>
+<circle cx="1390" cy="372.49999999999994" r="22" fill="white" stroke="black" stroke-width="4"/>
+<text x="1390" y="438.48" text-anchor="middle" font-family="Arial" font-size="23" fill="black">
+<tspan x="1390" dy="0">Отклонено</tspan>
+</text>
+<polyline points="162,140.83333333333331 235,140.83333333333331" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="490,140.83333333333331 530.0,140.83333333333331 530.0,372.49999999999994 570,372.49999999999994" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="815,372.49999999999994 890,372.49999999999994" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="924.0,406.49999999999994 924,610 1050,604.1666666666666" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="941.5" y="515.68" width="37.0" height="28.64" fill="white"/>
+<text x="960" y="535.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="960" dy="0">да</tspan>
+</text>
+<polyline points="1330,604.1666666666666 1370.0,604.1666666666666 1370.0,140.83333333333331 1410,140.83333333333331" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1645,140.83333333333331 1703,140.83333333333331" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="958,372.49999999999994 1070,372.49999999999994" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="991.0078125" y="335.17999999999995" width="45.984375" height="28.64" fill="white"/>
+<text x="1014.0" y="355.22" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="1014.0" dy="0">нет</tspan>
+</text>
+<polyline points="1305,372.49999999999994 1368,372.49999999999994" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="900.0" y="769.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="900.0" dy="0">BPMN 2.0.2: круг — событие; скруглённый блок — задача; ромб × — исключающий шлюз; + — подпроцесс.</tspan>
+</text>
+<text x="900.0" y="807.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="900.0" dy="0">Открытие счёта не создаёт денежного перевода; начальный остаток задаётся до начала работы книги.</tspan>
+</text></svg>

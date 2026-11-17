@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="760" viewBox="0 0 1500 760"><defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 4 L 0 8" fill="none" stroke="black" stroke-width="1.7"/></marker></defs><rect width="100%" height="100%" fill="white"/><rect x="20" y="310" width="245" height="110" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="142.5" y="356.90" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<tspan x="142.5" dy="0">E1</tspan>
+<tspan x="142.5" dy="30.240000000000002">Оператор</tspan>
+</text>
+<rect x="1235" y="310" width="245" height="110" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="1357.5" y="356.90" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<tspan x="1357.5" dy="0">E2</tspan>
+<tspan x="1357.5" dy="30.240000000000002">Контролёр</tspan>
+</text>
+<rect x="600" y="15" width="300" height="95" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="750.0" y="54.40" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<tspan x="750.0" dy="0">E3</tspan>
+<tspan x="750.0" dy="30.240000000000002">Администратор</tspan>
+</text>
+<rect x="490" y="280" width="520" height="255" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<path d="M502,280 H998 Q1010,280 1010,292 V317 H490 V292 Q490,280 502,280" fill="#F7A547" stroke="black" stroke-width="2"/>
+<text x="750.0" y="306.54" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
+<tspan x="750.0" dy="0">0</tspan>
+</text>
+<text x="750.0" y="417.30" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
+<tspan x="750.0" dy="0">Учитывать и контролировать</tspan>
+<tspan x="750.0" dy="32.480000000000004">внутрибанковские переводы</tspan>
+</text>
+<polyline points="265,335 490,335" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="378" y="197.48" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="378" dy="0">Реквизиты</tspan>
+<tspan x="378" dy="26.880000000000003">клиентов,</tspan>
+<tspan x="378" dy="26.880000000000003">счета, поручения,</tspan>
+<tspan x="378" dy="26.880000000000003">CSV, команды,</tspan>
+<tspan x="378" dy="26.880000000000003">период</tspan>
+</text>
+<polyline points="490,485 380,485 380,395 265,395" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="265" y="552.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="265" dy="0">Карточки, статусы,</tspan>
+<tspan x="265" dy="26.880000000000003">выписки, ошибки</tspan>
+</text>
+<polyline points="1235,335 1010,335" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1122" y="197.48" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1122" dy="0">Оригинал и причина</tspan>
+<tspan x="1122" dy="26.880000000000003">возврата,</tspan>
+<tspan x="1122" dy="26.880000000000003">параметры</tspan>
+<tspan x="1122" dy="26.880000000000003">контрольных</tspan>
+<tspan x="1122" dy="26.880000000000003">отчётов</tspan>
+</text>
+<polyline points="1010,485 1120,485 1120,395 1235,395" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1230" y="552.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1230" dy="0">Результат возврата,</tspan>
+<tspan x="1230" dy="26.880000000000003">отчёты, ошибки</tspan>
+</text>
+<polyline points="660,110 660,280" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="444" y="138.36" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="444" dy="0">Справочники,</tspan>
+<tspan x="444" dy="26.880000000000003">учётные записи,</tspan>
+<tspan x="444" dy="26.880000000000003">настройки доступа</tspan>
+</text>
+<polyline points="840,280 840,110" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1070" y="151.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1070" dy="0">Подтверждения,</tspan>
+<tspan x="1070" dy="26.880000000000003">журнал действий</tspan>
+</text>
+<text x="750" y="661.50" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<tspan x="750" dy="0">Граница автоматизации: операционное подразделение одного банка; рублёвые переводы физических лиц.</tspan>
+</text>
+<text x="750" y="720.98" text-anchor="middle" font-family="Arial" font-size="23" fill="black">
+<tspan x="750" dy="0">DFD (Гейн — Сарсон): синий блок — внешний участник; жёлтый — процесс; стрелка — поток данных.</tspan>
+</text></svg>

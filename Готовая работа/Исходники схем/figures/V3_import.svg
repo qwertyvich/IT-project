@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="860" viewBox="0 0 1900 860"><defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 4 L 0 8" fill="none" stroke="black" stroke-width="1.7"/></marker></defs><rect width="100%" height="100%" fill="white"/><rect x="10" y="25" width="1880" height="725" fill="white" stroke="black" stroke-width="2"/>
+<polyline points="90,25.0 1890,25.0" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="90,25.0 90,266.66666666666663" fill="none" stroke="black" stroke-width="2"/>
+<text x="50" y="145.83333333333331" text-anchor="middle" transform="rotate(-90 50 145.83333333333331)" font-family="Arial" font-size="24">Оператор</text>
+<rect x="90" y="266.66666666666663" width="1800" height="241.66666666666666" fill="#F7F7F7"/>
+<polyline points="90,266.66666666666663 1890,266.66666666666663" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="90,266.66666666666663 90,508.33333333333326" fill="none" stroke="black" stroke-width="2"/>
+<text x="50" y="387.49999999999994" text-anchor="middle" transform="rotate(-90 50 387.49999999999994)" font-family="Arial" font-size="24">Прикладной сервис</text>
+<polyline points="90,508.3333333333333 1890,508.3333333333333" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="90,508.3333333333333 90,750.0" fill="none" stroke="black" stroke-width="2"/>
+<text x="50" y="629.1666666666666" text-anchor="middle" transform="rotate(-90 50 629.1666666666666)" font-family="Arial" font-size="24">PostgreSQL</text>
+<circle cx="140" cy="145.83333333333331" r="22" fill="white" stroke="black" stroke-width="2"/>
+<text x="195" y="211.81" text-anchor="middle" font-family="Arial" font-size="23" fill="black">
+<tspan x="195" dy="0">Реестр CSV</tspan>
+</text>
+<rect x="225" y="97.83333333333331" width="235" height="96" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<text x="342.5" y="138.63" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="342.5" dy="0">Выбрать файл</tspan>
+<tspan x="342.5" dy="26.880000000000003">и отправить</tspan>
+</text>
+<rect x="535" y="339.49999999999994" width="260" height="96" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="665.0" y="366.86" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="665.0" dy="0">Проверить UTF8,</tspan>
+<tspan x="665.0" dy="26.880000000000003">заголовок, все</tspan>
+<tspan x="665.0" dy="26.880000000000003">строки</tspan>
+</text>
+<polygon points="909.0,353.49999999999994 943,387.49999999999994 909.0,421.49999999999994 875,387.49999999999994" fill="white" stroke="black" stroke-width="2"/>
+<text x="909.0" y="396.34" text-anchor="middle" font-family="Arial" font-size="34" fill="black">
+<tspan x="909.0" dy="0">×</tspan>
+</text>
+<text x="909" y="323.48" text-anchor="middle" font-family="Arial" font-size="23" fill="black">
+<tspan x="909" dy="0">Есть ошибки?</tspan>
+</text>
+<rect x="1010" y="97.83333333333331" width="230" height="96" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="1125.0" y="138.63" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1125.0" dy="0">Показать строки</tspan>
+<tspan x="1125.0" dy="26.880000000000003">с ошибками</tspan>
+</text>
+<circle cx="1330" cy="145.83333333333331" r="22" fill="white" stroke="black" stroke-width="4"/>
+<text x="1330" y="211.81" text-anchor="middle" font-family="Arial" font-size="23" fill="black">
+<tspan x="1330" dy="0">Не загружен</tspan>
+</text>
+<rect x="1010" y="581.1666666666666" width="255" height="96" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="1137.5" y="608.53" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1137.5" dy="0">BEGIN; найти</tspan>
+<tspan x="1137.5" dy="26.880000000000003">реестр</tspan>
+<tspan x="1137.5" dy="26.880000000000003">по SHA-256</tspan>
+</text>
+<polygon points="1379.0,595.1666666666666 1413,629.1666666666666 1379.0,663.1666666666666 1345,629.1666666666666" fill="white" stroke="black" stroke-width="2"/>
+<text x="1379.0" y="638.01" text-anchor="middle" font-family="Arial" font-size="34" fill="black">
+<tspan x="1379.0" dy="0">×</tspan>
+</text>
+<text x="1379" y="565.15" text-anchor="middle" font-family="Arial" font-size="23" fill="black">
+<tspan x="1379" dy="0">Уже есть?</tspan>
+</text>
+<rect x="1475" y="581.1666666666666" width="270" height="96" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="1610.0" y="621.97" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1610.0" dy="0">Создать batch и все</tspan>
+<tspan x="1610.0" dy="26.880000000000003">pending; COMMIT</tspan>
+</text>
+<rect x="1490" y="339.49999999999994" width="265" height="96" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="1622.5" y="380.30" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1622.5" dy="0">Вернуть batch_id</tspan>
+<tspan x="1622.5" dy="26.880000000000003">и список поручений</tspan>
+</text>
+<circle cx="1820" cy="387.49999999999994" r="22" fill="white" stroke="black" stroke-width="4"/>
+<text x="1785" y="453.48" text-anchor="middle" font-family="Arial" font-size="23" fill="black">
+<tspan x="1785" dy="0">Загружен</tspan>
+</text>
+<polyline points="162,145.83333333333331 225,145.83333333333331" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="460,145.83333333333331 497.5,145.83333333333331 497.5,387.49999999999994 535,387.49999999999994" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="795,387.49999999999994 875,387.49999999999994" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="909.0,353.49999999999994 909,145 1010,145.83333333333331" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="936.5" y="215.68" width="37.0" height="28.64" fill="white"/>
+<text x="955" y="235.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="955" dy="0">да</tspan>
+</text>
+<polyline points="1240,145.83333333333331 1308,145.83333333333331" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="909.0,421.49999999999994 909,629 1010,629.1666666666666" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="927.0078125" y="515.68" width="45.984375" height="28.64" fill="white"/>
+<text x="950" y="535.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="950" dy="0">нет</tspan>
+</text>
+<polyline points="1265,629.1666666666666 1345,629.1666666666666" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1413,629.1666666666666 1475,629.1666666666666" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1421.0078125" y="591.8466666666666" width="45.984375" height="28.64" fill="white"/>
+<text x="1444.0" y="611.89" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="1444.0" dy="0">нет</tspan>
+</text>
+<polyline points="1610.0,581.1666666666666 1610,515 1622,515 1622.5,435.49999999999994" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1379.0,595.1666666666666 1379,391 1490,387.49999999999994" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1391.5" y="465.68" width="37.0" height="28.64" fill="white"/>
+<text x="1410" y="485.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="1410" dy="0">да</tspan>
+</text>
+<polyline points="1755,387.49999999999994 1798,387.49999999999994" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="950.0" y="799.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="950.0" dy="0">BPMN 2.0.2: круг — событие; скруглённый блок — задача; ромб × — исключающий шлюз; + — подпроцесс.</tspan>
+</text>
+<text x="950.0" y="837.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="950.0" dy="0">При ошибке записи весь импорт откатывается. Повтор идентичных байтов возвращает прежний реестр.</tspan>
+</text></svg>
