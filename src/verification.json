@@ -59,10 +59,13 @@
     "scope": "Структурная проверка спецификации и примеров; не сертификация OpenAPI и не проверка работающего API."
   },
   "documents": {
-    "main_docx_sha256": "d3f89a361b1b4c45f970e97711d91e65bb6e17bacbe38375574b4759936a87f4",
-    "guide_docx_sha256": "9f6055d6a44058829f74ed526a1129abea58fd5c64ec14a784fc47ab179df530",
+    "main_docx_sha256": "be31dded646d57bb6399bcc003839c61370515e561053f0b47e09f590d2ec72c",
+    "guide_docx_sha256": "fe930190905ddeae8cc34192a3864f59df6a825e048db63d0d275eb84605d2c9",
     "figures": 36,
-    "tables": 69,
+    "tables": 73,
+    "chapters": 7,
+    "numbered_headings": 52,
+    "reference_structure_verified": true,
     "appendices": 8,
     "author": "Салихов Р. Р.",
     "group": "М8О-309БВ",
@@ -71,7 +74,7 @@
   "pdfs": [
     {
       "file": "Банковская система — Пояснительная записка.pdf",
-      "pages": 110,
+      "pages": 113,
       "outline_present": true,
       "no_blank_pages": true,
       "page_numbers_sequential": true,
@@ -81,7 +84,7 @@
         "/BCDGEE+TimesNewRomanPS-BoldMT": true,
         "/BCDHEE+TimesNewRomanPS-BoldMT": true
       },
-      "sha256": "044971d4d9986c07c518b27fb92d68ecae37eb8b9b3f11d63869e468e2fbb294"
+      "sha256": "5a319599fc028b9ecfa1018d53a68c75fb879cbd8d7dc2261fa8bc030c72ded4"
     },
     {
       "file": "Защита за 3 минуты и пояснения.pdf",
@@ -95,7 +98,7 @@
         "/BCDGEE+TimesNewRomanPSMT": true,
         "/BCDHEE+TimesNewRomanPSMT": true
       },
-      "sha256": "0860036abf57e8daa05f2fa8156d530cc213dc28d86cb2507a0e0ca88a7374cc"
+      "sha256": "16382721404b4da47753754ac3c4dbc1bf83d8968b30b20b2696e2969050ca2d"
     }
   ],
   "scope": "Проверка проектных артефактов и независимых эталонов. Приёмочные испытания банковского ПО не проводились."

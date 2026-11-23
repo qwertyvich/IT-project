@@ -38,7 +38,7 @@ try {
       $paragraphCount = $doc.Paragraphs.Count
       for ($i = 2; $i -le $paragraphCount; $i++) {
         $paragraph = $doc.Paragraphs.Item($i)
-        if ($paragraph.Range.Text.Trim() -ceq 'ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ') {
+        if ($paragraph.Range.Text.Trim() -ceq 'ОПРЕДЕЛЕНИЯ, ОБОЗНАЧЕНИЯ И СОКРАЩЕНИЯ') {
           $previous = $doc.Paragraphs.Item($i - 1)
           if ($previous.Range.Text.Trim().Length -le 1) {
             $paragraph.Format.PageBreakBefore = 0
@@ -58,6 +58,9 @@ try {
   $doc.Repaginate()
   if ($Update.IsPresent) {
     foreach ($toc in $doc.TablesOfContents) { $toc.UpdatePageNumbers() }
+    foreach ($field in $doc.Fields) {
+      if ($field.Code.Text -match '^\s*NUMPAGES\b') { $field.Update() | Out-Null }
+    }
     $doc.Save()
   }
   # PDF/A embeds both Latin and Cyrillic font resources; bookmarks work in Preview.

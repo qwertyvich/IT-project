@@ -99,7 +99,10 @@ def check_docx():
  for case in TESTS:assert case[0]+' '+case[1] in alltext,case[0]
  for leaf in LEAVES:assert leaf[0] in alltext,leaf[0]
  for m,title,*_ in MODULES:assert m+' '+title in alltext,m
- assert alltext.index('1.4 Концепция качества и достижение назначения',alltext.index('ВВЕДЕНИЕ'))<alltext.index('3 Функциональная модель',alltext.index('ВВЕДЕНИЕ'))
+ reference=json.loads((ROOT/'docs/reference_structure.json').read_text(encoding='utf-8'))
+ headings=[p.text for p in d.paragraphs if p.style.name in ('Heading 1','Heading 2') and re.match(r'^\d+\s|^\d+\.\d+\s',p.text)]
+ assert headings==reference['expected_headings'],headings
+ assert alltext.index('1.4 Нефункциональные требования и критерии качества',alltext.index('ВВЕДЕНИЕ'))<alltext.index('3 Модель функционирования системы',alltext.index('ВВЕДЕНИЕ'))
  for token in ['БП-01','Г0','ЦП1','ЦП2','ЦП3','ЦП4','u_B≤0,80u_A','недостаточно свидетельств']:
   assert token in alltext,token
  for _,o,_,_,_,handler,_ in OPERATIONS:
@@ -122,7 +125,7 @@ def check_docx():
  with zipfile.ZipFile(MAIN) as z:
   assert b'pBdr' not in z.read('word/styles.xml')
  assert AUTHOR in '\n'.join(p.text for p in g.paragraphs)
- return {'main_docx_sha256':sha(MAIN),'guide_docx_sha256':sha(GUIDE),'figures':len(FIGURES),'tables':len(d.tables),'appendices':8,'author':AUTHOR,'group':GROUP,'images_match_sources':True}
+ return {'main_docx_sha256':sha(MAIN),'guide_docx_sha256':sha(GUIDE),'figures':len(FIGURES),'tables':len(d.tables),'chapters':7,'numbered_headings':len(headings),'reference_structure_verified':True,'appendices':8,'author':AUTHOR,'group':GROUP,'images_match_sources':True}
 
 def check_contracts():
  data=json.loads((ROOT/'contracts/openapi.json').read_text(encoding='utf-8'))

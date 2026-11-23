@@ -74,17 +74,23 @@ def main_doc():
  w.p('ПОЯСНИТЕЛЬНАЯ ЗАПИСКА','Title',before=65)
  w.p('по дисциплине «Практикум IT-разработки»',align=C,indent=0)
  w.p('«Банковская система»',align=C,indent=0,before=15)
- w.p(SUBTITLE,align=C,indent=0,after=12)
  for i,tx in enumerate([f'Выполнил: {AUTHOR}',f'Группа: {GROUP}',f'Проверил: {TEACHER}']):
   p=w.p(tx,indent=0,before=40 if i==0 else 0);p.paragraph_format.left_indent=Mm(75)
- w.p('Москва 2026',align=C,indent=0,before=65)
+ w.p('Москва 2026',align=C,indent=0,before=290)
 
+ w.structural('РЕФЕРАТ')
+ abstract=w.p('Записка ',indent=0)
+ count_field=OxmlElement('w:fldSimple');count_field.set(qn('w:instr'),'NUMPAGES');abstract._p.append(count_field)
+ abstract.add_run(' с.')
+ w.p('БАНКОВСКАЯ СИСТЕМА, КЛИЕНТ, СЧЁТ, ПЕРЕВОД, КРЕДИТНЫЙ ДОГОВОР, МОДЕЛЬ ДАННЫХ, DFD, BPMN, АРХИТЕКТУРА, ТЕХНИЧЕСКИЙ ПРОЕКТ, ИСПЫТАНИЯ',indent=0,before=8,after=8)
+ paras(w,'Объект разработки — информационное обеспечение обслуживания физических лиц в отделениях банка. Цель — подготовить согласованный проект системы ведения клиентов, счетов, карт, переводов и кредитных договоров с проверяемым результатом обслуживания.',
+ 'Построены декларативная модель Чена, диаграммы потоков данных и процессы BPMN. Определены архитектура, принципы функционирования и развития, технические модули и интерфейсы. Программа и методика испытаний связывает требования с наблюдаемыми результатами, включая сравнение полного труда при одинаковых обращениях.')
  w.structural('СОДЕРЖАНИЕ');p=w.p('',indent=0)
  # The field-ending paragraph must not occupy a blank page after a full TOC.
  p.paragraph_format.line_spacing=Pt(1);p.paragraph_format.space_after=Pt(0)
  mark=OxmlElement('w:rPr');sz=OxmlElement('w:sz');sz.set(qn('w:val'),'2');mark.append(sz);p._p.get_or_add_pPr().append(mark)
  f=OxmlElement('w:fldSimple');f.set(qn('w:instr'),'TOC \\o "1-2" \\h \\z \\u');p._p.append(f)
- w.structural('ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ')
+ w.structural('ОПРЕДЕЛЕНИЯ, ОБОЗНАЧЕНИЯ И СОКРАЩЕНИЯ')
  for a,b in [
  ('Банковская система в границах проекта','люди, регламент и программно-информационные средства операционного учёта обслуживания физических лиц в отделениях банка.'),
  ('Качество','степень соответствия совокупности собственных характеристик объекта требованиям [8].'),
@@ -99,13 +105,13 @@ def main_doc():
  ('Верификация','подтверждение выполнения установленных требований по объективным свидетельствам [8].'),
  ('Валидация','подтверждение пригодности результата для предполагаемого применения [8].'),
  ('Свидетельство','сохранённые данные наблюдения, по которым можно воспроизвести сравнение с нормой.')]:
-  pp=w.p(a+' — '+b,size=12,indent=0,after=5);pp.paragraph_format.line_spacing=1.15
- w.structural('ПЕРЕЧЕНЬ СОКРАЩЕНИЙ И ОБОЗНАЧЕНИЙ')
+  pp=w.p(a+' — '+b,size=12,indent=0,after=2);pp.paragraph_format.line_spacing=1.0
+ w.p('Применяются следующие сокращения и обозначения.',indent=0,size=12,before=6,after=5)
  for tx in ['БД / СУБД — база данных / система управления базами данных.','DFD — диаграмма потоков данных в нотации Гейна–Сарсона.','BPMN — нотация моделирования бизнес-процессов, версия 2.0.2.','PK / FK / UQ / NN — первичный ключ / внешний ключ / уникальность / обязательность.','РН / УП — требование назначения / условие применения.','ФТ / ФТТ / ТТ — функциональное / функционально-техническое / техническое требование.','ПР / Г — проблема / гипотеза её решения.','К / Д / М / И — архитектурный компонент / ресурс данных / технический модуль / интерфейс; И01–И25 — испытания.','ПФ / ПРЗ — принцип функционирования / принцип развития.','ПМИ — программа и методика испытаний.','p95 — 95-й процентиль; для 100 измерений nearest-rank берётся 95-е значение упорядоченного ряда.','Actual/365 Fixed — фактическое число дней периода, делённое на постоянное число 365.']:
-  w.p(tx,size=12,indent=0,after=8).paragraph_format.line_spacing=1.15
+  w.p(tx,size=12,indent=0,after=2).paragraph_format.line_spacing=1.0
 
  write_introduction(w)
- write_problem(w,table)
+ write_problem(w,table,QUALITY)
  write_project_sections(w,table,QUALITY,PRINCIPLES,DEVELOPMENT,INTERFACES)
  write_conclusion(w)
 
@@ -207,6 +213,7 @@ def main_doc():
  paras(w,'Протокол заполняется при выполнении сценария на фиксированной сборке. Для отклонения регистрируются дефект, затронутые требования и повторный запуск. Заключение о приёмке оформляется по полному комплекту свидетельств И01–И25.')
  write_trace_annex(w,app,table)
  write_annex(w,app,table)
+ abstract.runs[-1].text=f' с., 1 кн., {w.figures} рис., {w.tables} табл., {len(sources)} источников, 8 приложений.'
  w.save(MAIN)
  return {'main':str(MAIN),'figures':w.figures,'tables':w.tables,'appendices':8,'sources':len(sources)}
 
