@@ -422,7 +422,8 @@
               }
             }
           }
-        }
+        },
+        "description": "contract_ref однозначно обозначает исходный утверждённый договор. Новый договор: 201. Совпавший повтор ссылки, счёта и всех условий: 200 с прежними loan_id, автором, текущим состоянием и планом; повторного аудита создания нет. Иные условия с той же ссылкой: 409 BT005. Первая дата платежа строго позже issued_on; даты возрастают, последняя равна due_on. При потере ответа повторяется исходная команда с прежним contract_ref."
       }
     },
     "/loans/{id}/close": {
@@ -642,6 +643,13 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
+          "contract_ref": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100,
+            "pattern": "\\S",
+            "description": "Номер утверждённого договора в формате банка; крайние пробелы удаляются до сравнения. Номер сохраняется неизменным."
+          },
           "account_id": {
             "type": "integer",
             "minimum": 1,
@@ -674,6 +682,7 @@
           }
         },
         "required": [
+          "contract_ref",
           "account_id",
           "principal",
           "annual_rate",
@@ -720,6 +729,18 @@
             "minimum": 1,
             "maximum": 2147483647
           },
+          "contract_ref": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100,
+            "pattern": "\\S",
+            "description": "Номер утверждённого договора в формате банка; крайние пробелы удаляются до сравнения. Номер сохраняется неизменным."
+          },
+          "created_by": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2147483647
+          },
           "status": {
             "enum": [
               "registered",
@@ -739,6 +760,8 @@
         },
         "required": [
           "loan_id",
+          "contract_ref",
+          "created_by",
           "status",
           "schedule",
           "request_id"

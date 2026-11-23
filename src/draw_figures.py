@@ -12,22 +12,28 @@ import process_figures
 import additional_figures
 
 def chen(name,entities,relations,places,rplaces):
- g=Graph(name,'TB',26);g.body.append('graph [overlap=true, splines=true];')
+ g=Graph(name,'TB',26);g.body.append('graph [overlap=true, splines=true];');partial_keys=[]
  def pos(id,xy):g.body.append(f'{id} [pos="{xy[0]/72},{xy[1]/72}!",pin=true];')
  for id,title,attrs in entities:
-  g.node(id,title,'box',BLUE);cx,cy=places[id];pos(id,(cx,cy))
+  weak=id=='schedule'
+  g.node(id,title,'box',BLUE,**({'peripheries':2} if weak else {}));cx,cy=places[id];pos(id,(cx,cy))
   offsets=([(0,230),(-310,140),(310,140),(-290,340),(290,340),(0,460)] if cy>800 else [(0,-210),(-310,-120),(310,-120),(-280,-320),(280,-320),(0,-440)])
   for i,t in enumerate(attrs):
    aid=f'{id}_a{i}';key=t.startswith('*');t=t.lstrip('*')
-   if key:
+   if key and weak:
+    g.node(aid,t,'ellipse','white')
+    partial_keys.append({'node':aid,'text_width':ImageFont.truetype(str(ARIAL),26).getlength(t)})
+   elif key:
     g.nodes.add(aid);g.body.append(f'{aid} [shape=ellipse,label=<<U>{html.escape(t)}</U>>,style=filled,fillcolor=white];')
    else:g.node(aid,t,'ellipse','white')
    dx,dy=offsets[i];pos(aid,(cx+dx,cy+dy));g.edge(id,aid,'',dir='none',color='#555555')
  for i,(a,b,t,ca,cb) in enumerate(relations):
-  rid='r'+str(i);g.node(rid,t,'diamond',YELLOW,margin='.03,.02');pos(rid,rplaces[i])
+  rid='r'+str(i);g.node(rid,t,'diamond',YELLOW,margin='.03,.02',**({'peripheries':2} if b=='schedule' else {}));pos(rid,rplaces[i])
   g.edge(a,rid,'',dir='none',headlabel=ca,labeldistance='2',labelangle='35')
-  g.edge(rid,b,'',dir='none',taillabel=cb,labeldistance='2',labelangle='35')
- result=g.save();result['engine']='neato';return result
+  g.edge(rid,b,'',dir='none',taillabel=cb,labeldistance='2',labelangle='35',**({'color':'black:white:black'} if b=='schedule' else {}))
+ result=g.save();result['engine']='neato'
+ if partial_keys:result['partial_keys']=partial_keys
+ return result
 
 def declarative():
  out=[]
@@ -41,7 +47,7 @@ def declarative():
  out.append(chen('A2_products',[
   ('card','БАНКОВСКАЯ КАРТА\nbank_card',['*Номер карты','Дата выпуска','Дата окончания','Состояние']),
   ('transfer','ПЕРЕВОД\ntransfer',['*Идентификатор перевода','Сумма','Состояние','Ключ запроса','Дата инициирования','Дата завершения']),
-  ('loan','КРЕДИТНЫЙ ДОГОВОР\nloan',['*Идентификатор договора','Основная сумма','Годовая ставка','Дата выдачи','Срок окончания','Основание закрытия']),
+  ('loan','КРЕДИТНЫЙ ДОГОВОР\nloan',['*Номер договора','Основная сумма','Годовая ставка','Дата начала договора','Срок окончания','Основание закрытия']),
   ('account','СЧЁТ\nконтекст А.1',['*Номер счёта']),
   ('employee','СОТРУДНИК\nконтекст А.1',['*Идентификатор сотрудника']),
   ('schedule','ПЛАНОВЫЙ ПЛАТЁЖ\nloan_schedule',['*Номер в договоре','Дата платежа','Основная часть','Процентная часть'])],
@@ -78,6 +84,7 @@ def logical(name,full,context=()):
    cells=''.join(f'<TD WIDTH="{ww}" ALIGN="LEFT">{html.escape(t)}</TD>' for t,ww in zip(row,widths))
    rows.append(f'<TR><TD PORT="{row[0]}" CELLPADDING="0"><TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6"><TR>{cells}</TR></TABLE></TD></TR>')
   label=html.escape(title)+'<BR/>'+id+('<BR/>контекст А.4' if id in context else '')
+  if id=='branch' and id in full:label+='<BR/>UQ: (city, address)'
   table=f'<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"><TR><TD BGCOLOR="{BLUE}"><B>{label}</B></TD></TR>'+''.join(rows)+'</TABLE>'
   g.nodes.add(id);g.body.append(f'{id} [shape=plain,label=<{table}>];')
   if id in fixed:
@@ -191,7 +198,7 @@ def renamed_primitive(fn,old,new,replacements):
 def schedule_algorithm():
  s=Picture('D4_schedule',1600,1110)
  s.box(80,20,580,65,'Начало',26,'terminal');s.box(80,130,580,95,'principal, annual_rate,\nissued_on, даты платежей',26,'io')
- s.box(160,290,420,130,'Входные данные\nкорректны?',26,'diamond')
+ s.box(160,290,420,130,'Первая дата позже\nначала договора;\nввод корректен?',26,'diamond')
  s.box(80,485,580,95,'Вычислить базовую долю\nв целых копейках',26)
  s.box(80,645,580,105,'Для каждой даты: проценты HALF_UP;\nпоследней доле — остаток',25)
  s.box(160,825,420,130,'Сумма и сроки\nсогласованы?',26,'diamond')

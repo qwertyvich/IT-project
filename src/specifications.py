@@ -9,8 +9,8 @@ MEANINGS={
  'employee': ['Идентификатор сотрудника','Отделение сотрудника','Уникальное имя входа','Хеш с солью и параметрами; не выдаётся в API','Фамилия, имя и отчество','operator / credit / controller / admin','Разрешён ли доступ сейчас'],
  'bank_card': ['Идентификатор карты','Уникальный номер: ровно 16 цифр; в списках маскируется','Обслуживаемый счёт','Первый допустимый день','Последний допустимый день; позже issued_on','active / blocked / closed','Сотрудник, зарегистрировавший карту'],
  'transfer': ['Идентификатор распоряжения','Счёт списания','Другой счёт зачисления','Положительная сумма; предел команды 1 000 000,00 руб.','Момент инициирования распоряжения','pending / completed / cancelled','Уникальный ключ создания команды','Автор из проверенного сеанса','Момент completed/cancelled; NULL только при pending'],
- 'loan': ['Идентификатор договора','Связанный активный счёт','Положительная основная сумма','Годовая ставка от 0,00 до 999,99 %','Дата начала договорного периода','Последняя дата утверждённого плана','registered / closed','Сотрудник, зарегистрировавший договор','Основание кредитной службы; непустое только для closed'],
- 'loan_schedule': ['Договор; первая часть составного PK','Номер от 1 до N; вторая часть PK','Строго возрастающая дата; последняя равна loan.due_on','Положительная часть основного долга','Неотрицательная процентная часть; HALF_UP'],
+ 'loan': ['Внутренний идентификатор договора','Уникальный номер исходного утверждённого договора; неизменяемый contract_ref','Связанный активный счёт','Положительная основная сумма','Годовая ставка от 0,00 до 999,99 %','Дата начала договорного периода','Последняя дата утверждённого плана','registered / closed','Сотрудник первоначальной регистрации','Основание кредитной службы; непустое только для closed'],
+ 'loan_schedule': ['Договор; первая часть составного PK','Номер от 1 до N; вторая часть PK','Позже loan.issued_on; даты возрастают, последняя равна loan.due_on','Положительная часть основного долга','Неотрицательная процентная часть; HALF_UP'],
  'audit_event': ['Идентификатор события','Автор из доверенного контекста','Имя изменённого отношения','Идентификатор объекта без универсального FK','create / update / post / cancel / close','Момент события с часовым поясом','Ключ команды; объединяет события одной операции','Снимок до; NULL для создания; без секретов','Снимок после; обязательный для изменения; без секретов'],
 }
 
@@ -35,7 +35,7 @@ ERRORS=[
  ('BT002','Нет права / сотрудник отключён','403','Отказ до предметной записи'),
  ('BT003','Недостаточно средств','409','Полный откат; перевод остаётся pending'),
  ('BT004','Недопустимые поля, состояние или переход','422 / 409','422 для формы данных; 409 для конфликта текущего состояния'),
- ('BT005','Тот же ключ, другие параметры или автор','409','Вернуть конфликт без нового распоряжения'),
+ ('BT005','Ключ перевода: иные параметры/автор; contract_ref: иные условия','409','Конфликт без нового перевода или договора'),
  ('BT006','Невозможный или несогласованный график','422','Не сохранять часть договора или плана'),
  ('BT099','Исчерпание повторов / недоступность инфраструктуры','503','Нет подтверждённого успеха; безопасно запросить прежний результат'),
  ('INTERNAL','Непредвиденная ошибка реализации','500','request_id для диагностики; внутренние SQL и секреты не выдавать'),
@@ -58,7 +58,7 @@ def write_annex(w,app,table):
  for start in range(0,len(CONTRACTS),3):
   table(w,'Детальные контракты связей '+str(start//3+1),['ID и граница','Синтаксис и вход','Результат и семантика'],[(i+' '+b,p+'; '+inp,out) for i,b,p,inp,out in CONTRACTS[start:start+3]],[35,73,57])
  table(w,'Единая классификация отказов',['Код','Условие','HTTP','Правило'],ERRORS,[21,43,21,80])
- w.p('Все сетевые команды используют префикс /api/v1, Content-Type: application/json; charset=utf-8 и проверенный сервером сеанс. Поля вне схемы отклоняются, числовые ID должны быть положительными. Денежная строка допускает только точку и ровно две цифры после неё, без разделителей групп. Автор вычисляется из сеанса; пароль, cookie и хеш не записываются в аудит. Для всех ответов формируется request_id.')
+ w.p('Все сетевые команды используют префикс /api/v1 и Content-Type: application/json; charset=utf-8. POST /sessions проверяет учётные данные и создаёт сеанс; остальные команды требуют проверенного сервером сеанса. Поля вне схемы отклоняются, числовые ID должны быть положительными. Денежная строка допускает только точку и ровно две цифры после неё, без разделителей групп. Автор вычисляется из сеанса; пароль, cookie и хеш не записываются в аудит. Для всех ответов формируется request_id.')
  for title,example in EXAMPLES:
   w.p(title,keep=True,before=6)
   p=w.p(json.dumps(example,ensure_ascii=False,indent=2),align=0,size=12,indent=0,after=6)
@@ -69,21 +69,22 @@ EXAMPLES=[
  ('Создание распоряжения POST /api/v1/transfers',{'from_account_id':101,'to_account_id':102,'amount':'2500.00','request_key':'11111111-1111-4111-8111-111111111111'}),
  ('Ответ проведения POST /api/v1/transfers/501/post после COMMIT',{'transfer_id':501,'status':'completed','finished_at':'2026-11-01T10:30:00+03:00','request_key':'11111111-1111-4111-8111-111111111111','request_id':'22222222-2222-4222-8222-222222222222'}),
  ('Отказ HTTP 409 без предметного изменения',{'error':{'code':'BT003','message':'Недостаточно средств'},'request_id':'22222222-2222-4222-8222-222222222222'}),
- ('Регистрация утверждённого договора POST /api/v1/loans',{'account_id':101,'principal':'120000.00','annual_rate':'12.00','issued_on':'2026-01-01','due_on':'2026-04-01','payment_dates':['2026-02-01','2026-03-01','2026-04-01']}),
+ ('Регистрация утверждённого договора POST /api/v1/loans',{'contract_ref':'КД-2026-0001','account_id':101,'principal':'120000.00','annual_rate':'12.00','issued_on':'2026-01-01','due_on':'2026-04-01','payment_dates':['2026-02-01','2026-03-01','2026-04-01']}),
 ]
 
 def write_openapi():
  money={'type':'string','pattern':r'^[0-9]{1,12}\.[0-9]{2}$'}
  ident={'type':'integer','minimum':1,'maximum':2147483647}
  uuid={'type':'string','format':'uuid'}
+ contract_ref={'type':'string','minLength':1,'maxLength':100,'pattern':r'\S','description':'Номер утверждённого договора в формате банка; крайние пробелы удаляются до сравнения. Номер сохраняется неизменным.'}
  def obj(props,required=None):return {'type':'object','additionalProperties':False,'properties':props,'required':required or list(props)}
  schemas={
   'TransferCommand':obj({'from_account_id':ident,'to_account_id':ident,'amount':money,'request_key':uuid}),
   'TransferView':obj({'transfer_id':ident,'status':{'enum':['pending','completed','cancelled']},'request_key':uuid,'request_id':uuid}),
   'PostingResult':obj({'transfer_id':ident,'status':{'const':'completed'},'finished_at':{'type':'string','format':'date-time'},'request_key':uuid,'request_id':uuid}),
-  'LoanCommand':obj({'account_id':ident,'principal':money,'annual_rate':{'type':'string','pattern':r'^[0-9]{1,3}\.[0-9]{2}$'},'issued_on':{'type':'string','format':'date'},'due_on':{'type':'string','format':'date'},'payment_dates':{'type':'array','minItems':1,'uniqueItems':True,'items':{'type':'string','format':'date'}}}),
+  'LoanCommand':obj({'contract_ref':contract_ref,'account_id':ident,'principal':money,'annual_rate':{'type':'string','pattern':r'^[0-9]{1,3}\.[0-9]{2}$'},'issued_on':{'type':'string','format':'date'},'due_on':{'type':'string','format':'date'},'payment_dates':{'type':'array','minItems':1,'uniqueItems':True,'items':{'type':'string','format':'date'}}}),
   'ScheduleItem':obj({'payment_no':ident,'due_on':{'type':'string','format':'date'},'principal_part':money,'interest_part':money}),
-  'LoanView':obj({'loan_id':ident,'status':{'enum':['registered','closed']},'schedule':{'type':'array','items':{'$ref':'#/components/schemas/ScheduleItem'}},'request_id':uuid}),
+  'LoanView':obj({'loan_id':ident,'contract_ref':contract_ref,'created_by':ident,'status':{'enum':['registered','closed']},'schedule':{'type':'array','items':{'$ref':'#/components/schemas/ScheduleItem'}},'request_id':uuid}),
   'CloseCommand':obj({'close_ref':{'type':'string','minLength':1,'maxLength':100}}),
   'Error':obj({'error':obj({'code':{'type':'string'},'message':{'type':'string'}}),'request_id':uuid}),
  }
@@ -95,6 +96,7 @@ def write_openapi():
   return x
  paths={'/transfers':{'post':op('TransferCommand','TransferView',True)},'/transfers/{id}':{'get':op(None,'TransferView')},'/transfers/{id}/post':{'post':op(None,'PostingResult')},'/loans':{'post':op('LoanCommand','LoanView',True)},'/loans/{id}/close':{'post':op('CloseCommand','LoanView')}}
  paths['/transfers/{id}']['get']['description']='Чтение подтверждённого состояния с проверкой сеанса и права на объект. После потери ответа completed означает прежний успех; pending допускает повтор проведения того же ID. Недоступность чтения не доказывает откат.'
+ paths['/loans']['post']['description']='contract_ref однозначно обозначает исходный утверждённый договор. Новый договор: 201. Совпавший повтор ссылки, счёта и всех условий: 200 с прежними loan_id, автором, текущим состоянием и планом; повторного аудита создания нет. Иные условия с той же ссылкой: 409 BT005. Первая дата платежа строго позже issued_on; даты возрастают, последняя равна due_on. При потере ответа повторяется исходная команда с прежним contract_ref.'
  for path,methods in paths.items():
   if '{id}' in path:methods['parameters']=[{'name':'id','in':'path','required':True,'schema':ident}]
  data={'openapi':'3.1.0','info':{'title':'Банковская система — ключевые контракты','version':'1.0.0','description':'Проектная спецификация. Семантические ограничения и транзакции описаны в записке; сервис ещё не реализован.'},'servers':[{'url':'https://bank.example.invalid/api/v1'}],'security':[{'session':[]}],'paths':paths,'components':{'securitySchemes':{'session':{'type':'apiKey','in':'cookie','name':'session'}},'schemas':schemas}}

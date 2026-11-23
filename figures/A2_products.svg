@@ -77,23 +77,23 @@
 <!-- loan&#45;&gt;loan_a3 -->
 <g id="edge14" class="edge">
 <title>loan&#45;&gt;loan_a3</title>
-<path fill="none" stroke="#555555" stroke-width="1.2" d="M2652.56,-1387.54C2623.67,-1416.21 2582.31,-1456.46 2544.64,-1490.21 2498.01,-1531.97 2471.62,-1528.52 2436.3,-1580.21 2419.84,-1604.3 2410.28,-1636.39 2405.09,-1659.69"/>
+<path fill="none" stroke="#555555" stroke-width="1.2" d="M2657.84,-1387.57C2605.31,-1449.15 2500.53,-1571.99 2441.91,-1640.72"/>
 </g>
 <!-- loan&#45;&gt;loan_a4 -->
 <g id="edge15" class="edge">
 <title>loan&#45;&gt;loan_a4</title>
-<path fill="none" stroke="#555555" stroke-width="1.2" d="M2726.84,-1387.54C2755.73,-1416.21 2797.09,-1456.46 2834.76,-1490.21 2881.39,-1531.97 2907.78,-1528.52 2943.1,-1580.21 2959.56,-1604.3 2969.12,-1636.39 2974.31,-1659.69"/>
+<path fill="none" stroke="#555555" stroke-width="1.2" d="M2721.56,-1387.57C2779.54,-1455.53 2901.15,-1598.11 2954.12,-1660.22"/>
 </g>
 <!-- loan&#45;&gt;loan_a5 -->
 <g id="edge16" class="edge">
 <title>loan&#45;&gt;loan_a5</title>
-<path fill="none" stroke="#555555" stroke-width="1.2" d="M2652.56,-1387.54C2623.67,-1416.21 2582.31,-1456.46 2544.64,-1490.21 2498.01,-1531.97 2437.67,-1517.63 2436.3,-1580.21 2435.68,-1608.79 2579.27,-1724.44 2650.55,-1780.05"/>
+<path fill="none" stroke="#555555" stroke-width="1.2" d="M2640.21,-1387.5C2591.63,-1428.77 2524.76,-1500.11 2524.76,-1580.21 2524.76,-1665.21 2600.09,-1740.37 2648.93,-1780.16"/>
 </g>
 <!-- loan&#45;&gt;r4 -->
 <g id="edge31" class="edge">
 <title>loan&#45;&gt;r4</title>
-<path fill="none" stroke="#333333" stroke-width="1.2" d="M2689.7,-1312.63C2689.7,-1228.14 2689.7,-1022.32 2689.7,-916.07"/>
-<text xml:space="preserve" text-anchor="middle" x="2678.23" y="-924.95" font-family="Arial" font-size="25.00">1</text>
+<path fill="none" stroke="#333333" stroke-width="1.2" d="M2689.7,-1312.63C2689.7,-1229.28 2689.7,-1027.83 2689.7,-920.41"/>
+<text xml:space="preserve" text-anchor="middle" x="2678.23" y="-929.29" font-family="Arial" font-size="25.00">1</text>
 </g>
 <!-- account&#45;&gt;account_a0 -->
 <g id="edge17" class="edge">
@@ -150,22 +150,22 @@
 <!-- schedule&#45;&gt;schedule_a0 -->
 <g id="edge19" class="edge">
 <title>schedule&#45;&gt;schedule_a0</title>
-<path fill="none" stroke="#555555" stroke-width="1.2" d="M2689.7,-312.66C2689.7,-272.2 2689.7,-208.55 2689.7,-170.95"/>
+<path fill="none" stroke="#555555" stroke-width="1.2" d="M2689.7,-308.72C2689.7,-268.2 2689.7,-207.46 2689.7,-171.04"/>
 </g>
 <!-- schedule&#45;&gt;schedule_a1 -->
 <g id="edge20" class="edge">
 <title>schedule&#45;&gt;schedule_a1</title>
-<path fill="none" stroke="#555555" stroke-width="1.2" d="M2592.89,-312.73C2545.63,-294.44 2489.94,-272.88 2447.33,-256.39"/>
+<path fill="none" stroke="#555555" stroke-width="1.2" d="M2582.58,-308.74C2537.78,-291.4 2487.06,-271.77 2447.54,-256.47"/>
 </g>
 <!-- schedule&#45;&gt;schedule_a2 -->
 <g id="edge21" class="edge">
 <title>schedule&#45;&gt;schedule_a2</title>
-<path fill="none" stroke="#555555" stroke-width="1.2" d="M2786.51,-312.73C2832.88,-294.78 2887.37,-273.69 2929.66,-257.32"/>
+<path fill="none" stroke="#555555" stroke-width="1.2" d="M2796.82,-308.74C2840.75,-291.74 2890.36,-272.53 2929.53,-257.37"/>
 </g>
 <!-- schedule&#45;&gt;schedule_a3 -->
 <g id="edge22" class="edge">
 <title>schedule&#45;&gt;schedule_a3</title>
-<path fill="none" stroke="#555555" stroke-width="1.2" d="M2657.03,-312.87C2601.06,-248.9 2487.88,-119.56 2436.35,-60.66"/>
+<path fill="none" stroke="#555555" stroke-width="1.2" d="M2653.38,-308.7C2596.27,-243.42 2486.77,-118.28 2436.33,-60.64"/>
 </g>
 <!-- r0&#45;&gt;card -->
 <g id="edge24" class="edge">
@@ -194,8 +194,10 @@
 <!-- r4&#45;&gt;schedule -->
 <g id="edge32" class="edge">
 <title>r4&#45;&gt;schedule</title>
-<path fill="none" stroke="#333333" stroke-width="1.2" d="M2689.7,-784.33C2689.7,-677.99 2689.7,-471.93 2689.7,-387.58"/>
-<text xml:space="preserve" text-anchor="middle" x="2701.17" y="-760.44" font-family="Arial" font-size="25.00">1..N</text>
+<path fill="none" stroke="black" stroke-width="1.2" d="M2687.7,-779.89C2687.7,-674.05 2687.7,-477.1 2687.7,-391.6"/>
+<path fill="none" stroke="white" stroke-width="1.2" d="M2689.7,-779.89C2689.7,-674.05 2689.7,-477.1 2689.7,-391.6"/>
+<path fill="none" stroke="black" stroke-width="1.2" d="M2691.7,-779.89C2691.7,-674.05 2691.7,-477.1 2691.7,-391.6"/>
+<text xml:space="preserve" text-anchor="middle" x="2701.17" y="-756.01" font-family="Arial" font-size="25.00">1..N</text>
 </g>
 <!-- r5&#45;&gt;card -->
 <g id="edge34" class="edge">
@@ -299,8 +301,8 @@
 <!-- loan_a0 -->
 <g id="node14" class="node">
 <title>loan_a0</title>
-<ellipse fill="white" stroke="black" stroke-width="1.3" cx="2689.7" cy="-1580.21" rx="231.86" ry="30.21"/>
-<text xml:space="preserve" text-anchor="start" x="2534.39" y="-1573.41" font-family="Arial" text-decoration="underline" font-size="26.00">Идентификатор договора</text>
+<ellipse fill="white" stroke="black" stroke-width="1.3" cx="2689.7" cy="-1580.21" rx="150.13" ry="30.21"/>
+<text xml:space="preserve" text-anchor="start" x="2592.18" y="-1573.41" font-family="Arial" text-decoration="underline" font-size="26.00">Номер договора</text>
 </g>
 <!-- loan_a1 -->
 <g id="node15" class="node">
@@ -317,8 +319,9 @@
 <!-- loan_a3 -->
 <g id="node17" class="node">
 <title>loan_a3</title>
-<ellipse fill="white" stroke="black" stroke-width="1.3" cx="2399.7" cy="-1690.21" rx="119.48" ry="30.21"/>
-<text xml:space="preserve" text-anchor="middle" x="2399.7" y="-1682.41" font-family="Arial" font-size="26.00">Дата выдачи</text>
+<ellipse fill="white" stroke="black" stroke-width="1.3" cx="2399.7" cy="-1690.21" rx="119.48" ry="52.27"/>
+<text xml:space="preserve" text-anchor="middle" x="2399.7" y="-1698.01" font-family="Arial" font-size="26.00">Дата начала</text>
+<text xml:space="preserve" text-anchor="middle" x="2399.7" y="-1666.81" font-family="Arial" font-size="26.00">договора</text>
 </g>
 <!-- loan_a4 -->
 <g id="node18" class="node">
@@ -362,6 +365,7 @@
 <g id="node24" class="node">
 <title>schedule</title>
 <polygon fill="#a4c8ea" stroke="black" stroke-width="1.3" points="2839.68,-387.17 2539.72,-387.17 2539.72,-313.25 2839.68,-313.25 2839.68,-387.17"/>
+<polygon fill="none" stroke="black" stroke-width="1.3" points="2843.68,-391.17 2535.72,-391.17 2535.72,-309.25 2843.68,-309.25 2843.68,-391.17"/>
 <text xml:space="preserve" text-anchor="middle" x="2689.7" y="-358.01" font-family="Arial" font-size="26.00">ПЛАНОВЫЙ ПЛАТЁЖ</text>
 <text xml:space="preserve" text-anchor="middle" x="2689.7" y="-326.81" font-family="Arial" font-size="26.00">loan_schedule</text>
 </g>
@@ -369,8 +373,8 @@
 <g id="node25" class="node">
 <title>schedule_a0</title>
 <ellipse fill="white" stroke="black" stroke-width="1.3" cx="2689.7" cy="-140.21" rx="165.46" ry="30.21"/>
-<text xml:space="preserve" text-anchor="start" x="2581.35" y="-133.41" font-family="Arial" text-decoration="underline" font-size="26.00">Номер в договоре</text>
-</g>
+<text xml:space="preserve" text-anchor="middle" x="2689.7" y="-132.41" font-family="Arial" font-size="26.00">Номер в договоре</text>
+<line x1="2582.2078125" y1="-129.41" x2="2797.1921875" y2="-129.41" stroke="black" stroke-width="1.4" stroke-dasharray="5 3"/></g>
 <!-- schedule_a1 -->
 <g id="node26" class="node">
 <title>schedule_a1</title>
@@ -419,6 +423,7 @@
 <g id="node33" class="node">
 <title>r4</title>
 <polygon fill="#fff2b2" stroke="black" stroke-width="1.3" points="2689.7,-915.49 2569.8,-850.21 2689.7,-784.93 2809.6,-850.21 2689.7,-915.49"/>
+<polygon fill="none" stroke="black" stroke-width="1.3" points="2689.7,-920.04 2561.44,-850.21 2689.7,-780.37 2817.96,-850.21 2689.7,-920.04"/>
 <text xml:space="preserve" text-anchor="middle" x="2689.7" y="-858.01" font-family="Arial" font-size="26.00">СОДЕРЖИТ</text>
 <text xml:space="preserve" text-anchor="middle" x="2689.7" y="-826.81" font-family="Arial" font-size="26.00">ПЛАН</text>
 </g>

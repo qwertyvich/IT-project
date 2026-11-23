@@ -8,9 +8,10 @@
 <tspan x="370.0" dy="29.120000000000005">issued_on, даты платежей</tspan>
 </text>
 <polygon points="370.0,290 580,355.0 370.0,420 160,355.0" fill="white" stroke="black" stroke-width="2"/>
-<text x="370.0" y="347.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
-<tspan x="370.0" dy="0">Входные данные</tspan>
-<tspan x="370.0" dy="29.120000000000005">корректны?</tspan>
+<text x="370.0" y="332.64" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="370.0" dy="0">Первая дата позже</tspan>
+<tspan x="370.0" dy="29.120000000000005">начала договора;</tspan>
+<tspan x="370.0" dy="29.120000000000005">ввод корректен?</tspan>
 </text>
 <rect x="80" y="485" width="580" height="95" rx="0" fill="white" stroke="black" stroke-width="2"/>
 <text x="370.0" y="524.70" text-anchor="middle" font-family="Arial" font-size="26" fill="black">

@@ -42,6 +42,9 @@ def check_figures():
   assert sha(p.with_suffix('.png'))==item['sha256_png'];etree.fromstring(p.read_bytes())
   assert item['min_font_on_paper_pt']>=7.5,(item['name'],item['min_font_on_paper_pt'])
  dots=''.join((FIG/(n+'.dot')).read_text(encoding='utf-8') for n in ['A4_logical_people','A5_logical_products'])
+ chen=next(item for item in manifest if item['name']=='A2_products')
+ assert chen['partial_keys'][0]['node']=='schedule_a0'
+ assert 'stroke-dasharray="5 3"' in (FIG/'A2_products.svg').read_text(encoding='utf-8')
  for a,f,b,p in FK:assert f'{a}:{f} -> {b}:{p}' in dots,(a,f,b,p)
  logical=''.join((FIG/(n+'.svg')).read_text(encoding='utf-8') for n in ['A4_logical_people','A5_logical_products'])
  for name,title,fields in ENTITIES:
@@ -65,6 +68,7 @@ def check_figures():
  drawn_ops=set()
  for item in processes:
   assert item['sequence_connected'] and item['data_objects']==2,item['name']
+  assert item['data_inputs']==1 and item['data_outputs']==1,item['name']
   svg=(FIG/(item['name']+'.svg')).read_text(encoding='utf-8')
   for op in item['operations']:assert op in svg;drawn_ops.add(op)
  assert drawn_ops=={f'ОП{i:02}' for i in range(1,16)},drawn_ops
@@ -135,9 +139,12 @@ def check_docx():
 
 def check_contracts():
  data=json.loads((ROOT/'contracts/openapi.json').read_text(encoding='utf-8'))
- assert data['openapi']=='3.1.0' and len(field_rows())==63
+ assert data['openapi']=='3.1.0' and len(field_rows())==64
  assert data['paths']['/transfers/{id}']['get']['responses']['200']['content']['application/json']['schema']['$ref']=='#/components/schemas/TransferView'
  schemas=data['components']['schemas']
+ assert 'contract_ref' in schemas['LoanCommand']['required'] and 'contract_ref' in schemas['LoanView']['required']
+ assert 'created_by' in schemas['LoanView']['required']
+ assert dict((f,flags) for f,_,flags in next(e[2] for e in ENTITIES if e[0]=='loan'))['contract_ref']=='UQ, NN'
  def resolve(schema):
   if '$ref' in schema:
    assert schema['$ref'].startswith('#/components/schemas/')
@@ -155,7 +162,8 @@ def check_contracts():
    for k,v in value.items():validate(v,schema['properties'][k])
   elif kind=='string':
    assert isinstance(value,str)
-   if 'pattern' in schema:assert re.fullmatch(schema['pattern'],value),value
+   # JSON Schema pattern ищет совпадение; полное совпадение задаётся якорями.
+   if 'pattern' in schema:assert re.search(schema['pattern'],value),value
    if schema.get('format')=='uuid':
     from uuid import UUID
     UUID(value)
@@ -177,7 +185,7 @@ def check_contracts():
  walk(data)
  for (_,example),name in zip(EXAMPLES,['TransferCommand','PostingResult','Error','LoanCommand']):validate(example,schemas[name])
  assert len(CONTRACTS)==11 and {c[0] for c in CONTRACTS}=={f'Т{i:02}' for i in range(1,12)}
- return {'fields_defined':63,'interface_contracts':11,'openapi_examples_checked':4,'all_local_schema_references_resolve':True,'scope':'Структурная проверка спецификации и примеров; не сертификация OpenAPI и не проверка работающего API.'}
+ return {'fields_defined':64,'interface_contracts':11,'openapi_examples_checked':4,'loan_source_reference_required':True,'all_local_schema_references_resolve':True,'scope':'Структурная проверка спецификации и примеров; не сертификация OpenAPI и не проверка работающего API.'}
 
 def check_pdf(path):
  r=PdfReader(path);texts=[p.extract_text() or '' for p in r.pages]

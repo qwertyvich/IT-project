@@ -6,7 +6,7 @@ class Detail(BPMN):
     def __init__(self, name, role):
         Picture.__init__(self, name, 2600, 1500)
         self.nodes = {}; self.seq = []; self.kinds = {}
-        self.operations = set(); self.data_count = 0
+        self.operations = set(); self.data_count = 0; self.data_inputs = 0; self.data_outputs = 0
         self.add('<rect x="10" y="25" width="2580" height="1365" fill="white" stroke="black" stroke-width="2"/>')
         self.add('<rect x="90" y="235" width="2500" height="1155" fill="#F7F7F7"/>')
         self.line([(90,25),(90,1390)])
@@ -46,6 +46,8 @@ class Detail(BPMN):
         if not store: pts.reverse()
         self.add('<polyline points="'+' '.join(f'{a},{b}' for a,b in pts)+'" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="4 5" marker-end="url(#dataArrow)"/>')
         self.data_count+=1
+        if store:self.data_outputs+=1
+        else:self.data_inputs+=1
 
     def begin(self,command):
         self.event_at('start',165,130,'Обращение')
@@ -118,24 +120,26 @@ def transfers():
 
 def loans():
     s=Detail('V5_loans','Кредитный специалист')
-    s.begin('Предъявить утверждённые условия\nи даты полного плана')
-    s.task_at('validate',300,590,'ОП10 · К4 / М06\nПроверить сумму, ставку,\nсчёт и порядок дат',490,140,ops=['ОП10'])
+    s.begin('Указать номер утверждённого\nдоговора, условия и даты плана')
+    s.task_at('validate',300,590,'ОП10 · К4 / М06\nНайти contract_ref;\nпроверить реквизиты команды',490,140,ops=['ОП10'])
     s.link('valid','validate','да',source='bottom',target='top',route=[(889,500),(545,500)],labelpos=(930,475))
-    s.gate_at('terms',870,660,'Условия допустимы?')
+    s.gate_at('terms',870,660,'Номер договора новый?')
     s.link('validate','terms')
-    s.link('terms','refusal','нет',source='top',target='bottom',route=[(904,475),(1355,475)],labelpos=(975,510))
-    s.task_at('calculate',1110,590,'ОП11 · К4 / М07\nРассчитать доли в копейках;\nпроценты и остаток округления',520,140,ops=['ОП11'])
+    s.task_at('existing',220,850,'ОП10 · К4 / М06\nСопоставить счёт и все условия;\nпрежний ID, состояние и план\nлибо BT005 без новой записи',560,140,ops=['ОП10'])
+    s.link('terms','existing','нет: прежний',source='bottom',target='top',route=[(904,800),(500,800)],labelpos=(1010,765))
+    s.to_result('existing')
+    s.task_at('calculate',1110,590,'ОП10 / ОП11 · К4\nМ06: счёт и даты; М07: план;\nпервая дата позже начала',520,140,ops=['ОП10','ОП11'])
     s.link('terms','calculate','да')
     s.gate_at('plan',1730,660,'Суммы и сроки\nполного плана верны?')
     s.link('calculate','plan')
     s.task_at('plan_error',1990,590,'Отклонить план;\nдоговор и строки не записывать',360,140)
     s.link('plan','plan_error','нет'); s.to_result('plan_error')
-    s.task_at('save',1110,960,'ОП11 · К4 / М06\nСохранить договор, все строки\nи аудит одной транзакцией',520,140,ops=['ОП11'])
+    s.task_at('save',1110,960,'ОП11 · К4 / М06\nРаспознать contract_ref;\nдоговор, план, аудит атомарно',520,140,ops=['ОП11'])
     s.link('plan','save','да',source='bottom',target='top',route=[(1764,850),(1370,850)],labelpos=(1805,810))
     s.gate_at('saved',1730,1030,'Запись подтверждена?')
     s.link('save','saved')
-    s.task_at('saved_out',1990,960,'registered и полный план;\nвернуть договор и график',360,140)
-    s.task_at('failure',1990,1210,'Ошибка до фиксации — откат;\nнеизвестный исход — сверка\nдо новой регистрации',360,150)
+    s.task_at('saved_out',1990,960,'Новый / прежний ID;\nсостояние и полный план',360,140)
+    s.task_at('failure',1990,1210,'Ошибка до фиксации — откат;\nнет ответа — повторить\nпрежний contract_ref',360,150)
     s.link('saved','saved_out','да'); s.to_result('saved_out')
     s.link('saved','failure','нет',source='bottom',route=[(1764,1285)],labelpos=(1810,1250)); s.to_result('failure')
     s.data_at(220,1110,430,'ДО6 / ДО7 · Условия и план','validate',route=[(545,790),(180,790),(180,1080),(435,1080)])

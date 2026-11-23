@@ -12,8 +12,8 @@
 <!-- account&#45;&gt;branch -->
 <g id="edge2" class="edge">
 <title>account:branch_id&#45;&gt;branch:branch_id</title>
-<path fill="none" stroke="#333333" stroke-width="1.2" d="M352,-453.8C352,-453.8 389.12,-266.79 397.38,-225.15"/>
-<polygon fill="#333333" stroke="#333333" stroke-width="1.2" points="399.61,-225.6 398.65,-218.78 395.15,-224.71 399.61,-225.6"/>
+<path fill="none" stroke="#333333" stroke-width="1.2" d="M352,-453.8C352,-453.8 389.28,-259.62 397.44,-217.14"/>
+<polygon fill="#333333" stroke="#333333" stroke-width="1.2" points="399.67,-217.6 398.66,-210.78 395.2,-216.74 399.67,-217.6"/>
 </g>
 <!-- account&#45;&gt;client -->
 <g id="edge1" class="edge">
@@ -24,40 +24,41 @@
 <!-- employee&#45;&gt;branch -->
 <g id="edge3" class="edge">
 <title>employee:branch_id&#45;&gt;branch:branch_id</title>
-<path fill="none" stroke="#333333" stroke-width="1.2" d="M342.5,-183.6C342.5,-183.6 376.98,-203.99 392.07,-212.9"/>
-<polygon fill="#333333" stroke="#333333" stroke-width="1.2" points="390.68,-214.73 397.44,-216.08 393,-210.81 390.68,-214.73"/>
+<path fill="none" stroke="#333333" stroke-width="1.2" d="M342.5,-183.6C342.5,-183.6 376.3,-198.79 391.61,-205.68"/>
+<polygon fill="#333333" stroke="#333333" stroke-width="1.2" points="390.48,-207.67 397.34,-208.26 392.35,-203.52 390.48,-207.67"/>
 </g>
 <!-- branch -->
 <g id="node1" class="node">
 <title>branch</title>
-<polygon fill="#a4c8ea" stroke="none" points="400,-233.6 400,-277.6 711,-277.6 711,-233.6 400,-233.6"/>
-<text xml:space="preserve" text-anchor="start" x="515.49" y="-258.2" font-family="Arial" font-weight="bold" font-size="16.00">Отделение</text>
-<text xml:space="preserve" text-anchor="start" x="528.83" y="-242.2" font-family="Arial" font-weight="bold" font-size="16.00">branch</text>
-<polygon fill="none" stroke="black" points="400,-200.4 400,-233.6 517,-233.6 517,-200.4 400,-200.4"/>
-<text xml:space="preserve" text-anchor="start" x="407" y="-210.6" font-family="Arial" font-size="16.00">branch_id</text>
-<polygon fill="none" stroke="black" points="517,-200.4 517,-233.6 631,-233.6 631,-200.4 517,-200.4"/>
-<text xml:space="preserve" text-anchor="start" x="524" y="-210.6" font-family="Arial" font-size="16.00">integer</text>
-<polygon fill="none" stroke="black" points="631,-200.4 631,-233.6 711,-233.6 711,-200.4 631,-200.4"/>
-<text xml:space="preserve" text-anchor="start" x="638" y="-210.6" font-family="Arial" font-size="16.00">PK</text>
-<polygon fill="none" stroke="black" points="400,-167.2 400,-200.4 517,-200.4 517,-167.2 400,-167.2"/>
-<text xml:space="preserve" text-anchor="start" x="407" y="-177.4" font-family="Arial" font-size="16.00">branch_code</text>
-<polygon fill="none" stroke="black" points="517,-167.2 517,-200.4 631,-200.4 631,-167.2 517,-167.2"/>
-<text xml:space="preserve" text-anchor="start" x="524" y="-177.4" font-family="Arial" font-size="16.00">varchar(10)</text>
-<polygon fill="none" stroke="black" points="631,-167.2 631,-200.4 711,-200.4 711,-167.2 631,-167.2"/>
-<text xml:space="preserve" text-anchor="start" x="638" y="-177.4" font-family="Arial" font-size="16.00">UQ, NN</text>
-<polygon fill="none" stroke="black" points="400,-134 400,-167.2 517,-167.2 517,-134 400,-134"/>
-<text xml:space="preserve" text-anchor="start" x="407" y="-144.2" font-family="Arial" font-size="16.00">city</text>
-<polygon fill="none" stroke="black" points="517,-134 517,-167.2 631,-167.2 631,-134 517,-134"/>
-<text xml:space="preserve" text-anchor="start" x="524" y="-144.2" font-family="Arial" font-size="16.00">varchar(100)</text>
-<polygon fill="none" stroke="black" points="631,-134 631,-167.2 711,-167.2 711,-134 631,-134"/>
-<text xml:space="preserve" text-anchor="start" x="638" y="-144.2" font-family="Arial" font-size="16.00">NN</text>
-<polygon fill="none" stroke="black" points="400,-100.8 400,-134 517,-134 517,-100.8 400,-100.8"/>
-<text xml:space="preserve" text-anchor="start" x="407" y="-111" font-family="Arial" font-size="16.00">address</text>
-<polygon fill="none" stroke="black" points="517,-100.8 517,-134 631,-134 631,-100.8 517,-100.8"/>
-<text xml:space="preserve" text-anchor="start" x="524" y="-111" font-family="Arial" font-size="16.00">varchar(200)</text>
-<polygon fill="none" stroke="black" points="631,-100.8 631,-134 711,-134 711,-100.8 631,-100.8"/>
-<text xml:space="preserve" text-anchor="start" x="638" y="-111" font-family="Arial" font-size="16.00">NN</text>
-<polygon fill="none" stroke="black" points="399,-99.8 399,-278.6 712,-278.6 712,-99.8 399,-99.8"/>
+<polygon fill="#a4c8ea" stroke="none" points="400,-225.6 400,-285.6 711,-285.6 711,-225.6 400,-225.6"/>
+<text xml:space="preserve" text-anchor="start" x="515.49" y="-266.2" font-family="Arial" font-weight="bold" font-size="16.00">Отделение</text>
+<text xml:space="preserve" text-anchor="start" x="528.83" y="-250.2" font-family="Arial" font-weight="bold" font-size="16.00">branch</text>
+<text xml:space="preserve" text-anchor="start" x="484.37" y="-234.2" font-family="Arial" font-weight="bold" font-size="16.00">UQ: (city, address)</text>
+<polygon fill="none" stroke="black" points="400,-192.4 400,-225.6 517,-225.6 517,-192.4 400,-192.4"/>
+<text xml:space="preserve" text-anchor="start" x="407" y="-202.6" font-family="Arial" font-size="16.00">branch_id</text>
+<polygon fill="none" stroke="black" points="517,-192.4 517,-225.6 631,-225.6 631,-192.4 517,-192.4"/>
+<text xml:space="preserve" text-anchor="start" x="524" y="-202.6" font-family="Arial" font-size="16.00">integer</text>
+<polygon fill="none" stroke="black" points="631,-192.4 631,-225.6 711,-225.6 711,-192.4 631,-192.4"/>
+<text xml:space="preserve" text-anchor="start" x="638" y="-202.6" font-family="Arial" font-size="16.00">PK</text>
+<polygon fill="none" stroke="black" points="400,-159.2 400,-192.4 517,-192.4 517,-159.2 400,-159.2"/>
+<text xml:space="preserve" text-anchor="start" x="407" y="-169.4" font-family="Arial" font-size="16.00">branch_code</text>
+<polygon fill="none" stroke="black" points="517,-159.2 517,-192.4 631,-192.4 631,-159.2 517,-159.2"/>
+<text xml:space="preserve" text-anchor="start" x="524" y="-169.4" font-family="Arial" font-size="16.00">varchar(10)</text>
+<polygon fill="none" stroke="black" points="631,-159.2 631,-192.4 711,-192.4 711,-159.2 631,-159.2"/>
+<text xml:space="preserve" text-anchor="start" x="638" y="-169.4" font-family="Arial" font-size="16.00">UQ, NN</text>
+<polygon fill="none" stroke="black" points="400,-126 400,-159.2 517,-159.2 517,-126 400,-126"/>
+<text xml:space="preserve" text-anchor="start" x="407" y="-136.2" font-family="Arial" font-size="16.00">city</text>
+<polygon fill="none" stroke="black" points="517,-126 517,-159.2 631,-159.2 631,-126 517,-126"/>
+<text xml:space="preserve" text-anchor="start" x="524" y="-136.2" font-family="Arial" font-size="16.00">varchar(100)</text>
+<polygon fill="none" stroke="black" points="631,-126 631,-159.2 711,-159.2 711,-126 631,-126"/>
+<text xml:space="preserve" text-anchor="start" x="638" y="-136.2" font-family="Arial" font-size="16.00">NN</text>
+<polygon fill="none" stroke="black" points="400,-92.8 400,-126 517,-126 517,-92.8 400,-92.8"/>
+<text xml:space="preserve" text-anchor="start" x="407" y="-103" font-family="Arial" font-size="16.00">address</text>
+<polygon fill="none" stroke="black" points="517,-92.8 517,-126 631,-126 631,-92.8 517,-92.8"/>
+<text xml:space="preserve" text-anchor="start" x="524" y="-103" font-family="Arial" font-size="16.00">varchar(200)</text>
+<polygon fill="none" stroke="black" points="631,-92.8 631,-126 711,-126 711,-92.8 631,-92.8"/>
+<text xml:space="preserve" text-anchor="start" x="638" y="-103" font-family="Arial" font-size="16.00">NN</text>
+<polygon fill="none" stroke="black" points="399,-91.8 399,-286.6 712,-286.6 712,-91.8 399,-91.8"/>
 </g>
 <!-- client -->
 <g id="node2" class="node">

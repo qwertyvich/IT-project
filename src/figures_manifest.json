@@ -21,13 +21,19 @@
     "edges": 38,
     "paper": "A3",
     "engine": "neato",
+    "partial_keys": [
+      {
+        "node": "schedule_a0",
+        "text_width": 214.984375
+      }
+    ],
     "caption": "Рисунок А.2 — Модель Чена: карты, переводы и кредитные договоры",
     "width": 3167,
     "height": 1858,
     "min_font_px": 25,
-    "sha256_svg": "76075e0caed9e6d67b2b4e6b8efb1a5238342fa39e7ff146132bbec2d790352f",
+    "sha256_svg": "31c1073339634f4863522d60425d9efc10f3671102c06a5c4d5a131451c1acdc",
     "min_font_on_paper_pt": 8.39,
-    "sha256_png": "a904b53ffee6deef150a7b46be2217ff73fb02ba29e778b4d47d0d04e690cf1b"
+    "sha256_png": "302900e30219b8096ddf54c134f26ff848cf7e786cef09fdab68090c3bb3779c"
   },
   {
     "name": "A3_quality",
@@ -54,9 +60,9 @@
     "width": 729,
     "height": 632,
     "min_font_px": 16,
-    "sha256_svg": "ad3ffce5a9fdf1818b2c4afa55034989a3900d286dcaeb8aa042b1bc9ec3f24e",
+    "sha256_svg": "ed5ddafd4a9db803bb368121fa06346718f144d74f31a301c0add1cd2f9ee050",
     "min_font_on_paper_pt": 9.69,
-    "sha256_png": "082bd17f41217b1309715d5af8af5d7a7448a01a50fb46f316a84667ae133508"
+    "sha256_png": "188d41b41727605ed35f2c9343901dd3cbdd40bf676c26b9ea07889b6787f1ce"
   },
   {
     "name": "A5_logical_products",
@@ -67,11 +73,11 @@
     "engine": "neato",
     "caption": "Рисунок А.5 — Логическая модель операций, продуктов и аудита",
     "width": 1527,
-    "height": 1012,
+    "height": 1029,
     "min_font_px": 16,
-    "sha256_svg": "815eac4d5704fc2bb519cf0a6b96f22c8000f72ddaad982c16cb586547d72525",
-    "min_font_on_paper_pt": 9.86,
-    "sha256_png": "c48c9955520716aa04b980fe3de896c672198c3333422afa04b9da39744c000b"
+    "sha256_svg": "ad8458141afe02eb4033f129aa5c6f47622f62283202fb64710f75c56a424f6c",
+    "min_font_on_paper_pt": 9.7,
+    "sha256_png": "c80140539e09c59524f19395ad63d6c3b31b10b22c0bfe7f27262698a7e9cad1"
   },
   {
     "name": "B1_context",
@@ -202,22 +208,24 @@
     "width": 2200,
     "height": 900,
     "min_font_px": 18,
-    "sha256_svg": "cba25fe9d260166e28a487f94f4900d1c4c02f79fbfce39803603d2634510625",
+    "sha256_svg": "60b98337de4a9d334adf9662a91cc5b97b476f44c2c56b23bb10408f2fa4902f",
     "source": "svg",
     "paper": "A3",
     "operations": [],
     "data_objects": 2,
+    "data_inputs": 1,
+    "data_outputs": 1,
     "sequence_connected": true,
     "caption": "Рисунок В.1 — BPMN: полный маршрут банковского обслуживания",
     "min_font_on_paper_pt": 8.7,
-    "sha256_png": "12b29b0bc3036009b21941c8c6319b35c7fb699847b0216923d28da16d6fa77f"
+    "sha256_png": "3c3bd3a6543e9e9ce6cc0174a179fe0c888f2592e46600b9e9a63e007447d550"
   },
   {
     "name": "V2_clients",
     "width": 2200,
     "height": 900,
     "min_font_px": 18,
-    "sha256_svg": "80cfae39e369b5fef3a67423d3faadd3dcbf8d4ae213206e20619dc553c53bd8",
+    "sha256_svg": "ec3ffc14ad6b48ea0739f83ec59e1c29be1277449f79d0d5d68997784c9e809e",
     "source": "svg",
     "paper": "A3",
     "operations": [
@@ -225,10 +233,12 @@
       "ОП02"
     ],
     "data_objects": 2,
+    "data_inputs": 1,
+    "data_outputs": 1,
     "sequence_connected": true,
     "caption": "Рисунок В.2 — BPMN: клиент и открытие счёта",
     "min_font_on_paper_pt": 8.7,
-    "sha256_png": "0dfcc9d714754ae08a7c057d3d76157c26003d0e41ca9c871ce04321982aeaa3"
+    "sha256_png": "4558b86ea9015984ec7935495071f4d300efc33d2fedee43ccb33feab226aab2"
   },
   {
     "name": "V3_cards",
@@ -244,6 +254,8 @@
       "ОП06"
     ],
     "data_objects": 2,
+    "data_inputs": 1,
+    "data_outputs": 1,
     "sequence_connected": true,
     "caption": "Рисунок В.3 — BPMN: регистрация и состояние карты",
     "min_font_on_paper_pt": 8.99,
@@ -263,6 +275,8 @@
       "ОП09"
     ],
     "data_objects": 2,
+    "data_inputs": 1,
+    "data_outputs": 1,
     "sequence_connected": true,
     "caption": "Рисунок В.4 — BPMN: подготовка и проведение перевода",
     "min_font_on_paper_pt": 8.99,
@@ -273,7 +287,7 @@
     "width": 2600,
     "height": 1500,
     "min_font_px": 22,
-    "sha256_svg": "711072d958b8b57b8ccd6a1abeb227d42f46dde6a71fd91046329e339bb7bc85",
+    "sha256_svg": "ebcdc0d5db7e772f9bab4e07a4e32c41f380e610239ffd09461349283a349b95",
     "source": "svg",
     "paper": "A3",
     "operations": [
@@ -281,17 +295,19 @@
       "ОП11"
     ],
     "data_objects": 2,
+    "data_inputs": 1,
+    "data_outputs": 1,
     "sequence_connected": true,
     "caption": "Рисунок В.5 — BPMN: договор и согласованный график",
     "min_font_on_paper_pt": 8.99,
-    "sha256_png": "339ff882417e10e0200d121f5b7882701db917aed01887f857f8ba6db74aba3d"
+    "sha256_png": "cafb2592a8a6588c1b290b27d47247ae0e0d6adf36ef9f04b7cdb1b8e5822ca1"
   },
   {
     "name": "V6_reports",
     "width": 2200,
     "height": 900,
     "min_font_px": 18,
-    "sha256_svg": "c72f9913542730008ceb3ceeadcfd9e3c184a9cb7e2e69dc9d27aab2add53735",
+    "sha256_svg": "59c00c3900c46359bc0f748895ff45cca17cf5e4b89588c6fba5ed235c1d555a",
     "source": "svg",
     "paper": "A3",
     "operations": [
@@ -300,10 +316,12 @@
       "ОП15"
     ],
     "data_objects": 2,
+    "data_inputs": 1,
+    "data_outputs": 1,
     "sequence_connected": true,
     "caption": "Рисунок В.6 — BPMN: получение проверяемого отчёта",
     "min_font_on_paper_pt": 8.7,
-    "sha256_png": "58ee8dd30491fb5ce1ae83e234d2c35c92fbd3cec8111cd501e65adf43c17249"
+    "sha256_png": "0c1d9813807a33918488e2e7c831eca138acf438f06f2edcc0841cfbc2f05cda"
   },
   {
     "name": "V7_states",
@@ -322,34 +340,38 @@
     "width": 2200,
     "height": 900,
     "min_font_px": 18,
-    "sha256_svg": "e30255706924897ad70ca3cfa35591b6f0ff96dd116c64eeea6325facff803b5",
+    "sha256_svg": "3239eaefb68ab173c572bc8e21e3f9156b91138786fa92f1a94b5668df2c7eb8",
     "source": "svg",
     "paper": "A3",
     "operations": [
       "ОП03"
     ],
     "data_objects": 2,
+    "data_inputs": 1,
+    "data_outputs": 1,
     "sequence_connected": true,
     "caption": "Рисунок В.8 — BPMN: отделения, сотрудники и доступ",
     "min_font_on_paper_pt": 8.7,
-    "sha256_png": "29353d15e9eea35fda1960a4718bffe04bdfa2922a6e24040784e4e6f671b92f"
+    "sha256_png": "cedc33b66409f2522b7fa7da412fed59237c91617ca0718fa5207048a3567847"
   },
   {
     "name": "V9_close",
     "width": 2200,
     "height": 900,
     "min_font_px": 18,
-    "sha256_svg": "41fbc1b5168487fc21eb0003f8908b16f4e37a6c6d34d466d2849cdb9f7af04f",
+    "sha256_svg": "7727e949eecfacf25e35ea37d53b5a82bce7e431c1ae4a81a14fc6c5f24bd2d5",
     "source": "svg",
     "paper": "A3",
     "operations": [
       "ОП12"
     ],
     "data_objects": 2,
+    "data_inputs": 1,
+    "data_outputs": 1,
     "sequence_connected": true,
     "caption": "Рисунок В.9 — BPMN: закрытие кредитного договора по основанию",
     "min_font_on_paper_pt": 8.7,
-    "sha256_png": "d733cd951c747124c75b204a6c3384665bd3e7e828956e0cc7755fc2ffa6efb9"
+    "sha256_png": "58d1b70818a1ac01d9c7332f8f0c81de0d90c4e7db7eda3ce5972231ceb900ee"
   },
   {
     "name": "G1_architecture",
@@ -456,12 +478,12 @@
     "width": 1600,
     "height": 1110,
     "min_font_px": 23,
-    "sha256_svg": "9428a82628e523234dc7680cc8517d731fff088c9d384093d1bf9bcd08a33cc1",
+    "sha256_svg": "c1c45903542042f307e3c1a56a0169ad0b3aeb6177bf7b876687089c811996cf",
     "source": "svg",
     "paper": "A3",
     "caption": "Рисунок Д.4 — Алгоритм расчёта планового графика",
     "min_font_on_paper_pt": 12.92,
-    "sha256_png": "bdee3dc3b9889b88a4f11b0a92888c845f946b363bb996f9316abbf2619a8b54"
+    "sha256_png": "5d8ad7addb07790d2caa3b9d3f758dba29e6de384d1c9e47e71e4a48c39cec4a"
   },
   {
     "name": "D5_concurrency",

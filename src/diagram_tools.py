@@ -66,7 +66,7 @@ class Picture(Sheet):
 class BPMN(Picture):
     def __init__(self,name,lanes,w=1800,h=830):
         super().__init__(name,w,h);self.lanes=lanes;self.top=25;self.bottom=h-110
-        self.lh=(self.bottom-self.top)/len(lanes);self.nodes={};self.seq=[];self.kinds={};self.operations=set();self.data_count=0
+        self.lh=(self.bottom-self.top)/len(lanes);self.nodes={};self.seq=[];self.kinds={};self.operations=set();self.data_count=0;self.data_inputs=0;self.data_outputs=0
         self.add(f'<rect x="10" y="{self.top}" width="{w-20}" height="{self.bottom-self.top}" fill="white" stroke="black" stroke-width="2"/>')
         for i,t in enumerate(lanes):
             y=self.top+i*self.lh
@@ -130,5 +130,5 @@ class BPMN(Picture):
         assert reachable(ends,True)==set(self.nodes),('no path to end',self.name)
         for n,k in self.kinds.items():
             if k=='gateway':assert sum(a==n for a,b in self.seq)>=2,(self.name,n)
-        item=self.save();item.update(operations=sorted(self.operations),data_objects=self.data_count,sequence_connected=True)
+        item=self.save();item.update(operations=sorted(self.operations),data_objects=self.data_count,data_inputs=self.data_inputs,data_outputs=self.data_outputs,sequence_connected=True)
         return item

@@ -20,8 +20,8 @@
 </text>
 <rect x="300" y="75" width="490" height="110" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
 <text x="545.0" y="122.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
-<tspan x="545.0" dy="0">Предъявить утверждённые условия</tspan>
-<tspan x="545.0" dy="26.880000000000003">и даты полного плана</tspan>
+<tspan x="545.0" dy="0">Указать номер утверждённого</tspan>
+<tspan x="545.0" dy="26.880000000000003">договора, условия и даты плана</tspan>
 </text>
 <rect x="300" y="310" width="490" height="125" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
 <text x="545.0" y="351.86" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
@@ -65,8 +65,8 @@
 <rect x="300" y="590" width="490" height="140" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
 <text x="545.0" y="639.36" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
 <tspan x="545.0" dy="0">ОП10 · К4 / М06</tspan>
-<tspan x="545.0" dy="26.880000000000003">Проверить сумму, ставку,</tspan>
-<tspan x="545.0" dy="26.880000000000003">счёт и порядок дат</tspan>
+<tspan x="545.0" dy="26.880000000000003">Найти contract_ref;</tspan>
+<tspan x="545.0" dy="26.880000000000003">проверить реквизиты команды</tspan>
 </text>
 <polyline points="889.0,406 889,500 545,500 545.0,590" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="911.5" y="460.68" width="37.0" height="28.64" fill="white"/>
@@ -77,21 +77,30 @@
 <text x="904.0" y="668.84" text-anchor="middle" font-family="Arial" font-size="34" fill="black">
 <tspan x="904.0" dy="0">×</tspan>
 </text>
-<rect x="780.515625" y="556.56" width="246.96875" height="30.880000000000003" fill="white"/>
-<text x="904" y="578.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
-<tspan x="904" dy="0">Условия допустимы?</tspan>
+<rect x="807.5078125" y="543.12" width="192.984375" height="57.760000000000005" fill="white"/>
+<text x="904" y="564.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="904" dy="0">Номер договора</tspan>
+<tspan x="904" dy="26.880000000000003">новый?</tspan>
 </text>
 <polyline points="790,660.0 870,660.0" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
-<polyline points="904.0,626 904,475 1355,475 1355.0,435" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="952.0078125" y="495.68" width="45.984375" height="28.64" fill="white"/>
-<text x="975" y="515.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
-<tspan x="975" dy="0">нет</tspan>
+<rect x="220" y="850" width="560" height="140" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="500.0" y="885.92" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="500.0" dy="0">ОП10 · К4 / М06</tspan>
+<tspan x="500.0" dy="26.880000000000003">Сопоставить счёт и все условия;</tspan>
+<tspan x="500.0" dy="26.880000000000003">прежний ID, состояние и план</tspan>
+<tspan x="500.0" dy="26.880000000000003">либо BT005 без новой записи</tspan>
 </text>
+<polyline points="904.0,694 904,800 500,800 500.0,850" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="937.5078125" y="750.68" width="144.984375" height="28.64" fill="white"/>
+<text x="1010" y="770.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="1010" dy="0">нет: прежний</tspan>
+</text>
+<polyline points="780,920.0 2460,920.0 2460,260 2125,260 2125.0,185" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1110" y="590" width="520" height="140" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
 <text x="1370.0" y="639.36" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
-<tspan x="1370.0" dy="0">ОП11 · К4 / М07</tspan>
-<tspan x="1370.0" dy="26.880000000000003">Рассчитать доли в копейках;</tspan>
-<tspan x="1370.0" dy="26.880000000000003">проценты и остаток округления</tspan>
+<tspan x="1370.0" dy="0">ОП10 / ОП11 · К4</tspan>
+<tspan x="1370.0" dy="26.880000000000003">М06: счёт и даты; М07: план;</tspan>
+<tspan x="1370.0" dy="26.880000000000003">первая дата позже начала</tspan>
 </text>
 <polyline points="938,660.0 1110,660.0" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1005.5" y="622.68" width="37.0" height="28.64" fill="white"/>
@@ -123,8 +132,8 @@
 <rect x="1110" y="960" width="520" height="140" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
 <text x="1370.0" y="1009.36" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
 <tspan x="1370.0" dy="0">ОП11 · К4 / М06</tspan>
-<tspan x="1370.0" dy="26.880000000000003">Сохранить договор, все строки</tspan>
-<tspan x="1370.0" dy="26.880000000000003">и аудит одной транзакцией</tspan>
+<tspan x="1370.0" dy="26.880000000000003">Распознать contract_ref;</tspan>
+<tspan x="1370.0" dy="26.880000000000003">договор, план, аудит атомарно</tspan>
 </text>
 <polyline points="1764.0,694 1764,850 1370,850 1370.0,960" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1786.5" y="795.68" width="37.0" height="28.64" fill="white"/>
@@ -142,15 +151,15 @@
 <polyline points="1630,1030.0 1730,1030.0" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1990" y="960" width="360" height="140" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
 <text x="2170.0" y="1022.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
-<tspan x="2170.0" dy="0">registered и полный план;</tspan>
-<tspan x="2170.0" dy="26.880000000000003">вернуть договор и график</tspan>
+<tspan x="2170.0" dy="0">Новый / прежний ID;</tspan>
+<tspan x="2170.0" dy="26.880000000000003">состояние и полный план</tspan>
 </text>
 <rect x="1990" y="1210" width="360" height="150" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
 <text x="2170.0" y="1250.92" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
 <tspan x="2170.0" dy="0">Ошибка до фиксации —</tspan>
 <tspan x="2170.0" dy="26.880000000000003">откат;</tspan>
-<tspan x="2170.0" dy="26.880000000000003">неизвестный исход — сверка</tspan>
-<tspan x="2170.0" dy="26.880000000000003">до новой регистрации</tspan>
+<tspan x="2170.0" dy="26.880000000000003">нет ответа — повторить</tspan>
+<tspan x="2170.0" dy="26.880000000000003">прежний contract_ref</tspan>
 </text>
 <polyline points="1798,1030.0 1990,1030.0" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1875.5" y="992.68" width="37.0" height="28.64" fill="white"/>

@@ -26,7 +26,19 @@ for(const file of manifest.filter(i=>i.source==='dot').map(i=>i.name+'.dot')){
   }
   const source=await fs.readFile(path.join(folder,file),'utf8');
   const item=manifest.find(i=>i.name+'.dot'===file);
-  const svg=viz.renderString(source,{format:'svg',engine:item.engine??'dot'});
+  let svg=viz.renderString(source,{format:'svg',engine:item.engine??'dot'});
+  // Частичный ключ слабой сущности Чена: пунктирное подчёркивание.
+  // Координаты берутся из результата Graphviz, ширина — из метрик Arial.
+  for(const partial of item.partial_keys??[]){
+    const groupPattern=new RegExp(`<g\\b[^>]*>\\s*<title>${partial.node}</title>[\\s\\S]*?</g>`);
+    const group=svg.match(groupPattern)?.[0];
+    if(!group)throw Error('Missing partial-key node: '+partial.node);
+    const position=group.match(/<text\b[^>]*\bx="([\d.-]+)"\s+y="([\d.-]+)"/);
+    if(!position)throw Error('Missing partial-key label: '+partial.node);
+    const x=Number(position[1]), y=Number(position[2])+3, half=partial.text_width/2;
+    const underline=`<line x1="${x-half}" y1="${y}" x2="${x+half}" y2="${y}" stroke="black" stroke-width="1.4" stroke-dasharray="5 3"/>`;
+    svg=svg.replace(group,group.replace('</g>',underline+'</g>'));
+  }
   await fs.writeFile(path.join(folder,file.replace('.dot','.svg')),svg);
 }
 const files=manifest.map(i=>i.name+'.svg');

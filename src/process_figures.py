@@ -24,8 +24,12 @@ def data(s,x,title,nodeid,store=False):
   s.add(f'<path d="M{x},{y} H{x+w-18} L{x+w},{y+18} V{y+h} H{x} Z M{x+w-18},{y} V{y+18} H{x+w}" fill="white" stroke="black" stroke-width="2"/>')
  s.text(x+w/2,y+h/2+7,title,21,w-24)
  nx,ny,nw,nh=s.nodes[nodeid]
- s.add(f'<polyline points="{nx+nw/2},{ny+nh} {x+w/2},{y}" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="4 5" marker-end="url(#dataArrow)"/>')
+ pts=[(nx+nw/2,ny+nh),(x+w/2,y)]
+ if not store:pts.reverse()
+ s.add('<polyline points="'+' '.join(f'{xx},{yy}' for xx,yy in pts)+'" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="4 5" marker-end="url(#dataArrow)"/>')
  s.data_count+=1
+ if store:s.data_outputs+=1
+ else:s.data_inputs+=1
 
 def process(spec):
  name,role,command,check,operation,result,check_ops,op_ops,docs,note=spec
