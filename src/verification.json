@@ -59,12 +59,12 @@
     "scope": "Структурная проверка спецификации и примеров; не сертификация OpenAPI и не проверка работающего API."
   },
   "documents": {
-    "main_docx_sha256": "fe905da4bbf72f5330158801644639518d1478e8a71690027795d6925217eaa7",
-    "guide_docx_sha256": "ae39dd083434b516697e875eb7a9802cc028a87f30d484590b335ab1c48fc62d",
+    "main_docx_sha256": "d3f89a361b1b4c45f970e97711d91e65bb6e17bacbe38375574b4759936a87f4",
+    "guide_docx_sha256": "9f6055d6a44058829f74ed526a1129abea58fd5c64ec14a784fc47ab179df530",
     "figures": 36,
     "tables": 69,
     "appendices": 8,
-    "author": "Салихо Р. Р.",
+    "author": "Салихов Р. Р.",
     "group": "М8О-309БВ",
     "images_match_sources": true
   },
@@ -81,7 +81,7 @@
         "/BCDGEE+TimesNewRomanPS-BoldMT": true,
         "/BCDHEE+TimesNewRomanPS-BoldMT": true
       },
-      "sha256": "21e9b4e3b5acf01a7c4825c559636ca5e34cf22b02fc28c22fe3b91fbf6a179f"
+      "sha256": "044971d4d9986c07c518b27fb92d68ecae37eb8b9b3f11d63869e468e2fbb294"
     },
     {
       "file": "Защита за 3 минуты и пояснения.pdf",
@@ -95,7 +95,7 @@
         "/BCDGEE+TimesNewRomanPSMT": true,
         "/BCDHEE+TimesNewRomanPSMT": true
       },
-      "sha256": "407b0543ab1cc52d0471b6a739d00a537b00753d13a71a8cfb72305dbb9f0003"
+      "sha256": "0860036abf57e8daa05f2fa8156d530cc213dc28d86cb2507a0e0ca88a7374cc"
     }
   ],
   "scope": "Проверка проектных артефактов и независимых эталонов. Приёмочные испытания банковского ПО не проводились."
