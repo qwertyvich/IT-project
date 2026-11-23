@@ -80,6 +80,11 @@ def check_docx():
  alltext='\n'.join(paragraphs+[' '.join(c.text for row in t.rows for c in row.cells) for t in d.tables])
  assert TOPIC in alltext and AUTHOR in alltext and GROUP in alltext and TEACHER in alltext
  assert 'М8О-309БВ-24' not in alltext and 'учебн' not in alltext.lower()
+ assert not re.search(r'лабораторн|BD_labs|\bЛР\s*[12]|вариант[ау]?\s*5|курсов|учебн',alltext,re.I)
+ from report_content import SOURCES
+ citation_groups=re.findall(r'\[([\d,\s–-]+)\]',alltext)
+ citations={int(x) for group in citation_groups for x in re.findall(r'\d+',group)}
+ assert citations and min(citations)>=1 and max(citations)<=len(SOURCES)==16,citations
  assert 'БанкПеревод' not in alltext and 'beneficiary' not in alltext and 'transfer_reversal' not in alltext
  assert len(d.inline_shapes)==len(FIGURES)==36
  for shape,f in zip(d.inline_shapes,FIGURES):

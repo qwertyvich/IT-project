@@ -10,7 +10,7 @@ def main():
  paths += [p for p in SRC.iterdir() if p.is_file() and p.name!='package_summary.json']
  paths += [p for folder in ['figures','docs','contracts'] for p in (ROOT/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts]
  payload={p.relative_to(ROOT).as_posix():p.read_bytes() for p in sorted(paths)}
- payload['ARCHIVE_INFO.md']=('Исходники проекта «Банковская система», вариант 5.\n\n'
+ payload['ARCHIVE_INFO.md']=('Исходники проекта банковской информационной системы.\n\n'
   'PDF и DOCX опубликованы отдельно в папке «Готовая работа» репозитория:\n'
   'https://github.com/qwertyvich/IT-project\n\n'
   'Порядок сборки: README.md. Контекст продолжения: CONTEXT.md.\n'

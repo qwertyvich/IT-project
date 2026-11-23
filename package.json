@@ -1,6 +1,6 @@
 {
   "name": "banking-system-project",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "private": true,
   "type": "module",
   "description": "Variant 5 Banking system design documents and reproducible diagrams",

@@ -396,12 +396,12 @@
     "width": 2600,
     "height": 1450,
     "min_font_px": 29,
-    "sha256_svg": "dd57edb64d397ee82117f243380b836c17c3e79ddbca37c44ea3429f4240c12f",
+    "sha256_svg": "f19e26e76b266e1e2080a19d43323920b9b56bc381f0b9a1c5098b2d8aef18f4",
     "source": "svg",
     "paper": "A3",
     "caption": "Рисунок Г.4 — Внешнее назначение и противоречие организатора",
     "min_font_on_paper_pt": 11.86,
-    "sha256_png": "f85683e94a25cdb398da001b600112501810073a3428baa5c423855a6e0eabed"
+    "sha256_png": "a0a80e79b8c443e154f52ce19544125b456d6316887095d2e31aae401a3af0ff"
   },
   {
     "name": "G5_quality",
