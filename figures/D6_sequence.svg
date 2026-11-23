@@ -48,20 +48,21 @@
 <tspan x="1480.0" dy="0">5. Подготовленный результат либо ошибка</tspan>
 </text>
 <polyline points="1190,760 1770,760" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="1314.0" y="712.56" width="332.0" height="30.880000000000003" fill="white"/>
+<rect x="1255.0234375" y="712.56" width="449.953125" height="30.880000000000003" fill="white"/>
 <text x="1480.0" y="734.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
-<tspan x="1480.0" dy="0">6. COMMIT либо ROLLBACK</tspan>
+<tspan x="1480.0" dy="0">6. COMMIT; известная ошибка — откат</tspan>
 </text>
 <polyline points="1190,890 650,890" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="662.0078125" y="842.56" width="515.984375" height="30.880000000000003" fill="white"/>
+<rect x="669.015625" y="842.56" width="501.96875" height="30.880000000000003" fill="white"/>
 <text x="920.0" y="864.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
-<tspan x="920.0" dy="0">7. Итог только после завершения транзакции</tspan>
+<tspan x="920.0" dy="0">7. Подтверждённый итог / исход неизвестен</tspan>
 </text>
 <polyline points="650,1000 180,1000" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="206.515625" y="952.56" width="416.96875" height="30.880000000000003" fill="white"/>
-<text x="415.0" y="974.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
-<tspan x="415.0" dy="0">8. ID, статус, понятный отказ / успех</tspan>
+<rect x="217.03125" y="939.12" width="395.9375" height="57.760000000000005" fill="white"/>
+<text x="415.0" y="960.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="415.0" dy="0">8. ID, статус; при потере ответа —</tspan>
+<tspan x="415.0" dy="26.880000000000003">сверка</tspan>
 </text>
 <text x="1050" y="1086.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
-<tspan x="1050" dy="0">Соответствие: К3 → М04/М05; К6 → М10/М11. Интерфейс получает согласованный итог, а не промежуточное списание.</tspan>
+<tspan x="1050" dy="0">Потеря подтверждения COMMIT: GET прежнего ID либо повтор с прежним ключом; отсутствие ответа не доказывает откат.</tspan>
 </text></svg>

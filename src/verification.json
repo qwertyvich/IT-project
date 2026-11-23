@@ -59,8 +59,8 @@
     "scope": "Структурная проверка спецификации и примеров; не сертификация OpenAPI и не проверка работающего API."
   },
   "documents": {
-    "main_docx_sha256": "be31dded646d57bb6399bcc003839c61370515e561053f0b47e09f590d2ec72c",
-    "guide_docx_sha256": "fe930190905ddeae8cc34192a3864f59df6a825e048db63d0d275eb84605d2c9",
+    "main_docx_sha256": "4e5d9de27d087cc17b48930b404ba0302319de0351c59a2aa24e70aedbf45727",
+    "guide_docx_sha256": "13257e95e5ea233d54819d2f7e9ec2821f1e8b644e0e13312c823fd992733171",
     "figures": 36,
     "tables": 73,
     "chapters": 7,
@@ -74,7 +74,7 @@
   "pdfs": [
     {
       "file": "Банковская система — Пояснительная записка.pdf",
-      "pages": 113,
+      "pages": 115,
       "outline_present": true,
       "no_blank_pages": true,
       "page_numbers_sequential": true,
@@ -84,7 +84,7 @@
         "/BCDGEE+TimesNewRomanPS-BoldMT": true,
         "/BCDHEE+TimesNewRomanPS-BoldMT": true
       },
-      "sha256": "5a319599fc028b9ecfa1018d53a68c75fb879cbd8d7dc2261fa8bc030c72ded4"
+      "sha256": "1babf61814b32f89a6fc2a5463c5dd46ebc1f0913c022817185d3cd330cc1df4"
     },
     {
       "file": "Защита за 3 минуты и пояснения.pdf",
@@ -98,7 +98,7 @@
         "/BCDGEE+TimesNewRomanPSMT": true,
         "/BCDHEE+TimesNewRomanPSMT": true
       },
-      "sha256": "16382721404b4da47753754ac3c4dbc1bf83d8968b30b20b2696e2969050ca2d"
+      "sha256": "99c5d67ab729324e4cd8319832597e7a8de1874ab715e2b3c228d32b9dc69e22"
     }
   ],
   "scope": "Проверка проектных артефактов и независимых эталонов. Приёмочные испытания банковского ПО не проводились."

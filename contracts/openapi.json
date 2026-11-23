@@ -122,6 +122,105 @@
         }
       }
     },
+    "/transfers/{id}": {
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Результат по контракту",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TransferView"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Результат по контракту",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Результат по контракту",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Результат по контракту",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "Результат по контракту",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Результат по контракту",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Результат по контракту",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Результат по контракту",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "description": "Чтение подтверждённого состояния с проверкой сеанса и права на объект. После потери ответа completed означает прежний успех; pending допускает повтор проведения того же ID. Недоступность чтения не доказывает откат."
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "schema": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2147483647
+          }
+        }
+      ]
+    },
     "/transfers/{id}/post": {
       "post": {
         "responses": {

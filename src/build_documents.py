@@ -190,6 +190,7 @@ def main_doc():
  ('POST/PATCH /clients; POST /accounts','Реквизиты; клиент; отделение','ID; карточка / BT001, BT004'),
  ('POST /cards; PATCH /cards/{id}/status','Номер, даты, счёт; команда','Карта; доступность / BT004'),
  ('POST /transfers','Счета; amount; request_key','ID, pending / BT005'),
+ ('GET /transfers/{id}','ID; проверенный сеанс','Прежний ID и подтверждённое состояние; при недоступности исход неизвестен'),
  ('POST /transfers/{id}/post; /cancel','ID; проверенный сеанс','completed / cancelled / отказ'),
  ('POST /loans','Счёт; сумма; ставка; даты','Договор и план / BT006'),
  ('POST /loans/{id}/close','ID; close_ref','closed / BT002, BT004'),

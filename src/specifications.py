@@ -16,14 +16,14 @@ MEANINGS={
 
 # Смысл границ уточняется до конкретного синтаксиса, а не заменяется названием REST.
 CONTRACTS=[
- ('Т01','М09 → М10','HTTPS; JSON UTF-8; защищённый сеанс','POST /api/v1/transfers: from_account_id:int, to_account_id:int, amount:string, request_key:UUID; POST /transfers/{id}/post: ID в пути','201/200 TransferView / PostingResult либо Error; actor_id не принимается от клиента'),
+ ('Т01','М09 → М10','HTTPS; JSON UTF-8; защищённый сеанс','POST /api/v1/transfers: from_account_id:int, to_account_id:int, amount:string, request_key:UUID; POST /transfers/{id}/post и GET /transfers/{id}: ID в пути','201/200 TransferView / PostingResult либо Error; GET читает прежний исход с проверкой прав; actor_id не принимается от клиента'),
  ('Т02','М10 → М04','Python 3.12; типизированный вызов','dispatch(command, ctx:ActorContext) → TransferView / подготовленный ID; prepare и resolve_repeat; ctx: employee_id, role, request_id','BT001/002/004/005; проверка роли и активности до записи'),
  ('Т03','М04 / М09 → координатор М05','Python; общий доверенный контекст','post(transfer_id:int, ctx:ActorContext) → PostingResult; положительный ID','Исход completed либо доменный отказ; повтор возвращает тот же факт'),
  ('Т04','Координатор М05 → серверная функция М05','psycopg 3; параметризованный SQL; одна транзакция','SELECT post_transfer(%s::integer, %s::integer, %s::uuid); параметры: transfer_id, actor_id, request_id','jsonb либо SQLSTATE BT001…BT005; BEGIN/COMMIT у координатора. Ключ аудита — из заблокированного transfer; request_id — корреляция вызова'),
  ('Т05','Серверная операция → М11','SQL; триггер в текущей транзакции','Предметная строка OLD/NEW и transaction-local actor_id / request_key; обе величины задаёт доверенный сервис','Строки audit_event; при сбое аудита откат всей операции'),
  ('Т06','М05 / М11 → Д1, Д3, Д5','SQL; блокировки строк и ограничения','Парные balance; transfer.status / finished_at; аудит; всё под одним COMMIT','Конечный факт доступен после фиксации; нет произвольного UPDATE от формы'),
- ('Т07','Серверная функция → координатор М05','SQL jsonb либо исключение SQLSTATE','{transfer_id:int,status:"completed",finished_at:RFC3339,request_key:UUID}; код ошибки вне успешного JSON','40P01/40001: не более трёх попыток всей транзакции с прежним ключом; иной отказ → ROLLBACK'),
- ('Т08','Координатор М05 → М09','Python DTO → HTTPS JSON UTF-8','HTTP 200; PostingResult и request_id; сериализация денег строками, дат ISO 8601','Ответ об успехе только после COMMIT; потеря ответа допускает безопасный повтор'),
+ ('Т07','Серверная функция → координатор М05','SQL jsonb либо исключение SQLSTATE','{transfer_id:int,status:"completed",finished_at:RFC3339,request_key:UUID}; код ошибки вне успешного JSON','40P01/40001: до трёх попыток транзакции с прежним ключом; известная ошибка до фиксации → ROLLBACK. Потеря связи при COMMIT → сверка сохранённого состояния'),
+ ('Т08','Координатор М05 → М09','Python DTO → HTTPS JSON UTF-8','HTTP 200; PostingResult и request_id; сериализация денег строками, дат ISO 8601','Успех после подтверждённого COMMIT. Потеря ответа: GET состояния либо повтор с прежним ключом/ID; до сверки исход неизвестен вызывающему'),
  ('Т09','М06 → М07','Python; чистый детерминированный вызов','build(principal:Decimal, rate:Decimal, issued_on:date, dates:list[date]) → list[ScheduleItem]','Основные части, даты, проценты; ошибка BT006 до записи'),
  ('Т10','М01–М04, М06 → контекст К1','Python; разрешённое чтение; для денег чтение внутри текущей транзакции','AccountContext: id, client_id, branch_id, status, balance; ClientContext: id, разрешённые реквизиты','Контекст для показа не заменяет повторную проверку под блокировкой М05'),
  ('Т11','Профильные модули → М08/М09','Python Outcome DTO; чтение подтверждённого состояния','kind, entity_id, status, request_id; details для конкретного вида; итог после COMMIT','ResultPresenter.render; документ не изменяет исходный факт; доступ проверяется заново'),
@@ -93,7 +93,8 @@ def write_openapi():
   if command:x['requestBody']={'required':True,'content':{'application/json':{'schema':{'$ref':'#/components/schemas/'+command}}}}
   if created:x['responses']['200']=response(result)
   return x
- paths={'/transfers':{'post':op('TransferCommand','TransferView',True)},'/transfers/{id}/post':{'post':op(None,'PostingResult')},'/loans':{'post':op('LoanCommand','LoanView',True)},'/loans/{id}/close':{'post':op('CloseCommand','LoanView')}}
+ paths={'/transfers':{'post':op('TransferCommand','TransferView',True)},'/transfers/{id}':{'get':op(None,'TransferView')},'/transfers/{id}/post':{'post':op(None,'PostingResult')},'/loans':{'post':op('LoanCommand','LoanView',True)},'/loans/{id}/close':{'post':op('CloseCommand','LoanView')}}
+ paths['/transfers/{id}']['get']['description']='Чтение подтверждённого состояния с проверкой сеанса и права на объект. После потери ответа completed означает прежний успех; pending допускает повтор проведения того же ID. Недоступность чтения не доказывает откат.'
  for path,methods in paths.items():
   if '{id}' in path:methods['parameters']=[{'name':'id','in':'path','required':True,'schema':ident}]
  data={'openapi':'3.1.0','info':{'title':'Банковская система — ключевые контракты','version':'1.0.0','description':'Проектная спецификация. Семантические ограничения и транзакции описаны в записке; сервис ещё не реализован.'},'servers':[{'url':'https://bank.example.invalid/api/v1'}],'security':[{'session':[]}],'paths':paths,'components':{'securitySchemes':{'session':{'type':'apiKey','in':'cookie','name':'session'}},'schemas':schemas}}

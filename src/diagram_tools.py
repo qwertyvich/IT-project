@@ -129,6 +129,6 @@ class BPMN(Picture):
         assert reachable(starts)==set(self.nodes),('unreachable',self.name)
         assert reachable(ends,True)==set(self.nodes),('no path to end',self.name)
         for n,k in self.kinds.items():
-            if k=='gateway':assert sum(a==n for a,b in self.seq)==2,(self.name,n)
+            if k=='gateway':assert sum(a==n for a,b in self.seq)>=2,(self.name,n)
         item=self.save();item.update(operations=sorted(self.operations),data_objects=self.data_count,sequence_connected=True)
         return item

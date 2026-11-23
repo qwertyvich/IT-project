@@ -20,7 +20,7 @@ def main():
  target=OUT/'Исходники проекта.zip'
  with zipfile.ZipFile(target,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as z:
   for name,data in sorted(payload.items()):
-   info=zipfile.ZipInfo(name,date_time=(2026,11,23,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED
+   info=zipfile.ZipInfo(name,date_time=(2026,11,24,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED
    info.external_attr=0o644<<16;z.writestr(info,data)
  with zipfile.ZipFile(target) as z:
   assert z.testzip() is None

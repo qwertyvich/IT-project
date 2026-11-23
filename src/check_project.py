@@ -102,6 +102,12 @@ def check_docx():
  reference=json.loads((ROOT/'docs/reference_structure.json').read_text(encoding='utf-8'))
  headings=[p.text for p in d.paragraphs if p.style.name in ('Heading 1','Heading 2') and re.match(r'^\d+\s|^\d+\.\d+\s',p.text)]
  assert headings==reference['expected_headings'],headings
+ # Критерии назначения должны быть заданы до перечня функциональных требований.
+ # Ищем фактические элементы документа, а не строки обновлённого оглавления.
+ body=list(d.element.body)
+ h13=next(i for i,e in enumerate(body) if e.tag==qn('w:p') and ''.join(e.xpath('.//w:t/text()'))=='1.3 Функциональные требования')
+ goal_caption=next(i for i,e in enumerate(body) if 'Критерии достижения назначения' in ''.join(e.xpath('.//w:t/text()')))
+ assert goal_caption<h13,'Внешние критерии оказались после функциональных требований'
  assert alltext.index('1.4 Нефункциональные требования и критерии качества',alltext.index('ВВЕДЕНИЕ'))<alltext.index('3 Модель функционирования системы',alltext.index('ВВЕДЕНИЕ'))
  for token in ['БП-01','Г0','ЦП1','ЦП2','ЦП3','ЦП4','u_B≤0,80u_A','недостаточно свидетельств']:
   assert token in alltext,token
@@ -130,6 +136,7 @@ def check_docx():
 def check_contracts():
  data=json.loads((ROOT/'contracts/openapi.json').read_text(encoding='utf-8'))
  assert data['openapi']=='3.1.0' and len(field_rows())==63
+ assert data['paths']['/transfers/{id}']['get']['responses']['200']['content']['application/json']['schema']['$ref']=='#/components/schemas/TransferView'
  schemas=data['components']['schemas']
  def resolve(schema):
   if '$ref' in schema:

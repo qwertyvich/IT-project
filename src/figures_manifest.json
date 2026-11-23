@@ -202,7 +202,7 @@
     "width": 2200,
     "height": 900,
     "min_font_px": 18,
-    "sha256_svg": "97d868afed53195fa1dd57d6cd33dfda3b94dc7e3927cacb5ae45a7d0f4b3db1",
+    "sha256_svg": "cba25fe9d260166e28a487f94f4900d1c4c02f79fbfce39803603d2634510625",
     "source": "svg",
     "paper": "A3",
     "operations": [],
@@ -210,7 +210,7 @@
     "sequence_connected": true,
     "caption": "Рисунок В.1 — BPMN: полный маршрут банковского обслуживания",
     "min_font_on_paper_pt": 8.7,
-    "sha256_png": "bafb453d77c1cb9ecf2600d340e4f6094eecdc5c59714cdfda97280b95da12ec"
+    "sha256_png": "12b29b0bc3036009b21941c8c6319b35c7fb699847b0216923d28da16d6fa77f"
   },
   {
     "name": "V2_clients",
@@ -232,10 +232,10 @@
   },
   {
     "name": "V3_cards",
-    "width": 2200,
-    "height": 900,
-    "min_font_px": 18,
-    "sha256_svg": "6da8571a9f671d9ebeb0b5c024ace5bd5a2e9a017a7bcf19c62a6ddf15d15bf8",
+    "width": 2600,
+    "height": 1500,
+    "min_font_px": 22,
+    "sha256_svg": "3041c826213a5890605067a0e1d66102325c8cdfcf8c27cd06e3d95aa0ff9604",
     "source": "svg",
     "paper": "A3",
     "operations": [
@@ -246,15 +246,15 @@
     "data_objects": 2,
     "sequence_connected": true,
     "caption": "Рисунок В.3 — BPMN: регистрация и состояние карты",
-    "min_font_on_paper_pt": 8.7,
-    "sha256_png": "293ff40ae2724eb363f5c87dc108ace41acdc1c84ce3be0376c342a479d64f46"
+    "min_font_on_paper_pt": 8.99,
+    "sha256_png": "1e2affd5d460f40a8eb2688a3742ab6154892b9714b8c19d97fc4676f0345777"
   },
   {
     "name": "V4_transfers",
-    "width": 2200,
-    "height": 900,
-    "min_font_px": 18,
-    "sha256_svg": "cc25bdb25c7ef10295de0f2690a9ca86190fe3e3bbec46ad733c91a312fbb074",
+    "width": 2600,
+    "height": 1500,
+    "min_font_px": 22,
+    "sha256_svg": "ad26d100d4e63e5773354af016374b55b3fdac46916c80d2fc983c50665ba9cd",
     "source": "svg",
     "paper": "A3",
     "operations": [
@@ -265,15 +265,15 @@
     "data_objects": 2,
     "sequence_connected": true,
     "caption": "Рисунок В.4 — BPMN: подготовка и проведение перевода",
-    "min_font_on_paper_pt": 8.7,
-    "sha256_png": "dd1182b24bca3cff4601fe9fb44c24169c9a75898209a4f6dda7b20c13acc924"
+    "min_font_on_paper_pt": 8.99,
+    "sha256_png": "fd6610d50038ed06e528e84e56d7e5fbe71081fefe280bfa2fc77ab438c75ce1"
   },
   {
     "name": "V5_loans",
-    "width": 2200,
-    "height": 900,
-    "min_font_px": 18,
-    "sha256_svg": "0127e2263f4b1591ceacf49b10d60cfc4c6559d0e5264fb10e6ed932105aad9b",
+    "width": 2600,
+    "height": 1500,
+    "min_font_px": 22,
+    "sha256_svg": "711072d958b8b57b8ccd6a1abeb227d42f46dde6a71fd91046329e339bb7bc85",
     "source": "svg",
     "paper": "A3",
     "operations": [
@@ -283,8 +283,8 @@
     "data_objects": 2,
     "sequence_connected": true,
     "caption": "Рисунок В.5 — BPMN: договор и согласованный график",
-    "min_font_on_paper_pt": 8.7,
-    "sha256_png": "5433bbeec46c59cf001334706348c5bfcf9833c6d4fe54ea89e8097262a3e7b4"
+    "min_font_on_paper_pt": 8.99,
+    "sha256_png": "339ff882417e10e0200d121f5b7882701db917aed01887f857f8ba6db74aba3d"
   },
   {
     "name": "V6_reports",
@@ -480,24 +480,24 @@
     "width": 2100,
     "height": 1120,
     "min_font_px": 24,
-    "sha256_svg": "deb8f620d72ac7936ea4143f3f6cebec40e57c322a714b6e16a42aa04da5969b",
+    "sha256_svg": "09fd3c80d9511da956a586eb27bc1a83df9a6a1b35f2d7fb7bb4e1f21068fd75",
     "source": "svg",
     "paper": "A3",
     "caption": "Рисунок Д.6 — Последовательность сквозного проведения перевода",
     "min_font_on_paper_pt": 12.15,
-    "sha256_png": "ac99384275b6cab821024bb7ced4bfc897227520dec76e9677d90306df284f8d"
+    "sha256_png": "d8731be26e3557816e600c44bfbc8031f2a222838d0873b3d8cac349e613489b"
   },
   {
     "name": "D7_component",
     "width": 2600,
     "height": 1450,
     "min_font_px": 26,
-    "sha256_svg": "7455a9e7a0fa3ab158c50adc1d743a4070a43b2f685ef9f4ebde655c5384298c",
+    "sha256_svg": "47b480348295a85b770cb6a9eef2a9306db095c0a7272a2054c4759076334313",
     "source": "svg",
     "paper": "A3",
     "caption": "Рисунок Д.7 — Техническая декомпозиция компонента переводов и контракты",
     "min_font_on_paper_pt": 10.63,
-    "sha256_png": "4a966a96390071178898eaf695c38c39c2460711e04518b264515cfe1d719029"
+    "sha256_png": "264bf9c674dd1b59c9f17a0dbc60e4553f93257835a3ba9d7c400f1deb188cda"
   },
   {
     "name": "E1_quality",

@@ -1,16 +1,16 @@
 [
   {
     "file": "Банковская система — Пояснительная записка.pdf",
-    "pages": 113,
+    "pages": 115,
     "text_outside_horizontal_margins": [],
     "minimum_pdf_text_pt": 12.0,
-    "sha256": "5a319599fc028b9ecfa1018d53a68c75fb879cbd8d7dc2261fa8bc030c72ded4"
+    "sha256": "1babf61814b32f89a6fc2a5463c5dd46ebc1f0913c022817185d3cd330cc1df4"
   },
   {
     "file": "Защита за 3 минуты и пояснения.pdf",
     "pages": 5,
     "text_outside_horizontal_margins": [],
     "minimum_pdf_text_pt": 12.0,
-    "sha256": "16382721404b4da47753754ac3c4dbc1bf83d8968b30b20b2696e2969050ca2d"
+    "sha256": "99c5d67ab729324e4cd8319832597e7a8de1874ab715e2b3c228d32b9dc69e22"
   }
 ]
