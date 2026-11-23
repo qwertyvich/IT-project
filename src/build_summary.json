@@ -3,8 +3,8 @@
     "domain_entities": 8,
     "service_entities": 1,
     "foreign_keys": 12,
-    "requirements": 33,
-    "tests": 23,
+    "requirements": 35,
+    "tests": 25,
     "functions": 5,
     "components": 6,
     "modules": 11,
@@ -12,13 +12,13 @@
   },
   "document": {
     "main": "C:\\Users\\user\\Desktop\\IT\\_work\\IT-project\\Готовая работа\\Банковская система — Пояснительная записка.docx",
-    "figures": 30,
-    "tables": 41,
-    "appendices": 6,
-    "sources": 15
+    "figures": 36,
+    "tables": 69,
+    "appendices": 8,
+    "sources": 19
   },
   "guide": {
     "guide": "C:\\Users\\user\\Desktop\\IT\\_work\\IT-project\\Готовая работа\\Защита за 3 минуты и пояснения.docx",
-    "speech_words": 292
+    "speech_words": 288
   }
 }

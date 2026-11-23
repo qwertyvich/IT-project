@@ -1,0 +1,20 @@
+digraph B1_context {
+graph [rankdir=LR, bgcolor="white", pad=.12, nodesep=.35, ranksep=.65, splines=polyline, outputorder=edgesfirst];
+node [fontname="Arial", fontsize=22, margin=".12,.08", penwidth=1.3];
+edge [fontname="Arial", fontsize=21, color="#333333", penwidth=1.2, arrowsize=.75];
+"P0" [label="0\nОбеспечивать\nсогласованный\nоперационный учёт\nбанка", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="3.208"];
+"E1" [label="E1\nОператор", shape="box", style="filled", fillcolor="#A4C8EA", width="1.819"];
+"E2" [label="E2\nКредитный\nспециалист", shape="box", style="filled", fillcolor="#A4C8EA", width="2.083"];
+"E3" [label="E3\nПолучатель сведений\nпо роли", shape="box", style="filled", fillcolor="#A4C8EA", width="3.541"];
+"E4" [label="E4\nАдминистратор", shape="box", style="filled", fillcolor="#A4C8EA", width="2.639"];
+E1 -> P0 [label="F01 Клиент и счёт"];
+E1 -> P0 [label="F03 Команда карты"];
+E1 -> P0 [label="F05 Команда\nперевода"];
+E2 -> P0 [label="F07 Условия и\nоснование"];
+E3 -> P0 [label="F09 Запрос\nсведений"];
+E4 -> P0 [label="F11 Справочные\nданные"];
+P0 -> E1 [label="F02 Документ и\nисход"];
+P0 -> E2 [label="F08 Договор и план"];
+P0 -> E3 [label="F10 Проверяемые\nсведения"];
+P0 -> E4 [label="F12 Результат\nсправочника"];
+}

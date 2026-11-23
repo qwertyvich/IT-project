@@ -22,14 +22,14 @@
 <polyline points="30,470 60,470" fill="none" stroke="black" stroke-width="2"/>
 <rect x="60" y="420" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
 <text x="212.5" y="468.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
-<tspan x="212.5" dy="0">F1.1 Проверить и</tspan>
-<tspan x="212.5" dy="26.880000000000003">сохранить клиента</tspan>
+<tspan x="212.5" dy="0">F1.1 Вести реквизиты</tspan>
+<tspan x="212.5" dy="26.880000000000003">клиента</tspan>
 </text>
 <polyline points="30,610 60,610" fill="none" stroke="black" stroke-width="2"/>
 <rect x="60" y="560" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
 <text x="212.5" y="608.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
-<tspan x="212.5" dy="0">F1.2 Открыть /</tspan>
-<tspan x="212.5" dy="26.880000000000003">отключить счёт</tspan>
+<tspan x="212.5" dy="0">F1.2 Вести счета и</tspan>
+<tspan x="212.5" dy="26.880000000000003">контекст</tspan>
 </text>
 <polyline points="30,750 60,750" fill="none" stroke="black" stroke-width="2"/>
 <rect x="60" y="700" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
@@ -136,8 +136,8 @@
 <polyline points="1550,470 1580,470" fill="none" stroke="black" stroke-width="2"/>
 <rect x="1580" y="420" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>
 <text x="1732.5" y="468.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
-<tspan x="1732.5" dy="0">F5.1 Сформировать</tspan>
-<tspan x="1732.5" dy="26.880000000000003">карточку и выписку</tspan>
+<tspan x="1732.5" dy="0">F5.1 Выдать документы</tspan>
+<tspan x="1732.5" dy="26.880000000000003">и результаты</tspan>
 </text>
 <polyline points="1550,610 1580,610" fill="none" stroke="black" stroke-width="2"/>
 <rect x="1580" y="560" width="305" height="112" rx="0" fill="white" stroke="black" stroke-width="2"/>

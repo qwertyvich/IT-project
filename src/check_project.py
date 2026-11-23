@@ -11,6 +11,10 @@ from pypdf import PdfReader
 from project_model import *
 from diagram_catalog import FIGURES
 from build_documents import MAIN,GUIDE
+from dfd_model import validate_dfd,BOUNDARY,NAMES,LEAF_TITLES
+from business_case import OPERATIONS
+from specifications import field_rows,CONTRACTS,EXAMPLES
+from quality_metrics import check_reference
 
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def arithmetic():
@@ -32,7 +36,7 @@ def arithmetic():
 
 def check_figures():
  manifest=json.loads((SRC/'figures_manifest.json').read_text(encoding='utf-8'))
- assert len(manifest)==30 and {x['name'] for x in manifest}=={x['name'] for x in FIGURES}
+ assert len(manifest)==36 and {x['name'] for x in manifest}=={x['name'] for x in FIGURES}
  for item in manifest:
   p=FIG/(item['name']+'.svg');assert sha(p)==item['sha256_svg']
   assert sha(p.with_suffix('.png'))==item['sha256_png'];etree.fromstring(p.read_bytes())
@@ -51,7 +55,24 @@ def check_figures():
  algo=(FIG/'D3_transfer.svg').read_text(encoding='utf-8')
  assert 'order_id' not in algo and 'Создать transfer' not in algo
  assert 'Установить completed' in algo
- return {'diagrams':30,'all_12_foreign_keys_drawn':True,'all_attributes_present':True,'all_components_and_modules_present':True,'minimum_font_on_paper_pt':min(x['min_font_on_paper_pt'] for x in manifest)}
+ for parent,flows in BOUNDARY.items():
+  svg=etree.fromstring((FIG/(NAMES[parent]+'.svg')).read_bytes())
+  visible=' '.join(' '.join(''.join(e.itertext()) for e in svg.findall('.//{http://www.w3.org/2000/svg}text')).split())
+  for code in flows:assert code in visible,(parent,code)
+  for leaf,title in LEAF_TITLES.items():
+   if leaf.startswith(parent+'.'):assert leaf+' '+title in visible,(leaf,title)
+ processes=[x for x in manifest if x['name'].startswith('V') and x['name']!='V7_states']
+ drawn_ops=set()
+ for item in processes:
+  assert item['sequence_connected'] and item['data_objects']==2,item['name']
+  svg=(FIG/(item['name']+'.svg')).read_text(encoding='utf-8')
+  for op in item['operations']:assert op in svg;drawn_ops.add(op)
+ assert drawn_ops=={f'ОП{i:02}' for i in range(1,16)},drawn_ops
+ assert {x[0] for x in OPERATIONS}=={x[0] for x in LEAVES}
+ assert len({x[1].split(';')[0] for x in OPERATIONS})==15
+ expected_files={x['name']+ext for x in manifest for ext in (['.svg','.png','.dot'] if x['source']=='dot' else ['.svg','.png'])}
+ assert {p.name for p in FIG.iterdir() if p.is_file()}==expected_files
+ return {'diagrams':len(manifest),'all_12_foreign_keys_drawn':True,'all_attributes_present':True,'all_components_and_modules_present':True,'all_15_operations_drawn':True,'dfd':validate_dfd(),'minimum_font_on_paper_pt':min(x['min_font_on_paper_pt'] for x in manifest)}
 
 def check_docx():
  d=Document(MAIN);g=Document(GUIDE)
@@ -60,18 +81,27 @@ def check_docx():
  assert TOPIC in alltext and AUTHOR in alltext and GROUP in alltext and TEACHER in alltext
  assert 'М8О-309БВ-24' not in alltext and 'учебн' not in alltext.lower()
  assert 'БанкПеревод' not in alltext and 'beneficiary' not in alltext and 'transfer_reversal' not in alltext
- assert len(d.inline_shapes)==len(FIGURES)==30
+ assert len(d.inline_shapes)==len(FIGURES)==36
  for shape,f in zip(d.inline_shapes,FIGURES):
   rid=shape._inline.graphic.graphicData.pic.blipFill.blip.embed
   assert hashlib.sha256(d.part.rels[rid].target_part.blob).hexdigest()==sha(FIG/(f['name']+'.png'))
  captions=[p.text for p in d.paragraphs if p.style.name=='Caption']
  assert captions==[f['caption'] for f in FIGURES]
- assert len(d.tables)==41,len(d.tables)
- assert [p.text for p in d.paragraphs if p.style.name=='Heading 1' and p.text.startswith('ПРИЛОЖЕНИЕ ')]==['ПРИЛОЖЕНИЕ '+x for x in 'АБВГДЕ']
+ summary=json.loads((SRC/'build_summary.json').read_text(encoding='utf-8'))
+ assert len(d.tables)==summary['document']['tables'],len(d.tables)
+ assert [p.text for p in d.paragraphs if p.style.name=='Heading 1' and p.text.startswith('ПРИЛОЖЕНИЕ ')]==['ПРИЛОЖЕНИЕ '+x for x in 'АБВГДЕЖИ']
  for r in REQ:assert r[0] in alltext,r[0]
  for case in TESTS:assert case[0]+' '+case[1] in alltext,case[0]
  for leaf in LEAVES:assert leaf[0] in alltext,leaf[0]
  for m,title,*_ in MODULES:assert m+' '+title in alltext,m
+ assert alltext.index('1.4 Концепция качества и достижение назначения',alltext.index('ВВЕДЕНИЕ'))<alltext.index('3 Функциональная модель',alltext.index('ВВЕДЕНИЕ'))
+ for token in ['БП-01','Г0','ЦП1','ЦП2','ЦП3','ЦП4','u_B≤0,80u_A','недостаточно свидетельств']:
+  assert token in alltext,token
+ for _,o,_,_,_,handler,_ in OPERATIONS:
+  assert o.split(';')[0] in alltext and handler in alltext,o
+ for table_name,_,fields in ENTITIES:
+  assert table_name in alltext
+  for field,_,_ in fields:assert field in alltext,(table_name,field)
  assert d.styles['Normal'].font.size.pt==14 and d.styles['Normal'].paragraph_format.line_spacing==1.5
  for s in d.sections:
   assert abs(s.left_margin.mm-30)<.1 and abs(s.right_margin.mm-15)<.1
@@ -87,7 +117,52 @@ def check_docx():
  with zipfile.ZipFile(MAIN) as z:
   assert b'pBdr' not in z.read('word/styles.xml')
  assert AUTHOR in '\n'.join(p.text for p in g.paragraphs)
- return {'main_docx_sha256':sha(MAIN),'guide_docx_sha256':sha(GUIDE),'figures':30,'tables':41,'appendices':6,'author':AUTHOR,'group':GROUP,'images_match_sources':True}
+ return {'main_docx_sha256':sha(MAIN),'guide_docx_sha256':sha(GUIDE),'figures':len(FIGURES),'tables':len(d.tables),'appendices':8,'author':AUTHOR,'group':GROUP,'images_match_sources':True}
+
+def check_contracts():
+ data=json.loads((ROOT/'contracts/openapi.json').read_text(encoding='utf-8'))
+ assert data['openapi']=='3.1.0' and len(field_rows())==63
+ schemas=data['components']['schemas']
+ def resolve(schema):
+  if '$ref' in schema:
+   assert schema['$ref'].startswith('#/components/schemas/')
+   return schemas[schema['$ref'].split('/')[-1]]
+  return schema
+ def validate(value,schema):
+  schema=resolve(schema)
+  if 'const' in schema:assert value==schema['const']
+  if 'enum' in schema:assert value in schema['enum']
+  kind=schema.get('type')
+  if kind=='object':
+   assert isinstance(value,dict)
+   assert set(schema['required'])<=set(value)
+   if schema.get('additionalProperties') is False:assert set(value)<=set(schema['properties'])
+   for k,v in value.items():validate(v,schema['properties'][k])
+  elif kind=='string':
+   assert isinstance(value,str)
+   if 'pattern' in schema:assert re.fullmatch(schema['pattern'],value),value
+   if schema.get('format')=='uuid':
+    from uuid import UUID
+    UUID(value)
+   if schema.get('format')=='date':date.fromisoformat(value)
+   if schema.get('format')=='date-time':
+    from datetime import datetime
+    assert datetime.fromisoformat(value).tzinfo is not None
+  elif kind=='integer':assert type(value) is int and value>=schema.get('minimum',value) and value<=schema.get('maximum',value)
+  elif kind=='array':
+   assert isinstance(value,list) and len(value)>=schema.get('minItems',0)
+   for item in value:validate(item,schema['items'])
+ def walk(node):
+  if isinstance(node,dict):
+   if '$ref' in node:resolve(node)
+   if node.get('type')=='object':assert set(node['required'])<=set(node['properties'])
+   for child in node.values():walk(child)
+  elif isinstance(node,list):
+   for child in node:walk(child)
+ walk(data)
+ for (_,example),name in zip(EXAMPLES,['TransferCommand','PostingResult','Error','LoanCommand']):validate(example,schemas[name])
+ assert len(CONTRACTS)==11 and {c[0] for c in CONTRACTS}=={f'Т{i:02}' for i in range(1,12)}
+ return {'fields_defined':63,'interface_contracts':11,'openapi_examples_checked':4,'all_local_schema_references_resolve':True,'scope':'Структурная проверка спецификации и примеров; не сертификация OpenAPI и не проверка работающего API.'}
 
 def check_pdf(path):
  r=PdfReader(path);texts=[p.extract_text() or '' for p in r.pages]
@@ -112,7 +187,7 @@ def check_pdf(path):
  return {'file':Path(path).name,'pages':len(r.pages),'outline_present':True,'no_blank_pages':True,'page_numbers_sequential':True,'fonts_embedded':fonts,'sha256':sha(path)}
 
 if __name__=='__main__':
- result={'model':validate_model(),'reference_arithmetic':arithmetic(),'diagrams':check_figures(),'documents':check_docx()}
+ result={'model':validate_model(),'reference_arithmetic':arithmetic(),'quality_formula':check_reference(),'diagrams':check_figures(),'contracts':check_contracts(),'documents':check_docx()}
  pdf_paths=sys.argv[1:] or [p for p in [MAIN.with_suffix('.pdf'),GUIDE.with_suffix('.pdf')] if p.is_file()]
  if pdf_paths:result['pdfs']=[check_pdf(p) for p in pdf_paths]
  result['scope']='Проверка проектных артефактов и независимых эталонов. Приёмочные испытания банковского ПО не проводились.'

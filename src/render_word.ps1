@@ -1,4 +1,4 @@
-param(
+﻿param(
   [Parameter(Mandatory=$true)][string]$InputDocx,
   [Parameter(Mandatory=$true)][string]$OutputPdf,
   [switch]$Update
@@ -15,7 +15,45 @@ try {
   $doc = $word.Documents.Open($InputDocx, $false, (-not $Update.IsPresent), $false)
   if ($Update.IsPresent) {
     $doc.Fields.Update() | Out-Null
-    foreach ($toc in $doc.TablesOfContents) { $toc.Update() }
+    foreach ($toc in $doc.TablesOfContents) {
+      $toc.Update()
+      $toc.Range.Font.Name = 'Times New Roman'
+      $toc.Range.Font.Size = 12
+      $toc.Range.Font.Bold = 0
+      $toc.Range.Font.Color = 0
+    }
+    if ($doc.TablesOfContents.Count -gt 0) {
+      foreach ($styleId in @(-20, -21)) {
+        $style = $doc.Styles.Item($styleId)
+        $style.Font.Name = 'Times New Roman'
+        $style.Font.Size = 12
+        $style.Font.Bold = 0
+        $style.ParagraphFormat.LineSpacingRule = 4
+        $style.ParagraphFormat.LineSpacing = 13.8
+        $style.ParagraphFormat.SpaceAfter = 4
+      }
+      # Word places the field-ending paragraph on a separate page when the
+      # following heading owns another page break. Keep that paragraph with
+      # the heading and put their shared break on the empty paragraph itself.
+      $paragraphCount = $doc.Paragraphs.Count
+      for ($i = 2; $i -le $paragraphCount; $i++) {
+        $paragraph = $doc.Paragraphs.Item($i)
+        if ($paragraph.Range.Text.Trim() -ceq 'ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ') {
+          $previous = $doc.Paragraphs.Item($i - 1)
+          if ($previous.Range.Text.Trim().Length -le 1) {
+            $paragraph.Format.PageBreakBefore = 0
+            $previous.Format.PageBreakBefore = -1
+            $previous.Format.KeepWithNext = -1
+            $previous.Format.LineSpacingRule = 4
+            $previous.Format.LineSpacing = 1
+            $previous.Format.SpaceBefore = 0
+            $previous.Format.SpaceAfter = 0
+            $previous.Range.Font.Size = 1
+          }
+          break
+        }
+      }
+    }
   }
   $doc.Repaginate()
   if ($Update.IsPresent) {

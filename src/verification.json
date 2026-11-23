@@ -3,8 +3,8 @@
     "domain_entities": 8,
     "service_entities": 1,
     "foreign_keys": 12,
-    "requirements": 33,
-    "tests": 23,
+    "requirements": 35,
+    "tests": 25,
     "functions": 5,
     "components": 6,
     "modules": 11,
@@ -26,19 +26,44 @@
     ],
     "software_tests_run": false
   },
+  "quality_formula": {
+    "synthetic_formula_reference": {
+      "verdict": "соответствует",
+      "u_a": "6",
+      "u_b": "4.5",
+      "reduction_percent": "25.00"
+    },
+    "boundary_cases": 7,
+    "bank_software_trials": false
+  },
   "diagrams": {
-    "diagrams": 30,
+    "diagrams": 36,
     "all_12_foreign_keys_drawn": true,
     "all_attributes_present": true,
     "all_components_and_modules_present": true,
-    "minimum_font_on_paper_pt": 7.93
+    "all_15_operations_drawn": true,
+    "dfd": {
+      "canonical_flows": 39,
+      "external_flows": 10,
+      "interfunctional_flows": 10,
+      "all_5_boundaries_balanced": true,
+      "leaf_titles_from_single_source": true
+    },
+    "minimum_font_on_paper_pt": 8.39
+  },
+  "contracts": {
+    "fields_defined": 63,
+    "interface_contracts": 11,
+    "openapi_examples_checked": 4,
+    "all_local_schema_references_resolve": true,
+    "scope": "Структурная проверка спецификации и примеров; не сертификация OpenAPI и не проверка работающего API."
   },
   "documents": {
-    "main_docx_sha256": "83150c1e03926159d8ce609ec918e8a5c6408941f5fe326056610e5cf510d394",
-    "guide_docx_sha256": "d03fcef23fec7c671b5563619d0d3fd8c229be12ffab561c43e9ceef2c85314e",
-    "figures": 30,
-    "tables": 41,
-    "appendices": 6,
+    "main_docx_sha256": "66f7916a8939b573191c9c442e294b6ff51bdd00fb3394a5bf44ec76bebf573f",
+    "guide_docx_sha256": "37ab2c5c05a0d7cbf2d14866f42fb7b93b0322b2e5d80990530bdbb67dfa5bc2",
+    "figures": 36,
+    "tables": 69,
+    "appendices": 8,
     "author": "Салихо Р. Р.",
     "group": "М8О-309БВ",
     "images_match_sources": true
@@ -46,7 +71,7 @@
   "pdfs": [
     {
       "file": "Банковская система — Пояснительная записка.pdf",
-      "pages": 83,
+      "pages": 113,
       "outline_present": true,
       "no_blank_pages": true,
       "page_numbers_sequential": true,
@@ -54,14 +79,13 @@
         "/BCDEEE+TimesNewRomanPSMT": true,
         "/BCDFEE+TimesNewRomanPSMT": true,
         "/BCDGEE+TimesNewRomanPS-BoldMT": true,
-        "/BCDHEE+TimesNewRomanPS-BoldMT": true,
-        "/BCDIEE+Cambria": true
+        "/BCDHEE+TimesNewRomanPS-BoldMT": true
       },
-      "sha256": "19a4afe54cf6e419079c0c1460f46e11c2400b55ba2f543dd4dd67f9dc75a8f6"
+      "sha256": "0c9e87d831b0357d976a1346e60b9c8e83e3badabf900b7b57c3e58bf859b4ec"
     },
     {
       "file": "Защита за 3 минуты и пояснения.pdf",
-      "pages": 4,
+      "pages": 5,
       "outline_present": true,
       "no_blank_pages": true,
       "page_numbers_sequential": true,
@@ -71,7 +95,7 @@
         "/BCDGEE+TimesNewRomanPSMT": true,
         "/BCDHEE+TimesNewRomanPSMT": true
       },
-      "sha256": "2da07a3194e4b1e8a431516df797afbd5db537d4d052d320ff59c4bf1b1eba39"
+      "sha256": "ca7cd0bfed6b5bd5d5647ecbbf0a5d897d493e78f4aec4b56eb960d0495a5903"
     }
   ],
   "scope": "Проверка проектных артефактов и независимых эталонов. Приёмочные испытания банковского ПО не проводились."

@@ -1,0 +1,32 @@
+[
+  {
+    "key": "corrected",
+    "file": "Пояснительная_записка_—_исправленная.docx",
+    "bytes": 20713819,
+    "sha256": "663ff36f31ddb2c97716bfcc6702705560bd93b1d724fbd0e38ff3e9467bb3ef",
+    "tables": 29,
+    "images": 36,
+    "rendered_pages": 99
+  },
+  {
+    "key": "avia",
+    "file": "АвиаКасса_—_пояснительная_записка_—_А4.pdf",
+    "bytes": 937994,
+    "sha256": "728c531e862fd91ed2612b4672c899adc43bab60d367cb5f23d43f6e0c646a1d",
+    "pages": 78
+  },
+  {
+    "key": "cinema",
+    "file": "Пояснительная_записка_—_Онлайн_кинотеатр.pdf",
+    "bytes": 5657504,
+    "sha256": "3e945d6c66ab9c3ec06226a07ece197c16e1458a526556a9c301da014c00619a",
+    "pages": 46
+  },
+  {
+    "key": "carsharing",
+    "file": "Каршеринг_для_Google_Docs.pdf",
+    "bytes": 5164333,
+    "sha256": "8a2504af751544eb48fdd71afdd53ce8e570849b0fce6f4d471952cf05c2843c",
+    "pages": 91
+  }
+]

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="1450" viewBox="0 0 2600 1450"><defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 4 L 0 8" fill="none" stroke="black" stroke-width="1.7"/></marker></defs><rect width="100%" height="100%" fill="white"/><rect x="30" y="60" width="720" height="230" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="390.0" y="115.60" text-anchor="middle" font-family="Arial" font-size="30" fill="black">
+<tspan x="390.0" dy="0">Организатор: руководитель</tspan>
+<tspan x="390.0" dy="33.6">операционного направления банка</tspan>
+<tspan x="390.0" dy="33.6"></tspan>
+<tspan x="390.0" dy="33.6">Нужен завершённый результат</tspan>
+<tspan x="390.0" dy="33.6">при ограниченном ресурсе</tspan>
+</text>
+<rect x="940" y="60" width="720" height="230" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<text x="1300.0" y="132.40" text-anchor="middle" font-family="Arial" font-size="30" fill="black">
+<tspan x="1300.0" dy="0">БП-01: системное противоречие</tspan>
+<tspan x="1300.0" dy="33.6"></tspan>
+<tspan x="1300.0" dy="33.6">Больше ручных сверок → больше труда</tspan>
+<tspan x="1300.0" dy="33.6">Меньше проверок → больше риска</tspan>
+</text>
+<rect x="1850" y="60" width="720" height="230" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
+<text x="2210.0" y="132.40" text-anchor="middle" font-family="Arial" font-size="30" fill="black">
+<tspan x="2210.0" dy="0">Назначение системы</tspan>
+<tspan x="2210.0" dy="33.6"></tspan>
+<tspan x="2210.0" dy="33.6">Верное завершение обращения</tspan>
+<tspan x="2210.0" dy="33.6">с меньшим удельным ручным трудом</tspan>
+</text>
+<rect x="1850" y="580" width="720" height="260" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<text x="2210.0" y="650.60" text-anchor="middle" font-family="Arial" font-size="30" fill="black">
+<tspan x="2210.0" dy="0">Г0: согласованная автоматизация</tspan>
+<tspan x="2210.0" dy="33.6"></tspan>
+<tspan x="2210.0" dy="33.6">Повторяемые действия — программе</tspan>
+<tspan x="2210.0" dy="33.6">Решения и ответственность — людям</tspan>
+<tspan x="2210.0" dy="33.6">Границы процесса сохраняются</tspan>
+</text>
+<rect x="940" y="580" width="720" height="260" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
+<text x="1300.0" y="650.60" text-anchor="middle" font-family="Arial" font-size="30" fill="black">
+<tspan x="1300.0" dy="0">Целевые свойства результата</tspan>
+<tspan x="1300.0" dy="33.6"></tspan>
+<tspan x="1300.0" dy="33.6">QБ=30 из 30; критических нарушений=0</tspan>
+<tspan x="1300.0" dy="33.6">u=L/Q; uБ≤0,80uА</tspan>
+<tspan x="1300.0" dy="33.6">Состав исполнителей одинаков</tspan>
+</text>
+<rect x="30" y="580" width="720" height="260" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="390.0" y="650.60" text-anchor="middle" font-family="Arial" font-size="30" fill="black">
+<tspan x="390.0" dy="0">Приёмка заказчиком</tspan>
+<tspan x="390.0" dy="33.6"></tspan>
+<tspan x="390.0" dy="33.6">Контрольный профиль А/Б</tspan>
+<tspan x="390.0" dy="33.6">Свидетельства И01–И25</tspan>
+<tspan x="390.0" dy="33.6">Решение с явными основаниями</tspan>
+</text>
+<polyline points="750,175 940,175" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1660,175 1850,175" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="2210,290 2210,580" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1850,710 1660,710" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="940,710 750,710" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="30" y="1060" width="2540" height="230" rx="0" fill="#FFFFFF" stroke="black" stroke-width="2"/>
+<text x="1300.0" y="1150.06" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
+<tspan x="1300.0" dy="0">Граница объектов: деятельность банка → система с людьми и регламентом → программный продукт → модули.</tspan>
+<tspan x="1300.0" dy="32.480000000000004">Цель задана через результат деятельности; функции и технологии появляются после критериев.</tspan>
+<tspan x="1300.0" dy="32.480000000000004">Порог 20 % — проектная норма; наблюдений банка и достигнутой экономии пока нет.</tspan>
+</text>
+<polyline points="390,840 390,970 1300,970 1300,1060" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/></svg>

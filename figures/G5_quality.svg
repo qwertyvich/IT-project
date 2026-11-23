@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2550" height="1420" viewBox="0 0 2550 1420"><defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 4 L 0 8" fill="none" stroke="black" stroke-width="1.7"/></marker></defs><rect width="100%" height="100%" fill="white"/><rect x="20" y="60" width="605" height="230" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="322.5" y="150.92" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<tspan x="322.5" dy="0">Потребность организатора</tspan>
+<tspan x="322.5" dy="31.360000000000003">Завершать обслуживание</tspan>
+<tspan x="322.5" dy="31.360000000000003">при том же кадровом ресурсе</tspan>
+</text>
+<rect x="655" y="60" width="605" height="230" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<text x="957.5" y="150.92" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<tspan x="957.5" dy="0">Свойства результата</tspan>
+<tspan x="957.5" dy="31.360000000000003">Результативность</tspan>
+<tspan x="957.5" dy="31.360000000000003">Ресурс; время; доказуемость</tspan>
+</text>
+<rect x="1290" y="60" width="605" height="230" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<text x="1592.5" y="150.92" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<tspan x="1592.5" dy="0">Метрики</tspan>
+<tspan x="1592.5" dy="31.360000000000003">Q; L; u=L/Q</tspan>
+<tspan x="1592.5" dy="31.360000000000003">Время; критические нарушения</tspan>
+</text>
+<rect x="1925" y="60" width="605" height="230" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
+<text x="2227.5" y="150.92" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<tspan x="2227.5" dy="0">Нормы до испытаний</tspan>
+<tspan x="2227.5" dy="31.360000000000003">QБ=30 из 30; uБ≤0,80uА</tspan>
+<tspan x="2227.5" dy="31.360000000000003">Каждый маршрут Б≤120 с</tspan>
+</text>
+<polyline points="625,175 655,175" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1260,175 1290,175" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1895,175 1925,175" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1925" y="680" width="605" height="230" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<text x="2227.5" y="770.92" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<tspan x="2227.5" dy="0">Процедура И24</tspan>
+<tspan x="2227.5" dy="31.360000000000003">30 сопоставимых пар А/Б</tspan>
+<tspan x="2227.5" dy="31.360000000000003">Тот же состав и исходные данные</tspan>
+</text>
+<rect x="1290" y="680" width="605" height="230" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
+<text x="1592.5" y="770.92" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<tspan x="1592.5" dy="0">Свидетельства</tspan>
+<tspan x="1592.5" dy="31.360000000000003">Все времена, исправления,</tspan>
+<tspan x="1592.5" dy="31.360000000000003">документы и снимки состояний</tspan>
+</text>
+<rect x="655" y="680" width="605" height="230" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
+<text x="957.5" y="770.92" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<tspan x="957.5" dy="0">Сравнение</tspan>
+<tspan x="957.5" dy="31.360000000000003">Каждая норма и критический запрет</tspan>
+<tspan x="957.5" dy="31.360000000000003">отдельно, без усреднения ошибок</tspan>
+</text>
+<rect x="20" y="680" width="605" height="230" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
+<text x="322.5" y="770.92" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<tspan x="322.5" dy="0">Решение И25</tspan>
+<tspan x="322.5" dy="31.360000000000003">Принять / исправить /</tspan>
+<tspan x="322.5" dy="31.360000000000003">недостаточно свидетельств</tspan>
+</text>
+<polyline points="2227,290 2227,680" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1925,795 1895,795" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1290,795 1260,795" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="655,795 625,795" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="20" y="1120" width="2510" height="160" rx="0" fill="#FFFFFF" stroke="black" stroke-width="2"/>
+<text x="1275.0" y="1191.30" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
+<tspan x="1275.0" dy="0">Нет корректной базы А или полного журнала → экономия не подтверждена.</tspan>
+<tspan x="1275.0" dy="32.480000000000004">Критическое нарушение → отказ независимо от экономии. Пилот в банке — отдельная последующая валидация.</tspan>
+</text></svg>

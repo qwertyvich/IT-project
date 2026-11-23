@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1100" viewBox="0 0 2400 1100"><defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 4 L 0 8" fill="none" stroke="black" stroke-width="1.7"/></marker></defs><rect width="100%" height="100%" fill="white"/><rect x="20" y="90" width="540" height="225" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
 <text x="290.0" y="193.80" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
-<tspan x="290.0" dy="0">Потребность пользователя</tspan>
+<tspan x="290.0" dy="0">Интерес организатора</tspan>
 <tspan x="290.0" dy="32.480000000000004">и требования назначения</tspan>
 </text>
 <rect x="620" y="90" width="540" height="225" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
 <text x="890.0" y="193.80" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
 <tspan x="890.0" dy="0">Критерии качества:</tspan>
-<tspan x="890.0" dy="32.480000000000004">метрика, норма, метод</tspan>
+<tspan x="890.0" dy="32.480000000000004">ЦП1–ЦП4; КР1–КР6</tspan>
 </text>
 <rect x="1220" y="90" width="540" height="225" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
 <text x="1490.0" y="193.80" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
-<tspan x="1490.0" dy="0">Проверка:</tspan>
+<tspan x="1490.0" dy="0">Проверка И01–И25:</tspan>
 <tspan x="1490.0" dy="32.480000000000004">данные, действия, эталон</tspan>
 </text>
 <rect x="1820" y="90" width="540" height="225" rx="12" fill="#A4C8EA" stroke="black" stroke-width="2"/>
@@ -21,12 +21,12 @@
 <rect x="1820" y="670" width="540" height="225" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
 <text x="2090.0" y="773.80" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
 <tspan x="2090.0" dy="0">Наблюдение:</tspan>
-<tspan x="2090.0" dy="32.480000000000004">факт, время, действия</tspan>
+<tspan x="2090.0" dy="32.480000000000004">результат, время, весь труд</tspan>
 </text>
 <rect x="1220" y="670" width="540" height="225" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
 <text x="1490.0" y="773.80" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
 <tspan x="1490.0" dy="0">Свидетельства:</tspan>
-<tspan x="1490.0" dy="32.480000000000004">снимки, журналы, SHA-256</tspan>
+<tspan x="1490.0" dy="32.480000000000004">снимки, журналы А/Б, SHA-256</tspan>
 </text>
 <rect x="620" y="670" width="540" height="225" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
 <text x="890.0" y="773.80" text-anchor="middle" font-family="Arial" font-size="29" fill="black">
@@ -57,5 +57,5 @@
 <tspan x="1020" dy="30.240000000000002">заданный порог</tspan>
 </text>
 <text x="1200" y="1027.02" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
-<tspan x="1200" dy="0">Для приёмки нужны все обязательные критерии и три сквозные задачи. До запуска фактический результат неизвестен.</tspan>
+<tspan x="1200" dy="0">Приёмка: все нормы и 30 сопоставимых обращений А/Б. Критический дефект исключает успех; без базы А эффект неизвестен.</tspan>
 </text></svg>

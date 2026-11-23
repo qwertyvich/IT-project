@@ -10,13 +10,14 @@ edge [fontname="Arial", fontsize=23, color="#333333", penwidth=1.2, arrowsize=.7
 "loan" [label="К4\nДоговор и план", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="2.805"];
 "control" [label="К5\nДокумент и сверка", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="3.334"];
 "done" [label="Проверенный\nрезультат\nдля пользователя", shape="box", style="rounded,filled", fillcolor="#D9EAD3", width="3.249"];
-e -> ctx [label="Реквизиты"];
-ctx -> trust [label="Контекст"];
-trust -> card [label="Карточный маршрут"];
-trust -> tr [label="Платёжный маршрут"];
-trust -> loan [label="Кредитный маршрут"];
+e -> trust [label="Команда и сеанс"];
+trust -> ctx [label="Проверенные\nполномочия"];
+ctx -> card [label="Карточный маршрут"];
+ctx -> tr [label="Платёжный маршрут"];
+ctx -> loan [label="Кредитный маршрут"];
+ctx -> control [label="Карточка клиента"];
 card -> control [label="Состояние"];
-tr -> control [label="Факт и остатки"];
+tr -> control [label="Подтверждённый\nфакт"];
 loan -> control [label="Условия и план"];
-control -> done [label="Результат;\nактуальность"];
+control -> done [label="Документ;\nактуальность"];
 }

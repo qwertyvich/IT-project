@@ -66,7 +66,7 @@ class Picture(Sheet):
 class BPMN(Picture):
     def __init__(self,name,lanes,w=1800,h=830):
         super().__init__(name,w,h);self.lanes=lanes;self.top=25;self.bottom=h-110
-        self.lh=(self.bottom-self.top)/len(lanes);self.nodes={};self.seq=[]
+        self.lh=(self.bottom-self.top)/len(lanes);self.nodes={};self.seq=[];self.kinds={};self.operations=set();self.data_count=0
         self.add(f'<rect x="10" y="{self.top}" width="{w-20}" height="{self.bottom-self.top}" fill="white" stroke="black" stroke-width="2"/>')
         for i,t in enumerate(lanes):
             y=self.top+i*self.lh
@@ -77,24 +77,27 @@ class BPMN(Picture):
     def task(self,id,x,lane,text,w=240,sub=False,user=False):
         hh=126 if sub else 96
         y=self.top+lane*self.lh+self.lh/2-hh/2
-        self.filled(x,y,w,hh,'' if sub else text,YELLOW if user else BLUE,24,True)
+        self.filled(x,y,w,hh,'' if sub else text,YELLOW if user else BLUE,22,True)
         if sub:
-            th=self.text(x+w/2,y+(hh-22)/2,text,24,w-24)
-            assert th<=hh-30,(self.name,text,th,hh)
+            th=self.text(x+w/2,y+(hh-22)/2,text,22,w-24)
+            assert th<=hh-24,(self.name,text,th,hh)
             self.box(x+w/2-9,y+hh-21,18,18);self.text(x+w/2,y+hh-12,'+',18)
         self.nodes[id]=(x,y,w,hh)
+        self.kinds[id]='task'
         return id
     def gateway(self,id,x,lane,label=''):
         cy=self.top+lane*self.lh+self.lh/2
         self.box(x,cy-34,68,68,'×',34,'diamond')
         if label:self.text(x+34,cy-70,label,23,190)
         self.nodes[id]=(x,cy-34,68,68)
+        self.kinds[id]='gateway'
         return id
     def event(self,id,x,lane,label='',end=False):
         cy=self.top+lane*self.lh+self.lh/2
         self.circle(x,cy,22,thick=end)
         if label:self.text(max(195,min(x,self.w-115)),cy+60,label,23,210)
         self.nodes[id]=(x-22,cy-22,44,44)
+        self.kinds[id]='end' if end else 'start'
         return id
     def link(self,a,b,label='',route=None,source='right',target='left',labelpos=None):
         def port(rect,side):
@@ -113,6 +116,19 @@ class BPMN(Picture):
     def finish(self,note=''):
         self.text(self.w/2,self.h-66,'BPMN 2.0.2: круг — событие; скруглённый блок — задача; ромб × — исключающий шлюз; + — подпроцесс.',22,self.w-70)
         if note:self.text(self.w/2,self.h-28,note,22,self.w-70)
-        # Все задачи и события должны быть связаны, из каждого старта достижим конец.
-        assert all(id in {a for a,b in self.seq}|{b for a,b in self.seq} for id in self.nodes),self.name
-        return self.save()
+        starts={n for n,k in self.kinds.items() if k=='start'};ends={n for n,k in self.kinds.items() if k=='end'}
+        assert starts and ends,self.name
+        def reachable(seeds,reverse=False):
+            visited=set(seeds);todo=list(seeds)
+            while todo:
+                n=todo.pop()
+                for a,b in self.seq:
+                    if reverse:a,b=b,a
+                    if a==n and b not in visited:visited.add(b);todo.append(b)
+            return visited
+        assert reachable(starts)==set(self.nodes),('unreachable',self.name)
+        assert reachable(ends,True)==set(self.nodes),('no path to end',self.name)
+        for n,k in self.kinds.items():
+            if k=='gateway':assert sum(a==n for a,b in self.seq)==2,(self.name,n)
+        item=self.save();item.update(operations=sorted(self.operations),data_objects=self.data_count,sequence_connected=True)
+        return item

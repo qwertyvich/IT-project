@@ -1,0 +1,40 @@
+digraph B2_dfd {
+graph [rankdir=LR, bgcolor="white", pad=.12, nodesep=.35, ranksep=.65, splines=polyline, outputorder=edgesfirst];
+node [fontname="Arial", fontsize=23, margin=".12,.08", penwidth=1.3];
+edge [fontname="Arial", fontsize=22, color="#333333", penwidth=1.2, arrowsize=.75];
+graph [nodesep=.6, ranksep=1.1];
+"E1_out" [label="E1\nОператор", shape="box", style="filled", fillcolor="#A4C8EA", width="1.917"];
+"F1" [label="F1\nВести клиентов,\nсчета и отделения", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="3.222"];
+E1_out -> F1 [label="F01 Клиент и счёт"];
+"F2" [label="F2\nВести банковские\nкарты", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="3.111"];
+E1_out -> F2 [label="F03 Команда карты"];
+"F3" [label="F3\nУчитывать и\nпроводить переводы", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="3.556"];
+E1_out -> F3 [label="F05 Команда\nперевода"];
+"E2_out" [label="E2\nКредитный\nспециалист", shape="box", style="filled", fillcolor="#A4C8EA", width="2.181"];
+"F4" [label="F4\nВести кредитные\nдоговоры", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="3.028"];
+E2_out -> F4 [label="F07 Условия и\nоснование"];
+"E3_out" [label="E3\nПолучатель сведений\nпо роли", shape="box", style="filled", fillcolor="#A4C8EA", width="3.736"];
+"F5" [label="F5\nВыдавать сведения и\nотчёты", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="3.667"];
+E3_out -> F5 [label="F09 Запрос\nсведений"];
+"E4_out" [label="E4\nАдминистратор", shape="box", style="filled", fillcolor="#A4C8EA", width="2.792"];
+E4_out -> F1 [label="F11 Справочные\nданные"];
+"E1_in" [label="E1\nОператор", shape="box", style="filled", fillcolor="#A4C8EA", width="1.917"];
+F5 -> E1_in [label="F02 Документ и\nисход"];
+"E2_in" [label="E2\nКредитный\nспециалист", shape="box", style="filled", fillcolor="#A4C8EA", width="2.181"];
+F5 -> E2_in [label="F08 Договор и план"];
+"E3_in" [label="E3\nПолучатель сведений\nпо роли", shape="box", style="filled", fillcolor="#A4C8EA", width="3.736"];
+F5 -> E3_in [label="F10 Проверяемые\nсведения"];
+"E4_in" [label="E4\nАдминистратор", shape="box", style="filled", fillcolor="#A4C8EA", width="2.792"];
+F5 -> E4_in [label="F12 Результат\nсправочника"];
+F2 -> F1 [label="I21 Запрос\nконтекста карты"];
+F1 -> F2 [label="I12 Контекст карты"];
+F3 -> F1 [label="I31 Запрос счетов"];
+F1 -> F3 [label="I13 Реквизиты\nсчетов"];
+F4 -> F1 [label="I41 Запрос счёта\nдоговора"];
+F1 -> F4 [label="I14 Контекст\nдоговора"];
+F1 -> F5 [label="I15 Клиентский\nрезультат"];
+F2 -> F5 [label="I25 Результат\nкарты"];
+F3 -> F5 [label="I35 Результат\nперевода"];
+F4 -> F5 [label="I45 Кредитный\nрезультат"];
+{rank=same; F2; F3; F4;}
+}

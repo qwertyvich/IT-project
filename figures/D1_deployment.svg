@@ -55,5 +55,5 @@
 </text>
 <polyline points="1415,575 1415,700" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <text x="900" y="946.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
-<tspan x="900" dy="0">Секреты вне кода; миграции до старта; БД не публикуется в сеть рабочих мест. Интерфейсы И1–И4 сохранены.</tspan>
+<tspan x="900" dy="0">Секреты вне кода; миграции до старта; БД недоступна рабочим местам. И1–И6 уточняются контрактами приложения И.</tspan>
 </text></svg>
