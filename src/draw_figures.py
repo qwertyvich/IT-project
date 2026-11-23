@@ -5,7 +5,7 @@ from PIL import ImageFont
 from fonts import ARIAL
 from project_model import *
 from diagram_catalog import FIGURES,BY_NAME
-from diagram_tools import Graph,Picture,BPMN,BLUE,YELLOW,GREEN
+from diagram_tools import Graph,Picture,BPMN,BLUE,YELLOW,GREEN,wrap
 import svg_primitives as primitive
 import dfd_figures
 import process_figures
@@ -124,33 +124,36 @@ def states():
  return s.save()
 
 def architecture():
- g=Graph('G1_architecture','LR',21)
+ g=Graph('G1_architecture','TB',21)
+ g.body.append('graph [nodesep=.3, ranksep=.2];')
+ def edge(a,b,text,**opts):g.edge(a,b,wrap(text,12),**opts)
  for e,t in [('e1','Оператор'),('e2','Кредитный специалист'),('e3','Контролёр / руководитель'),('e4','Администратор')]:g.node(e,t)
  for id,t,*_ in COMPONENTS:g.node(id,t+'\n'+id,'box',YELLOW,style='rounded,filled')
  for d,t in [('Д1','Клиентский контекст'),('Д2','Карты'),('Д3','Переводы'),('Д4','Договоры и графики'),('Д5','Аудит')]:g.node(d,d+'\n'+t,'cylinder',GREEN)
- for e in ['e1','e2','e3','e4']:g.edge(e,'К6','И1: команда / результат',dir='both')
- for k in ['К1','К2','К3','К4','К5']:g.edge('К6',k,'И2: действие / ответ',dir='both')
+ for e in ['e1','e2','e3','e4']:edge(e,'К6','И1: команда / результат',dir='both')
+ for k in ['К1','К2','К3','К4','К5']:edge('К6',k,'И2: действие / ответ',dir='both')
  for k,ds in [('К1',['Д1']),('К2',['Д2']),('К3',['Д1','Д3']),('К4',['Д4'])]:
-  for d in ds:g.edge(k,d,'И3: данные / результат',dir='both')
- for d in ['Д1','Д2','Д3','Д4','Д5']:g.edge(d,'К5','И3: факты для чтения')
- for k in ['К2','К3','К4']:g.edge('К1',k,'И5: контекст / запрос',dir='both')
- for k in ['К1','К2','К3','К4']:g.edge(k,'К5','И6: результат действия')
- for k in ['К1','К2','К3','К4']:g.edge(k,'Д5','И4: событие действия')
- g.edge('К6','Д5','И4: единые правила аудита')
+  for d in ds:edge(k,d,'И3: данные / результат',dir='both')
+ for d in ['Д1','Д2','Д3','Д4','Д5']:edge(d,'К5','И3: факты для чтения')
+ for k in ['К2','К3','К4']:edge('К1',k,'И5: контекст / запрос',dir='both')
+ for k in ['К1','К2','К3','К4']:edge(k,'К5','И6: результат действия')
+ for k in ['К1','К2','К3','К4']:edge(k,'Д5','И4: событие действия')
+ edge('К6','Д5','И4: единые правила аудита')
  return g.save()
 
 def general_functioning():
- g=Graph('G2_functioning','LR',24)
+ g=Graph('G2_functioning','TB',24)
+ g.body.append('graph [nodesep=.2, ranksep=.2];')
  nodes=[('e','Сотрудник: обращение',BLUE),('ctx','К1\nЕдиный клиентский контекст',YELLOW),('trust','К6\nРоль, основание, ключ',YELLOW),('card','К2\nКарта и доступность',YELLOW),('tr','К3\nСогласованный перевод',YELLOW),('loan','К4\nДоговор и план',YELLOW),('control','К5\nДокумент и сверка',YELLOW),('done','Проверенный результат\nдля пользователя',GREEN)]
  for id,t,c in nodes:g.node(id,t,'box',c,style='rounded,filled')
- for a,b,t in [('e','trust','Команда и сеанс'),('trust','ctx','Проверенные полномочия'),('ctx','card','Карточный маршрут'),('ctx','tr','Платёжный маршрут'),('ctx','loan','Кредитный маршрут'),('ctx','control','Карточка клиента'),('card','control','Состояние'),('tr','control','Подтверждённый факт'),('loan','control','Условия и план'),('control','done','Документ; актуальность')]:g.edge(a,b,t)
+ for a,b,t in [('e','trust','Команда и сеанс'),('trust','ctx','Проверенные полномочия'),('ctx','card','Карточный маршрут'),('ctx','tr','Платёжный маршрут'),('ctx','loan','Кредитный маршрут'),('ctx','control','Карточка клиента'),('card','control','Состояние'),('tr','control','Подтверждённый факт'),('loan','control','Условия и план'),('control','done','Документ; актуальность')]:g.edge(a,b,wrap(t,12))
  return g.save()
 
 def reasoning():
  s=Picture('G3_reasoning',2800,1330)
  titles=['Проблема','Гипотеза / решение','Функция','Компонент → модуль','Проверка','Мера результата']
  xs=[20,470,920,1270,1830,2280];ww=[400,400,300,510,400,480]
- for x,w,t in zip(xs,ww,titles):s.filled(x,15,w,80,t,BLUE,27)
+ for x,w,t in zip(xs,ww,titles):s.filled(x,15,w,80,t,BLUE,36)
  rows=[['ПР1\nРазрозненные реквизиты','Г1\nЕдиный контекст\nи проверки до записи','F1, F2','К1, К2, К6\nМ01–М03, М10, М11','И01–И05, И23','0 повторных переносов;\nверные связанные карточки'],
  ['ПР2\nПовтор и гонка списаний','Г2\nОдно атомарное\nпроведение с ключом','F3','К3, К6\nМ04, М05, М10, М11','И07–И12','0 частичных операций;\nсумма средств сохранена'],
  ['ПР3\nОшибки плана кредита','Г3\nЕдиная формула\nи точный остаток','F4','К4, К6\nМ06, М07, М10, М11','И13–И16, И23','Сумма долей = principal;\nвсе даты и проценты верны'],
@@ -158,9 +161,9 @@ def reasoning():
  for j,row in enumerate(rows):
   y=150+j*280
   for i,(x,w,t) in enumerate(zip(xs,ww,row)):
-   s.filled(x,y,w,185,t,GREEN if i==5 else YELLOW,25,True)
+   s.filled(x,y,w,185,t,GREEN if i==5 else YELLOW,36,True)
    if i<5:s.line([(x+w,y+92),(xs[i+1],y+92)],True)
- s.text(1400,1290,'Г1–Г4 обеспечивают общую Г0. Польза организатору проверяется отдельно И24/И25: 30 пар А/Б и полный труд.',26,2700)
+ s.text(1400,1290,'Г1–Г4 обеспечивают общую Г0. Польза организатору проверяется отдельно И24/И25: 30 пар А/Б и полный труд.',36,2700)
  return s.save()
 
 def deployment():
@@ -181,12 +184,12 @@ def deployment():
 
 def realization():
  s=Picture('D2_realization',2700,1550)
- for x,w,t in [(30,540,'Архитектурный компонент'),(770,1000,'Разрабатываемые модули'),(1950,700,'Технические средства и данные')]:s.filled(x,10,w,85,t,BLUE,28)
+ for x,w,t in [(30,540,'Архитектурный компонент'),(770,1000,'Разрабатываемые модули'),(1950,700,'Технические средства и данные')]:s.filled(x,10,w,85,t,BLUE,35)
  details=[('К1','Клиентский контекст','М01 Клиенты и справочники\nМ02 Счета','Формы; API; branch, client,\naccount, employee'),('К2','Карточное обслуживание','М03 Карты','Форма карты; правила срока;\nbank_card'),('К3','Проведение переводов','М04 Подготовка перевода\nМ05 Транзакционное проведение','Форма перевода; post_transfer;\naccount, transfer'),('К4','Кредитный учёт','М06 Кредитные договоры\nМ07 Расчёт графика','Форма договора; build_schedule;\nloan, loan_schedule'),('К5','Контроль результатов','М08 Запросы и сверка\nМ09 Пользовательские сценарии','VIEW; SQL Q1–Q8;\nкарточки, выписка, сводка'),('К6','Доверие к действиям','М10 Полномочия и контекст\nМ11 Аудит изменений','Политики ролей; триггеры;\naudit_event')]
  for i,(code,title,modules,tech) in enumerate(details):
-  y=150+i*215;s.filled(30,y,540,150,code+'\n'+title,YELLOW,27,True);s.filled(770,y,1000,150,modules,YELLOW,28,True);s.filled(1950,y,700,150,tech,GREEN,27,True)
+  y=150+i*215;s.filled(30,y,540,150,code+'\n'+title,YELLOW,35,True);s.filled(770,y,1000,150,modules,YELLOW,35,True);s.filled(1950,y,700,150,tech,GREEN,35,True)
   s.line([(570,y+75),(770,y+75)],True);s.line([(1770,y+75),(1950,y+75)],True)
- s.text(1350,1505,'Для каждого М-модуля заданы вход, выход, правило, ошибки и испытание; HTTP и SQL реализуют интерфейсы облика.',26,2610)
+ s.text(1350,1505,'Для каждого М-модуля заданы вход, выход, правило, ошибки и испытание; HTTP и SQL реализуют интерфейсы облика.',35,2610)
  return s.save()
 
 def renamed_primitive(fn,old,new,replacements):
@@ -220,9 +223,9 @@ def sequence():
  exchanges=[(180,650,180,'1. Ключ, реквизиты, команда'),(650,1190,280,'2. Сеанс и transfer_id; проверка М10'),(1190,1770,380,'3. BEGIN; вызов post_transfer'),(1770,1770,500,'4. Блокировки; проверки; остатки; статус; аудит'),(1770,1190,650,'5. Подготовленный результат либо ошибка'),(1190,1770,760,'6. COMMIT; известная ошибка — откат'),(1190,650,890,'7. Подтверждённый итог / исход неизвестен'),(650,180,1000,'8. ID, статус; при потере ответа — сверка')]
  for a,b,y,t in exchanges:
   if a==b:
-   s.line([(a,y),(a+260,y),(a+260,y+70),(a,y+70)],True);s.text(1500,y+10,t,24,490,bg=True)
-  else:s.line([(a,y),(b,y)],True);s.text((a+b)/2,y-32,t,24,abs(a-b)-35,bg=True)
- s.text(1050,1080,'Потеря подтверждения COMMIT: GET прежнего ID либо повтор с прежним ключом; отсутствие ответа не доказывает откат.',24,2010)
+   s.line([(a,y),(a+260,y),(a+260,y+70),(a,y+70)],True);s.text(1500,y+10,t,26,490,bg=True)
+  else:s.line([(a,y),(b,y)],True);s.text((a+b)/2,y-32,t,26,abs(a-b)-35,bg=True)
+ s.text(1050,1080,'Потеря подтверждения COMMIT: GET прежнего ID либо повтор с прежним ключом; отсутствие ответа не доказывает откат.',26,2010)
  return s.save()
 
 def quality_decision():
@@ -230,10 +233,10 @@ def quality_decision():
  blocks=[(20,90,'Интерес организатора\nи требования назначения',BLUE),(620,90,'Критерии качества:\nЦП1–ЦП4; КР1–КР6',YELLOW),(1220,90,'Проверка И01–И25:\nданные, действия, эталон',YELLOW),(1820,90,'Запуск:\nсборка, среда, исполнитель',BLUE),(1820,670,'Наблюдение:\nрезультат, время, весь труд',YELLOW),(1220,670,'Свидетельства:\nснимки, журналы А/Б, SHA-256',GREEN),(620,670,'Сравнение с нормой\nпо каждому требованию',YELLOW),(20,670,'Решение по назначению:\nпринять / исправить /\nнедостаточно свидетельств',GREEN)]
  for x,y,t,c in blocks:s.filled(x,y,540,225,t,c,29,True)
  for a,b in [(0,1),(1,2),(2,3)]:s.line([(blocks[a][0]+540,202),(blocks[b][0],202)],True)
- s.line([(2090,315),(2090,670)],True);s.text(2210,490,'Измерение',27,330,bg=True)
+ s.line([(2090,315),(2090,670)],True);s.text(2210,490,'Измерение',29,330,bg=True)
  for a,b in [(4,5),(5,6),(6,7)]:s.line([(blocks[a][0],782),(blocks[b][0]+540,782)],True)
- s.line([(890,315),(890,670)],True);s.text(1020,490,'Заранее\nзаданный порог',27,320,bg=True)
- s.text(1200,1020,'Приёмка: все нормы и 30 сопоставимых обращений А/Б. Критический дефект исключает успех; без базы А эффект неизвестен.',27,2300)
+ s.line([(890,315),(890,670)],True);s.text(1020,490,'Заранее\nзаданный порог',29,320,bg=True)
+ s.text(1200,1020,'Приёмка: все нормы и 30 сопоставимых обращений А/Б. Критический дефект исключает успех; без базы А эффект неизвестен.',29,2300)
  return s.save()
 
 def main():
@@ -246,5 +249,7 @@ def main():
   item.update(paper=BY_NAME[item['name']]['paper'],caption=BY_NAME[item['name']]['caption']);item.setdefault('source','svg')
  assert len(catalog)==len(FIGURES)==36
  (SRC/'figures_manifest.json').write_text(json.dumps(catalog,ensure_ascii=False,indent=2),encoding='utf-8')
+ print_layout={f['name']:{key:f[key] for key in ('paper','orientation','max_width_mm','max_height_mm')} for f in FIGURES}
+ (SRC/'print_layout.json').write_text(json.dumps(print_layout,ensure_ascii=False,indent=2),encoding='utf-8')
  print(f'Created {len(catalog)} diagram sources')
 if __name__=='__main__':main()

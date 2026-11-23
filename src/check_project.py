@@ -11,7 +11,7 @@ from pypdf import PdfReader
 from project_model import *
 from diagram_catalog import FIGURES
 from build_documents import MAIN,GUIDE
-from dfd_model import validate_dfd,BOUNDARY,NAMES,LEAF_TITLES
+from dfd_model import validate_dfd,BOUNDARY,NAMES,LEAF_TITLES,FLOWS
 from business_case import OPERATIONS
 from specifications import field_rows,CONTRACTS,EXAMPLES
 from quality_metrics import check_reference
@@ -97,10 +97,26 @@ def check_docx():
  captions=[p.text for p in d.paragraphs if p.style.name=='Caption']
  assert captions==[f['caption'] for f in FIGURES]
  summary=json.loads((SRC/'build_summary.json').read_text(encoding='utf-8'))
- assert len(d.tables)==summary['document']['tables'],len(d.tables)
+ assert len(d.tables)==summary['document'].get('physical_tables',summary['document']['tables']),len(d.tables)
+ table_captions=[p.text for p in d.paragraphs if re.match(r'^Таблица\s+[А-ЯA-Z\d]',p.text)]
+ continued=[p.text for p in d.paragraphs if p.text.startswith('Продолжение таблицы ')]
+ assert len(table_captions)==summary['document']['tables']
+ assert len(continued)==len(d.tables)-len(table_captions)
+ assert all(t.rows[0]._tr.xpath('./w:trPr/w:tblHeader') for t in d.tables)
  assert [p.text for p in d.paragraphs if p.style.name=='Heading 1' and p.text.startswith('ПРИЛОЖЕНИЕ ')]==['ПРИЛОЖЕНИЕ '+x for x in 'АБВГДЕЖИ']
- for r in REQ:assert r[0] in alltext,r[0]
- for case in TESTS:assert case[0]+' '+case[1] in alltext,case[0]
+ normalized=' '.join(alltext.split())
+ def present(value):return ' '.join(str(value).split()) in normalized
+ for r in REQ:assert r[0] in alltext and present(r[1]),r[0]
+ for case in TESTS:
+  assert case[0]+' '+case[1] in alltext and present(case[2]) and present(case[3]),case[0]
+ for row in MODULES:
+  for value in row[3:]:assert present(value),(row[0],value)
+ for row in LEAVES:
+  for value in row[1:4]:assert present(value),(row[0],value)
+ for row in CONTRACTS:
+  for value in row[2:]:assert present(value),(row[0],value)
+ for row in FLOWS:
+  assert present(row[4]),row[0]
  for leaf in LEAVES:assert leaf[0] in alltext,leaf[0]
  for m,title,*_ in MODULES:assert m+' '+title in alltext,m
  reference=json.loads((ROOT/'docs/reference_structure.json').read_text(encoding='utf-8'))
@@ -120,7 +136,7 @@ def check_docx():
  for table_name,_,fields in ENTITIES:
   assert table_name in alltext
   for field,_,_ in fields:assert field in alltext,(table_name,field)
- assert d.styles['Normal'].font.size.pt==14 and d.styles['Normal'].paragraph_format.line_spacing==1.5
+ assert d.styles['Normal'].font.size.pt==12 and d.styles['Normal'].paragraph_format.line_spacing==1.5
  for s in d.sections:
   assert abs(s.left_margin.mm-30)<.1 and abs(s.right_margin.mm-15)<.1
   assert abs(s.top_margin.mm-20)<.1 and abs(s.bottom_margin.mm-20)<.1
@@ -135,7 +151,7 @@ def check_docx():
  with zipfile.ZipFile(MAIN) as z:
   assert b'pBdr' not in z.read('word/styles.xml')
  assert AUTHOR in '\n'.join(p.text for p in g.paragraphs)
- return {'main_docx_sha256':sha(MAIN),'guide_docx_sha256':sha(GUIDE),'figures':len(FIGURES),'tables':len(d.tables),'chapters':7,'numbered_headings':len(headings),'reference_structure_verified':True,'appendices':8,'author':AUTHOR,'group':GROUP,'images_match_sources':True}
+ return {'main_docx_sha256':sha(MAIN),'guide_docx_sha256':sha(GUIDE),'figures':len(FIGURES),'tables':len(table_captions),'physical_table_parts':len(d.tables),'table_continuations':len(continued),'full_requirement_and_test_texts_preserved':True,'chapters':7,'numbered_headings':len(headings),'reference_structure_verified':True,'appendices':8,'author':AUTHOR,'group':GROUP,'images_match_sources':True}
 
 def check_contracts():
  data=json.loads((ROOT/'contracts/openapi.json').read_text(encoding='utf-8'))
@@ -189,6 +205,11 @@ def check_contracts():
 
 def check_pdf(path):
  r=PdfReader(path);texts=[p.extract_text() or '' for p in r.pages]
+ if Path(path).resolve()==MAIN.with_suffix('.pdf').resolve():
+  norm=lambda value:''.join(value.replace('\u00ad','').split())
+  body=norm('\n'.join(re.sub(r'(?m)^\s*'+str(i)+r'\s*$','',text) for i,text in enumerate(texts,1)))
+  assert all(norm(row[1]) in body for row in REQ),'Неполный текст требования в PDF'
+  assert all(norm(row[2]) in body and norm(row[3]) in body for row in TESTS),'Неполный сценарий или норма в PDF'
  assert AUTHOR in texts[0] and GROUP in texts[0]
  assert all(len(x.strip())>25 for x in texts)
  assert all('Ошибка! Источник ссылки' not in x and 'Error! Bookmark' not in x for x in texts)

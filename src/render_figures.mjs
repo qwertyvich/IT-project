@@ -15,6 +15,7 @@ const codeDir=path.dirname(fileURLToPath(import.meta.url));
 const folder=path.resolve(process.argv[2]??path.join(codeDir,'..','figures'));
 const manifestPath=path.join(codeDir,'figures_manifest.json');
 const manifest=JSON.parse(await fs.readFile(manifestPath,'utf8'));
+const catalog=JSON.parse(await fs.readFile(path.join(codeDir,'print_layout.json'),'utf8'));
 const bundle=path.join(os.homedir(),'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules');
 let viz;
 for(const file of manifest.filter(i=>i.source==='dot').map(i=>i.name+'.dot')){
@@ -56,8 +57,9 @@ for(const item of manifest){
   const fonts=[...svg.matchAll(/font-size="([\d.]+)"/g)].map(m=>Number(m[1]));
   item.min_font_px=Math.min(...fonts);
   item.sha256_svg=crypto.createHash('sha256').update(svg).digest('hex');
-  const maxWmm=item.paper==='A3'?375:252;
-  const maxHmm=item.paper==='A3'?220:135;
+  Object.assign(item,catalog[item.name]);
+  const maxWmm=item.max_width_mm;
+  const maxHmm=item.max_height_mm;
   item.min_font_on_paper_pt=Number((Math.min(maxWmm*72/25.4/item.width,maxHmm*72/25.4/item.height)*item.min_font_px).toFixed(2));
   item.sha256_png=crypto.createHash('sha256').update(await fs.readFile(path.join(folder,item.name+'.png'))).digest('hex');
 }

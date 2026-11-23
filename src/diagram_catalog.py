@@ -44,3 +44,20 @@ GROUPS=[
 ]
 FIGURES=[dict(name=n,caption=f'Рисунок {letter}.{i} — {title}',paper=paper,letter=letter) for letter,_,items in GROUPS for i,(n,title,paper) in enumerate(items,1)]
 BY_NAME={x['name']:x for x in FIGURES}
+
+# Печатный формат выбирается по фактической геометрии и размеру подписей.
+# Подробные модели сохраняют A3; компактные представления печатаются на A4.
+A4_LANDSCAPE={
+ 'A4_logical_people','B1_context','B2_dfd','B3_tree','B4_clients','B5_cards',
+ 'B6_transfers','B7_loans','B8_reports','B9_resources','V7_states',
+ 'G1_architecture','G2_functioning','G3_reasoning','G4_business','G5_quality','D1_deployment','D2_realization','D3_transfer',
+ 'D4_schedule','D5_concurrency','D6_sequence','E1_quality',
+}
+A4_PORTRAIT={'V1_service','V2_clients','V6_reports','V8_reference','V9_close'}
+for figure in FIGURES:
+ if figure['name'] in A4_LANDSCAPE:
+  figure.update(paper='A4',orientation='landscape',max_width_mm=252,max_height_mm=135 if figure['name'] in {'A4_logical_people','B1_context'} else 145)
+ elif figure['name'] in A4_PORTRAIT:
+  figure.update(paper='A4',orientation='portrait',max_width_mm=165,max_height_mm=225)
+ else:
+  figure.update(paper='A3',orientation='landscape',max_width_mm=375,max_height_mm=220)

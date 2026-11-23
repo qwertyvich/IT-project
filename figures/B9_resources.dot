@@ -1,7 +1,8 @@
 digraph B9_resources {
-graph [rankdir=LR, bgcolor="white", pad=.12, nodesep=.35, ranksep=.65, splines=polyline, outputorder=edgesfirst];
+graph [rankdir=TB, bgcolor="white", pad=.12, nodesep=.35, ranksep=.65, splines=polyline, outputorder=edgesfirst];
 node [fontname="Arial", fontsize=22, margin=".12,.08", penwidth=1.3];
 edge [fontname="Arial", fontsize=21, color="#333333", penwidth=1.2, arrowsize=.75];
+graph [nodesep=.2, ranksep=.2];
 "F1" [label="F1\nВести клиентов,\nсчета и отделения", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="3.055"];
 "F2" [label="F2\nВести банковские\nкарты", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="2.972"];
 "F3" [label="F3\nУчитывать и\nпроводить переводы", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="3.403"];
@@ -13,22 +14,22 @@ edge [fontname="Arial", fontsize=21, color="#333333", penwidth=1.2, arrowsize=.7
 "D4" [shape=plain,style="",label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BORDER="1" SIDES="TLBR" BGCOLOR="#D9EAD3">D4</TD><TD BORDER="1" SIDES="TB" BGCOLOR="#D9EAD3">Договоры и плановые<BR/>платежи</TD></TR></TABLE>>];
 "D5" [shape=plain,style="",label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="7"><TR><TD BORDER="1" SIDES="TLBR" BGCOLOR="#D9EAD3">D5</TD><TD BORDER="1" SIDES="TB" BGCOLOR="#D9EAD3">Аудит</TD></TR></TABLE>>];
 D1 -> F1 [label="R01 Текущий\nконтекст"];
-F1 -> D1 [label="W01 Сохранённый\nконтекст"];
-D1 -> F3 [label="R03 Счета под\nблокировкой"];
-F3 -> D1 [label="W03 Парное\nизменение остатков"];
-D2 -> F2 [label="R22 Состояние\nкарты"];
-F2 -> D2 [label="W22 Сохранённая\nкарта"];
-D3 -> F3 [label="R33 Состояние\nперевода"];
+F1 -> D1 [label="W01\nСохранённый\nконтекст"];
+D1 -> F3 [label="R03 Счета\nпод\nблокировкой"];
+F3 -> D1 [label="W03 Парное\nизменение\nостатков"];
+D2 -> F2 [label="R22\nСостояние\nкарты"];
+F2 -> D2 [label="W22\nСохранённая\nкарта"];
+D3 -> F3 [label="R33\nСостояние\nперевода"];
 F3 -> D3 [label="W33\nЗафиксированный\nперевод"];
-D4 -> F4 [label="R44 Условия и\nистория"];
-F4 -> D4 [label="W44 Договор с\nпланом"];
-D1 -> F5 [label="R51 Сведения\nклиента и счетов"];
-D2 -> F5 [label="R52 Карты для\nсводки"];
-D3 -> F5 [label="R53 Переводы для\nотчёта"];
-D4 -> F5 [label="R54 Договоры для\nотчёта"];
+D4 -> F4 [label="R44 Условия\nи история"];
+F4 -> D4 [label="W44 Договор\nс планом"];
+D1 -> F5 [label="R51 Сведения\nклиента и\nсчетов"];
+D2 -> F5 [label="R52 Карты\nдля сводки"];
+D3 -> F5 [label="R53 Переводы\nдля отчёта"];
+D4 -> F5 [label="R54 Договоры\nдля отчёта"];
 D5 -> F5 [label="R55 История\nизменений"];
 F1 -> D5 [label="W15 Аудит\nконтекста"];
-F2 -> D5 [label="W25 Аудит карты"];
-F3 -> D5 [label="W35 Аудит перевода"];
-F4 -> D5 [label="W45 Аудит договора"];
+F2 -> D5 [label="W25 Аудит\nкарты"];
+F3 -> D5 [label="W35 Аудит\nперевода"];
+F4 -> D5 [label="W45 Аудит\nдоговора"];
 }

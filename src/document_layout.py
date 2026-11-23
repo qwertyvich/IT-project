@@ -13,7 +13,8 @@ from project_model import *
 
 
 class Writer:
-    def __init__(self):
+    def __init__(self,compact=False):
+        self.compact=compact;self.cover_stage=compact
         self.doc=Document();self.tables=0;self.figures=0;self.app_letter=None;self.app_tables={};self.pending_break=False;self.flow=False;self.after_table=False
         self.setup(self.doc.sections[0],False,first=True)
         self.styles()
@@ -50,9 +51,9 @@ class Writer:
                 for color in st.element.xpath('.//w:color'):
                     for key in list(color.attrib):
                         if 'theme' in key.lower():del color.attrib[key]
-        normal=d.styles['Normal'];pf=normal.paragraph_format
+        normal=d.styles['Normal'];normal.font.size=Pt(12 if self.compact else 14);pf=normal.paragraph_format
         pf.first_line_indent=Mm(12.5);pf.alignment=WD_ALIGN_PARAGRAPH.JUSTIFY
-        pf.line_spacing=1.5;pf.space_before=Pt(0);pf.space_after=Pt(0);pf.widow_control=True
+        pf.line_spacing=1.5;pf.space_before=Pt(0);pf.space_after=Pt(0);pf.widow_control=True;pf.keep_with_next=False
         for name in ('Heading 1','Heading 2','Heading 3'):
             st=d.styles[name];st.font.bold=True;st.font.size=Pt(14)
             pf=st.paragraph_format;pf.first_line_indent=Mm(12.5);pf.left_indent=Mm(0)
@@ -70,6 +71,7 @@ class Writer:
             st=d.styles[name];st.font.size=Pt(12);st.font.italic=False;st.font.bold=False
             st.paragraph_format.line_spacing=1.15;st.paragraph_format.first_line_indent=Mm(0)
     def p(self,text='',style=None,align=None,size=None,indent=None,before=0,after=0,keep=None):
+        if self.cover_stage and style!='Title' and size is None:size=14
         p=self.doc.add_paragraph(style=style)
         if self.pending_break:p.paragraph_format.page_break_before=True;self.pending_break=False
         if self.after_table:before=max(before,5);self.after_table=False
@@ -83,6 +85,7 @@ class Writer:
         return p
     def h(self,text,level=2):return self.p(text,f'Heading {level}')
     def structural(self,text,new=True):
+        if text=='РЕФЕРАТ':self.cover_stage=False
         if new:self.br()
         if text in ('РЕФЕРАТ','СОДЕРЖАНИЕ'):
             p=self.p(text,align=WD_ALIGN_PARAGRAPH.CENTER,indent=0,after=12)
@@ -94,13 +97,15 @@ class Writer:
     def page(self,title=None,level=2):
         if level==1 or not self.flow:self.br()
         if title:self.h(title,level)
-    def table(self,caption,headers,rows,widths=None,size=12):
+    def table(self,caption,headers,rows,widths=None,size=None):
+        size=size or (11 if self.compact else 12)
         self.tables+=1
         if self.app_letter:
             self.app_tables[self.app_letter]=self.app_tables.get(self.app_letter,0)+1
             number=f'{self.app_letter}.{self.app_tables[self.app_letter]}'
         else:number=str(self.tables)
         references={
+          'Деятельность, система и программный продукт':'Границы деятельности, системы и программного продукта сопоставлены',
           'Роли и результаты работы':'Распределение обязанностей и результатов приведено',
           'Правила предметной области':'Ограничения допустимых состояний перечислены',
           'Группы требований':'Группы требований сопоставлены с примерами проверок',
@@ -139,8 +144,10 @@ class Writer:
             if any(caption.endswith(' '+name) for name,_,_ in ENTITIES):
                 tx='Атрибуты, типы и ограничения отношения приведены'
             if tx is None:tx='Состав и характеристики данных приведены'
-        self.p(f'{tx} в таблице {number}.',keep=True,before=4)
-        cap=self.p(f'Таблица {number} — {caption}',indent=0,size=12,before=6,after=5,keep=True)
+        # Приложение содержит общую ссылку на диапазон своих таблиц.
+        # Не повторяем перед каждой спецификацией отдельную вводную строку.
+        if not self.app_letter:self.p(f'{tx} в таблице {number}.',keep=True,before=4)
+        cap=self.p(f'Таблица {number} — {caption}',indent=0,size=12,before=5,after=3,keep=True)
         cap.paragraph_format.line_spacing=1.15
         t=self.doc.add_table(rows=1,cols=len(headers));t.alignment=WD_TABLE_ALIGNMENT.CENTER;t.autofit=False
         if widths:
@@ -162,7 +169,7 @@ class Writer:
                 if widths:c.width=Mm(widths[j])
                 c.vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER
                 p=c.paragraphs[0];p.paragraph_format.first_line_indent=Mm(0);p.paragraph_format.space_after=Pt(0)
-                p.paragraph_format.line_spacing=1.0;p.paragraph_format.keep_with_next=(i<len(rows))
+                p.paragraph_format.line_spacing=1.0;p.paragraph_format.keep_with_next=(i==0)
                 p.alignment=WD_ALIGN_PARAGRAPH.CENTER if i==0 or (j==0 and len(str(tx))<14) else WD_ALIGN_PARAGRAPH.LEFT
                 r=p.add_run(str(tx));r.font.name='Times New Roman';r.font.size=Pt(size);r.font.bold=False
                 if i==0:
@@ -174,7 +181,7 @@ class Writer:
         self.pending_break=False;self.after_table=False
         s=self.doc.add_section(WD_SECTION_START.NEW_PAGE);self.setup(s,landscape,first=False,a3=a3)
         return s
-    def figure(self,filename,caption):
+    def figure(self,filename,caption,max_height_mm=None):
         self.figures+=1
         pic=FIG/(filename+'.png')
         from PIL import Image
@@ -182,7 +189,7 @@ class Writer:
         sec=self.doc.sections[-1]
         maxw=sec.page_width-sec.left_margin-sec.right_margin
         # 135 mm for landscape figures leaves room for section label, caption and explanation.
-        maxh=Mm(220 if sec.page_width.mm>400 else (135 if sec.orientation==WD_ORIENT.LANDSCAPE else 205))
+        maxh=Mm(max_height_mm or (220 if sec.page_width.mm>400 else (145 if sec.orientation==WD_ORIENT.LANDSCAPE else 225)))
         width=min(maxw,int(maxh*w/h))
         p=self.p('',align=WD_ALIGN_PARAGRAPH.CENTER,indent=0,keep=True)
         p.paragraph_format.line_spacing=1.0

@@ -1,116 +1,116 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2700" height="1550" viewBox="0 0 2700 1550"><defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 4 L 0 8" fill="none" stroke="black" stroke-width="1.7"/></marker></defs><rect width="100%" height="100%" fill="white"/><rect x="30" y="10" width="540" height="85" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
-<text x="300.0" y="59.78" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<text x="300.0" y="61.60" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="300.0" dy="0">Архитектурный компонент</tspan>
 </text>
 <rect x="770" y="10" width="1000" height="85" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
-<text x="1270.0" y="59.78" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<text x="1270.0" y="61.60" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="1270.0" dy="0">Разрабатываемые модули</tspan>
 </text>
 <rect x="1950" y="10" width="700" height="85" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
-<text x="2300.0" y="59.78" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<text x="2300.0" y="61.60" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="2300.0" dy="0">Технические средства и данные</tspan>
 </text>
 <rect x="30" y="150" width="540" height="150" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="300.0" y="216.90" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="300.0" y="214.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="300.0" dy="0">К1</tspan>
-<tspan x="300.0" dy="30.240000000000002">Клиентский контекст</tspan>
+<tspan x="300.0" dy="39.2">Клиентский контекст</tspan>
 </text>
 <rect x="770" y="150" width="1000" height="150" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="1270.0" y="216.60" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<text x="1270.0" y="214.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="1270.0" dy="0">М01 Клиенты и справочники</tspan>
-<tspan x="1270.0" dy="31.360000000000003">М02 Счета</tspan>
+<tspan x="1270.0" dy="39.2">М02 Счета</tspan>
 </text>
 <rect x="1950" y="150" width="700" height="150" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
-<text x="2300.0" y="216.90" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="2300.0" y="214.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="2300.0" dy="0">Формы; API; branch, client,</tspan>
-<tspan x="2300.0" dy="30.240000000000002">account, employee</tspan>
+<tspan x="2300.0" dy="39.2">account, employee</tspan>
 </text>
 <polyline points="570,225 770,225" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <polyline points="1770,225 1950,225" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="30" y="365" width="540" height="150" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="300.0" y="431.90" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="300.0" y="429.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="300.0" dy="0">К2</tspan>
-<tspan x="300.0" dy="30.240000000000002">Карточное обслуживание</tspan>
+<tspan x="300.0" dy="39.2">Карточное обслуживание</tspan>
 </text>
 <rect x="770" y="365" width="1000" height="150" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="1270.0" y="447.28" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<text x="1270.0" y="449.10" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="1270.0" dy="0">М03 Карты</tspan>
 </text>
 <rect x="1950" y="365" width="700" height="150" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
-<text x="2300.0" y="431.90" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="2300.0" y="429.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="2300.0" dy="0">Форма карты; правила срока;</tspan>
-<tspan x="2300.0" dy="30.240000000000002">bank_card</tspan>
+<tspan x="2300.0" dy="39.2">bank_card</tspan>
 </text>
 <polyline points="570,440 770,440" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <polyline points="1770,440 1950,440" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="30" y="580" width="540" height="150" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="300.0" y="646.90" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="300.0" y="644.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="300.0" dy="0">К3</tspan>
-<tspan x="300.0" dy="30.240000000000002">Проведение переводов</tspan>
+<tspan x="300.0" dy="39.2">Проведение переводов</tspan>
 </text>
 <rect x="770" y="580" width="1000" height="150" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="1270.0" y="646.60" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<text x="1270.0" y="644.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="1270.0" dy="0">М04 Подготовка перевода</tspan>
-<tspan x="1270.0" dy="31.360000000000003">М05 Транзакционное проведение</tspan>
+<tspan x="1270.0" dy="39.2">М05 Транзакционное проведение</tspan>
 </text>
 <rect x="1950" y="580" width="700" height="150" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
-<text x="2300.0" y="646.90" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="2300.0" y="644.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="2300.0" dy="0">Форма перевода; post_transfer;</tspan>
-<tspan x="2300.0" dy="30.240000000000002">account, transfer</tspan>
+<tspan x="2300.0" dy="39.2">account, transfer</tspan>
 </text>
 <polyline points="570,655 770,655" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <polyline points="1770,655 1950,655" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="30" y="795" width="540" height="150" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="300.0" y="861.90" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="300.0" y="859.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="300.0" dy="0">К4</tspan>
-<tspan x="300.0" dy="30.240000000000002">Кредитный учёт</tspan>
+<tspan x="300.0" dy="39.2">Кредитный учёт</tspan>
 </text>
 <rect x="770" y="795" width="1000" height="150" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="1270.0" y="861.60" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<text x="1270.0" y="859.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="1270.0" dy="0">М06 Кредитные договоры</tspan>
-<tspan x="1270.0" dy="31.360000000000003">М07 Расчёт графика</tspan>
+<tspan x="1270.0" dy="39.2">М07 Расчёт графика</tspan>
 </text>
 <rect x="1950" y="795" width="700" height="150" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
-<text x="2300.0" y="861.90" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="2300.0" y="859.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="2300.0" dy="0">Форма договора; build_schedule;</tspan>
-<tspan x="2300.0" dy="30.240000000000002">loan, loan_schedule</tspan>
+<tspan x="2300.0" dy="39.2">loan, loan_schedule</tspan>
 </text>
 <polyline points="570,870 770,870" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <polyline points="1770,870 1950,870" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="30" y="1010" width="540" height="150" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="300.0" y="1076.90" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="300.0" y="1074.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="300.0" dy="0">К5</tspan>
-<tspan x="300.0" dy="30.240000000000002">Контроль результатов</tspan>
+<tspan x="300.0" dy="39.2">Контроль результатов</tspan>
 </text>
 <rect x="770" y="1010" width="1000" height="150" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="1270.0" y="1076.60" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<text x="1270.0" y="1074.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="1270.0" dy="0">М08 Запросы и сверка</tspan>
-<tspan x="1270.0" dy="31.360000000000003">М09 Пользовательские сценарии</tspan>
+<tspan x="1270.0" dy="39.2">М09 Пользовательские сценарии</tspan>
 </text>
 <rect x="1950" y="1010" width="700" height="150" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
-<text x="2300.0" y="1076.90" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="2300.0" y="1074.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="2300.0" dy="0">VIEW; SQL Q1–Q8;</tspan>
-<tspan x="2300.0" dy="30.240000000000002">карточки, выписка, сводка</tspan>
+<tspan x="2300.0" dy="39.2">карточки, выписка, сводка</tspan>
 </text>
 <polyline points="570,1085 770,1085" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <polyline points="1770,1085 1950,1085" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="30" y="1225" width="540" height="150" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="300.0" y="1291.90" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="300.0" y="1289.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="300.0" dy="0">К6</tspan>
-<tspan x="300.0" dy="30.240000000000002">Доверие к действиям</tspan>
+<tspan x="300.0" dy="39.2">Доверие к действиям</tspan>
 </text>
 <rect x="770" y="1225" width="1000" height="150" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="1270.0" y="1291.60" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<text x="1270.0" y="1289.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="1270.0" dy="0">М10 Полномочия и контекст</tspan>
-<tspan x="1270.0" dy="31.360000000000003">М11 Аудит изменений</tspan>
+<tspan x="1270.0" dy="39.2">М11 Аудит изменений</tspan>
 </text>
 <rect x="1950" y="1225" width="700" height="150" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
-<text x="2300.0" y="1291.90" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="2300.0" y="1289.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="2300.0" dy="0">Политики ролей; триггеры;</tspan>
-<tspan x="2300.0" dy="30.240000000000002">audit_event</tspan>
+<tspan x="2300.0" dy="39.2">audit_event</tspan>
 </text>
 <polyline points="570,1300 770,1300" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <polyline points="1770,1300 1950,1300" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
-<text x="1350" y="1511.76" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<text x="1350" y="1514.10" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="1350" dy="0">Для каждого М-модуля заданы вход, выход, правило, ошибки и испытание; HTTP и SQL реализуют интерфейсы облика.</tspan>
 </text></svg>

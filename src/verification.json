@@ -60,10 +60,13 @@
     "scope": "Структурная проверка спецификации и примеров; не сертификация OpenAPI и не проверка работающего API."
   },
   "documents": {
-    "main_docx_sha256": "905ecad032a3e697d137bda1e38f8b8a7afb931209804c8d2eabb91f3ddbe1d9",
+    "main_docx_sha256": "74a99c1a2a2b99080f33f3bdc721a39aa020058571a0b0f634c9c09adec6ce5d",
     "guide_docx_sha256": "e979d69df3bda83e59993decadcdd8e9d68c304f3277c98aab661ce862638272",
     "figures": 36,
-    "tables": 73,
+    "tables": 51,
+    "physical_table_parts": 61,
+    "table_continuations": 10,
+    "full_requirement_and_test_texts_preserved": true,
     "chapters": 7,
     "numbered_headings": 52,
     "reference_structure_verified": true,
@@ -75,7 +78,7 @@
   "pdfs": [
     {
       "file": "Банковская система — Пояснительная записка.pdf",
-      "pages": 118,
+      "pages": 94,
       "outline_present": true,
       "no_blank_pages": true,
       "page_numbers_sequential": true,
@@ -85,7 +88,7 @@
         "/BCDGEE+TimesNewRomanPS-BoldMT": true,
         "/BCDHEE+TimesNewRomanPS-BoldMT": true
       },
-      "sha256": "9484a1b34bee0003cd22658c6dab9f504df3cef7538390a5cb76a9a517b47093"
+      "sha256": "812e55b4d9aceddeb8eaa1d095842fc4ec6faa5bc07612f7f750312e4baa2f18"
     },
     {
       "file": "Защита за 3 минуты и пояснения.pdf",

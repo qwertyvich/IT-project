@@ -1,0 +1,218 @@
+{
+  "A1_people": {
+    "paper": "A3",
+    "orientation": "landscape",
+    "max_width_mm": 375,
+    "max_height_mm": 220
+  },
+  "A2_products": {
+    "paper": "A3",
+    "orientation": "landscape",
+    "max_width_mm": 375,
+    "max_height_mm": 220
+  },
+  "A3_quality": {
+    "paper": "A3",
+    "orientation": "landscape",
+    "max_width_mm": 375,
+    "max_height_mm": 220
+  },
+  "A4_logical_people": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 135
+  },
+  "A5_logical_products": {
+    "paper": "A3",
+    "orientation": "landscape",
+    "max_width_mm": 375,
+    "max_height_mm": 220
+  },
+  "B1_context": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 135
+  },
+  "B2_dfd": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "B3_tree": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "B4_clients": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "B5_cards": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "B6_transfers": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "B7_loans": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "B8_reports": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "B9_resources": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "V1_service": {
+    "paper": "A4",
+    "orientation": "portrait",
+    "max_width_mm": 165,
+    "max_height_mm": 225
+  },
+  "V2_clients": {
+    "paper": "A4",
+    "orientation": "portrait",
+    "max_width_mm": 165,
+    "max_height_mm": 225
+  },
+  "V3_cards": {
+    "paper": "A3",
+    "orientation": "landscape",
+    "max_width_mm": 375,
+    "max_height_mm": 220
+  },
+  "V4_transfers": {
+    "paper": "A3",
+    "orientation": "landscape",
+    "max_width_mm": 375,
+    "max_height_mm": 220
+  },
+  "V5_loans": {
+    "paper": "A3",
+    "orientation": "landscape",
+    "max_width_mm": 375,
+    "max_height_mm": 220
+  },
+  "V6_reports": {
+    "paper": "A4",
+    "orientation": "portrait",
+    "max_width_mm": 165,
+    "max_height_mm": 225
+  },
+  "V7_states": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "V8_reference": {
+    "paper": "A4",
+    "orientation": "portrait",
+    "max_width_mm": 165,
+    "max_height_mm": 225
+  },
+  "V9_close": {
+    "paper": "A4",
+    "orientation": "portrait",
+    "max_width_mm": 165,
+    "max_height_mm": 225
+  },
+  "G1_architecture": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "G2_functioning": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "G3_reasoning": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "G4_business": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "G5_quality": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "D1_deployment": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "D2_realization": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "D3_transfer": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "D4_schedule": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "D5_concurrency": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "D6_sequence": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  },
+  "D7_component": {
+    "paper": "A3",
+    "orientation": "landscape",
+    "max_width_mm": 375,
+    "max_height_mm": 220
+  },
+  "E1_quality": {
+    "paper": "A4",
+    "orientation": "landscape",
+    "max_width_mm": 252,
+    "max_height_mm": 145
+  }
+}

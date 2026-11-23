@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-24",
+  "baseline_commit": "173c6375ea57be875821d31d7defe11670af0aa5",
+  "before": {
+    "pages": 118,
+    "formats": {
+      "A4 portrait": 82,
+      "A3 landscape": 33,
+      "A4 landscape": 3
+    },
+    "a4_area_equivalent": 151,
+    "sha256": "9484a1b34bee0003cd22658c6dab9f504df3cef7538390a5cb76a9a517b47093"
+  },
+  "after": {
+    "pages": 94,
+    "formats": {
+      "A4 portrait": 63,
+      "A3 landscape": 8,
+      "A4 landscape": 23
+    },
+    "a4_area_equivalent": 102,
+    "sha256": "812e55b4d9aceddeb8eaa1d095842fc4ec6faa5bc07612f7f750312e4baa2f18",
+    "logical_tables": 51,
+    "table_parts": 61,
+    "diagrams": 36,
+    "appendices": 8
+  },
+  "pages_reduction_percent": 20.34,
+  "paper_area_reduction_percent": 32.45,
+  "critical_arrays_equal": {
+    "requirements": true,
+    "tests": true,
+    "entities": true,
+    "modules": true,
+    "leaves": true,
+    "flows": true,
+    "operations": true,
+    "contracts": true
+  },
+  "complete_requirement_texts_in_pdf": 35,
+  "complete_test_actions_and_expected_results_in_pdf": 25,
+  "prose_words_before": 4554,
+  "prose_words_after": 3369,
+  "body_font_pt": 12,
+  "table_font_pt": 11,
+  "body_line_spacing": 1.5,
+  "table_pagination_verified": true,
+  "guide_docx_unchanged": true,
+  "guide_pdf_unchanged": true
+}

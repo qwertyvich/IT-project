@@ -23,8 +23,9 @@ def context():
  return g.save()
 
 def level_one():
- g=Graph('B2_dfd','LR',23)
- g.body.append('graph [nodesep=.6, ranksep=1.1];')
+ g=Graph('B2_dfd','TB',23)
+ # The flow labels stay complete; a vertical arrangement avoids a very wide sheet.
+ g.body.append('graph [nodesep=.12, ranksep=.5];')
  used=set()
  for id,a,b,name,_ in FLOWS:
   if not id.startswith(('F','I')):continue
@@ -40,15 +41,19 @@ def level_one():
  return g.save()
 
 def resource_view():
- g=Graph('B9_resources','LR',22)
+ g=Graph('B9_resources','TB',22)
+ g.body.append('graph [nodesep=.2, ranksep=.2];')
  for id in TITLES:node(g,id)
  for id in STORES:node(g,id)
  for id,a,b,name,_ in FLOWS:
-  if id.startswith(('R','W')):g.edge(a,b,id+' '+name)
+  if id.startswith(('R','W')):g.edge(a,b,wrap(id+' '+name,12))
  return g.save()
 
 def detail(parent):
- g=Graph(NAMES[parent],'LR',21);used=set()
+ # F5's three independent result leaves read across the page; the command
+ # decompositions use vertical ranks. This changes geometry only.
+ g=Graph(NAMES[parent],'LR' if parent=='F5' else 'TB',21);used=set()
+ g.body.append('graph [nodesep='+('.35' if parent=='F3' else '.12')+', ranksep=.2];')
  for a,b,id,name in detail_edges(parent):
   for x in (a,b):
    if x not in used:node(g,x);used.add(x)

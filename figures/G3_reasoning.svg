@@ -1,163 +1,169 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2800" height="1330" viewBox="0 0 2800 1330"><defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 4 L 0 8" fill="none" stroke="black" stroke-width="1.7"/></marker></defs><rect width="100%" height="100%" fill="white"/><rect x="20" y="15" width="400" height="80" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
-<text x="220.0" y="62.02" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="220.0" y="64.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="220.0" dy="0">Проблема</tspan>
 </text>
 <rect x="470" y="15" width="400" height="80" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
-<text x="670.0" y="62.02" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="670.0" y="64.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="670.0" dy="0">Гипотеза / решение</tspan>
 </text>
 <rect x="920" y="15" width="300" height="80" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
-<text x="1070.0" y="62.02" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="1070.0" y="64.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="1070.0" dy="0">Функция</tspan>
 </text>
 <rect x="1270" y="15" width="510" height="80" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
-<text x="1525.0" y="62.02" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="1525.0" y="64.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="1525.0" dy="0">Компонент → модуль</tspan>
 </text>
 <rect x="1830" y="15" width="400" height="80" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
-<text x="2030.0" y="62.02" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="2030.0" y="64.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="2030.0" dy="0">Проверка</tspan>
 </text>
 <rect x="2280" y="15" width="480" height="80" rx="0" fill="#A4C8EA" stroke="black" stroke-width="2"/>
-<text x="2520.0" y="62.02" text-anchor="middle" font-family="Arial" font-size="27" fill="black">
+<text x="2520.0" y="64.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="2520.0" dy="0">Мера результата</tspan>
 </text>
 <rect x="20" y="150" width="400" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="220.0" y="235.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="220.0" y="211.54" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="220.0" dy="0">ПР1</tspan>
-<tspan x="220.0" dy="28.000000000000004">Разрозненные реквизиты</tspan>
+<tspan x="220.0" dy="40.32000000000001">Разрозненные</tspan>
+<tspan x="220.0" dy="40.32000000000001">реквизиты</tspan>
 </text>
 <polyline points="420,242 470,242" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="470" y="150" width="400" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="670.0" y="221.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="670.0" y="211.54" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="670.0" dy="0">Г1</tspan>
-<tspan x="670.0" dy="28.000000000000004">Единый контекст</tspan>
-<tspan x="670.0" dy="28.000000000000004">и проверки до записи</tspan>
+<tspan x="670.0" dy="40.32000000000001">Единый контекст</tspan>
+<tspan x="670.0" dy="40.32000000000001">и проверки до записи</tspan>
 </text>
 <polyline points="870,242 920,242" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="920" y="150" width="300" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="1070.0" y="249.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="1070.0" y="251.86" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="1070.0" dy="0">F1, F2</tspan>
 </text>
 <polyline points="1220,242 1270,242" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1270" y="150" width="510" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="1525.0" y="235.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="1525.0" y="231.70" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="1525.0" dy="0">К1, К2, К6</tspan>
-<tspan x="1525.0" dy="28.000000000000004">М01–М03, М10, М11</tspan>
+<tspan x="1525.0" dy="40.32000000000001">М01–М03, М10, М11</tspan>
 </text>
 <polyline points="1780,242 1830,242" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1830" y="150" width="400" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="2030.0" y="249.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="2030.0" y="251.86" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="2030.0" dy="0">И01–И05, И23</tspan>
 </text>
 <polyline points="2230,242 2280,242" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="2280" y="150" width="480" height="185" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
-<text x="2520.0" y="235.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="2520.0" y="211.54" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="2520.0" dy="0">0 повторных переносов;</tspan>
-<tspan x="2520.0" dy="28.000000000000004">верные связанные карточки</tspan>
+<tspan x="2520.0" dy="40.32000000000001">верные связанные</tspan>
+<tspan x="2520.0" dy="40.32000000000001">карточки</tspan>
 </text>
 <rect x="20" y="430" width="400" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="220.0" y="515.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="220.0" y="491.54" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="220.0" dy="0">ПР2</tspan>
-<tspan x="220.0" dy="28.000000000000004">Повтор и гонка списаний</tspan>
+<tspan x="220.0" dy="40.32000000000001">Повтор и гонка</tspan>
+<tspan x="220.0" dy="40.32000000000001">списаний</tspan>
 </text>
 <polyline points="420,522 470,522" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="470" y="430" width="400" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="670.0" y="501.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="670.0" y="491.54" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="670.0" dy="0">Г2</tspan>
-<tspan x="670.0" dy="28.000000000000004">Одно атомарное</tspan>
-<tspan x="670.0" dy="28.000000000000004">проведение с ключом</tspan>
+<tspan x="670.0" dy="40.32000000000001">Одно атомарное</tspan>
+<tspan x="670.0" dy="40.32000000000001">проведение с ключом</tspan>
 </text>
 <polyline points="870,522 920,522" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="920" y="430" width="300" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="1070.0" y="529.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="1070.0" y="531.86" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="1070.0" dy="0">F3</tspan>
 </text>
 <polyline points="1220,522 1270,522" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1270" y="430" width="510" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="1525.0" y="515.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="1525.0" y="511.70" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="1525.0" dy="0">К3, К6</tspan>
-<tspan x="1525.0" dy="28.000000000000004">М04, М05, М10, М11</tspan>
+<tspan x="1525.0" dy="40.32000000000001">М04, М05, М10, М11</tspan>
 </text>
 <polyline points="1780,522 1830,522" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1830" y="430" width="400" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="2030.0" y="529.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="2030.0" y="531.86" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="2030.0" dy="0">И07–И12</tspan>
 </text>
 <polyline points="2230,522 2280,522" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="2280" y="430" width="480" height="185" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
-<text x="2520.0" y="515.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="2520.0" y="511.70" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="2520.0" dy="0">0 частичных операций;</tspan>
-<tspan x="2520.0" dy="28.000000000000004">сумма средств сохранена</tspan>
+<tspan x="2520.0" dy="40.32000000000001">сумма средств сохранена</tspan>
 </text>
 <rect x="20" y="710" width="400" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="220.0" y="795.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="220.0" y="771.54" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="220.0" dy="0">ПР3</tspan>
-<tspan x="220.0" dy="28.000000000000004">Ошибки плана кредита</tspan>
+<tspan x="220.0" dy="40.32000000000001">Ошибки плана</tspan>
+<tspan x="220.0" dy="40.32000000000001">кредита</tspan>
 </text>
 <polyline points="420,802 470,802" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="470" y="710" width="400" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="670.0" y="781.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="670.0" y="771.54" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="670.0" dy="0">Г3</tspan>
-<tspan x="670.0" dy="28.000000000000004">Единая формула</tspan>
-<tspan x="670.0" dy="28.000000000000004">и точный остаток</tspan>
+<tspan x="670.0" dy="40.32000000000001">Единая формула</tspan>
+<tspan x="670.0" dy="40.32000000000001">и точный остаток</tspan>
 </text>
 <polyline points="870,802 920,802" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="920" y="710" width="300" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="1070.0" y="809.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="1070.0" y="811.86" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="1070.0" dy="0">F4</tspan>
 </text>
 <polyline points="1220,802 1270,802" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1270" y="710" width="510" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="1525.0" y="795.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="1525.0" y="791.70" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="1525.0" dy="0">К4, К6</tspan>
-<tspan x="1525.0" dy="28.000000000000004">М06, М07, М10, М11</tspan>
+<tspan x="1525.0" dy="40.32000000000001">М06, М07, М10, М11</tspan>
 </text>
 <polyline points="1780,802 1830,802" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1830" y="710" width="400" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="2030.0" y="809.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="2030.0" y="811.86" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="2030.0" dy="0">И13–И16, И23</tspan>
 </text>
 <polyline points="2230,802 2280,802" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="2280" y="710" width="480" height="185" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
-<text x="2520.0" y="795.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="2520.0" y="771.54" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="2520.0" dy="0">Сумма долей = principal;</tspan>
-<tspan x="2520.0" dy="28.000000000000004">все даты и проценты верны</tspan>
+<tspan x="2520.0" dy="40.32000000000001">все даты и проценты</tspan>
+<tspan x="2520.0" dy="40.32000000000001">верны</tspan>
 </text>
 <rect x="20" y="990" width="400" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="220.0" y="1075.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="220.0" y="1051.54" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="220.0" dy="0">ПР4</tspan>
-<tspan x="220.0" dy="28.000000000000004">Несогласованные сводки</tspan>
+<tspan x="220.0" dy="40.32000000000001">Несогласованные</tspan>
+<tspan x="220.0" dy="40.32000000000001">сводки</tspan>
 </text>
 <polyline points="420,1082 470,1082" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="470" y="990" width="400" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="670.0" y="1061.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="670.0" y="1051.54" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="670.0" dy="0">Г4</tspan>
-<tspan x="670.0" dy="28.000000000000004">Общая модель</tspan>
-<tspan x="670.0" dy="28.000000000000004">и явный период</tspan>
+<tspan x="670.0" dy="40.32000000000001">Общая модель</tspan>
+<tspan x="670.0" dy="40.32000000000001">и явный период</tspan>
 </text>
 <polyline points="870,1082 920,1082" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="920" y="990" width="300" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="1070.0" y="1089.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="1070.0" y="1091.86" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="1070.0" dy="0">F5</tspan>
 </text>
 <polyline points="1220,1082 1270,1082" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1270" y="990" width="510" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="1525.0" y="1075.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="1525.0" y="1071.70" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="1525.0" dy="0">К5, К6</tspan>
-<tspan x="1525.0" dy="28.000000000000004">М08–М11</tspan>
+<tspan x="1525.0" dy="40.32000000000001">М08–М11</tspan>
 </text>
 <polyline points="1780,1082 1830,1082" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="1830" y="990" width="400" height="185" rx="12" fill="#FFF2B2" stroke="black" stroke-width="2"/>
-<text x="2030.0" y="1089.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="2030.0" y="1091.86" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="2030.0" dy="0">И17, И19, И23</tspan>
 </text>
 <polyline points="2230,1082 2280,1082" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <rect x="2280" y="990" width="480" height="185" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
-<text x="2520.0" y="1075.00" text-anchor="middle" font-family="Arial" font-size="25" fill="black">
+<text x="2520.0" y="1071.70" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="2520.0" dy="0">Верный эталон; p95;</tspan>
-<tspan x="2520.0" dy="28.000000000000004">три задачи без SQL</tspan>
+<tspan x="2520.0" dy="40.32000000000001">три задачи без SQL</tspan>
 </text>
-<text x="1400" y="1296.76" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<text x="1400" y="1299.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
 <tspan x="1400" dy="0">Г1–Г4 обеспечивают общую Г0. Польза организатору проверяется отдельно И24/И25: 30 пар А/Б и полный труд.</tspan>
 </text></svg>

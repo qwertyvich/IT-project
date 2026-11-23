@@ -1,7 +1,8 @@
 digraph G2_functioning {
-graph [rankdir=LR, bgcolor="white", pad=.12, nodesep=.35, ranksep=.65, splines=polyline, outputorder=edgesfirst];
+graph [rankdir=TB, bgcolor="white", pad=.12, nodesep=.35, ranksep=.65, splines=polyline, outputorder=edgesfirst];
 node [fontname="Arial", fontsize=24, margin=".12,.08", penwidth=1.3];
 edge [fontname="Arial", fontsize=23, color="#333333", penwidth=1.2, arrowsize=.75];
+graph [nodesep=.2, ranksep=.2];
 "e" [label="Сотрудник:\nобращение", shape="box", style="rounded,filled", fillcolor="#A4C8EA", width="2.181"];
 "ctx" [label="К1\nЕдиный клиентский\nконтекст", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="3.458"];
 "trust" [label="К6\nРоль, основание,\nключ", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="3.125"];
@@ -10,14 +11,14 @@ edge [fontname="Arial", fontsize=23, color="#333333", penwidth=1.2, arrowsize=.7
 "loan" [label="К4\nДоговор и план", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="2.805"];
 "control" [label="К5\nДокумент и сверка", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="3.334"];
 "done" [label="Проверенный\nрезультат\nдля пользователя", shape="box", style="rounded,filled", fillcolor="#D9EAD3", width="3.249"];
-e -> trust [label="Команда и сеанс"];
+e -> trust [label="Команда и\nсеанс"];
 trust -> ctx [label="Проверенные\nполномочия"];
-ctx -> card [label="Карточный маршрут"];
-ctx -> tr [label="Платёжный маршрут"];
-ctx -> loan [label="Кредитный маршрут"];
-ctx -> control [label="Карточка клиента"];
+ctx -> card [label="Карточный\nмаршрут"];
+ctx -> tr [label="Платёжный\nмаршрут"];
+ctx -> loan [label="Кредитный\nмаршрут"];
+ctx -> control [label="Карточка\nклиента"];
 card -> control [label="Состояние"];
 tr -> control [label="Подтверждённый\nфакт"];
-loan -> control [label="Условия и план"];
+loan -> control [label="Условия и\nплан"];
 control -> done [label="Документ;\nактуальность"];
 }

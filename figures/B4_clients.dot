@@ -1,7 +1,8 @@
 digraph B4_clients {
-graph [rankdir=LR, bgcolor="white", pad=.12, nodesep=.35, ranksep=.65, splines=polyline, outputorder=edgesfirst];
+graph [rankdir=TB, bgcolor="white", pad=.12, nodesep=.35, ranksep=.65, splines=polyline, outputorder=edgesfirst];
 node [fontname="Arial", fontsize=21, margin=".12,.08", penwidth=1.3];
 edge [fontname="Arial", fontsize=20, color="#333333", penwidth=1.2, arrowsize=.75];
+graph [nodesep=.12, ranksep=.2];
 "E1" [label="E1\nОператор", shape="box", style="filled", fillcolor="#A4C8EA", width="1.792"];
 "F1_1" [label="F1.1\nВести реквизиты\nклиента", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="2.778"];
 E1 -> F1_1 [label="F01 Клиент и счёт"];

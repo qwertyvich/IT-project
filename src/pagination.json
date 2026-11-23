@@ -1,0 +1,51 @@
+{
+  "rounds": [
+    {
+      "round": 1,
+      "tables_split": 1
+    },
+    {
+      "round": 2,
+      "tables_split": 1
+    },
+    {
+      "round": 3,
+      "tables_split": 1
+    },
+    {
+      "round": 4,
+      "tables_split": 1
+    },
+    {
+      "round": 5,
+      "tables_split": 1
+    },
+    {
+      "round": 6,
+      "tables_split": 1
+    },
+    {
+      "round": 7,
+      "tables_split": 1
+    },
+    {
+      "round": 8,
+      "tables_split": 1
+    },
+    {
+      "round": 9,
+      "tables_split": 1
+    },
+    {
+      "round": 10,
+      "tables_split": 1
+    },
+    {
+      "round": 11,
+      "tables_split": 0
+    }
+  ],
+  "all_table_parts_fit_one_page": true,
+  "physical_tables": 61,
+  "logical_tables": 51
+}

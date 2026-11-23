@@ -1,7 +1,8 @@
 digraph B7_loans {
-graph [rankdir=LR, bgcolor="white", pad=.12, nodesep=.35, ranksep=.65, splines=polyline, outputorder=edgesfirst];
+graph [rankdir=TB, bgcolor="white", pad=.12, nodesep=.35, ranksep=.65, splines=polyline, outputorder=edgesfirst];
 node [fontname="Arial", fontsize=21, margin=".12,.08", penwidth=1.3];
 edge [fontname="Arial", fontsize=20, color="#333333", penwidth=1.2, arrowsize=.75];
+graph [nodesep=.12, ranksep=.2];
 "E2" [label="E2\nКредитный\nспециалист", shape="box", style="filled", fillcolor="#A4C8EA", width="2.042"];
 "F4_1" [label="F4.1\nПроверить условия\nдоговора", shape="box", style="rounded,filled", fillcolor="#FFF2B2", width="3.125"];
 E2 -> F4_1 [label="F07 Условия и\nоснование"];

@@ -13,9 +13,11 @@
   "document": {
     "main": "C:\\Users\\user\\Desktop\\IT\\_work\\IT-project\\Готовая работа\\Банковская система — Пояснительная записка.docx",
     "figures": 36,
-    "tables": 73,
+    "tables": 51,
     "appendices": 8,
-    "sources": 16
+    "sources": 16,
+    "physical_tables": 61,
+    "continued_parts": 10
   },
   "guide": {
     "guide": "C:\\Users\\user\\Desktop\\IT\\_work\\IT-project\\Готовая работа\\Защита за 3 минуты и пояснения.docx",

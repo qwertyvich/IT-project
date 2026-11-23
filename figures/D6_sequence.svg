@@ -22,47 +22,48 @@
 </text>
 <polyline points="1770,115 1770,1025" fill="none" stroke="black" stroke-width="2" stroke-dasharray="8 5"/>
 <polyline points="180,180 650,180" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="247.5078125" y="132.56" width="334.984375" height="30.880000000000003" fill="white"/>
-<text x="415.0" y="154.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<rect x="236.0078125" y="131.44" width="357.984375" height="33.120000000000005" fill="white"/>
+<text x="415.0" y="154.76" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
 <tspan x="415.0" dy="0">1. Ключ, реквизиты, команда</tspan>
 </text>
 <polyline points="650,280 1190,280" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="712.4921875" y="232.56" width="415.015625" height="30.880000000000003" fill="white"/>
-<text x="920.0" y="254.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<rect x="697.9921875" y="231.44" width="444.015625" height="33.120000000000005" fill="white"/>
+<text x="920.0" y="254.76" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
 <tspan x="920.0" dy="0">2. Сеанс и transfer_id; проверка М10</tspan>
 </text>
 <polyline points="1190,380 1770,380" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="1309.5" y="332.56" width="341.0" height="30.880000000000003" fill="white"/>
-<text x="1480.0" y="354.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<rect x="1298.5" y="331.44" width="363.0" height="33.120000000000005" fill="white"/>
+<text x="1480.0" y="354.76" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
 <tspan x="1480.0" dy="0">3. BEGIN; вызов post_transfer</tspan>
 </text>
 <polyline points="1770,500 2030,500 2030,570 1770,570" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="1262.515625" y="481.12" width="474.96875" height="57.760000000000005" fill="white"/>
-<text x="1500" y="502.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
-<tspan x="1500" dy="0">4. Блокировки; проверки; остатки; статус;</tspan>
-<tspan x="1500" dy="26.880000000000003">аудит</tspan>
+<rect x="1292.0078125" y="478.88" width="415.984375" height="62.24000000000001" fill="white"/>
+<text x="1500" y="502.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="1500" dy="0">4. Блокировки; проверки; остатки;</tspan>
+<tspan x="1500" dy="29.120000000000005">статус; аудит</tspan>
 </text>
 <polyline points="1770,650 1190,650" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="1233.0625" y="602.56" width="493.875" height="30.880000000000003" fill="white"/>
-<text x="1480.0" y="624.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<rect x="1214.0625" y="601.44" width="531.875" height="33.120000000000005" fill="white"/>
+<text x="1480.0" y="624.76" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
 <tspan x="1480.0" dy="0">5. Подготовленный результат либо ошибка</tspan>
 </text>
 <polyline points="1190,760 1770,760" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="1255.0234375" y="712.56" width="449.953125" height="30.880000000000003" fill="white"/>
-<text x="1480.0" y="734.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<rect x="1239.0234375" y="711.44" width="481.953125" height="33.120000000000005" fill="white"/>
+<text x="1480.0" y="734.76" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
 <tspan x="1480.0" dy="0">6. COMMIT; известная ошибка — откат</tspan>
 </text>
 <polyline points="1190,890 650,890" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="669.015625" y="842.56" width="501.96875" height="30.880000000000003" fill="white"/>
-<text x="920.0" y="864.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
-<tspan x="920.0" dy="0">7. Подтверждённый итог / исход неизвестен</tspan>
+<rect x="721.015625" y="826.88" width="397.96875" height="62.24000000000001" fill="white"/>
+<text x="920.0" y="850.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="920.0" dy="0">7. Подтверждённый итог / исход</tspan>
+<tspan x="920.0" dy="29.120000000000005">неизвестен</tspan>
 </text>
 <polyline points="650,1000 180,1000" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
-<rect x="217.03125" y="939.12" width="395.9375" height="57.760000000000005" fill="white"/>
-<text x="415.0" y="960.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<rect x="203.53125" y="936.88" width="422.9375" height="62.24000000000001" fill="white"/>
+<text x="415.0" y="960.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
 <tspan x="415.0" dy="0">8. ID, статус; при потере ответа —</tspan>
-<tspan x="415.0" dy="26.880000000000003">сверка</tspan>
+<tspan x="415.0" dy="29.120000000000005">сверка</tspan>
 </text>
-<text x="1050" y="1086.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<text x="1050" y="1086.76" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
 <tspan x="1050" dy="0">Потеря подтверждения COMMIT: GET прежнего ID либо повтор с прежним ключом; отсутствие ответа не доказывает откат.</tspan>
 </text></svg>

@@ -1,7 +1,10 @@
 ﻿param(
   [Parameter(Mandatory=$true)][string]$InputDocx,
   [Parameter(Mandatory=$true)][string]$OutputPdf,
-  [switch]$Update
+  [switch]$Update,
+  [string]$TableMapPath,
+  [switch]$FirstSplitOnly,
+  [switch]$SkipPdf
 )
 $ErrorActionPreference = 'Stop'
 $word = $null
@@ -63,8 +66,41 @@ try {
     }
     $doc.Save()
   }
+  if ($TableMapPath) {
+    $tableMap = @()
+    for ($tableNumber = 1; $tableNumber -le $doc.Tables.Count; $tableNumber++) {
+      $table = $doc.Tables.Item($tableNumber)
+      if ($FirstSplitOnly.IsPresent) {
+        $rangeStart = $table.Range.Duplicate
+        $rangeStart.Collapse(1)
+        $rangeEnd = $table.Range.Duplicate
+        $rangeEnd.End = $rangeEnd.End - 1
+        $rangeEnd.Collapse(0)
+        if ($rangeStart.Information(3) -eq $rangeEnd.Information(3)) { continue }
+      }
+      $rowMap = @()
+      for ($rowNumber = 1; $rowNumber -le $table.Rows.Count; $rowNumber++) {
+        $rowRange = $table.Rows.Item($rowNumber).Range.Duplicate
+        $startRange = $rowRange.Duplicate
+        $startRange.Collapse(1)
+        $endRange = $rowRange.Duplicate
+        $endRange.End = $endRange.End - 1
+        $endRange.Collapse(0)
+        $rowMap += [PSCustomObject]@{row=$rowNumber; start=$startRange.Information(3); end=$endRange.Information(3)}
+      }
+      $tableMap += [PSCustomObject]@{table=$tableNumber; rows=$rowMap}
+      if ($FirstSplitOnly.IsPresent) { break }
+    }
+    $mapObject = if ($FirstSplitOnly.IsPresent) {
+      [PSCustomObject]@{table_count=$doc.Tables.Count; first_only=$true; records=@($tableMap)}
+    } else { @($tableMap) }
+    $jsonMap = ConvertTo-Json -InputObject $mapObject -Depth 6
+    [System.IO.File]::WriteAllText($TableMapPath, $jsonMap, (New-Object System.Text.UTF8Encoding($false)))
+  }
   # PDF/A embeds both Latin and Cyrillic font resources; bookmarks work in Preview.
-  $doc.ExportAsFixedFormat($OutputPdf, 17, $false, 0, 0, 1, 1, 0, $true, $true, 1, $true, $true, $true)
+  if (-not $SkipPdf.IsPresent) {
+    $doc.ExportAsFixedFormat($OutputPdf, 17, $false, 0, 0, 1, 1, 0, $true, $true, 1, $true, $true, $true)
+  }
   [PSCustomObject]@{Pages=$doc.ComputeStatistics(2); Pdf=$OutputPdf} | ConvertTo-Json -Compress
   $doc.Close(0)
   $doc = $null
