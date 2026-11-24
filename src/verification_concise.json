@@ -1,0 +1,200 @@
+{
+  "model": {
+    "domain_entities": 8,
+    "service_entities": 1,
+    "foreign_keys": 12,
+    "requirements": 35,
+    "tests": 25,
+    "functions": 5,
+    "components": 6,
+    "modules": 11,
+    "software_acceptance_tests_run": false
+  },
+  "dfd": {
+    "canonical_flows": 39,
+    "external_flows": 10,
+    "interfunctional_flows": 10,
+    "all_5_boundaries_balanced": true,
+    "leaf_titles_from_single_source": true
+  },
+  "reference_arithmetic": {
+    "transfer_total": "11000.00",
+    "concurrent_final_balance": "3000.00",
+    "interest": [
+      "1223.01",
+      "736.44",
+      "407.67"
+    ],
+    "interest_sum": "2367.12",
+    "rounding_parts": [
+      "33.33",
+      "33.33",
+      "33.35"
+    ],
+    "software_tests_run": false
+  },
+  "quality_formula": {
+    "synthetic_formula_reference": {
+      "verdict": "соответствует",
+      "u_a": "6",
+      "u_b": "4.5",
+      "reduction_percent": "25.00"
+    },
+    "boundary_cases": 34,
+    "bank_software_trials": false
+  },
+  "contracts": {
+    "fields_defined": 64,
+    "interface_contracts": 11,
+    "openapi_examples_checked": 4,
+    "loan_source_reference_required": true,
+    "all_local_schema_references_resolve": true,
+    "scope": "Структурная проверка спецификации и примеров; не сертификация OpenAPI и не проверка работающего API."
+  },
+  "module_tasks": {
+    "modules_with_individual_tasks": 11,
+    "all_task_test_ids_resolve": true,
+    "normalization_reference_examples_checked": true,
+    "authentication_source_edge_present": true,
+    "scope": "Проверены спецификации и контрольные примеры нормализации; банковские модули не исполнялись."
+  },
+  "printed_document": {
+    "chapters": 7,
+    "numbered_headings": 27,
+    "appendices": 5,
+    "figures": 20,
+    "logical_tables": 8,
+    "body_font_pt": 14,
+    "table_font_pt": 12,
+    "all_images_match_code": true,
+    "all_64_fields_present_on_er": true,
+    "all_15_operations_covered": true,
+    "layout": {
+      "main_pages": 46,
+      "main_before_appendices": 23,
+      "appendix_pages": 23,
+      "a3_pages": 4,
+      "figures": [
+        {
+          "figure": "C_A1_data",
+          "page": 24,
+          "font_pt": 8.852
+        },
+        {
+          "figure": "C_A2_quality",
+          "page": 25,
+          "font_pt": 10.204
+        },
+        {
+          "figure": "C_B1_context",
+          "page": 26,
+          "font_pt": 12.136
+        },
+        {
+          "figure": "C_B2_dfd",
+          "page": 27,
+          "font_pt": 8.883
+        },
+        {
+          "figure": "C_B9_resources",
+          "page": 28,
+          "font_pt": 10.856
+        },
+        {
+          "figure": "C_B3_tree",
+          "page": 29,
+          "font_pt": 9.023
+        },
+        {
+          "figure": "C_B6_transfers",
+          "page": 30,
+          "font_pt": 9.022
+        },
+        {
+          "figure": "C_B7_loans",
+          "page": 31,
+          "font_pt": 9.797
+        },
+        {
+          "figure": "C_V1_service",
+          "page": 32,
+          "font_pt": 9.355
+        },
+        {
+          "figure": "C_V2_clients",
+          "page": 33,
+          "font_pt": 9.355
+        },
+        {
+          "figure": "C_V3_cards",
+          "page": 34,
+          "font_pt": 8.994
+        },
+        {
+          "figure": "C_V4_transfers",
+          "page": 35,
+          "font_pt": 8.994
+        },
+        {
+          "figure": "C_V5_loans",
+          "page": 36,
+          "font_pt": 8.994
+        },
+        {
+          "figure": "C_V6_reports",
+          "page": 37,
+          "font_pt": 9.355
+        },
+        {
+          "figure": "C_V7_states",
+          "page": 38,
+          "font_pt": 9.524
+        },
+        {
+          "figure": "C_G1_architecture",
+          "page": 39,
+          "font_pt": 9.715
+        },
+        {
+          "figure": "C_D2_realization",
+          "page": 40,
+          "font_pt": 9.259
+        },
+        {
+          "figure": "C_D3_transfer",
+          "page": 41,
+          "font_pt": 11.735
+        },
+        {
+          "figure": "C_D4_schedule",
+          "page": 42,
+          "font_pt": 8.516
+        },
+        {
+          "figure": "C_D7_component",
+          "page": 43,
+          "font_pt": 10.63
+        }
+      ]
+    }
+  },
+  "pdfs": [
+    {
+      "file": "Банковская система — Пояснительная записка.pdf",
+      "pages": 46,
+      "sha256": "877150eada58cd61d019fc708276ac612b99e0caafe3e71279a8df70cf2a422d",
+      "no_blank_pages": true,
+      "fonts_embedded": true,
+      "page_numbers_sequential": true
+    },
+    {
+      "file": "Защита за 3 минуты и пояснения.pdf",
+      "pages": 2,
+      "sha256": "a7bfd5ee33397ff9b2655e95e16da92e34d83b160d48355874b4bfce8734256c",
+      "no_blank_pages": true,
+      "fonts_embedded": true,
+      "page_numbers_sequential": true
+    }
+  ],
+  "scope": "Проверка проектных документов и расчётных эталонов. Приёмочные испытания реализации не проводились."
+}

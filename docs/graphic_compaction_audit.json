@@ -11622,5 +11622,7 @@
       "scope": "All historical 98-page figure contact sheets plus full pages 36,48,78,80,89. No new clipping, label overlaps or caption overflow observed.",
       "qa_directory": "C:\\Users\\user\\Desktop\\IT\\_work\\print_compact_2026-11-24\\qa"
     }
-  }
+  },
+  "historical_edition": true,
+  "current_release": "CONCISE_REBUILD_2026-11-24.json"
 }

@@ -40,5 +40,7 @@
   "other_attribution_checks": 6,
   "bank_application_tests_performed": false,
   "full_working_documentation_claimed": false,
-  "notes_pages": 3
+  "notes_pages": 3,
+  "historical_edition": true,
+  "current_release": "CONCISE_REBUILD_2026-11-24.json"
 }

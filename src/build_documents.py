@@ -234,6 +234,5 @@ def main_doc():
 from defense_guide import guide_doc
 
 if __name__=='__main__':
- result={'model':validate_model(),'document':main_doc(),'guide':guide_doc()}
- (SRC/'build_summary.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
- print(json.dumps(result,ensure_ascii=False,indent=2))
+ from build_concise import main_doc as build_print_edition
+ build_print_edition()

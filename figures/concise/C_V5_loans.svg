@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="1500" viewBox="0 0 2600 1500"><defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 4 L 0 8" fill="none" stroke="black" stroke-width="1.7"/></marker></defs><rect width="100%" height="100%" fill="white"/><rect x="10" y="25" width="2580" height="1365" fill="white" stroke="black" stroke-width="2"/>
+<rect x="90" y="235" width="2500" height="1155" fill="#eeeeee"/>
+<polyline points="90,25 90,1390" fill="none" stroke="black" stroke-width="2"/>
+<polyline points="10,235 2590,235" fill="none" stroke="black" stroke-width="2"/>
+<g transform="rotate(-90 50 130)">
+<text x="50" y="122.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="50" dy="0">Кредитный</tspan>
+<tspan x="50" dy="26.880000000000003">специалист</tspan>
+</text>
+</g>
+<g transform="rotate(-90 50 810)">
+<text x="50" y="816.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="50" dy="0">Банковская система</tspan>
+</text>
+</g>
+<defs><marker id="dataArrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M1,1 L9,5 L1,9" fill="none" stroke="black" stroke-width="1.4"/></marker></defs>
+<circle cx="165" cy="130" r="22" fill="white" stroke="black" stroke-width="2"/>
+<text x="195" y="202.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="195" dy="0">Обращение</tspan>
+</text>
+<rect x="300" y="75" width="490" height="110" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="545.0" y="122.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="545.0" dy="0">Указать номер утверждённого</tspan>
+<tspan x="545.0" dy="26.880000000000003">договора, условия и даты плана</tspan>
+</text>
+<rect x="300" y="310" width="490" height="125" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="545.0" y="351.86" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="545.0" dy="0">К6 / профильный компонент</tspan>
+<tspan x="545.0" dy="26.880000000000003">Проверить сеанс, полномочия</tspan>
+<tspan x="545.0" dy="26.880000000000003">и обязательные реквизиты</tspan>
+</text>
+<polygon points="889.0,338 923,372.0 889.0,406 855,372.0" fill="white" stroke="black" stroke-width="2"/>
+<text x="889.0" y="380.84" text-anchor="middle" font-family="Arial" font-size="34" fill="black">
+<tspan x="889.0" dy="0">×</tspan>
+</text>
+<rect x="809.0078125" y="255.12" width="159.984375" height="57.760000000000005" fill="white"/>
+<text x="889" y="276.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="889" dy="0">Ввод и права</tspan>
+<tspan x="889" dy="26.880000000000003">допустимы?</tspan>
+</text>
+<rect x="1110" y="310" width="490" height="125" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="1355.0" y="365.30" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1355.0" dy="0">Вернуть причину отказа</tspan>
+<tspan x="1355.0" dy="26.880000000000003">без предметного изменения</tspan>
+</text>
+<rect x="1900" y="75" width="450" height="110" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="2125.0" y="122.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="2125.0" dy="0">Прочитать состояние</tspan>
+<tspan x="2125.0" dy="26.880000000000003">и передать результат клиенту</tspan>
+</text>
+<circle cx="2490" cy="130" r="22" fill="white" stroke="black" stroke-width="4"/>
+<text x="2405" y="202.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="2405" dy="0">Результат передан</tspan>
+</text>
+<polyline points="187,130.0 300,130.0" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="545.0,185 545.0,185 545.0,310 545.0,310" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="790,372.5 822.5,372.5 822.5,372.0 855,372.0" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="923,372.0 1016.5,372.0 1016.5,372.5 1110,372.5" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="946.7578125" y="334.68" width="45.984375" height="28.64" fill="white"/>
+<text x="969.75" y="354.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="969.75" dy="0">нет</tspan>
+</text>
+<polyline points="2350,130.0 2468,130.0" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1600,372.5 2460,372.5 2460,260 2125,260 2125.0,185" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="300" y="590" width="490" height="140" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="545.0" y="639.36" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="545.0" dy="0">ОП10 · К4 / М06</tspan>
+<tspan x="545.0" dy="26.880000000000003">Найти contract_ref;</tspan>
+<tspan x="545.0" dy="26.880000000000003">проверить реквизиты команды</tspan>
+</text>
+<polyline points="889.0,406 889,500 545,500 545.0,590" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="911.5" y="460.68" width="37.0" height="28.64" fill="white"/>
+<text x="930" y="480.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="930" dy="0">да</tspan>
+</text>
+<polygon points="904.0,626 938,660.0 904.0,694 870,660.0" fill="white" stroke="black" stroke-width="2"/>
+<text x="904.0" y="668.84" text-anchor="middle" font-family="Arial" font-size="34" fill="black">
+<tspan x="904.0" dy="0">×</tspan>
+</text>
+<rect x="807.5078125" y="543.12" width="192.984375" height="57.760000000000005" fill="white"/>
+<text x="904" y="564.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="904" dy="0">Номер договора</tspan>
+<tspan x="904" dy="26.880000000000003">новый?</tspan>
+</text>
+<polyline points="790,660.0 870,660.0" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="220" y="850" width="560" height="140" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="500.0" y="885.92" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="500.0" dy="0">ОП10 · К4 / М06</tspan>
+<tspan x="500.0" dy="26.880000000000003">Сопоставить счёт и все условия;</tspan>
+<tspan x="500.0" dy="26.880000000000003">прежний ID, состояние и план</tspan>
+<tspan x="500.0" dy="26.880000000000003">либо BT005 без новой записи</tspan>
+</text>
+<polyline points="904.0,694 904,800 500,800 500.0,850" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="937.5078125" y="750.68" width="144.984375" height="28.64" fill="white"/>
+<text x="1010" y="770.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="1010" dy="0">нет: прежний</tspan>
+</text>
+<polyline points="780,920.0 2460,920.0 2460,260 2125,260 2125.0,185" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1110" y="590" width="520" height="140" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="1370.0" y="639.36" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1370.0" dy="0">ОП10 / ОП11 · К4</tspan>
+<tspan x="1370.0" dy="26.880000000000003">М06: счёт и даты; М07: план;</tspan>
+<tspan x="1370.0" dy="26.880000000000003">первая дата позже начала</tspan>
+</text>
+<polyline points="938,660.0 1110,660.0" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1005.5" y="622.68" width="37.0" height="28.64" fill="white"/>
+<text x="1024.0" y="642.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="1024.0" dy="0">да</tspan>
+</text>
+<polygon points="1764.0,626 1798,660.0 1764.0,694 1730,660.0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1764.0" y="668.84" text-anchor="middle" font-family="Arial" font-size="34" fill="black">
+<tspan x="1764.0" dy="0">×</tspan>
+</text>
+<rect x="1633.015625" y="543.12" width="261.96875" height="57.760000000000005" fill="white"/>
+<text x="1764" y="564.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1764" dy="0">Суммы и сроки</tspan>
+<tspan x="1764" dy="26.880000000000003">полного плана верны?</tspan>
+</text>
+<polyline points="1630,660.0 1730,660.0" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1990" y="590" width="360" height="140" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="2170.0" y="639.36" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="2170.0" dy="0">Отклонить план;</tspan>
+<tspan x="2170.0" dy="26.880000000000003">договор и строки не</tspan>
+<tspan x="2170.0" dy="26.880000000000003">записывать</tspan>
+</text>
+<polyline points="1798,660.0 1990,660.0" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1871.0078125" y="622.68" width="45.984375" height="28.64" fill="white"/>
+<text x="1894.0" y="642.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="1894.0" dy="0">нет</tspan>
+</text>
+<polyline points="2350,660.0 2460,660.0 2460,260 2125,260 2125.0,185" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1110" y="960" width="520" height="140" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="1370.0" y="1009.36" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1370.0" dy="0">ОП11 · К4 / М06</tspan>
+<tspan x="1370.0" dy="26.880000000000003">Распознать contract_ref;</tspan>
+<tspan x="1370.0" dy="26.880000000000003">договор, план, аудит атомарно</tspan>
+</text>
+<polyline points="1764.0,694 1764,850 1370,850 1370.0,960" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1786.5" y="795.68" width="37.0" height="28.64" fill="white"/>
+<text x="1805" y="815.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="1805" dy="0">да</tspan>
+</text>
+<polygon points="1764.0,996 1798,1030.0 1764.0,1064 1730,1030.0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1764.0" y="1038.84" text-anchor="middle" font-family="Arial" font-size="34" fill="black">
+<tspan x="1764.0" dy="0">×</tspan>
+</text>
+<rect x="1629.0078125" y="926.56" width="269.984375" height="30.880000000000003" fill="white"/>
+<text x="1764" y="948.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1764" dy="0">Запись подтверждена?</tspan>
+</text>
+<polyline points="1630,1030.0 1730,1030.0" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1990" y="960" width="360" height="140" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="2170.0" y="1022.80" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="2170.0" dy="0">Новый / прежний ID;</tspan>
+<tspan x="2170.0" dy="26.880000000000003">состояние и полный план</tspan>
+</text>
+<rect x="1990" y="1210" width="360" height="150" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="2170.0" y="1250.92" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="2170.0" dy="0">Ошибка до фиксации —</tspan>
+<tspan x="2170.0" dy="26.880000000000003">откат;</tspan>
+<tspan x="2170.0" dy="26.880000000000003">нет ответа — повторить</tspan>
+<tspan x="2170.0" dy="26.880000000000003">прежний contract_ref</tspan>
+</text>
+<polyline points="1798,1030.0 1990,1030.0" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1875.5" y="992.68" width="37.0" height="28.64" fill="white"/>
+<text x="1894.0" y="1012.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="1894.0" dy="0">да</tspan>
+</text>
+<polyline points="2350,1030.0 2460,1030.0 2460,260 2125,260 2125.0,185" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1764.0,1064 1764,1285 1990,1285.0" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="1787.0078125" y="1235.68" width="45.984375" height="28.64" fill="white"/>
+<text x="1810" y="1255.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="1810" dy="0">нет</tspan>
+</text>
+<polyline points="2350,1285.0 2460,1285.0 2460,260 2125,260 2125.0,185" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M220,1110 H632 L650,1128 V1190 H220 Z M632,1110 V1128 H650" fill="white" stroke="black" stroke-width="2"/>
+<text x="435.0" y="1163.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="435.0" dy="0">ДО6 / ДО7 · Условия и план</tspan>
+</text>
+<polyline points="435.0,1110 435,1080 180,1080 180,790 545,790 545.0,730" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="4 5" marker-end="url(#dataArrow)"/>
+<path d="M1110,1255 C1110,1235 1630,1235 1630,1255 V1305 C1630,1325 1110,1325 1110,1305 Z" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<ellipse cx="1370.0" cy="1255" rx="260.0" ry="15" fill="none" stroke="black" stroke-width="2"/>
+<text x="1370.0" y="1293.24" text-anchor="middle" font-family="Arial" font-size="24" fill="black">
+<tspan x="1370.0" dy="0">Д4; Д5 · Договор, строки и аудит</tspan>
+</text>
+<polyline points="1370.0,1100 1370.0,1240" fill="none" stroke="black" stroke-width="1.6" stroke-dasharray="4 5" marker-end="url(#dataArrow)"/>
+<text x="1300.0" y="1439.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="1300.0" dy="0">BPMN 2.0.2: круг — событие; скруглённый блок — задача; ромб × — исключающий шлюз; + — подпроцесс.</tspan>
+</text>
+<text x="1300.0" y="1477.72" text-anchor="middle" font-family="Arial" font-size="22" fill="black">
+<tspan x="1300.0" dy="0">Плановые платежи не подтверждают выдачу и погашение. Закрытие по основанию рассматривается отдельно в разделе 4.4.</tspan>
+</text></svg>

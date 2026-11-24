@@ -49,5 +49,7 @@
   "guide_pdf_unchanged": true,
   "snapshot_commit": "aeb27447dcf1211dd68b00a3b6ad45ca1bb9d8bf",
   "is_current_delivery": false,
-  "followup_review": "teacher_alignment.json"
+  "followup_review": "teacher_alignment.json",
+  "historical_edition": true,
+  "current_release": "CONCISE_REBUILD_2026-11-24.json"
 }

@@ -255,6 +255,10 @@ def check_module_tasks():
   'scope':'Проверены спецификации и контрольные примеры нормализации; банковские модули не исполнялись.'}
 
 if __name__=='__main__':
+ if json.loads((SRC/'build_summary.json').read_text(encoding='utf-8'))['document'].get('edition')=='concise':
+  import subprocess
+  subprocess.run([sys.executable,str(SRC/'check_concise.py')],check=True)
+  raise SystemExit(0)
  result={'model':validate_model(),'reference_arithmetic':arithmetic(),'quality_formula':check_reference(),'diagrams':check_figures(),'contracts':check_contracts(),'module_tasks':check_module_tasks(),'documents':check_docx()}
  pdf_paths=sys.argv[1:] or [p for p in [MAIN.with_suffix('.pdf'),GUIDE.with_suffix('.pdf')] if p.is_file()]
  if pdf_paths:result['pdfs']=[check_pdf(p) for p in pdf_paths]

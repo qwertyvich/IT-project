@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2800" height="1950" viewBox="0 0 2800 1950"><defs><marker id="arrow" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 11 5 L 0 10" fill="none" stroke="black" stroke-width="2.4"/></marker></defs><rect width="100%" height="100%" fill="white"/><polyline points="1000,760 930,760 930,716 860,716" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="897.5" y="799.48" width="65.0" height="51.040000000000006" fill="white"/>
+<text x="930" y="835.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="930" dy="0">R1</tspan>
+</text>
+<polyline points="1400,600 1400,500 460,500 460,260" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1412.5" y="524.48" width="65.0" height="51.040000000000006" fill="white"/>
+<text x="1445" y="560.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="1445" dy="0">R2</tspan>
+</text>
+<polyline points="1000,180 860,180" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="897.5" y="104.47999999999999" width="65.0" height="51.040000000000006" fill="white"/>
+<text x="930" y="140.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="930" dy="0">R3</tspan>
+</text>
+<polyline points="1940,740 1800,740" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1837.5" y="664.48" width="65.0" height="51.040000000000006" fill="white"/>
+<text x="1870" y="700.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="1870" dy="0">R4</tspan>
+</text>
+<polyline points="2340,600 2340,475 1650,475 1650,364" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="2077.5" y="422.48" width="65.0" height="51.040000000000006" fill="white"/>
+<text x="2110" y="458.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="2110" dy="0">R5</tspan>
+</text>
+<polyline points="2180,1150 2180,1030 1280,1030 1280,914" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1757.5" y="964.48" width="65.0" height="51.040000000000006" fill="white"/>
+<text x="1790" y="1000.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="1790" dy="0">R6</tspan>
+</text>
+<polyline points="2480,1150 2480,1100 1520,1100 1520,914" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1757.5" y="1034.48" width="65.0" height="51.040000000000006" fill="white"/>
+<text x="1790" y="1070.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="1790" dy="0">R7</tspan>
+</text>
+<polyline points="2740,1280 2770,1280 2770,20 1400,20 1400,50" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="2657.5" y="1024.48" width="65.0" height="51.040000000000006" fill="white"/>
+<text x="2690" y="1060.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="2690" dy="0">R8</tspan>
+</text>
+<polyline points="1400,1150 1400,914" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1417.5" y="934.48" width="65.0" height="51.040000000000006" fill="white"/>
+<text x="1450" y="970.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="1450" dy="0">R9</tspan>
+</text>
+<polyline points="1200,1568 1200,1605 20,1605 20,410 1200,410 1200,364" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="556.0" y="1534.48" width="88.0" height="51.040000000000006" fill="white"/>
+<text x="600" y="1570.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="600" dy="0">R10</tspan>
+</text>
+<polyline points="860,1260 1000,1260" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="886.0234375" y="1184.48" width="87.953125" height="51.040000000000006" fill="white"/>
+<text x="930" y="1220.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="930" dy="0">R11</tspan>
+</text>
+<polyline points="1940,180 1800,180" fill="none" stroke="black" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1826.0" y="104.47999999999999" width="88.0" height="51.040000000000006" fill="white"/>
+<text x="1870" y="140.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="1870" dy="0">R12</tspan>
+</text>
+<rect x="60" y="50" width="800" height="210" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<rect x="60" y="50" width="800" height="92" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="460.0" y="91.44" text-anchor="middle" font-family="Arial" font-size="44" fill="black" font-weight="bold">
+<tspan x="460.0" dy="0">Отделение</tspan>
+</text>
+<text x="460.0" y="128.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="460.0" dy="0">branch</tspan>
+</text>
+<text x="78" y="178.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="78" dy="0">PK branch_id; UQ branch_code</tspan>
+</text>
+<text x="78" y="230.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="78" dy="0">city; address</tspan>
+</text>
+<rect x="1000" y="50" width="800" height="314" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<rect x="1000" y="50" width="800" height="92" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="1400.0" y="91.44" text-anchor="middle" font-family="Arial" font-size="44" fill="black" font-weight="bold">
+<tspan x="1400.0" dy="0">Сотрудник</tspan>
+</text>
+<text x="1400.0" y="128.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="1400.0" dy="0">employee</tspan>
+</text>
+<text x="1018" y="178.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1018" dy="0">PK employee_id; FK branch_id</tspan>
+</text>
+<text x="1018" y="230.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1018" dy="0">UQ login</tspan>
+</text>
+<text x="1018" y="282.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1018" dy="0">password_hash; full_name</tspan>
+</text>
+<text x="1018" y="334.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1018" dy="0">role_code; is_active</tspan>
+</text>
+<rect x="1940" y="50" width="800" height="366" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<rect x="1940" y="50" width="800" height="92" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="2340.0" y="91.44" text-anchor="middle" font-family="Arial" font-size="44" fill="black" font-weight="bold">
+<tspan x="2340.0" dy="0">Событие аудита</tspan>
+</text>
+<text x="2340.0" y="128.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="2340.0" dy="0">audit_event</tspan>
+</text>
+<text x="1958" y="178.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1958" dy="0">PK event_id; FK actor_id</tspan>
+</text>
+<text x="1958" y="230.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1958" dy="0">entity_type; entity_id</tspan>
+</text>
+<text x="1958" y="282.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1958" dy="0">action; occurred_at</tspan>
+</text>
+<text x="1958" y="334.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1958" dy="0">request_key</tspan>
+</text>
+<text x="1958" y="386.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1958" dy="0">old_data; new_data</tspan>
+</text>
+<rect x="60" y="600" width="800" height="314" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<rect x="60" y="600" width="800" height="92" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="460.0" y="641.44" text-anchor="middle" font-family="Arial" font-size="44" fill="black" font-weight="bold">
+<tspan x="460.0" dy="0">Клиент</tspan>
+</text>
+<text x="460.0" y="678.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="460.0" dy="0">client</tspan>
+</text>
+<text x="78" y="728.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="78" dy="0">PK client_id</tspan>
+</text>
+<text x="78" y="780.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="78" dy="0">full_name</tspan>
+</text>
+<text x="78" y="832.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="78" dy="0">UQ phone; UQ email</tspan>
+</text>
+<text x="78" y="884.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="78" dy="0">registered_at</tspan>
+</text>
+<rect x="1000" y="600" width="800" height="314" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<rect x="1000" y="600" width="800" height="92" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="1400.0" y="641.44" text-anchor="middle" font-family="Arial" font-size="44" fill="black" font-weight="bold">
+<tspan x="1400.0" dy="0">Счёт</tspan>
+</text>
+<text x="1400.0" y="678.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="1400.0" dy="0">account</tspan>
+</text>
+<text x="1018" y="728.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1018" dy="0">PK account_id; UQ account_number</tspan>
+</text>
+<text x="1018" y="780.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1018" dy="0">FK client_id; FK branch_id</tspan>
+</text>
+<text x="1018" y="832.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1018" dy="0">opened_on; status</tspan>
+</text>
+<text x="1018" y="884.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1018" dy="0">opening_balance; balance</tspan>
+</text>
+<rect x="1940" y="600" width="800" height="314" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<rect x="1940" y="600" width="800" height="92" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="2340.0" y="641.44" text-anchor="middle" font-family="Arial" font-size="44" fill="black" font-weight="bold">
+<tspan x="2340.0" dy="0">Банковская карта</tspan>
+</text>
+<text x="2340.0" y="678.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="2340.0" dy="0">bank_card</tspan>
+</text>
+<text x="1958" y="728.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1958" dy="0">PK card_id; UQ card_number</tspan>
+</text>
+<text x="1958" y="780.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1958" dy="0">FK account_id; FK issued_by</tspan>
+</text>
+<text x="1958" y="832.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1958" dy="0">issued_on; expires_on</tspan>
+</text>
+<text x="1958" y="884.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1958" dy="0">status</tspan>
+</text>
+<rect x="60" y="1150" width="800" height="262" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<rect x="60" y="1150" width="800" height="92" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="460.0" y="1191.44" text-anchor="middle" font-family="Arial" font-size="44" fill="black" font-weight="bold">
+<tspan x="460.0" dy="0">Плановый платёж</tspan>
+</text>
+<text x="460.0" y="1228.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="460.0" dy="0">loan_schedule</tspan>
+</text>
+<text x="78" y="1278.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="78" dy="0">PK/FK loan_id; PK payment_no</tspan>
+</text>
+<text x="78" y="1330.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="78" dy="0">due_on</tspan>
+</text>
+<text x="78" y="1382.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="78" dy="0">principal_part; interest_part</tspan>
+</text>
+<rect x="1000" y="1150" width="800" height="418" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<rect x="1000" y="1150" width="800" height="92" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="1400.0" y="1191.44" text-anchor="middle" font-family="Arial" font-size="44" fill="black" font-weight="bold">
+<tspan x="1400.0" dy="0">Кредитный договор</tspan>
+</text>
+<text x="1400.0" y="1228.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="1400.0" dy="0">loan</tspan>
+</text>
+<text x="1018" y="1278.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1018" dy="0">PK loan_id</tspan>
+</text>
+<text x="1018" y="1330.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1018" dy="0">UQ contract_ref</tspan>
+</text>
+<text x="1018" y="1382.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1018" dy="0">FK account_id; FK created_by</tspan>
+</text>
+<text x="1018" y="1434.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1018" dy="0">principal; annual_rate</tspan>
+</text>
+<text x="1018" y="1486.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1018" dy="0">issued_on; due_on</tspan>
+</text>
+<text x="1018" y="1538.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1018" dy="0">status; close_ref</tspan>
+</text>
+<rect x="1940" y="1150" width="800" height="418" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<rect x="1940" y="1150" width="800" height="92" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="2340.0" y="1191.44" text-anchor="middle" font-family="Arial" font-size="44" fill="black" font-weight="bold">
+<tspan x="2340.0" dy="0">Перевод</tspan>
+</text>
+<text x="2340.0" y="1228.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="2340.0" dy="0">transfer</tspan>
+</text>
+<text x="1958" y="1278.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1958" dy="0">PK transfer_id</tspan>
+</text>
+<text x="1958" y="1330.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1958" dy="0">FK from_account_id</tspan>
+</text>
+<text x="1958" y="1382.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1958" dy="0">FK to_account_id; FK created_by</tspan>
+</text>
+<text x="1958" y="1434.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1958" dy="0">amount; status</tspan>
+</text>
+<text x="1958" y="1486.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1958" dy="0">transferred_at; finished_at</tspan>
+</text>
+<text x="1958" y="1538.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1958" dy="0">UQ request_key</tspan>
+</text>
+<text x="70" y="1650.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="70" dy="0">R1 счёт → клиент</tspan>
+</text>
+<text x="990" y="1650.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="990" dy="0">R2 счёт → отделение</tspan>
+</text>
+<text x="1910" y="1650.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1910" dy="0">R3 сотрудник → отделение</tspan>
+</text>
+<text x="70" y="1702.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="70" dy="0">R4 карта → счёт</tspan>
+</text>
+<text x="990" y="1702.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="990" dy="0">R5 карта → регистратор</tspan>
+</text>
+<text x="1910" y="1702.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1910" dy="0">R6 перевод → счёт списания</tspan>
+</text>
+<text x="70" y="1754.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="70" dy="0">R7 перевод → счёт зачисления</tspan>
+</text>
+<text x="990" y="1754.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="990" dy="0">R8 перевод → создатель</tspan>
+</text>
+<text x="1910" y="1754.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1910" dy="0">R9 договор → счёт</tspan>
+</text>
+<text x="70" y="1806.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="70" dy="0">R10 договор → создатель</tspan>
+</text>
+<text x="990" y="1806.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="990" dy="0">R11 платёж → договор</tspan>
+</text>
+<text x="1910" y="1806.92" text-anchor="start" font-family="Arial" font-size="42" fill="black">
+<tspan x="1910" dy="0">R12 аудит → автор</tspan>
+</text>
+<text x="1400" y="1880.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="1400" dy="0">PK — ключ; FK — ссылка; UQ — уникальность. FK → PK: у дочерней записи 1 родитель, у родителя 0..N записей.</tspan>
+</text>
+<text x="1400" y="1930.92" text-anchor="middle" font-family="Arial" font-size="42" fill="black">
+<tspan x="1400" dy="0">entity_id аудита — идентификатор объекта без общего FK. Пересечение линий без узла не создаёт отношения.</tspan>
+</text></svg>

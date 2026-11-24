@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="1450" viewBox="0 0 2600 1450"><defs><marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M 0 0 L 9 4 L 0 8" fill="none" stroke="black" stroke-width="1.7"/></marker></defs><rect width="100%" height="100%" fill="white"/><rect x="70" y="70" width="600" height="160" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="370.0" y="141.00" text-anchor="middle" font-family="Arial" font-size="30" fill="black">
+<tspan x="370.0" dy="0">М09</tspan>
+<tspan x="370.0" dy="33.6">Форма и JSON-запрос</tspan>
+</text>
+<rect x="70" y="480" width="600" height="180" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="370.0" y="561.00" text-anchor="middle" font-family="Arial" font-size="30" fill="black">
+<tspan x="370.0" dy="0">М10</tspan>
+<tspan x="370.0" dy="33.6">Проверенный actor и роль</tspan>
+</text>
+<rect x="70" y="1010" width="600" height="210" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="370.0" y="1106.00" text-anchor="middle" font-family="Arial" font-size="30" fill="black">
+<tspan x="370.0" dy="0">М04</tspan>
+<tspan x="370.0" dy="33.6">prepare / cancel / resolve_repeat</tspan>
+</text>
+<rect x="960" y="1010" width="700" height="230" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="1310.0" y="1116.00" text-anchor="middle" font-family="Arial" font-size="30" fill="black">
+<tspan x="1310.0" dy="0">М05 · PostingService.post</tspan>
+<tspan x="1310.0" dy="33.6">BEGIN / COMMIT / ROLLBACK</tspan>
+</text>
+<rect x="960" y="70" width="700" height="230" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="1310.0" y="159.20" text-anchor="middle" font-family="Arial" font-size="30" fill="black">
+<tspan x="1310.0" dy="0">М05 · post_transfer</tspan>
+<tspan x="1310.0" dy="33.6">Блокировки; проверки;</tspan>
+<tspan x="1310.0" dy="33.6">два остатка; completed</tspan>
+</text>
+<rect x="1900" y="70" width="600" height="200" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="2200.0" y="161.00" text-anchor="middle" font-family="Arial" font-size="30" fill="black">
+<tspan x="2200.0" dy="0">М11</tspan>
+<tspan x="2200.0" dy="33.6">Аудит той же транзакции</tspan>
+</text>
+<rect x="1900" y="540" width="600" height="230" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="2200.0" y="646.00" text-anchor="middle" font-family="Arial" font-size="30" fill="black">
+<tspan x="2200.0" dy="0">Д1 / Д3 / Д5</tspan>
+<tspan x="2200.0" dy="33.6">account; transfer; audit_event</tspan>
+</text>
+<rect x="1900" y="1050" width="600" height="170" rx="12" fill="#eeeeee" stroke="black" stroke-width="2"/>
+<text x="2200.0" y="1126.00" text-anchor="middle" font-family="Arial" font-size="30" fill="black">
+<tspan x="2200.0" dy="0">М09</tspan>
+<tspan x="2200.0" dy="33.6">Согласованный итог или отказ</tspan>
+</text>
+<polyline points="370,230 370,480" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="370,660 370,1010" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="670,1115 960,1115" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1110,1010 1110,300" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1510,300 1510,1010" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1660,170 1900,170" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1660,270 1780,270 1780,590 1900,590" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="2200,270 2200,540" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<polyline points="1660,1135 1900,1135" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="214.0" y="323.88" width="312.0" height="62.24000000000001" fill="white"/>
+<text x="370" y="347.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="370" dy="0">Т01 HTTPS; JSON UTF-8</tspan>
+<tspan x="370" dy="29.120000000000005">команда; cookie сеанса</tspan>
+</text>
+<rect x="194.0" y="803.88" width="352.0" height="62.24000000000001" fill="white"/>
+<text x="370" y="827.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="370" dy="0">Т02 Python DTO</tspan>
+<tspan x="370" dy="29.120000000000005">команда и доверенный actor</tspan>
+</text>
+<rect x="744.0" y="1083.88" width="142.0" height="62.24000000000001" fill="white"/>
+<text x="815" y="1107.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="815" dy="0">Т03 Python</tspan>
+<tspan x="815" dy="29.120000000000005">transfer_id</tspan>
+</text>
+<rect x="998.5" y="594.3199999999999" width="223.0" height="91.36000000000001" fill="white"/>
+<text x="1110" y="617.64" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="1110" dy="0">Т04 psycopg; SQL</tspan>
+<tspan x="1110" dy="29.120000000000005">ID; actor;</tspan>
+<tspan x="1110" dy="29.120000000000005">request_id</tspan>
+</text>
+<rect x="1367.0390625" y="594.3199999999999" width="285.921875" height="91.36000000000001" fill="white"/>
+<text x="1510" y="617.64" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="1510" dy="0">Т07 JSONB /</tspan>
+<tspan x="1510" dy="29.120000000000005">SQLSTATE;</tspan>
+<tspan x="1510" dy="29.120000000000005">подготовленный исход</tspan>
+</text>
+<rect x="1708.5078125" y="124.32" width="142.984375" height="91.36000000000001" fill="white"/>
+<text x="1780" y="147.64" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="1780" dy="0">Т05 SQL</tspan>
+<tspan x="1780" dy="29.120000000000005">OLD/NEW;</tspan>
+<tspan x="1780" dy="29.120000000000005">ключ; actor</tspan>
+</text>
+<rect x="1715.0" y="374.32" width="130.0" height="91.36000000000001" fill="white"/>
+<text x="1780" y="397.64" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="1780" dy="0">Т06 SQL</tspan>
+<tspan x="1780" dy="29.120000000000005">остатки;</tspan>
+<tspan x="1780" dy="29.120000000000005">completed</tspan>
+</text>
+<rect x="2052.0" y="373.88" width="296.0" height="62.24000000000001" fill="white"/>
+<text x="2200" y="397.20" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="2200" dy="0">Т06 та же транзакция</tspan>
+<tspan x="2200" dy="29.120000000000005">неизменяемое событие</tspan>
+</text>
+<rect x="1679.0" y="1089.32" width="202.0" height="91.36000000000001" fill="white"/>
+<text x="1780" y="1112.64" text-anchor="middle" font-family="Arial" font-size="26" fill="black">
+<tspan x="1780" dy="0">Т08 JSON</tspan>
+<tspan x="1780" dy="29.120000000000005">итог после</tspan>
+<tspan x="1780" dy="29.120000000000005">COMMIT / отказ</tspan>
+</text>
+<text x="1300" y="1367.28" text-anchor="middle" font-family="Arial" font-size="28" fill="black">
+<tspan x="1300" dy="0">Т01–Т08: типы — в разделе 6.2. Успех после COMMIT; потеря подтверждения требует сверки прежнего ID, а не нового списания.</tspan>
+</text></svg>

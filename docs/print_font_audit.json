@@ -1,261 +1,110 @@
 {
-  "pdf_sha256": "3cb804aeaf39115e15e4da0e067b1b63efd62d54add62b66f482b47dc7a77d96",
-  "pages": 95,
+  "edition": "concise",
+  "pdf_sha256": "877150eada58cd61d019fc708276ac612b99e0caafe3e71279a8df70cf2a422d",
+  "pages": 46,
+  "body_font_pt": 14,
+  "table_font_pt": 12,
   "figures": [
     {
-      "figure": "A1_people",
+      "figure": "C_A1_data",
+      "page": 24,
+      "font_pt": 8.852
+    },
+    {
+      "figure": "C_A2_quality",
+      "page": 25,
+      "font_pt": 10.204
+    },
+    {
+      "figure": "C_B1_context",
+      "page": 26,
+      "font_pt": 12.136
+    },
+    {
+      "figure": "C_B2_dfd",
+      "page": 27,
+      "font_pt": 8.883
+    },
+    {
+      "figure": "C_B9_resources",
+      "page": 28,
+      "font_pt": 10.856
+    },
+    {
+      "figure": "C_B3_tree",
+      "page": 29,
+      "font_pt": 9.023
+    },
+    {
+      "figure": "C_B6_transfers",
+      "page": 30,
+      "font_pt": 9.022
+    },
+    {
+      "figure": "C_B7_loans",
+      "page": 31,
+      "font_pt": 9.797
+    },
+    {
+      "figure": "C_V1_service",
+      "page": 32,
+      "font_pt": 9.355
+    },
+    {
+      "figure": "C_V2_clients",
+      "page": 33,
+      "font_pt": 9.355
+    },
+    {
+      "figure": "C_V3_cards",
       "page": 34,
-      "paper": "A3",
-      "font_pt": 9.817,
-      "matches_manifest": true
+      "font_pt": 8.994
     },
     {
-      "figure": "A2_products",
+      "figure": "C_V4_transfers",
       "page": 35,
-      "paper": "A3",
-      "font_pt": 8.391,
-      "matches_manifest": true
+      "font_pt": 8.994
     },
     {
-      "figure": "A3_quality",
+      "figure": "C_V5_loans",
       "page": 36,
-      "paper": "A3",
-      "font_pt": 8.589,
-      "matches_manifest": true
+      "font_pt": 8.994
     },
     {
-      "figure": "A4_logical_people",
+      "figure": "C_V6_reports",
       "page": 37,
-      "paper": "A4",
-      "font_pt": 9.688,
-      "matches_manifest": true
+      "font_pt": 9.355
     },
     {
-      "figure": "A5_logical_products",
+      "figure": "C_V7_states",
       "page": 38,
-      "paper": "A3",
-      "font_pt": 9.697,
-      "matches_manifest": true
+      "font_pt": 9.524
     },
     {
-      "figure": "B1_context",
+      "figure": "C_G1_architecture",
+      "page": 39,
+      "font_pt": 9.715
+    },
+    {
+      "figure": "C_D2_realization",
+      "page": 40,
+      "font_pt": 9.259
+    },
+    {
+      "figure": "C_D3_transfer",
+      "page": 41,
+      "font_pt": 11.735
+    },
+    {
+      "figure": "C_D4_schedule",
       "page": 42,
-      "paper": "A4",
-      "font_pt": 12.139,
-      "matches_manifest": true
+      "font_pt": 8.516
     },
     {
-      "figure": "B2_dfd",
+      "figure": "C_D7_component",
       "page": 43,
-      "paper": "A4",
-      "font_pt": 8.884,
-      "matches_manifest": true
-    },
-    {
-      "figure": "B3_tree",
-      "page": 44,
-      "paper": "A4",
-      "font_pt": 9.023,
-      "matches_manifest": true
-    },
-    {
-      "figure": "B4_clients",
-      "page": 45,
-      "paper": "A4",
-      "font_pt": 8.685,
-      "matches_manifest": true
-    },
-    {
-      "figure": "B5_cards",
-      "page": 46,
-      "paper": "A4",
-      "font_pt": 10.068,
-      "matches_manifest": true
-    },
-    {
-      "figure": "B6_transfers",
-      "page": 47,
-      "paper": "A4",
-      "font_pt": 9.023,
-      "matches_manifest": true
-    },
-    {
-      "figure": "B7_loans",
-      "page": 48,
-      "paper": "A4",
-      "font_pt": 9.798,
-      "matches_manifest": true
-    },
-    {
-      "figure": "B8_reports",
-      "page": 49,
-      "paper": "A4",
-      "font_pt": 9.537,
-      "matches_manifest": true
-    },
-    {
-      "figure": "B9_resources",
-      "page": 50,
-      "paper": "A4",
-      "font_pt": 10.858,
-      "matches_manifest": true
-    },
-    {
-      "figure": "V1_service",
-      "page": 53,
-      "paper": "A4",
-      "font_pt": 9.355,
-      "matches_manifest": true
-    },
-    {
-      "figure": "V2_clients",
-      "page": 54,
-      "paper": "A4",
-      "font_pt": 9.355,
-      "matches_manifest": true
-    },
-    {
-      "figure": "V3_cards",
-      "page": 55,
-      "paper": "A3",
-      "font_pt": 8.995,
-      "matches_manifest": true
-    },
-    {
-      "figure": "V4_transfers",
-      "page": 56,
-      "paper": "A3",
-      "font_pt": 8.995,
-      "matches_manifest": true
-    },
-    {
-      "figure": "V5_loans",
-      "page": 57,
-      "paper": "A3",
-      "font_pt": 8.995,
-      "matches_manifest": true
-    },
-    {
-      "figure": "V6_reports",
-      "page": 58,
-      "paper": "A4",
-      "font_pt": 9.355,
-      "matches_manifest": true
-    },
-    {
-      "figure": "V7_states",
-      "page": 59,
-      "paper": "A4",
-      "font_pt": 9.524,
-      "matches_manifest": true
-    },
-    {
-      "figure": "V8_reference",
-      "page": 60,
-      "paper": "A4",
-      "font_pt": 9.355,
-      "matches_manifest": true
-    },
-    {
-      "figure": "V9_close",
-      "page": 61,
-      "paper": "A4",
-      "font_pt": 9.355,
-      "matches_manifest": true
-    },
-    {
-      "figure": "G1_architecture",
-      "page": 64,
-      "paper": "A4",
-      "font_pt": 9.716,
-      "matches_manifest": true
-    },
-    {
-      "figure": "G2_functioning",
-      "page": 65,
-      "paper": "A4",
-      "font_pt": 10.469,
-      "matches_manifest": true
-    },
-    {
-      "figure": "G3_reasoning",
-      "page": 66,
-      "paper": "A4",
-      "font_pt": 9.184,
-      "matches_manifest": true
-    },
-    {
-      "figure": "G4_business",
-      "page": 67,
-      "paper": "A4",
-      "font_pt": 9.066,
-      "matches_manifest": true
-    },
-    {
-      "figure": "G5_quality",
-      "page": 68,
-      "paper": "A4",
-      "font_pt": 9.244,
-      "matches_manifest": true
-    },
-    {
-      "figure": "D1_deployment",
-      "page": 73,
-      "paper": "A4",
-      "font_pt": 9.524,
-      "matches_manifest": true
-    },
-    {
-      "figure": "D2_realization",
-      "page": 74,
-      "paper": "A4",
-      "font_pt": 9.259,
-      "matches_manifest": true
-    },
-    {
-      "figure": "D3_transfer",
-      "page": 75,
-      "paper": "A4",
-      "font_pt": 11.735,
-      "matches_manifest": true
-    },
-    {
-      "figure": "D4_schedule",
-      "page": 76,
-      "paper": "A4",
-      "font_pt": 8.515,
-      "matches_manifest": true
-    },
-    {
-      "figure": "D5_concurrency",
-      "page": 77,
-      "paper": "A4",
-      "font_pt": 11.735,
-      "matches_manifest": true
-    },
-    {
-      "figure": "D6_sequence",
-      "page": 78,
-      "paper": "A4",
-      "font_pt": 8.843,
-      "matches_manifest": true
-    },
-    {
-      "figure": "D7_component",
-      "page": 79,
-      "paper": "A3",
-      "font_pt": 10.629,
-      "matches_manifest": true
-    },
-    {
-      "figure": "E1_quality",
-      "page": 87,
-      "paper": "A4",
-      "font_pt": 8.631,
-      "matches_manifest": true
+      "font_pt": 10.63
     }
   ],
-  "all_match": true,
-  "minimum_pt": 8.391,
-  "minimum_a4_pt": 8.515
+  "minimum_figure_font_pt": 8.516
 }

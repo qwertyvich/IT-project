@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1769pt" height="816pt" viewBox="0.00 0.00 1769.00 816.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(8.64 807.84)">
+<title>B2_dfd</title>
+<polygon fill="white" stroke="none" points="-8.64,8.64 -8.64,-807.84 1760.23,-807.84 1760.23,8.64 -8.64,8.64"/>
+<!-- E1_out&#45;&gt;F1 -->
+<g id="edge1" class="edge">
+<title>E1_out-&gt;F1</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M665.51,-732.18C665.51,-709.72 665.51,-679.33 665.51,-653.11"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="668.14,-653.34 665.51,-645.84 662.89,-653.34 668.14,-653.34"/>
+<text xml:space="preserve" text-anchor="middle" x="760.87" y="-681.48" font-family="Arial" font-size="22.00" fill="black">F01 Клиент и счёт</text>
+</g>
+<!-- E1_out&#45;&gt;F2 -->
+<g id="edge2" class="edge">
+<title>E1_out-&gt;F2</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M734.88,-754.82C935.9,-725.79 1504.51,-643.68 1504.51,-643.68 1504.51,-643.68 1564.51,-531.36 1564.51,-531.36 1564.51,-531.36 1564.51,-478.56 1564.51,-478.56 1564.51,-478.56 1334.46,-464.03 1285.12,-460.04"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="1285.44,-457.43 1277.72,-459.31 1284.93,-462.66 1285.44,-457.43"/>
+<text xml:space="preserve" text-anchor="middle" x="1653.17" y="-589.92" font-family="Arial" font-size="22.00" fill="black">F03 Команда карты</text>
+</g>
+<!-- E1_out&#45;&gt;F3 -->
+<g id="edge3" class="edge">
+<title>E1_out-&gt;F3</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M597.64,-731.89C523.73,-696.01 415.92,-643.68 415.92,-643.68 415.92,-643.68 296.51,-531.36 296.51,-531.36 296.51,-531.36 296.51,-478.56 296.51,-478.56 296.51,-478.56 304.6,-473.42 316.21,-466.05"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="317.39,-468.41 322.31,-462.17 314.57,-463.98 317.39,-468.41"/>
+<text xml:space="preserve" text-anchor="middle" x="480.72" y="-603.12" font-family="Arial" font-size="22.00" fill="black">F05 Команда</text>
+<text xml:space="preserve" text-anchor="middle" x="480.72" y="-576.72" font-family="Arial" font-size="22.00" fill="black">перевода</text>
+</g>
+<!-- F1&#45;&gt;F2 -->
+<g id="edge12" class="edge">
+<title>F1-&gt;F2</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M782.09,-573.26C879.13,-554.73 1001.51,-531.36 1001.51,-531.36 1001.51,-531.36 1013.78,-478.56 1013.78,-478.56 1013.78,-478.56 1027.18,-472.82 1045.95,-464.78"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="1046.77,-467.28 1052.63,-461.91 1044.71,-462.45 1046.77,-467.28"/>
+<text xml:space="preserve" text-anchor="middle" x="1114.65" y="-498.36" font-family="Arial" font-size="22.00" fill="black">I12 Контекст карты</text>
+</g>
+<!-- F1&#45;&gt;F3 -->
+<g id="edge14" class="edge">
+<title>F1-&gt;F3</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M548.99,-549.57C522.91,-539.29 502.8,-531.36 502.8,-531.36 502.8,-531.36 486.51,-478.56 486.51,-478.56 486.51,-478.56 479.57,-473.56 469.56,-466.34"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="471.28,-464.35 463.67,-462.09 468.21,-468.61 471.28,-464.35"/>
+<text xml:space="preserve" text-anchor="middle" x="576.15" y="-511.56" font-family="Arial" font-size="22.00" fill="black">I13 Реквизиты</text>
+<text xml:space="preserve" text-anchor="middle" x="576.15" y="-485.16" font-family="Arial" font-size="22.00" fill="black">счетов</text>
+</g>
+<!-- F1&#45;&gt;F4 -->
+<g id="edge16" class="edge">
+<title>F1-&gt;F4</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M668.9,-548.96C671.27,-516.34 674.02,-478.56 674.02,-478.56 674.02,-478.56 782.9,-464.9 815.32,-459.65"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="815.44,-462.3 822.3,-458.29 814.43,-457.15 815.44,-462.3"/>
+<text xml:space="preserve" text-anchor="middle" x="741.27" y="-511.56" font-family="Arial" font-size="22.00" fill="black">I14 Контекст</text>
+<text xml:space="preserve" text-anchor="middle" x="741.27" y="-485.16" font-family="Arial" font-size="22.00" fill="black">договора</text>
+</g>
+<!-- F1&#45;&gt;F5 -->
+<g id="edge17" class="edge">
+<title>F1-&gt;F5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M663.81,-549.07C662.38,-510.04 660.57,-460.56 660.57,-460.56 660.57,-460.56 660.57,-366.24 660.57,-366.24 660.57,-366.24 753.79,-320.14 831.28,-281.83"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="832.01,-284.4 837.57,-278.72 829.68,-279.69 832.01,-284.4"/>
+<text xml:space="preserve" text-anchor="middle" x="740.04" y="-420" font-family="Arial" font-size="22.00" fill="black">I15 Клиентский</text>
+<text xml:space="preserve" text-anchor="middle" x="740.04" y="-393.6" font-family="Arial" font-size="22.00" fill="black">результат</text>
+</g>
+<!-- F2&#45;&gt;F1 -->
+<g id="edge11" class="edge">
+<title>F2-&gt;F1</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M1202.76,-461.03C1211.13,-470.98 1217.51,-478.56 1217.51,-478.56 1217.51,-478.56 1217.51,-531.36 1217.51,-531.36 1217.51,-531.36 953.91,-562 791.03,-580.93"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="790.85,-578.31 783.71,-581.78 791.46,-583.52 790.85,-578.31"/>
+<text xml:space="preserve" text-anchor="middle" x="1306.14" y="-511.56" font-family="Arial" font-size="22.00" fill="black">I21 Запрос</text>
+<text xml:space="preserve" text-anchor="middle" x="1306.14" y="-485.16" font-family="Arial" font-size="22.00" fill="black">контекста карты</text>
+</g>
+<!-- F2&#45;&gt;F5 -->
+<g id="edge18" class="edge">
+<title>F2-&gt;F5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M1131.27,-365.84C1108.68,-333.22 1082.51,-295.44 1082.51,-295.44 1082.51,-295.44 1069.18,-289.7 1050.5,-281.66"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="1051.79,-279.35 1043.86,-278.8 1049.71,-284.17 1051.79,-279.35"/>
+<text xml:space="preserve" text-anchor="middle" x="1191.52" y="-328.44" font-family="Arial" font-size="22.00" fill="black">I25 Результат</text>
+<text xml:space="preserve" text-anchor="middle" x="1191.52" y="-302.04" font-family="Arial" font-size="22.00" fill="black">карты</text>
+</g>
+<!-- F3&#45;&gt;F1 -->
+<g id="edge13" class="edge">
+<title>F3-&gt;F1</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M325.67,-461.2C310.52,-471.06 299.01,-478.56 299.01,-478.56 299.01,-478.56 299.01,-531.36 299.01,-531.36 299.01,-531.36 408.51,-549.36 408.51,-549.36 408.51,-549.36 474.94,-561.29 540.26,-573.02"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="539.41,-575.54 547.26,-574.28 540.34,-570.37 539.41,-575.54"/>
+<text xml:space="preserve" text-anchor="middle" x="393.76" y="-498.36" font-family="Arial" font-size="22.00" fill="black">I31 Запрос счетов</text>
+</g>
+<!-- F3&#45;&gt;F5 -->
+<g id="edge19" class="edge">
+<title>F3-&gt;F5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M439.43,-365.84C468.79,-333.22 502.8,-295.44 502.8,-295.44 502.8,-295.44 666.53,-271.05 792.09,-252.35"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="792.23,-254.98 799.27,-251.28 791.46,-249.79 792.23,-254.98"/>
+<text xml:space="preserve" text-anchor="middle" x="576.15" y="-328.44" font-family="Arial" font-size="22.00" fill="black">I35 Результат</text>
+<text xml:space="preserve" text-anchor="middle" x="576.15" y="-302.04" font-family="Arial" font-size="22.00" fill="black">перевода</text>
+</g>
+<!-- E2_out&#45;&gt;F4 -->
+<g id="edge4" class="edge">
+<title>E2_out-&gt;F4</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M1416.34,-548.96C1412.71,-516.34 1408.51,-478.56 1408.51,-478.56 1408.51,-478.56 1108.18,-463.59 1051.89,-459.54"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="1052.42,-456.95 1044.71,-458.86 1051.93,-462.18 1052.42,-456.95"/>
+<text xml:space="preserve" text-anchor="middle" x="1488.2" y="-511.56" font-family="Arial" font-size="22.00" fill="black">F07 Условия и</text>
+<text xml:space="preserve" text-anchor="middle" x="1488.2" y="-485.16" font-family="Arial" font-size="22.00" fill="black">основание</text>
+</g>
+<!-- F4&#45;&gt;F1 -->
+<g id="edge15" class="edge">
+<title>F4-&gt;F1</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M855.26,-461.2C838.77,-471.06 826.23,-478.56 826.23,-478.56 826.23,-478.56 810.51,-531.36 810.51,-531.36 810.51,-531.36 797.54,-537.1 779.36,-545.14"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="778.73,-542.55 772.93,-547.99 780.85,-547.35 778.73,-542.55"/>
+<text xml:space="preserve" text-anchor="middle" x="914.87" y="-511.56" font-family="Arial" font-size="22.00" fill="black">I41 Запрос счёта</text>
+<text xml:space="preserve" text-anchor="middle" x="914.87" y="-485.16" font-family="Arial" font-size="22.00" fill="black">договора</text>
+</g>
+<!-- F4&#45;&gt;F5 -->
+<g id="edge20" class="edge">
+<title>F4-&gt;F5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M933.51,-365.76C933.51,-341.77 933.51,-312.35 933.51,-287.15"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="936.14,-287.4 933.51,-279.9 930.89,-287.4 936.14,-287.4"/>
+<text xml:space="preserve" text-anchor="middle" x="1006.87" y="-328.44" font-family="Arial" font-size="22.00" fill="black">I45 Кредитный</text>
+<text xml:space="preserve" text-anchor="middle" x="1006.87" y="-302.04" font-family="Arial" font-size="22.00" fill="black">результат</text>
+</g>
+<!-- E3_out&#45;&gt;F5 -->
+<g id="edge5" class="edge">
+<title>E3_out-&gt;F5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M1358,-365.84C1315.61,-333.22 1266.51,-295.44 1266.51,-295.44 1266.51,-295.44 1165.76,-276.03 1075.1,-258.56"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="1075.72,-256.01 1067.86,-257.17 1074.73,-261.16 1075.72,-256.01"/>
+<text xml:space="preserve" text-anchor="middle" x="1392.1" y="-328.44" font-family="Arial" font-size="22.00" fill="black">F09 Запрос</text>
+<text xml:space="preserve" text-anchor="middle" x="1392.1" y="-302.04" font-family="Arial" font-size="22.00" fill="black">сведений</text>
+</g>
+<!-- F5&#45;&gt;E1_in -->
+<g id="edge7" class="edge">
+<title>F5-&gt;E1_in</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M801.02,-198.05C731.81,-181.73 661.36,-165.12 661.36,-165.12 661.36,-165.12 657.52,-123.78 654.42,-90.26"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="657.04,-90.09 653.73,-82.86 651.81,-90.57 657.04,-90.09"/>
+<text xml:space="preserve" text-anchor="middle" x="741.43" y="-145.32" font-family="Arial" font-size="22.00" fill="black">F02 Документ и</text>
+<text xml:space="preserve" text-anchor="middle" x="741.43" y="-118.92" font-family="Arial" font-size="22.00" fill="black">исход</text>
+</g>
+<!-- F5&#45;&gt;E2_in -->
+<g id="edge8" class="edge">
+<title>F5-&gt;E2_in</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M854.05,-182.48C837.3,-172.62 824.57,-165.12 824.57,-165.12 824.57,-165.12 823.76,-134.09 822.97,-104"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="825.6,-103.97 822.78,-96.54 820.35,-104.1 825.6,-103.97"/>
+<text xml:space="preserve" text-anchor="middle" x="926.04" y="-132.12" font-family="Arial" font-size="22.00" fill="black">F08 Договор и план</text>
+</g>
+<!-- F5&#45;&gt;E3_in -->
+<g id="edge9" class="edge">
+<title>F5-&gt;E3_in</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M1003.53,-182.48C1018.3,-172.62 1029.51,-165.12 1029.51,-165.12 1029.51,-165.12 1033.26,-133.82 1036.88,-103.61"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="1039.44,-104.28 1037.72,-96.53 1034.22,-103.66 1039.44,-104.28"/>
+<text xml:space="preserve" text-anchor="middle" x="1124.92" y="-145.32" font-family="Arial" font-size="22.00" fill="black">F10 Проверяемые</text>
+<text xml:space="preserve" text-anchor="middle" x="1124.92" y="-118.92" font-family="Arial" font-size="22.00" fill="black">сведения</text>
+</g>
+<!-- F5&#45;&gt;E4_in -->
+<g id="edge10" class="edge">
+<title>F5-&gt;E4_in</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M1065.9,-199.27C1139.55,-182.57 1216.51,-165.12 1216.51,-165.12 1216.51,-165.12 1242.25,-122.72 1262.74,-88.97"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="1264.96,-90.38 1266.6,-82.6 1260.47,-87.65 1264.96,-90.38"/>
+<text xml:space="preserve" text-anchor="middle" x="1324.78" y="-145.32" font-family="Arial" font-size="22.00" fill="black">F12 Результат</text>
+<text xml:space="preserve" text-anchor="middle" x="1324.78" y="-118.92" font-family="Arial" font-size="22.00" fill="black">справочника</text>
+</g>
+<!-- E4_out&#45;&gt;F1 -->
+<g id="edge6" class="edge">
+<title>E4_out-&gt;F1</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M201.52,-734.93C296.29,-706.86 438.3,-664.81 540.23,-634.62"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="540.85,-637.17 547.3,-632.53 539.36,-632.14 540.85,-637.17"/>
+<text xml:space="preserve" text-anchor="middle" x="516.75" y="-694.68" font-family="Arial" font-size="22.00" fill="black">F11 Справочные</text>
+<text xml:space="preserve" text-anchor="middle" x="516.75" y="-668.28" font-family="Arial" font-size="22.00" fill="black">данные</text>
+</g>
+<!-- E1_out -->
+<g id="node1" class="node">
+<title>E1_out</title>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.3" points="734.52,-799.2 596.5,-799.2 596.5,-732.48 734.52,-732.48 734.52,-799.2"/>
+<text xml:space="preserve" text-anchor="middle" x="665.51" y="-772.74" font-family="Arial" font-size="23.00" fill="black">E1</text>
+<text xml:space="preserve" text-anchor="middle" x="665.51" y="-745.14" font-family="Arial" font-size="23.00" fill="black">Оператор</text>
+</g>
+<!-- F1 -->
+<g id="node2" class="node">
+<title>F1</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M769.5,-643.68C769.5,-643.68 561.52,-643.68 561.52,-643.68 555.52,-643.68 549.52,-637.68 549.52,-631.68 549.52,-631.68 549.52,-561.36 549.52,-561.36 549.52,-555.36 555.52,-549.36 561.52,-549.36 561.52,-549.36 769.5,-549.36 769.5,-549.36 775.5,-549.36 781.5,-555.36 781.5,-561.36 781.5,-561.36 781.5,-631.68 781.5,-631.68 781.5,-637.68 775.5,-643.68 769.5,-643.68"/>
+<text xml:space="preserve" text-anchor="middle" x="665.51" y="-617.22" font-family="Arial" font-size="23.00" fill="black">F1</text>
+<text xml:space="preserve" text-anchor="middle" x="665.51" y="-589.62" font-family="Arial" font-size="23.00" fill="black">Вести клиентов,</text>
+<text xml:space="preserve" text-anchor="middle" x="665.51" y="-562.02" font-family="Arial" font-size="23.00" fill="black">счета и отделения</text>
+</g>
+<!-- F2 -->
+<g id="node3" class="node">
+<title>F2</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M1263.51,-460.56C1263.51,-460.56 1063.52,-460.56 1063.52,-460.56 1057.52,-460.56 1051.52,-454.56 1051.52,-448.56 1051.52,-448.56 1051.52,-378.24 1051.52,-378.24 1051.52,-372.24 1057.52,-366.24 1063.52,-366.24 1063.52,-366.24 1263.51,-366.24 1263.51,-366.24 1269.51,-366.24 1275.51,-372.24 1275.51,-378.24 1275.51,-378.24 1275.51,-448.56 1275.51,-448.56 1275.51,-454.56 1269.51,-460.56 1263.51,-460.56"/>
+<text xml:space="preserve" text-anchor="middle" x="1163.51" y="-434.1" font-family="Arial" font-size="23.00" fill="black">F2</text>
+<text xml:space="preserve" text-anchor="middle" x="1163.51" y="-406.5" font-family="Arial" font-size="23.00" fill="black">Вести банковские</text>
+<text xml:space="preserve" text-anchor="middle" x="1163.51" y="-378.9" font-family="Arial" font-size="23.00" fill="black">карты</text>
+</g>
+<!-- F3 -->
+<g id="node4" class="node">
+<title>F3</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M513.53,-460.56C513.53,-460.56 281.5,-460.56 281.5,-460.56 275.5,-460.56 269.5,-454.56 269.5,-448.56 269.5,-448.56 269.5,-378.24 269.5,-378.24 269.5,-372.24 275.5,-366.24 281.5,-366.24 281.5,-366.24 513.53,-366.24 513.53,-366.24 519.53,-366.24 525.53,-372.24 525.53,-378.24 525.53,-378.24 525.53,-448.56 525.53,-448.56 525.53,-454.56 519.53,-460.56 513.53,-460.56"/>
+<text xml:space="preserve" text-anchor="middle" x="397.51" y="-434.1" font-family="Arial" font-size="23.00" fill="black">F3</text>
+<text xml:space="preserve" text-anchor="middle" x="397.51" y="-406.5" font-family="Arial" font-size="23.00" fill="black">Учитывать и</text>
+<text xml:space="preserve" text-anchor="middle" x="397.51" y="-378.9" font-family="Arial" font-size="23.00" fill="black">проводить переводы</text>
+</g>
+<!-- E2_out -->
+<g id="node5" class="node">
+<title>E2_out</title>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.3" points="1500.03,-643.68 1343,-643.68 1343,-549.36 1500.03,-549.36 1500.03,-643.68"/>
+<text xml:space="preserve" text-anchor="middle" x="1421.51" y="-617.22" font-family="Arial" font-size="23.00" fill="black">E2</text>
+<text xml:space="preserve" text-anchor="middle" x="1421.51" y="-589.62" font-family="Arial" font-size="23.00" fill="black">Кредитный</text>
+<text xml:space="preserve" text-anchor="middle" x="1421.51" y="-562.02" font-family="Arial" font-size="23.00" fill="black">специалист</text>
+</g>
+<!-- F4 -->
+<g id="node6" class="node">
+<title>F4</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M1030.52,-460.56C1030.52,-460.56 836.5,-460.56 836.5,-460.56 830.5,-460.56 824.5,-454.56 824.5,-448.56 824.5,-448.56 824.5,-378.24 824.5,-378.24 824.5,-372.24 830.5,-366.24 836.5,-366.24 836.5,-366.24 1030.52,-366.24 1030.52,-366.24 1036.52,-366.24 1042.52,-372.24 1042.52,-378.24 1042.52,-378.24 1042.52,-448.56 1042.52,-448.56 1042.52,-454.56 1036.52,-460.56 1030.52,-460.56"/>
+<text xml:space="preserve" text-anchor="middle" x="933.51" y="-434.1" font-family="Arial" font-size="23.00" fill="black">F4</text>
+<text xml:space="preserve" text-anchor="middle" x="933.51" y="-406.5" font-family="Arial" font-size="23.00" fill="black">Вести кредитные</text>
+<text xml:space="preserve" text-anchor="middle" x="933.51" y="-378.9" font-family="Arial" font-size="23.00" fill="black">договоры</text>
+</g>
+<!-- E3_out -->
+<g id="node7" class="node">
+<title>E3_out</title>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.3" points="1553.01,-460.56 1284.02,-460.56 1284.02,-366.24 1553.01,-366.24 1553.01,-460.56"/>
+<text xml:space="preserve" text-anchor="middle" x="1418.51" y="-434.1" font-family="Arial" font-size="23.00" fill="black">E3</text>
+<text xml:space="preserve" text-anchor="middle" x="1418.51" y="-406.5" font-family="Arial" font-size="23.00" fill="black">Получатель сведений</text>
+<text xml:space="preserve" text-anchor="middle" x="1418.51" y="-378.9" font-family="Arial" font-size="23.00" fill="black">по роли</text>
+</g>
+<!-- F5 -->
+<g id="node8" class="node">
+<title>F5</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M1053.52,-277.44C1053.52,-277.44 813.5,-277.44 813.5,-277.44 807.5,-277.44 801.5,-271.44 801.5,-265.44 801.5,-265.44 801.5,-195.12 801.5,-195.12 801.5,-189.12 807.5,-183.12 813.5,-183.12 813.5,-183.12 1053.52,-183.12 1053.52,-183.12 1059.52,-183.12 1065.52,-189.12 1065.52,-195.12 1065.52,-195.12 1065.52,-265.44 1065.52,-265.44 1065.52,-271.44 1059.52,-277.44 1053.52,-277.44"/>
+<text xml:space="preserve" text-anchor="middle" x="933.51" y="-250.98" font-family="Arial" font-size="23.00" fill="black">F5</text>
+<text xml:space="preserve" text-anchor="middle" x="933.51" y="-223.38" font-family="Arial" font-size="23.00" fill="black">Выдавать сведения и</text>
+<text xml:space="preserve" text-anchor="middle" x="933.51" y="-195.78" font-family="Arial" font-size="23.00" fill="black">отчёты</text>
+</g>
+<!-- E4_out -->
+<g id="node9" class="node">
+<title>E4_out</title>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.3" points="201.02,-799.2 0,-799.2 0,-732.48 201.02,-732.48 201.02,-799.2"/>
+<text xml:space="preserve" text-anchor="middle" x="100.51" y="-772.74" font-family="Arial" font-size="23.00" fill="black">E4</text>
+<text xml:space="preserve" text-anchor="middle" x="100.51" y="-745.14" font-family="Arial" font-size="23.00" fill="black">Администратор</text>
+</g>
+<!-- E1_in -->
+<g id="node10" class="node">
+<title>E1_in</title>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.3" points="719.52,-80.52 581.5,-80.52 581.5,-13.8 719.52,-13.8 719.52,-80.52"/>
+<text xml:space="preserve" text-anchor="middle" x="650.51" y="-54.06" font-family="Arial" font-size="23.00" fill="black">E1</text>
+<text xml:space="preserve" text-anchor="middle" x="650.51" y="-26.46" font-family="Arial" font-size="23.00" fill="black">Оператор</text>
+</g>
+<!-- E2_in -->
+<g id="node11" class="node">
+<title>E2_in</title>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.3" points="900.03,-94.32 743,-94.32 743,0 900.03,0 900.03,-94.32"/>
+<text xml:space="preserve" text-anchor="middle" x="821.51" y="-67.86" font-family="Arial" font-size="23.00" fill="black">E2</text>
+<text xml:space="preserve" text-anchor="middle" x="821.51" y="-40.26" font-family="Arial" font-size="23.00" fill="black">Кредитный</text>
+<text xml:space="preserve" text-anchor="middle" x="821.51" y="-12.66" font-family="Arial" font-size="23.00" fill="black">специалист</text>
+</g>
+<!-- E3_in -->
+<g id="node12" class="node">
+<title>E3_in</title>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.3" points="1178.01,-94.32 909.02,-94.32 909.02,0 1178.01,0 1178.01,-94.32"/>
+<text xml:space="preserve" text-anchor="middle" x="1043.51" y="-67.86" font-family="Arial" font-size="23.00" fill="black">E3</text>
+<text xml:space="preserve" text-anchor="middle" x="1043.51" y="-40.26" font-family="Arial" font-size="23.00" fill="black">Получатель сведений</text>
+<text xml:space="preserve" text-anchor="middle" x="1043.51" y="-12.66" font-family="Arial" font-size="23.00" fill="black">по роли</text>
+</g>
+<!-- E4_in -->
+<g id="node13" class="node">
+<title>E4_in</title>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.3" points="1388.02,-80.52 1187,-80.52 1187,-13.8 1388.02,-13.8 1388.02,-80.52"/>
+<text xml:space="preserve" text-anchor="middle" x="1287.51" y="-54.06" font-family="Arial" font-size="23.00" fill="black">E4</text>
+<text xml:space="preserve" text-anchor="middle" x="1287.51" y="-26.46" font-family="Arial" font-size="23.00" fill="black">Администратор</text>
+</g>
+</g>
+</svg>

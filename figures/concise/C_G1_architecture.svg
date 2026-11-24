@@ -1,0 +1,367 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1121pt" height="846pt" viewBox="0.00 0.00 1121.00 846.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(8.64 836.98)">
+<title>G1_architecture</title>
+<polygon fill="white" stroke="none" points="-8.64,8.64 -8.64,-836.98 1111.88,-836.98 1111.88,8.64 -8.64,8.64"/>
+<text xml:space="preserve" text-anchor="middle" x="273.06" y="-106" font-family="Arial" font-size="20.00" fill="black">И1 — команда / результат; И2 — действие / ответ.</text>
+<text xml:space="preserve" text-anchor="middle" x="273.06" y="-82" font-family="Arial" font-size="20.00" fill="black">И3 — данные / результат; факты для чтения.</text>
+<text xml:space="preserve" text-anchor="middle" x="273.06" y="-58" font-family="Arial" font-size="20.00" fill="black">Д1 ↔ К6 по И3 — учётная запись / роль (только чтение).</text>
+<text xml:space="preserve" text-anchor="middle" x="273.06" y="-34" font-family="Arial" font-size="20.00" fill="black">И4 — событие действия; единые правила аудита.</text>
+<text xml:space="preserve" text-anchor="middle" x="273.06" y="-10" font-family="Arial" font-size="20.00" fill="black">И5 — контекст / запрос; И6 — результат действия.</text>
+<!-- e1&#45;&gt;К6 -->
+<g id="edge1" class="edge">
+<title>e1-&gt;К6</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M337.94,-774.8C372.08,-760.33 417.75,-740.98 456.74,-724.47"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="336.96,-772.36 331.08,-777.7 339.01,-777.19 336.96,-772.36"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="457.39,-727.04 463.27,-721.7 455.34,-722.21 457.39,-727.04"/>
+<text xml:space="preserve" text-anchor="middle" x="445.51" y="-737.42" font-family="Arial" font-size="20.00" fill="black">И1</text>
+</g>
+<!-- e2&#45;&gt;К6 -->
+<g id="edge2" class="edge">
+<title>e2-&gt;К6</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M478.59,-759.2C487.26,-749 496.66,-737.94 505.33,-727.73"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="476.82,-757.23 473.97,-764.64 480.82,-760.63 476.82,-757.23"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="507.17,-729.62 510.03,-722.2 503.17,-726.22 507.17,-729.62"/>
+<text xml:space="preserve" text-anchor="middle" x="511.18" y="-737.42" font-family="Arial" font-size="20.00" fill="black">И1</text>
+</g>
+<!-- e3&#45;&gt;К6 -->
+<g id="edge3" class="edge">
+<title>e3-&gt;К6</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M595.41,-759.2C586.74,-749 577.34,-737.94 568.67,-727.73"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="593.18,-760.63 600.03,-764.64 597.18,-757.23 593.18,-760.63"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="570.83,-726.22 563.97,-722.2 566.83,-729.62 570.83,-726.22"/>
+<text xml:space="preserve" text-anchor="middle" x="601.18" y="-737.42" font-family="Arial" font-size="20.00" fill="black">И1</text>
+</g>
+<!-- e4&#45;&gt;К6 -->
+<g id="edge4" class="edge">
+<title>e4-&gt;К6</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M768.45,-775.29C728.62,-760.69 674.77,-740.95 629.03,-724.19"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="767.32,-777.67 775.27,-777.79 769.13,-772.74 767.32,-777.67"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="629.94,-721.73 622,-721.61 628.14,-726.66 629.94,-721.73"/>
+<text xml:space="preserve" text-anchor="middle" x="718.5" y="-737.42" font-family="Arial" font-size="20.00" fill="black">И1</text>
+</g>
+<!-- К1&#45;&gt;К2 -->
+<g id="edge21" class="edge">
+<title>К1-&gt;К2</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M467.74,-551.15C496.14,-544.61 518,-539.58 518,-539.58 518,-539.58 533.98,-526.4 552.76,-510.9"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="467.22,-548.57 460.5,-552.81 468.4,-553.69 467.22,-548.57"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="554.26,-513.06 558.38,-506.27 550.92,-509.01 554.26,-513.06"/>
+<text xml:space="preserve" text-anchor="middle" x="556.89" y="-521.58" font-family="Arial" font-size="20.00" fill="black">И5</text>
+</g>
+<!-- К1&#45;&gt;К3 -->
+<g id="edge22" class="edge">
+<title>К1-&gt;К3</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M295.62,-544.35C292.04,-541.43 289.76,-539.58 289.76,-539.58 289.76,-539.58 274.17,-526.4 255.83,-510.9"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="293.82,-546.28 301.29,-548.98 297.14,-542.21 293.82,-546.28"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="257.79,-509.12 250.37,-506.28 254.4,-513.13 257.79,-509.12"/>
+<text xml:space="preserve" text-anchor="middle" x="300.88" y="-521.58" font-family="Arial" font-size="20.00" fill="black">И5</text>
+</g>
+<!-- К1&#45;&gt;К4 -->
+<g id="edge23" class="edge">
+<title>К1-&gt;К4</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M467.96,-558.05C522.15,-548.52 573,-539.58 573,-539.58 573,-539.58 711,-504.58 711,-504.58 711,-504.58 732.15,-499.02 759.16,-491.93"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="467.61,-555.44 460.68,-559.33 468.52,-560.61 467.61,-555.44"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="759.77,-494.48 766.36,-490.04 758.44,-489.4 759.77,-494.48"/>
+<text xml:space="preserve" text-anchor="middle" x="677.48" y="-521.58" font-family="Arial" font-size="20.00" fill="black">И5</text>
+</g>
+<!-- К1&#45;&gt;К5 -->
+<g id="edge24" class="edge">
+<title>К1-&gt;К5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M247.44,-549.97C183.53,-528.87 110,-504.58 110,-504.58 110,-504.58 1.76,-406.46 1.76,-406.46 1.76,-406.46 0,-371.46 0,-371.46 0,-371.46 0,-286.32 0,-286.32 0,-286.32 63,-251.32 63,-251.32 63,-251.32 297.66,-219.76 442.86,-200.24"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="442.98,-202.87 450.06,-199.27 442.28,-197.67 442.98,-202.87"/>
+<text xml:space="preserve" text-anchor="middle" x="12.88" y="-388.46" font-family="Arial" font-size="20.00" fill="black">И6</text>
+</g>
+<!-- К1&#45;&gt;Д1 -->
+<g id="edge10" class="edge">
+<title>К1-&gt;Д1</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M334.63,-541.14C326.76,-483.37 313,-382.46 313,-382.46 313,-382.46 299.8,-378.01 281.07,-371.7"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="331.98,-541.15 335.6,-548.22 337.18,-540.44 331.98,-541.15"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="282.09,-369.27 274.14,-369.37 280.41,-374.25 282.09,-369.27"/>
+<text xml:space="preserve" text-anchor="middle" x="340.74" y="-455.02" font-family="Arial" font-size="20.00" fill="black">И3</text>
+</g>
+<!-- К1&#45;&gt;Д5 -->
+<g id="edge28" class="edge">
+<title>К1-&gt;Д5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M359.06,-550.31C385.84,-507.83 434.9,-429.99 466.98,-379.1"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="469.03,-380.76 470.81,-373.02 464.59,-377.96 469.03,-380.76"/>
+<text xml:space="preserve" text-anchor="middle" x="453.5" y="-455.02" font-family="Arial" font-size="20.00" fill="black">И4</text>
+</g>
+<!-- К2&#45;&gt;К5 -->
+<g id="edge25" class="edge">
+<title>К2-&gt;К5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M672.18,-417.04C680.9,-410.82 687,-406.46 687,-406.46 687,-406.46 687,-382.46 687,-382.46 687,-382.46 670,-286.32 670,-286.32 670,-286.32 649.06,-267.9 625.06,-246.79"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="626.95,-244.95 619.58,-241.97 623.48,-248.9 626.95,-244.95"/>
+<text xml:space="preserve" text-anchor="middle" x="696.17" y="-322.89" font-family="Arial" font-size="20.00" fill="black">И6</text>
+</g>
+<!-- К2&#45;&gt;Д2 -->
+<g id="edge11" class="edge">
+<title>К2-&gt;Д2</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M612,-408.03C612,-399.13 612,-389.89 612,-381.02"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="609.38,-407.73 612,-415.23 614.63,-407.73 609.38,-407.73"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="614.63,-381.25 612,-373.75 609.38,-381.25 614.63,-381.25"/>
+<text xml:space="preserve" text-anchor="middle" x="623.12" y="-388.46" font-family="Arial" font-size="20.00" fill="black">И3</text>
+</g>
+<!-- К2&#45;&gt;Д5 -->
+<g id="edge29" class="edge">
+<title>К2-&gt;Д5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M574.36,-417.05C563.09,-404.19 550.68,-390.02 539.2,-376.91"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="541.4,-375.45 534.48,-371.54 537.45,-378.91 541.4,-375.45"/>
+<text xml:space="preserve" text-anchor="middle" x="572.94" y="-388.46" font-family="Arial" font-size="20.00" fill="black">И4</text>
+</g>
+<!-- К3&#45;&gt;К5 -->
+<g id="edge26" class="edge">
+<title>К3-&gt;К5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M120.52,-424.51C66.76,-399.87 4.76,-371.46 4.76,-371.46 4.76,-371.46 4.76,-286.32 4.76,-286.32 4.76,-286.32 282.3,-235.3 443.15,-205.72"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="443.46,-208.34 450.36,-204.4 442.51,-203.17 443.46,-208.34"/>
+<text xml:space="preserve" text-anchor="middle" x="15.88" y="-322.89" font-family="Arial" font-size="20.00" fill="black">И6</text>
+</g>
+<!-- К3&#45;&gt;Д1 -->
+<g id="edge12" class="edge">
+<title>К3-&gt;Д1</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M181.73,-408.38C178.84,-399.22 175.84,-389.68 172.96,-380.54"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="179.16,-408.95 183.92,-415.32 184.17,-407.38 179.16,-408.95"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="175.55,-380.03 170.79,-373.66 170.54,-381.6 175.55,-380.03"/>
+<text xml:space="preserve" text-anchor="middle" x="191.07" y="-388.46" font-family="Arial" font-size="20.00" fill="black">И3</text>
+</g>
+<!-- К3&#45;&gt;Д3 -->
+<g id="edge13" class="edge">
+<title>К3-&gt;Д3</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M260.14,-411.31C275,-399.66 290.81,-387.26 305.5,-375.75"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="258.53,-409.24 254.24,-415.93 261.77,-413.37 258.53,-409.24"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="306.9,-377.98 311.19,-371.29 303.67,-373.85 306.9,-377.98"/>
+<text xml:space="preserve" text-anchor="middle" x="306.99" y="-388.46" font-family="Arial" font-size="20.00" fill="black">И3</text>
+</g>
+<!-- К3&#45;&gt;Д5 -->
+<g id="edge30" class="edge">
+<title>К3-&gt;Д5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M275.49,-428.31C290.67,-422.1 302,-417.46 302,-417.46 302,-417.46 388.76,-382.46 388.76,-382.46 388.76,-382.46 441,-371.46 441,-371.46 441,-371.46 442.43,-370.42 444.83,-368.67"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="446.01,-371.06 450.52,-364.52 442.92,-366.81 446.01,-371.06"/>
+<text xml:space="preserve" text-anchor="middle" x="399.88" y="-388.46" font-family="Arial" font-size="20.00" fill="black">И4</text>
+</g>
+<!-- К4&#45;&gt;К5 -->
+<g id="edge27" class="edge">
+<title>К4-&gt;К5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M827.75,-417.04C803.99,-394.47 779.76,-371.46 779.76,-371.46 779.76,-371.46 712,-286.32 712,-286.32 712,-286.32 661,-251.32 661,-251.32 661,-251.32 657.47,-249.12 651.7,-245.51"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="653.26,-243.4 645.51,-241.65 650.48,-247.85 653.26,-243.4"/>
+<text xml:space="preserve" text-anchor="middle" x="790.88" y="-322.89" font-family="Arial" font-size="20.00" fill="black">И6</text>
+</g>
+<!-- К4&#45;&gt;Д4 -->
+<g id="edge14" class="edge">
+<title>К4-&gt;Д4</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M895.46,-408.73C899.56,-399.39 903.82,-389.66 907.9,-380.34"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="893.16,-407.46 892.55,-415.39 897.96,-409.57 893.16,-407.46"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="910.25,-381.52 910.86,-373.59 905.44,-379.41 910.25,-381.52"/>
+<text xml:space="preserve" text-anchor="middle" x="917.72" y="-388.46" font-family="Arial" font-size="20.00" fill="black">И3</text>
+</g>
+<!-- К4&#45;&gt;Д5 -->
+<g id="edge31" class="edge">
+<title>К4-&gt;Д5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M767.96,-423.38C757.7,-419.8 751,-417.46 751,-417.46 751,-417.46 637,-382.46 637,-382.46 637,-382.46 554,-371.46 554,-371.46 554,-371.46 552.98,-370.71 551.22,-369.4"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="553.03,-367.47 545.45,-365.11 549.9,-371.69 553.03,-367.47"/>
+<text xml:space="preserve" text-anchor="middle" x="725.24" y="-388.46" font-family="Arial" font-size="20.00" fill="black">И4</text>
+</g>
+<!-- К6&#45;&gt;К1 -->
+<g id="edge5" class="edge">
+<title>К6-&gt;К1</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M467.17,-654.1C459.14,-650.15 453.76,-647.5 453.76,-647.5 453.76,-647.5 428.33,-632.98 401.51,-617.66"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="465.68,-656.29 473.57,-657.25 468,-651.58 465.68,-656.29"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="402.94,-615.46 395.13,-614.02 400.34,-620.02 402.94,-615.46"/>
+<text xml:space="preserve" text-anchor="middle" x="464.88" y="-629.5" font-family="Arial" font-size="20.00" fill="black">И2</text>
+</g>
+<!-- К6&#45;&gt;К2 -->
+<g id="edge6" class="edge">
+<title>К6-&gt;К2</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M550,-649.2C562.4,-611.78 581.15,-555.17 594.78,-514.01"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="547.55,-648.25 547.69,-656.2 552.54,-649.9 547.55,-648.25"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="597.26,-514.88 597.12,-506.94 592.27,-513.23 597.26,-514.88"/>
+<text xml:space="preserve" text-anchor="middle" x="593.07" y="-575.54" font-family="Arial" font-size="20.00" fill="black">И2</text>
+</g>
+<!-- К6&#45;&gt;К3 -->
+<g id="edge7" class="edge">
+<title>К6-&gt;К3</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M405.94,-659.95C306.85,-638.4 187.76,-612.5 187.76,-612.5 187.76,-612.5 187.76,-550.58 187.76,-550.58 187.76,-550.58 189.75,-533.43 191.97,-514.22"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="405.19,-662.48 413.08,-661.51 406.31,-657.35 405.19,-662.48"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="194.57,-514.56 192.82,-506.81 189.35,-513.96 194.57,-514.56"/>
+<text xml:space="preserve" text-anchor="middle" x="198.88" y="-575.54" font-family="Arial" font-size="20.00" fill="black">И2</text>
+</g>
+<!-- К6&#45;&gt;К4 -->
+<g id="edge8" class="edge">
+<title>К6-&gt;К4</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M589.71,-652.93C646.69,-614.54 737.84,-553.11 801.31,-510.34"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="588.57,-650.54 583.82,-656.91 591.51,-654.89 588.57,-650.54"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="802.65,-512.6 807.4,-506.23 799.71,-508.25 802.65,-512.6"/>
+<text xml:space="preserve" text-anchor="middle" x="749.52" y="-575.54" font-family="Arial" font-size="20.00" fill="black">И2</text>
+</g>
+<!-- К6&#45;&gt;К5 -->
+<g id="edge9" class="edge">
+<title>К6-&gt;К5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M668.11,-662.93C829.09,-631.59 1081,-582.54 1081,-582.54 1081,-582.54 1081,-582.54 1081,-327.89 1081,-327.89 1058,-286.32 1058,-286.32 1058,-286.32 814.94,-237.44 666.74,-207.63"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="667.73,-660.33 660.87,-664.34 668.73,-665.49 667.73,-660.33"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="667.65,-205.14 659.78,-206.23 666.62,-210.29 667.65,-205.14"/>
+<text xml:space="preserve" text-anchor="middle" x="1092.12" y="-455.02" font-family="Arial" font-size="20.00" fill="black">И2</text>
+</g>
+<!-- К6&#45;&gt;Д1 -->
+<g id="edge15" class="edge">
+<title>К6-&gt;Д1</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M637.78,-655.03C699.22,-634.65 766,-612.5 766,-612.5 766,-612.5 766,-550.58 766,-550.58 766,-550.58 711,-417.46 711,-417.46 711,-417.46 540,-406.46 540,-406.46 540,-406.46 416,-382.46 416,-382.46 416,-382.46 287,-371.46 287,-371.46 287,-371.46 286.2,-371.2 284.72,-370.73"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="637.17,-652.47 630.88,-657.32 638.82,-657.45 637.17,-652.47"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="285.59,-368.25 277.65,-368.47 283.99,-373.25 285.59,-368.25"/>
+<text xml:space="preserve" text-anchor="middle" x="772.56" y="-521.58" font-family="Arial" font-size="20.00" fill="black">И3</text>
+</g>
+<!-- К6&#45;&gt;Д5 -->
+<g id="edge32" class="edge">
+<title>К6-&gt;Д5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M527.53,-657.97C514,-614.42 490.76,-539.58 490.76,-539.58 490.76,-539.58 490.76,-515.58 490.76,-515.58 490.76,-515.58 493.85,-436.26 496,-381.3"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="498.62,-381.44 496.29,-373.84 493.37,-381.23 498.62,-381.44"/>
+<text xml:space="preserve" text-anchor="middle" x="501.88" y="-521.58" font-family="Arial" font-size="20.00" fill="black">И4</text>
+</g>
+<!-- Д1&#45;&gt;К5 -->
+<g id="edge16" class="edge">
+<title>Д1-&gt;К5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M266.55,-288.61C321.48,-268.91 387.9,-245.09 443.15,-225.27"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="444.03,-227.74 450.2,-222.74 442.26,-222.8 444.03,-227.74"/>
+<text xml:space="preserve" text-anchor="middle" x="379.05" y="-257.32" font-family="Arial" font-size="20.00" fill="black">И3</text>
+</g>
+<!-- Д2&#45;&gt;К5 -->
+<g id="edge17" class="edge">
+<title>Д2-&gt;К5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M595.21,-285.84C590.64,-274.41 585.6,-261.78 580.66,-249.42"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="583.17,-248.62 577.95,-242.62 578.29,-250.56 583.17,-248.62"/>
+<text xml:space="preserve" text-anchor="middle" x="601.4" y="-257.32" font-family="Arial" font-size="20.00" fill="black">И3</text>
+</g>
+<!-- Д3&#45;&gt;К5 -->
+<g id="edge18" class="edge">
+<title>Д3-&gt;К5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M417.71,-287.75C434.86,-274.94 454.24,-260.46 472.92,-246.5"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="474.43,-248.65 478.86,-242.06 471.28,-244.44 474.43,-248.65"/>
+<text xml:space="preserve" text-anchor="middle" x="476.35" y="-257.32" font-family="Arial" font-size="20.00" fill="black">И3</text>
+</g>
+<!-- Д4&#45;&gt;К5 -->
+<g id="edge19" class="edge">
+<title>Д4-&gt;К5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M852.52,-286.69C818.44,-268.57 786,-251.32 786,-251.32 786,-251.32 725.68,-234.04 666.69,-217.15"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="667.68,-214.7 659.75,-215.16 666.24,-219.75 667.68,-214.7"/>
+<text xml:space="preserve" text-anchor="middle" x="839.67" y="-257.32" font-family="Arial" font-size="20.00" fill="black">И3</text>
+</g>
+<!-- Д5&#45;&gt;К5 -->
+<g id="edge20" class="edge">
+<title>Д5-&gt;К5</title>
+<path fill="none" stroke="black" stroke-width="1.2" d="M514.79,-285.84C519.36,-274.41 524.4,-261.78 529.34,-249.42"/>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.2" points="531.71,-250.56 532.05,-242.62 526.83,-248.62 531.71,-250.56"/>
+<text xml:space="preserve" text-anchor="middle" x="539.33" y="-257.32" font-family="Arial" font-size="20.00" fill="black">И3</text>
+</g>
+<!-- e1 -->
+<g id="node1" class="node">
+<title>e1</title>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.3" points="351.51,-815.74 222.49,-815.74 222.49,-779.02 351.51,-779.02 351.51,-815.74"/>
+<text xml:space="preserve" text-anchor="middle" x="287" y="-791.08" font-family="Arial" font-size="21.00" fill="black">Оператор</text>
+</g>
+<!-- e2 -->
+<g id="node2" class="node">
+<title>e2</title>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.3" points="520.51,-828.34 373.49,-828.34 373.49,-766.42 520.51,-766.42 520.51,-828.34"/>
+<text xml:space="preserve" text-anchor="middle" x="447" y="-803.68" font-family="Arial" font-size="21.00" fill="black">Кредитный</text>
+<text xml:space="preserve" text-anchor="middle" x="447" y="-778.48" font-family="Arial" font-size="21.00" fill="black">специалист</text>
+</g>
+<!-- e3 -->
+<g id="node3" class="node">
+<title>e3</title>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.3" points="710.99,-828.34 543.01,-828.34 543.01,-766.42 710.99,-766.42 710.99,-828.34"/>
+<text xml:space="preserve" text-anchor="middle" x="627" y="-803.68" font-family="Arial" font-size="21.00" fill="black">Контролёр /</text>
+<text xml:space="preserve" text-anchor="middle" x="627" y="-778.48" font-family="Arial" font-size="21.00" fill="black">руководитель</text>
+</g>
+<!-- e4 -->
+<g id="node4" class="node">
+<title>e4</title>
+<polygon fill="#eeeeee" stroke="black" stroke-width="1.3" points="919.49,-815.74 732.51,-815.74 732.51,-779.02 919.49,-779.02 919.49,-815.74"/>
+<text xml:space="preserve" text-anchor="middle" x="826" y="-791.08" font-family="Arial" font-size="21.00" fill="black">Администратор</text>
+</g>
+<!-- К1 -->
+<g id="node5" class="node">
+<title>К1</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M446.51,-612.5C446.51,-612.5 233.49,-612.5 233.49,-612.5 227.49,-612.5 221.49,-606.5 221.49,-600.5 221.49,-600.5 221.49,-562.58 221.49,-562.58 221.49,-556.58 227.49,-550.58 233.49,-550.58 233.49,-550.58 446.51,-550.58 446.51,-550.58 452.51,-550.58 458.51,-556.58 458.51,-562.58 458.51,-562.58 458.51,-600.5 458.51,-600.5 458.51,-606.5 452.51,-612.5 446.51,-612.5"/>
+<text xml:space="preserve" text-anchor="middle" x="340" y="-587.84" font-family="Arial" font-size="21.00" fill="black">Клиентский контекст</text>
+<text xml:space="preserve" text-anchor="middle" x="340" y="-562.64" font-family="Arial" font-size="21.00" fill="black">К1</text>
+</g>
+<!-- К2 -->
+<g id="node6" class="node">
+<title>К2</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M687.52,-504.58C687.52,-504.58 536.48,-504.58 536.48,-504.58 530.48,-504.58 524.48,-498.58 524.48,-492.58 524.48,-492.58 524.48,-429.46 524.48,-429.46 524.48,-423.46 530.48,-417.46 536.48,-417.46 536.48,-417.46 687.52,-417.46 687.52,-417.46 693.52,-417.46 699.52,-423.46 699.52,-429.46 699.52,-429.46 699.52,-492.58 699.52,-492.58 699.52,-498.58 693.52,-504.58 687.52,-504.58"/>
+<text xml:space="preserve" text-anchor="middle" x="612" y="-479.92" font-family="Arial" font-size="21.00" fill="black">Карточное</text>
+<text xml:space="preserve" text-anchor="middle" x="612" y="-454.72" font-family="Arial" font-size="21.00" fill="black">обслуживание</text>
+<text xml:space="preserve" text-anchor="middle" x="612" y="-429.52" font-family="Arial" font-size="21.00" fill="black">К2</text>
+</g>
+<!-- К3 -->
+<g id="node7" class="node">
+<title>К3</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M263,-504.58C263,-504.58 133,-504.58 133,-504.58 127,-504.58 121,-498.58 121,-492.58 121,-492.58 121,-429.46 121,-429.46 121,-423.46 127,-417.46 133,-417.46 133,-417.46 263,-417.46 263,-417.46 269,-417.46 275,-423.46 275,-429.46 275,-429.46 275,-492.58 275,-492.58 275,-498.58 269,-504.58 263,-504.58"/>
+<text xml:space="preserve" text-anchor="middle" x="198" y="-479.92" font-family="Arial" font-size="21.00" fill="black">Проведение</text>
+<text xml:space="preserve" text-anchor="middle" x="198" y="-454.72" font-family="Arial" font-size="21.00" fill="black">переводов</text>
+<text xml:space="preserve" text-anchor="middle" x="198" y="-429.52" font-family="Arial" font-size="21.00" fill="black">К3</text>
+</g>
+<!-- К4 -->
+<g id="node8" class="node">
+<title>К4</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M965.51,-504.58C965.51,-504.58 780.49,-504.58 780.49,-504.58 774.49,-504.58 768.49,-498.58 768.49,-492.58 768.49,-492.58 768.49,-429.46 768.49,-429.46 768.49,-423.46 774.49,-417.46 780.49,-417.46 780.49,-417.46 965.51,-417.46 965.51,-417.46 971.51,-417.46 977.51,-423.46 977.51,-429.46 977.51,-429.46 977.51,-492.58 977.51,-492.58 977.51,-498.58 971.51,-504.58 965.51,-504.58"/>
+<text xml:space="preserve" text-anchor="middle" x="873" y="-479.92" font-family="Arial" font-size="21.00" fill="black">Кредитный учёт и</text>
+<text xml:space="preserve" text-anchor="middle" x="873" y="-454.72" font-family="Arial" font-size="21.00" fill="black">планирование</text>
+<text xml:space="preserve" text-anchor="middle" x="873" y="-429.52" font-family="Arial" font-size="21.00" fill="black">К4</text>
+</g>
+<!-- К5 -->
+<g id="node9" class="node">
+<title>К5</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M645.49,-240.32C645.49,-240.32 464.51,-240.32 464.51,-240.32 458.51,-240.32 452.51,-234.32 452.51,-228.32 452.51,-228.32 452.51,-140 452.51,-140 452.51,-134 458.51,-128 464.51,-128 464.51,-128 645.49,-128 645.49,-128 651.49,-128 657.49,-134 657.49,-140 657.49,-140 657.49,-228.32 657.49,-228.32 657.49,-234.32 651.49,-240.32 645.49,-240.32"/>
+<text xml:space="preserve" text-anchor="middle" x="555" y="-215.66" font-family="Arial" font-size="21.00" fill="black">Представление и</text>
+<text xml:space="preserve" text-anchor="middle" x="555" y="-190.46" font-family="Arial" font-size="21.00" fill="black">контроль</text>
+<text xml:space="preserve" text-anchor="middle" x="555" y="-165.26" font-family="Arial" font-size="21.00" fill="black">результатов</text>
+<text xml:space="preserve" text-anchor="middle" x="555" y="-140.06" font-family="Arial" font-size="21.00" fill="black">К5</text>
+</g>
+<!-- К6 -->
+<g id="node10" class="node">
+<title>К6</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M646.5,-720.42C646.5,-720.42 427.5,-720.42 427.5,-720.42 421.5,-720.42 415.5,-714.42 415.5,-708.42 415.5,-708.42 415.5,-670.5 415.5,-670.5 415.5,-664.5 421.5,-658.5 427.5,-658.5 427.5,-658.5 646.5,-658.5 646.5,-658.5 652.5,-658.5 658.5,-664.5 658.5,-670.5 658.5,-670.5 658.5,-708.42 658.5,-708.42 658.5,-714.42 652.5,-720.42 646.5,-720.42"/>
+<text xml:space="preserve" text-anchor="middle" x="537" y="-695.76" font-family="Arial" font-size="21.00" fill="black">Доверие к действиям</text>
+<text xml:space="preserve" text-anchor="middle" x="537" y="-670.56" font-family="Arial" font-size="21.00" fill="black">К6</text>
+</g>
+<!-- Д1 -->
+<g id="node11" class="node">
+<title>Д1</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M275.51,-363.72C275.51,-367.99 222.39,-371.46 157,-371.46 91.61,-371.46 38.49,-367.99 38.49,-363.72 38.49,-363.72 38.49,-294.06 38.49,-294.06 38.49,-289.79 91.61,-286.32 157,-286.32 222.39,-286.32 275.51,-289.79 275.51,-294.06 275.51,-294.06 275.51,-363.72 275.51,-363.72"/>
+<path fill="none" stroke="black" stroke-width="1.3" d="M275.51,-363.72C275.51,-359.45 222.39,-355.98 157,-355.98 91.61,-355.98 38.49,-359.45 38.49,-363.72"/>
+<text xml:space="preserve" text-anchor="middle" x="157" y="-335.19" font-family="Arial" font-size="21.00" fill="black">Д1</text>
+<text xml:space="preserve" text-anchor="middle" x="157" y="-309.99" font-family="Arial" font-size="21.00" fill="black">Клиентский контекст</text>
+</g>
+<!-- Д2 -->
+<g id="node12" class="node">
+<title>Д2</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M658.51,-363.72C658.51,-367.99 637.66,-371.46 612,-371.46 586.34,-371.46 565.49,-367.99 565.49,-363.72 565.49,-363.72 565.49,-294.06 565.49,-294.06 565.49,-289.79 586.34,-286.32 612,-286.32 637.66,-286.32 658.51,-289.79 658.51,-294.06 658.51,-294.06 658.51,-363.72 658.51,-363.72"/>
+<path fill="none" stroke="black" stroke-width="1.3" d="M658.51,-363.72C658.51,-359.45 637.66,-355.98 612,-355.98 586.34,-355.98 565.49,-359.45 565.49,-363.72"/>
+<text xml:space="preserve" text-anchor="middle" x="612" y="-335.19" font-family="Arial" font-size="21.00" fill="black">Д2</text>
+<text xml:space="preserve" text-anchor="middle" x="612" y="-309.99" font-family="Arial" font-size="21.00" fill="black">Карты</text>
+</g>
+<!-- Д3 -->
+<g id="node13" class="node">
+<title>Д3</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M430.49,-363.72C430.49,-367.99 400.69,-371.46 364,-371.46 327.31,-371.46 297.51,-367.99 297.51,-363.72 297.51,-363.72 297.51,-294.06 297.51,-294.06 297.51,-289.79 327.31,-286.32 364,-286.32 400.69,-286.32 430.49,-289.79 430.49,-294.06 430.49,-294.06 430.49,-363.72 430.49,-363.72"/>
+<path fill="none" stroke="black" stroke-width="1.3" d="M430.49,-363.72C430.49,-359.45 400.69,-355.98 364,-355.98 327.31,-355.98 297.51,-359.45 297.51,-363.72"/>
+<text xml:space="preserve" text-anchor="middle" x="364" y="-335.19" font-family="Arial" font-size="21.00" fill="black">Д3</text>
+<text xml:space="preserve" text-anchor="middle" x="364" y="-309.99" font-family="Arial" font-size="21.00" fill="black">Переводы</text>
+</g>
+<!-- Д4 -->
+<g id="node14" class="node">
+<title>Д4</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M1047,-363.72C1047,-367.99 994.56,-371.46 930,-371.46 865.44,-371.46 813,-367.99 813,-363.72 813,-363.72 813,-294.06 813,-294.06 813,-289.79 865.44,-286.32 930,-286.32 994.56,-286.32 1047,-289.79 1047,-294.06 1047,-294.06 1047,-363.72 1047,-363.72"/>
+<path fill="none" stroke="black" stroke-width="1.3" d="M1047,-363.72C1047,-359.45 994.56,-355.98 930,-355.98 865.44,-355.98 813,-359.45 813,-363.72"/>
+<text xml:space="preserve" text-anchor="middle" x="930" y="-335.19" font-family="Arial" font-size="21.00" fill="black">Д4</text>
+<text xml:space="preserve" text-anchor="middle" x="930" y="-309.99" font-family="Arial" font-size="21.00" fill="black">Договоры и графики</text>
+</g>
+<!-- Д5 -->
+<g id="node15" class="node">
+<title>Д5</title>
+<path fill="#eeeeee" stroke="black" stroke-width="1.3" d="M543.5,-363.72C543.5,-367.99 523.11,-371.46 498,-371.46 472.89,-371.46 452.5,-367.99 452.5,-363.72 452.5,-363.72 452.5,-294.06 452.5,-294.06 452.5,-289.79 472.89,-286.32 498,-286.32 523.11,-286.32 543.5,-289.79 543.5,-294.06 543.5,-294.06 543.5,-363.72 543.5,-363.72"/>
+<path fill="none" stroke="black" stroke-width="1.3" d="M543.5,-363.72C543.5,-359.45 523.11,-355.98 498,-355.98 472.89,-355.98 452.5,-359.45 452.5,-363.72"/>
+<text xml:space="preserve" text-anchor="middle" x="498" y="-335.19" font-family="Arial" font-size="21.00" fill="black">Д5</text>
+<text xml:space="preserve" text-anchor="middle" x="498" y="-309.99" font-family="Arial" font-size="21.00" fill="black">Аудит</text>
+</g>
+</g>
+</svg>

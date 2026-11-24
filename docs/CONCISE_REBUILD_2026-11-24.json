@@ -1,0 +1,217 @@
+{
+  "date": "2026-11-24",
+  "edition": "concise",
+  "status": "verified",
+  "before": {
+    "main_pages": 95,
+    "appendix_pages": 64,
+    "appendices": 8,
+    "figures": 36,
+    "logical_tables": 51
+  },
+  "after": {
+    "chapters": 7,
+    "numbered_headings": 27,
+    "appendices": 5,
+    "figures": 20,
+    "logical_tables": 8,
+    "body_font_pt": 14,
+    "table_font_pt": 12,
+    "all_images_match_code": true,
+    "all_64_fields_present_on_er": true,
+    "all_15_operations_covered": true,
+    "layout": {
+      "main_pages": 46,
+      "main_before_appendices": 23,
+      "appendix_pages": 23,
+      "a3_pages": 4,
+      "figures": [
+        {
+          "figure": "C_A1_data",
+          "page": 24,
+          "font_pt": 8.852
+        },
+        {
+          "figure": "C_A2_quality",
+          "page": 25,
+          "font_pt": 10.204
+        },
+        {
+          "figure": "C_B1_context",
+          "page": 26,
+          "font_pt": 12.136
+        },
+        {
+          "figure": "C_B2_dfd",
+          "page": 27,
+          "font_pt": 8.883
+        },
+        {
+          "figure": "C_B9_resources",
+          "page": 28,
+          "font_pt": 10.856
+        },
+        {
+          "figure": "C_B3_tree",
+          "page": 29,
+          "font_pt": 9.023
+        },
+        {
+          "figure": "C_B6_transfers",
+          "page": 30,
+          "font_pt": 9.022
+        },
+        {
+          "figure": "C_B7_loans",
+          "page": 31,
+          "font_pt": 9.797
+        },
+        {
+          "figure": "C_V1_service",
+          "page": 32,
+          "font_pt": 9.355
+        },
+        {
+          "figure": "C_V2_clients",
+          "page": 33,
+          "font_pt": 9.355
+        },
+        {
+          "figure": "C_V3_cards",
+          "page": 34,
+          "font_pt": 8.994
+        },
+        {
+          "figure": "C_V4_transfers",
+          "page": 35,
+          "font_pt": 8.994
+        },
+        {
+          "figure": "C_V5_loans",
+          "page": 36,
+          "font_pt": 8.994
+        },
+        {
+          "figure": "C_V6_reports",
+          "page": 37,
+          "font_pt": 9.355
+        },
+        {
+          "figure": "C_V7_states",
+          "page": 38,
+          "font_pt": 9.524
+        },
+        {
+          "figure": "C_G1_architecture",
+          "page": 39,
+          "font_pt": 9.715
+        },
+        {
+          "figure": "C_D2_realization",
+          "page": 40,
+          "font_pt": 9.259
+        },
+        {
+          "figure": "C_D3_transfer",
+          "page": 41,
+          "font_pt": 11.735
+        },
+        {
+          "figure": "C_D4_schedule",
+          "page": 42,
+          "font_pt": 8.516
+        },
+        {
+          "figure": "C_D7_component",
+          "page": 43,
+          "font_pt": 10.63
+        }
+      ]
+    }
+  },
+  "peer_comparison": [
+    {
+      "file": "АвиаКасса_—_пояснительная_записка_—_А4.pdf",
+      "sha256": "728c531e862fd91ed2612b4672c899adc43bab60d367cb5f23d43f6e0c646a1d",
+      "pages": 78,
+      "body_and_frontmatter_pages": 47,
+      "appendix_pages": 31,
+      "appendices": 6
+    },
+    {
+      "file": "Каршеринг_для_Google_Docs.pdf",
+      "sha256": "8a2504af751544eb48fdd71afdd53ce8e570849b0fce6f4d471952cf05c2843c",
+      "pages": 91,
+      "body_and_frontmatter_pages": 77,
+      "appendix_pages": 14,
+      "appendices": 4
+    },
+    {
+      "file": "Пояснительная_записка_—_Онлайн_кинотеатр.pdf",
+      "sha256": "3e945d6c66ab9c3ec06226a07ece197c16e1458a526556a9c301da014c00619a",
+      "pages": 46,
+      "body_and_frontmatter_pages": 20,
+      "appendix_pages": 26,
+      "appendices": 5
+    },
+    {
+      "file": "peer_corrected.pdf",
+      "sha256": "0cd48991e4ecfe1f40515fc0007f96b894c1539e723f096d54416df48661e345",
+      "pages": 99,
+      "body_and_frontmatter_pages": 49,
+      "appendix_pages": 50,
+      "appendices": 8
+    }
+  ],
+  "pdfs": [
+    {
+      "file": "Банковская система — Пояснительная записка.pdf",
+      "pages": 46,
+      "sha256": "877150eada58cd61d019fc708276ac612b99e0caafe3e71279a8df70cf2a422d",
+      "no_blank_pages": true,
+      "fonts_embedded": true,
+      "page_numbers_sequential": true
+    },
+    {
+      "file": "Защита за 3 минуты и пояснения.pdf",
+      "pages": 2,
+      "sha256": "a7bfd5ee33397ff9b2655e95e16da92e34d83b160d48355874b4bfce8734256c",
+      "no_blank_pages": true,
+      "fonts_embedded": true,
+      "page_numbers_sequential": true
+    }
+  ],
+  "removed_from_print": [
+    "Повторные концептуальные и логические изображения одних данных",
+    "Однотипные декомпозиции, раскрытые в основном тексте",
+    "Длинные каталоги всех требований, контрактов и 25 частных испытаний"
+  ],
+  "preserved": [
+    "Назначение, организатор, противоречие и измеримое качество до функций",
+    "Данные: 9 отношений, 64 поля, 12 FK; модель оценивания качества",
+    "5 функций и 15 операций; DFD, BPMN, необходимые средства",
+    "6 компонентов, 11 модулей и задания всем модулям",
+    "Сетевой, Python- и SQL-интерфейсы; безопасный повтор; неизвестный COMMIT",
+    "ПМИ: 9 составных сценариев, условия, эталоны, свидетельства и протокол",
+    "Полный ручной труд, сопоставимая база, отрицательный результат и недостаточность свидетельств"
+  ],
+  "audio_repeat": {
+    "file": "Новая запись 11.m4a",
+    "sha256": "4d569868e1575612a9f456e683f74efc142cb392102aeed45bfb71bb76bb064c",
+    "duration_seconds": 557.248,
+    "method": "Повторное полное локальное распознавание faster-whisper small CPU int8; сверка с присланным текстом и ранее выделенными фрагментами",
+    "raw_audio_published": false
+  },
+  "review": {
+    "independent_reviewers": 3,
+    "main_png_pages": 46,
+    "guide_png_pages": 2,
+    "issues_fixed": [
+      "В.1: И24 заменено на П9",
+      "Г.4: условие помещено внутрь ромба",
+      "Убран трёхстрочный отдельный лист главы 4",
+      "Шапки узких кодовых столбцов сокращены до «Код»"
+    ],
+    "scope": "Проверка проектных документов и расчётных эталонов. Приёмочные испытания реализации не проводились."
+  }
+}

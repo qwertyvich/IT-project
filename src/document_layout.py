@@ -13,7 +13,8 @@ from project_model import *
 
 
 class Writer:
-    def __init__(self,compact=False):
+    def __init__(self,compact=False,auto_table_refs=True):
+        self.auto_table_refs=auto_table_refs
         self.compact=compact;self.cover_stage=compact
         self.doc=Document();self.tables=0;self.figures=0;self.app_letter=None;self.app_tables={};self.pending_break=False;self.flow=False;self.after_table=False
         self.setup(self.doc.sections[0],False,first=True)
@@ -147,7 +148,7 @@ class Writer:
             if tx is None:tx='Состав и характеристики данных приведены'
         # Приложение содержит общую ссылку на диапазон своих таблиц.
         # Не повторяем перед каждой спецификацией отдельную вводную строку.
-        if not self.app_letter:self.p(f'{tx} в таблице {number}.',keep=True,before=4)
+        if not self.app_letter and self.auto_table_refs:self.p(f'{tx} в таблице {number}.',keep=True,before=4)
         cap=self.p(f'Таблица {number} — {caption}',indent=0,size=12,before=5,after=3,keep=True)
         cap.paragraph_format.line_spacing=1.15
         t=self.doc.add_table(rows=1,cols=len(headers));t.alignment=WD_TABLE_ALIGNMENT.CENTER;t.autofit=False

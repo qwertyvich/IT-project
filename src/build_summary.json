@@ -12,15 +12,21 @@
   },
   "document": {
     "main": "C:\\Users\\user\\Desktop\\IT\\_work\\IT-project\\Готовая работа\\Банковская система — Пояснительная записка.docx",
-    "figures": 36,
-    "tables": 51,
-    "appendices": 8,
-    "sources": 16,
-    "physical_tables": 62,
-    "continued_parts": 11
+    "edition": "concise",
+    "figures": 20,
+    "tables": 8,
+    "appendices": 5,
+    "sources": 12,
+    "numbered_headings": 27,
+    "body_font_pt": 14,
+    "table_font_pt": 12,
+    "printed_catalogs": false,
+    "physical_tables": 11,
+    "continued_parts": 3
   },
   "guide": {
     "guide": "C:\\Users\\user\\Desktop\\IT\\_work\\IT-project\\Готовая работа\\Защита за 3 минуты и пояснения.docx",
-    "speech_words": 298
+    "speech_words": 298,
+    "target_pages": 2
   }
 }

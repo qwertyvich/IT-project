@@ -14,42 +14,10 @@
     },
     {
       "round": 4,
-      "tables_split": 1
-    },
-    {
-      "round": 5,
-      "tables_split": 1
-    },
-    {
-      "round": 6,
-      "tables_split": 1
-    },
-    {
-      "round": 7,
-      "tables_split": 1
-    },
-    {
-      "round": 8,
-      "tables_split": 1
-    },
-    {
-      "round": 9,
-      "tables_split": 1
-    },
-    {
-      "round": 10,
-      "tables_split": 1
-    },
-    {
-      "round": 11,
-      "tables_split": 1
-    },
-    {
-      "round": 12,
       "tables_split": 0
     }
   ],
   "all_table_parts_fit_one_page": true,
-  "physical_tables": 62,
-  "logical_tables": 51
+  "physical_tables": 11,
+  "logical_tables": 8
 }
