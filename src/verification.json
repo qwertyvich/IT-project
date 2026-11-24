@@ -59,13 +59,20 @@
     "all_local_schema_references_resolve": true,
     "scope": "Структурная проверка спецификации и примеров; не сертификация OpenAPI и не проверка работающего API."
   },
+  "module_tasks": {
+    "modules_with_individual_tasks": 11,
+    "all_task_test_ids_resolve": true,
+    "normalization_reference_examples_checked": true,
+    "authentication_source_edge_present": true,
+    "scope": "Проверены спецификации и контрольные примеры нормализации; банковские модули не исполнялись."
+  },
   "documents": {
-    "main_docx_sha256": "74a99c1a2a2b99080f33f3bdc721a39aa020058571a0b0f634c9c09adec6ce5d",
+    "main_docx_sha256": "4d59879cd23096e684894a41e024188a065128ebce9b2b115785813ba443519b",
     "guide_docx_sha256": "e979d69df3bda83e59993decadcdd8e9d68c304f3277c98aab661ce862638272",
     "figures": 36,
     "tables": 51,
-    "physical_table_parts": 61,
-    "table_continuations": 10,
+    "physical_table_parts": 62,
+    "table_continuations": 11,
     "full_requirement_and_test_texts_preserved": true,
     "chapters": 7,
     "numbered_headings": 52,
@@ -78,7 +85,7 @@
   "pdfs": [
     {
       "file": "Банковская система — Пояснительная записка.pdf",
-      "pages": 94,
+      "pages": 95,
       "outline_present": true,
       "no_blank_pages": true,
       "page_numbers_sequential": true,
@@ -88,7 +95,7 @@
         "/BCDGEE+TimesNewRomanPS-BoldMT": true,
         "/BCDHEE+TimesNewRomanPS-BoldMT": true
       },
-      "sha256": "812e55b4d9aceddeb8eaa1d095842fc4ec6faa5bc07612f7f750312e4baa2f18"
+      "sha256": "3cb804aeaf39115e15e4da0e067b1b63efd62d54add62b66f482b47dc7a77d96"
     },
     {
       "file": "Защита за 3 минуты и пояснения.pdf",

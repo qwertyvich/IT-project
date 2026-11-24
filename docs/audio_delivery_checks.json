@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-24",
+  "baseline_commit": "aeb27447dcf1211dd68b00a3b6ad45ca1bb9d8bf",
+  "baseline_pdf_pages": 94,
+  "baseline_pdf_sha256": "812e55b4d9aceddeb8eaa1d095842fc4ec6faa5bc07612f7f750312e4baa2f18",
+  "current_pdf_pages": 95,
+  "current_pdf_sha256": "3cb804aeaf39115e15e4da0e067b1b63efd62d54add62b66f482b47dc7a77d96",
+  "same_record_ids": true,
+  "changed_record_ids": {
+    "requirements": [
+      "ФТ-08"
+    ],
+    "tests": [
+      "И01",
+      "И17"
+    ],
+    "entities": [],
+    "modules": [
+      "М01",
+      "М08"
+    ],
+    "leaves": [],
+    "flows": [],
+    "operations": [],
+    "contracts": [
+      "Т11"
+    ]
+  },
+  "changed_diagrams": [
+    "V7_states",
+    "G1_architecture",
+    "D2_realization"
+  ],
+  "old_architecture_edges_preserved": true,
+  "added_architecture_edge": "К6->Д1",
+  "diagrams": 36,
+  "appendices": 8,
+  "module_tasks": 11,
+  "direct_audio_fragments": 12,
+  "other_attribution_checks": 6,
+  "bank_application_tests_performed": false,
+  "full_working_documentation_claimed": false,
+  "notes_pages": 3
+}

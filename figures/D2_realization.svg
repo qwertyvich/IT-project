@@ -107,7 +107,7 @@
 <rect x="1950" y="1225" width="700" height="150" rx="12" fill="#D9EAD3" stroke="black" stroke-width="2"/>
 <text x="2300.0" y="1289.50" text-anchor="middle" font-family="Arial" font-size="35" fill="black">
 <tspan x="2300.0" dy="0">Политики ролей; триггеры;</tspan>
-<tspan x="2300.0" dy="39.2">audit_event</tspan>
+<tspan x="2300.0" dy="39.2">employee; audit_event</tspan>
 </text>
 <polyline points="570,1300 770,1300" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>
 <polyline points="1770,1300 1950,1300" fill="none" stroke="black" stroke-width="2" marker-end="url(#arrow)"/>

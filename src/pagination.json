@@ -42,10 +42,14 @@
     },
     {
       "round": 11,
+      "tables_split": 1
+    },
+    {
+      "round": 12,
       "tables_split": 0
     }
   ],
   "all_table_parts_fit_one_page": true,
-  "physical_tables": 61,
+  "physical_tables": 62,
   "logical_tables": 51
 }

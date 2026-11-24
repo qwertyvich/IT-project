@@ -15,6 +15,7 @@ from dfd_model import validate_dfd,BOUNDARY,NAMES,LEAF_TITLES,FLOWS
 from business_case import OPERATIONS
 from specifications import field_rows,CONTRACTS,EXAMPLES
 from quality_metrics import check_reference
+from developer_tasks import DETAILS
 
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def arithmetic():
@@ -230,8 +231,31 @@ def check_pdf(path):
    fonts[name]=embedded
  return {'file':Path(path).name,'pages':len(r.pages),'outline_present':True,'no_blank_pages':True,'page_numbers_sequential':True,'fonts_embedded':fonts,'sha256':sha(path)}
 
+def check_module_tasks():
+ data=json.loads((ROOT/'contracts/module_tasks.json').read_text(encoding='utf-8'))
+ assert data['implementation_present'] is False
+ assert set(data['modules'])==set(DETAILS)=={m[0] for m in MODULES}
+ for id,title,component,inp,out,rules,tests in MODULES:
+  row=data['modules'][id];detail=row['detail']
+  assert (row['component'],row['inputs'],row['result'],row['rules'])==(component,inp,out,rules)
+  assert {'signature','inputs','preconditions','postconditions','errors','verificationIDs'}<=set(detail)
+  assert detail['signature'] and detail['inputs'] and detail['postconditions']
+  assert set(detail['verificationIDs'])<={t[0] for t in TESTS}
+ pattern=data['normalization']['phone_pattern']
+ assert re.fullmatch(pattern,'+79991234567') and not re.fullmatch(pattern,'79991234567')
+ def phone(value):return re.sub(r'[ ()-]','',value.strip())
+ assert phone('+7 (999) 123-45-67')==phone(' +79991234567 ')
+ assert ' User@Example.COM '.strip().lower()=='user@example.com'
+ graph=etree.fromstring((FIG/'G1_architecture.svg').read_bytes())
+ edges=[n.text for n in graph.findall('.//{http://www.w3.org/2000/svg}g[@class="edge"]/{http://www.w3.org/2000/svg}title')]
+ assert 'К6->Д1' in edges,'Пропущен источник учётной записи для К6'
+ assert 'Ошибки сохраняют исходное состояние' not in (FIG/'V7_states.svg').read_text(encoding='utf-8')
+ return {'modules_with_individual_tasks':len(data['modules']),'all_task_test_ids_resolve':True,
+  'normalization_reference_examples_checked':True,'authentication_source_edge_present':True,
+  'scope':'Проверены спецификации и контрольные примеры нормализации; банковские модули не исполнялись.'}
+
 if __name__=='__main__':
- result={'model':validate_model(),'reference_arithmetic':arithmetic(),'quality_formula':check_reference(),'diagrams':check_figures(),'contracts':check_contracts(),'documents':check_docx()}
+ result={'model':validate_model(),'reference_arithmetic':arithmetic(),'quality_formula':check_reference(),'diagrams':check_figures(),'contracts':check_contracts(),'module_tasks':check_module_tasks(),'documents':check_docx()}
  pdf_paths=sys.argv[1:] or [p for p in [MAIN.with_suffix('.pdf'),GUIDE.with_suffix('.pdf')] if p.is_file()]
  if pdf_paths:result['pdfs']=[check_pdf(p) for p in pdf_paths]
  result['scope']='Проверка проектных артефактов и независимых эталонов. Приёмочные испытания банковского ПО не проводились.'

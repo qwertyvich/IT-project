@@ -388,7 +388,7 @@
     "width": 1800,
     "height": 980,
     "min_font_px": 24,
-    "sha256_svg": "830ca2898b84fa937cfceb81f3ae5f13ef504fa858eb00d2022cf349f23813d5",
+    "sha256_svg": "3462c53522e465d25227a189fbfd11b9b5d68aa6bdae53ea739d1c36ce31373f",
     "source": "svg",
     "paper": "A4",
     "caption": "Рисунок В.7 — Состояния переводов, карт и договоров",
@@ -396,7 +396,7 @@
     "max_width_mm": 252,
     "max_height_mm": 145,
     "min_font_on_paper_pt": 9.52,
-    "sha256_png": "5ef4008b73209a167f33705f30be28b035c3c91a951ba1963df14fb3cc949cf5"
+    "sha256_png": "102e25ddb071508f1b8f8342c3db732db9716d6d1752fbae551b1b7f4dd048c0"
   },
   {
     "name": "V8_reference",
@@ -446,18 +446,18 @@
     "name": "G1_architecture",
     "source": "dot",
     "nodes": 15,
-    "edges": 31,
+    "edges": 32,
     "paper": "A4",
     "caption": "Рисунок Г.1 — Облик системы: компоненты, связи и интерфейсы",
-    "width": 1578,
-    "height": 856,
+    "width": 1121,
+    "height": 846,
     "min_font_px": 20,
-    "sha256_svg": "1fbed672dec246eb9e8eec1872e6a562c1cade279a4da7902d34c5c0db72280a",
+    "sha256_svg": "c2daf5b9ef5d0e2bb5269e37c68d2751ca7ffee28ec823894ad25cbd3187e1d8",
     "orientation": "landscape",
     "max_width_mm": 252,
     "max_height_mm": 145,
-    "min_font_on_paper_pt": 9.05,
-    "sha256_png": "349f6fbe57fbe9ae4c2a629d05634d3baabc64fbc7cb82fb14a180a12b4c6084"
+    "min_font_on_paper_pt": 9.72,
+    "sha256_png": "085ff981f8f6c01d2bd1a05f97168555c3678c9e223cd134a2671fd72a8e7620"
   },
   {
     "name": "G2_functioning",
@@ -541,7 +541,7 @@
     "width": 2700,
     "height": 1550,
     "min_font_px": 35,
-    "sha256_svg": "4d647922b5ef578e64151d8ab596dc37e25a5f78f311fb1646a562e44c03da11",
+    "sha256_svg": "554227b49b1c87e7689885ce9225c39e4940ee3f8e33e591b59530d63c200b7a",
     "source": "svg",
     "paper": "A4",
     "caption": "Рисунок Д.2 — Раскрытие компонентов архитектуры в программные модули",
@@ -549,7 +549,7 @@
     "max_width_mm": 252,
     "max_height_mm": 145,
     "min_font_on_paper_pt": 9.26,
-    "sha256_png": "0f34e150923de9e03fddf9ba55e52bd647c2ba7ee8b77f7e84fb338641b95ec4"
+    "sha256_png": "d487dd9b99ce04c98901fd90f31afb55dbc830cb5119a39837442c18a3195f02"
   },
   {
     "name": "D3_transfer",

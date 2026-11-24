@@ -1,6 +1,6 @@
 {
-  "pdf_sha256": "812e55b4d9aceddeb8eaa1d095842fc4ec6faa5bc07612f7f750312e4baa2f18",
-  "pages": 94,
+  "pdf_sha256": "3cb804aeaf39115e15e4da0e067b1b63efd62d54add62b66f482b47dc7a77d96",
+  "pages": 95,
   "figures": [
     {
       "figure": "A1_people",
@@ -167,7 +167,7 @@
       "figure": "G1_architecture",
       "page": 64,
       "paper": "A4",
-      "font_pt": 9.053,
+      "font_pt": 9.716,
       "matches_manifest": true
     },
     {
@@ -200,56 +200,56 @@
     },
     {
       "figure": "D1_deployment",
-      "page": 72,
+      "page": 73,
       "paper": "A4",
       "font_pt": 9.524,
       "matches_manifest": true
     },
     {
       "figure": "D2_realization",
-      "page": 73,
+      "page": 74,
       "paper": "A4",
       "font_pt": 9.259,
       "matches_manifest": true
     },
     {
       "figure": "D3_transfer",
-      "page": 74,
+      "page": 75,
       "paper": "A4",
       "font_pt": 11.735,
       "matches_manifest": true
     },
     {
       "figure": "D4_schedule",
-      "page": 75,
+      "page": 76,
       "paper": "A4",
       "font_pt": 8.515,
       "matches_manifest": true
     },
     {
       "figure": "D5_concurrency",
-      "page": 76,
+      "page": 77,
       "paper": "A4",
       "font_pt": 11.735,
       "matches_manifest": true
     },
     {
       "figure": "D6_sequence",
-      "page": 77,
+      "page": 78,
       "paper": "A4",
       "font_pt": 8.843,
       "matches_manifest": true
     },
     {
       "figure": "D7_component",
-      "page": 78,
+      "page": 79,
       "paper": "A3",
       "font_pt": 10.629,
       "matches_manifest": true
     },
     {
       "figure": "E1_quality",
-      "page": 86,
+      "page": 87,
       "paper": "A4",
       "font_pt": 8.631,
       "matches_manifest": true
