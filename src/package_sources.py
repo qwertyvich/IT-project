@@ -7,6 +7,7 @@ def sha(data):return hashlib.sha256(data).hexdigest()
 
 def main():
  paths=[ROOT/n for n in ['README.md','AGENTS.md','CONTEXT.md','requirements.txt','package.json']]
+ if (ROOT/'package-lock.json').exists():paths.append(ROOT/'package-lock.json')
  paths += [p for p in SRC.iterdir() if p.is_file() and p.name!='package_summary.json']
  paths += [p for folder in ['figures','docs','contracts'] for p in (ROOT/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts]
  payload={p.relative_to(ROOT).as_posix():p.read_bytes() for p in sorted(paths)}

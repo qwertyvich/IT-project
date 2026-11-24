@@ -1,5 +1,288 @@
 [
   {
+    "name": "C_A0_chen",
+    "source": "svg",
+    "width": 3400,
+    "height": 2340,
+    "entities": 9,
+    "relationships": [
+      {
+        "from": "account",
+        "field": "client_id",
+        "to": "client",
+        "target": "client_id"
+      },
+      {
+        "from": "account",
+        "field": "branch_id",
+        "to": "branch",
+        "target": "branch_id"
+      },
+      {
+        "from": "employee",
+        "field": "branch_id",
+        "to": "branch",
+        "target": "branch_id"
+      },
+      {
+        "from": "bank_card",
+        "field": "account_id",
+        "to": "account",
+        "target": "account_id"
+      },
+      {
+        "from": "transfer",
+        "field": "from_account_id",
+        "to": "account",
+        "target": "account_id"
+      },
+      {
+        "from": "transfer",
+        "field": "to_account_id",
+        "to": "account",
+        "target": "account_id"
+      },
+      {
+        "from": "bank_card",
+        "field": "issued_by",
+        "to": "employee",
+        "target": "employee_id"
+      },
+      {
+        "from": "transfer",
+        "field": "created_by",
+        "to": "employee",
+        "target": "employee_id"
+      },
+      {
+        "from": "loan",
+        "field": "account_id",
+        "to": "account",
+        "target": "account_id"
+      },
+      {
+        "from": "loan",
+        "field": "created_by",
+        "to": "employee",
+        "target": "employee_id"
+      },
+      {
+        "from": "loan_schedule",
+        "field": "loan_id",
+        "to": "loan",
+        "target": "loan_id"
+      },
+      {
+        "from": "audit_event",
+        "field": "actor_id",
+        "to": "employee",
+        "target": "employee_id"
+      }
+    ],
+    "attributes": [
+      {
+        "entity": "client",
+        "field": "client_id",
+        "key": true,
+        "partial_key": false
+      },
+      {
+        "entity": "client",
+        "field": "full_name",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "account",
+        "field": "account_id",
+        "key": true,
+        "partial_key": false
+      },
+      {
+        "entity": "account",
+        "field": "account_number",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "branch",
+        "field": "branch_id",
+        "key": true,
+        "partial_key": false
+      },
+      {
+        "entity": "branch",
+        "field": "branch_code",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "employee",
+        "field": "employee_id",
+        "key": true,
+        "partial_key": false
+      },
+      {
+        "entity": "employee",
+        "field": "role_code",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "account",
+        "field": "account_id",
+        "key": true,
+        "partial_key": false
+      },
+      {
+        "entity": "account",
+        "field": "account_number",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "bank_card",
+        "field": "card_id",
+        "key": true,
+        "partial_key": false
+      },
+      {
+        "entity": "bank_card",
+        "field": "card_number",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "transfer",
+        "field": "transfer_id",
+        "key": true,
+        "partial_key": false
+      },
+      {
+        "entity": "transfer",
+        "field": "amount",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "employee",
+        "field": "employee_id",
+        "key": true,
+        "partial_key": false
+      },
+      {
+        "entity": "employee",
+        "field": "role_code",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "account",
+        "field": "account_id",
+        "key": true,
+        "partial_key": false
+      },
+      {
+        "entity": "account",
+        "field": "account_number",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "loan",
+        "field": "loan_id",
+        "key": true,
+        "partial_key": false
+      },
+      {
+        "entity": "loan",
+        "field": "contract_ref",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "employee",
+        "field": "employee_id",
+        "key": true,
+        "partial_key": false
+      },
+      {
+        "entity": "employee",
+        "field": "role_code",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "loan_schedule",
+        "field": "due_on",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "loan_schedule",
+        "field": "payment_no",
+        "key": false,
+        "partial_key": true
+      },
+      {
+        "entity": "employee",
+        "field": "employee_id",
+        "key": true,
+        "partial_key": false
+      },
+      {
+        "entity": "employee",
+        "field": "role_code",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "audit_event",
+        "field": "event_id",
+        "key": true,
+        "partial_key": false
+      },
+      {
+        "entity": "audit_event",
+        "field": "action",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "audit_event",
+        "field": "entity_type",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "audit_event",
+        "field": "entity_id",
+        "key": false,
+        "partial_key": false
+      },
+      {
+        "entity": "audit_event",
+        "field": "occurred_at",
+        "key": false,
+        "partial_key": false
+      }
+    ],
+    "notation": "Чен: сущности, связи, атрибуты, ключи и обязательное участие",
+    "sha256_svg": "7aa24679f1ed681eb34af0ac401919e0139153819fd1721e8d8f342ead682106",
+    "source_name": "C_A0_chen",
+    "path": "concise/C_A0_chen",
+    "letter": "А",
+    "number": 1,
+    "caption": "Рисунок А.1 — Концептуальная модель данных в нотации Чена",
+    "paper": "A3",
+    "orientation": "landscape",
+    "max_height_mm": 220,
+    "max_width_mm": 375,
+    "min_font_px": 36,
+    "min_font_on_paper_pt": 9.59,
+    "sha256_png": "d16a23f1bdf67884377a8b89c2ab382bc78097beb1cfff64d9afe5ffc45deafd"
+  },
+  {
     "name": "C_A1_data",
     "source": "svg",
     "path": "concise/C_A1_data",
@@ -188,9 +471,9 @@
     "notation": "ER: отношения, атрибуты и именованные FK→PK; не нотация Чена",
     "source_name": "C_A1_data",
     "letter": "А",
-    "number": 1,
-    "caption": "Рисунок А.1 — Логическая модель данных банковской системы",
-    "sha256_png": "822eefa69763856d485ae14632dff74bb3fe942ebcbc869cd24d62c022c8edad"
+    "number": 2,
+    "caption": "Рисунок А.2 — Логическая модель данных банковской системы",
+    "sha256_png": "4a2ad3af816176f2edcfd8e34cadd6df653a0994bfea6fa841b9dafd52468ac0"
   },
   {
     "name": "C_A2_quality",
@@ -210,9 +493,9 @@
     "notation": "Концептуальная схема объектов и отношений системы оценивания",
     "source_name": "C_A2_quality",
     "letter": "А",
-    "number": 2,
-    "caption": "Рисунок А.2 — Декларативная модель оценивания качества",
-    "sha256_png": "df588bc299f75db60e0d884442dbbb50ce42f445a70d4d0d748c108be94e6180"
+    "number": 3,
+    "caption": "Рисунок А.3 — Декларативная модель оценивания качества",
+    "sha256_png": "a11165f47471dc2dbc678616d035ebbcd2c8fade0dd84d6b13bde9067da653cb"
   },
   {
     "name": "C_B1_context",
@@ -229,7 +512,7 @@
     "max_width_mm": 252,
     "max_height_mm": 135,
     "min_font_on_paper_pt": 12.14,
-    "sha256_png": "cc4123f86b6a78cb1df5196d51b320ff38ebc3b7815d575abedecab949d47662",
+    "sha256_png": "7081a14c3ca2a12d67ef88fc97bd26285b0dc21f16f265bbe083e81252d46673",
     "source_name": "B1_context",
     "path": "concise/C_B1_context",
     "letter": "Б",
@@ -250,7 +533,7 @@
     "max_width_mm": 252,
     "max_height_mm": 145,
     "min_font_on_paper_pt": 8.88,
-    "sha256_png": "69faca0f22bf5208bc766c7bb97dc71de333938b3a47cdf13324b2c42bd459de",
+    "sha256_png": "54e4726bcaaaf541d4fd1e1e9ffb4d7d6c8df3bd1c2090eefdf5c1cb3c49785a",
     "source_name": "B2_dfd",
     "path": "concise/C_B2_dfd",
     "letter": "Б",
@@ -271,7 +554,7 @@
     "max_width_mm": 252,
     "max_height_mm": 145,
     "min_font_on_paper_pt": 10.86,
-    "sha256_png": "faeeb505d0b78c3abd1307c6dc1337c2037b16e1609b4e713634f1271ded6141",
+    "sha256_png": "2a1ff6692df24e7100e348524d4ddb0b21e387e86347a1956370f0480fe93dc7",
     "source_name": "B9_resources",
     "path": "concise/C_B9_resources",
     "letter": "Б",
@@ -290,7 +573,7 @@
     "max_width_mm": 252,
     "max_height_mm": 145,
     "min_font_on_paper_pt": 9.02,
-    "sha256_png": "158cdebfb876c1971766b2458f1856f7de598ffb16d12d05e5e40ad367e02692",
+    "sha256_png": "aa741b5245d2418e6bc361e52bc404b21f79216c0a79641424192ad0cc836203",
     "source_name": "B3_tree",
     "path": "concise/C_B3_tree",
     "letter": "Б",
@@ -311,7 +594,7 @@
     "max_width_mm": 252,
     "max_height_mm": 145,
     "min_font_on_paper_pt": 9.02,
-    "sha256_png": "24d00e53f98efa17ff3de1460ecfd5e09053e8a13330d188e4afba8e19fe7eba",
+    "sha256_png": "2485252f532285f6b682d4b16d992edeec6db5a795524df654617953eecb029f",
     "source_name": "B6_transfers",
     "path": "concise/C_B6_transfers",
     "letter": "Б",
@@ -332,7 +615,7 @@
     "max_width_mm": 252,
     "max_height_mm": 145,
     "min_font_on_paper_pt": 9.8,
-    "sha256_png": "95fdeaf54a57423712b162c7f684b3f2d5d3e3302dca9cf7345ee9b23b76dd47",
+    "sha256_png": "c12d10438c0ab39d28b5d3afed93711f16abaa1501740593be4b2111b7b9780d",
     "source_name": "B7_loans",
     "path": "concise/C_B7_loans",
     "letter": "Б",
@@ -356,7 +639,7 @@
     "max_width_mm": 165,
     "max_height_mm": 225,
     "min_font_on_paper_pt": 9.35,
-    "sha256_png": "933278a6386275b9c220f0631a35e31fa2dfe36bf429c0a94fe271d3fec81737",
+    "sha256_png": "f21963204ecfc3abb957cc443ff946366d535d0675dd5589850e726a6751a58e",
     "source_name": "V1_service",
     "path": "concise/C_V1_service",
     "letter": "В",
@@ -383,7 +666,7 @@
     "max_width_mm": 165,
     "max_height_mm": 225,
     "min_font_on_paper_pt": 9.35,
-    "sha256_png": "f1ececc339eaca69831097585baa8a8162214e1611c9cd0a6d812ad9d295df14",
+    "sha256_png": "e592b752d4a8cc0415bed5862db1376ac066c27c5b1c9388a1a87dc4859b21c1",
     "source_name": "V2_clients",
     "path": "concise/C_V2_clients",
     "letter": "В",
@@ -411,7 +694,7 @@
     "max_width_mm": 375,
     "max_height_mm": 220,
     "min_font_on_paper_pt": 8.99,
-    "sha256_png": "435c9bc1ea7ad3b1871ed01a5cfe24a94e4b1ca995a46dd644c17114b285f57e",
+    "sha256_png": "97764e1fcb8eb9ad588626785deee98b1fb070921726d99509370e83603212e4",
     "source_name": "V3_cards",
     "path": "concise/C_V3_cards",
     "letter": "В",
@@ -439,7 +722,7 @@
     "max_width_mm": 375,
     "max_height_mm": 220,
     "min_font_on_paper_pt": 8.99,
-    "sha256_png": "ac2650740ed9e13d6ce8246808aedbda5ad21fd277b608e0a3e204af6a6932ef",
+    "sha256_png": "70306cd7a9d74eba17201d1198ae5913a15024d53c3f9020dfefc41c07a6930c",
     "source_name": "V4_transfers",
     "path": "concise/C_V4_transfers",
     "letter": "В",
@@ -466,7 +749,7 @@
     "max_width_mm": 375,
     "max_height_mm": 220,
     "min_font_on_paper_pt": 8.99,
-    "sha256_png": "d3040a644c558256e7d017c1213ae91176fcf400b451b77f79d472b7457c2216",
+    "sha256_png": "fa50633b66d1f079debdd4a530b9416b66e0454c3931e610c11e7cdba0ee450d",
     "source_name": "V5_loans",
     "path": "concise/C_V5_loans",
     "letter": "В",
@@ -494,7 +777,7 @@
     "max_width_mm": 165,
     "max_height_mm": 225,
     "min_font_on_paper_pt": 9.35,
-    "sha256_png": "19193af15ea2bcbf2f056c2907f33c23bb74f7f46df80d9b43d1ba2ed4c5559c",
+    "sha256_png": "560ec27d068024fab144e8bfc9fcba07186f19e4d531775b1543bd5f49480811",
     "source_name": "V6_reports",
     "path": "concise/C_V6_reports",
     "letter": "В",
@@ -513,7 +796,7 @@
     "max_width_mm": 252,
     "max_height_mm": 145,
     "min_font_on_paper_pt": 9.52,
-    "sha256_png": "94744f21e1edf6ca62b0f534f639b78a0ebe128521ca50814c2bd3b17a8f4d85",
+    "sha256_png": "06912772764d222d376817305c479d76a0d9200642c5bb5ebcb007e1bb51d4cc",
     "source_name": "V7_states",
     "path": "concise/C_V7_states",
     "letter": "В",
@@ -534,7 +817,7 @@
     "max_width_mm": 252,
     "max_height_mm": 145,
     "min_font_on_paper_pt": 9.72,
-    "sha256_png": "43631b5bd4fe6a61a5cfbc9994d420225ff3410722889d920dec28d03c078675",
+    "sha256_png": "cf60c98f3741516a15aeff4ca6d45d93688c730c8259d43078bf56b701d5cbbf",
     "source_name": "G1_architecture",
     "path": "concise/C_G1_architecture",
     "letter": "Г",
@@ -553,7 +836,7 @@
     "max_width_mm": 252,
     "max_height_mm": 145,
     "min_font_on_paper_pt": 9.26,
-    "sha256_png": "3c7d561e14729601718dfa3a0a4625a9f442bb2ca902ca09e433d01690f61feb",
+    "sha256_png": "e8daae4b696fad190a5342d2964c16dd228a9ecda2c32e362a83ace287c1f8af",
     "source_name": "D2_realization",
     "path": "concise/C_D2_realization",
     "letter": "Г",
@@ -572,7 +855,7 @@
     "max_width_mm": 252,
     "max_height_mm": 145,
     "min_font_on_paper_pt": 11.74,
-    "sha256_png": "98df7d2665ab6e089fcd23c4f9291f19b497f9508f1a3b4985c0b72cf8a9afa1",
+    "sha256_png": "bfae18decc083c53d90f40ce6efc45c02a278462adedab9f0cf73d3802872f42",
     "source_name": "D3_transfer",
     "path": "concise/C_D3_transfer",
     "letter": "Г",
@@ -591,7 +874,7 @@
     "max_width_mm": 252,
     "max_height_mm": 145,
     "min_font_on_paper_pt": 8.52,
-    "sha256_png": "8226e4e9c89ed30b44b2e5487303c3fb99d3a8c992556a80eef5f4b718dac5d0",
+    "sha256_png": "00a1c5bb44cd77c88be8c90b6a6662368c054fee21ec5a1100641e31b3ce6204",
     "source_name": "D4_schedule",
     "path": "concise/C_D4_schedule",
     "letter": "Г",
@@ -610,7 +893,7 @@
     "max_width_mm": 375,
     "max_height_mm": 220,
     "min_font_on_paper_pt": 10.63,
-    "sha256_png": "a50d8d95ff18ed7fc5e6930859b621464e0bd075afe1f8810c5d0a6d4621fc8f",
+    "sha256_png": "41532f4b41a758fb9f3054562ac152913bb725c1ca3d28465a9f4c710de00a78",
     "source_name": "D7_component",
     "path": "concise/C_D7_component",
     "letter": "Г",

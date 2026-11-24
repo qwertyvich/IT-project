@@ -11,9 +11,9 @@
     "software_acceptance_tests_run": false
   },
   "document": {
-    "main": "C:\\Users\\user\\Desktop\\IT\\_work\\IT-project\\Готовая работа\\Банковская система — Пояснительная записка.docx",
+    "main": "/Users/admin/Desktop/work/IT/Готовая работа/Банковская система — Пояснительная записка.docx",
     "edition": "concise",
-    "figures": 20,
+    "figures": 21,
     "tables": 8,
     "appendices": 5,
     "sources": 12,
@@ -25,7 +25,7 @@
     "continued_parts": 3
   },
   "guide": {
-    "guide": "C:\\Users\\user\\Desktop\\IT\\_work\\IT-project\\Готовая работа\\Защита за 3 минуты и пояснения.docx",
+    "guide": "/Users/admin/Desktop/work/IT/Готовая работа/Защита за 3 минуты и пояснения.docx",
     "speech_words": 298,
     "target_pages": 2
   }

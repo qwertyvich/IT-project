@@ -9,6 +9,7 @@ from fonts import ARIAL
 from PIL import ImageFont
 from project_model import FIG,ENTITIES,FK
 from diagram_tools import Picture,BLUE,GREEN,YELLOW
+from chen_figure import chen_model
 
 
 class CompactPicture(Picture):
@@ -153,7 +154,7 @@ def quality_model(out_dir=FIG/'concise'):
 
 
 def build_all(out_dir=FIG/'concise'):
-    return [data_model(out_dir),quality_model(out_dir)]
+    return [chen_model(out_dir),data_model(out_dir),quality_model(out_dir)]
 
 
 if __name__=='__main__':print(json.dumps(build_all(),ensure_ascii=False,indent=2))

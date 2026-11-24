@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="3400" height="2340" viewBox="0 0 3400 2340"><rect width="100%" height="100%" fill="white"/><rect x="25" y="45" width="1640" height="1040" fill="none" stroke="black" stroke-width="2" stroke-dasharray="12 8"/>
+<text x="845.0" y="103.40" text-anchor="middle" font-family="Arial" font-size="40" fill="black" font-weight="bold">
+<tspan x="845.0" dy="0">Клиенты, счета и сотрудники</tspan>
+</text>
+<rect x="1680" y="45" width="1710" height="1040" fill="none" stroke="black" stroke-width="2" stroke-dasharray="12 8"/>
+<text x="2535.0" y="103.40" text-anchor="middle" font-family="Arial" font-size="40" fill="black" font-weight="bold">
+<tspan x="2535.0" dy="0">Карты и внутрибанковские переводы</tspan>
+</text>
+<rect x="25" y="1140" width="1640" height="1040" fill="none" stroke="black" stroke-width="2" stroke-dasharray="12 8"/>
+<text x="845.0" y="1198.40" text-anchor="middle" font-family="Arial" font-size="40" fill="black" font-weight="bold">
+<tspan x="845.0" dy="0">Кредитный договор и план</tspan>
+</text>
+<rect x="1680" y="1140" width="1710" height="1040" fill="none" stroke="black" stroke-width="2" stroke-dasharray="12 8"/>
+<text x="2535.0" y="1198.40" text-anchor="middle" font-family="Arial" font-size="40" fill="black" font-weight="bold">
+<tspan x="2535.0" dy="0">Служебный аудит</tspan>
+</text>
+<rect x="135.0" y="320.0" width="350" height="100" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="310" y="379.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black" font-weight="bold">
+<tspan x="310" dy="0">Клиент</tspan>
+</text>
+<rect x="1125.0" y="320.0" width="350" height="100" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1300" y="379.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black" font-weight="bold">
+<tspan x="1300" dy="0">Счёт</tspan>
+</text>
+<rect x="1125.0" y="770.0" width="350" height="100" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1300" y="829.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black" font-weight="bold">
+<tspan x="1300" dy="0">Отделение</tspan>
+</text>
+<rect x="135.0" y="770.0" width="350" height="100" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="310" y="829.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black" font-weight="bold">
+<tspan x="310" dy="0">Сотрудник</tspan>
+</text>
+<polyline points="485,370 680,370" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="930.0,365.0 1125.0,365.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="930.0,375.0 1125.0,375.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polygon points="805,303.0 930.0,370 805,437.0 680.0,370" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="805" y="379.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="805" dy="0">владеет</tspan>
+</text>
+<rect x="529.0" y="307.84" width="32.0" height="44.32000000000001" fill="white"/>
+<text x="545" y="339.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="545" dy="0">1</tspan>
+</text>
+<rect x="1051.0" y="307.84" width="38.0" height="44.32000000000001" fill="white"/>
+<text x="1070" y="339.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1070" dy="0">N</tspan>
+</text>
+<polyline points="1300,770 1300,662" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="1295.0,528.0 1295.0,420.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="1305.0,528.0 1305.0,420.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polygon points="1300,528.0 1425.0,595 1300,662.0 1175.0,595" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="1300" y="584.20" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1300" dy="0">обслужи-</tspan>
+<tspan x="1300" dy="40.32000000000001">вает</tspan>
+</text>
+<rect x="1334.0" y="692.84" width="32.0" height="44.32000000000001" fill="white"/>
+<text x="1350" y="724.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1350" dy="0">1</tspan>
+</text>
+<rect x="1331.0" y="452.84" width="38.0" height="44.32000000000001" fill="white"/>
+<text x="1350" y="484.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1350" dy="0">N</tspan>
+</text>
+<polyline points="1125,820 930,820" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="680.0,825.0 485.0,825.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="680.0,815.0 485.0,815.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polygon points="805,753.0 930.0,820 805,887.0 680.0,820" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="805" y="809.20" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="805" dy="0">работает</tspan>
+<tspan x="805" dy="40.32000000000001">в</tspan>
+</text>
+<rect x="1054.0" y="757.84" width="32.0" height="44.32000000000001" fill="white"/>
+<text x="1070" y="789.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1070" dy="0">1</tspan>
+</text>
+<rect x="526.0" y="757.84" width="38.0" height="44.32000000000001" fill="white"/>
+<text x="545" y="789.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="545" dy="0">N</tspan>
+</text>
+<polyline points="273.8888888888889,320.0 209.64546858081286,231.0475718811255" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="180" cy="190" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="180" y="199.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="180" dy="0">ID клиента</tspan>
+</text>
+<path d="M 85.0 213 H 275.0" stroke="black" stroke-width="2"/>
+<polyline points="360.0,320.0 449.77129602071165,230.22870397928835" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="490" cy="190" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="490" y="199.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="490" dy="0">ФИО</tspan>
+</text>
+<polyline points="1255.5555555555557,320.0 1176.0727710784465,230.58186746325234" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="1140" cy="190" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="1140" y="199.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1140" dy="0">ID счёта</tspan>
+</text>
+<path d="M 1064.0 213 H 1216.0" stroke="black" stroke-width="2"/>
+<polyline points="1341.6666666666667,320.0 1416.0450124949134,230.74598500610395" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="1450" cy="190" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="1450" y="199.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1450" dy="0">Номер</tspan>
+</text>
+<polyline points="1255.5555555555557,870.0 1176.0727710784465,959.4181325367476" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="1140" cy="1000" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="1140" y="1009.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1140" dy="0">ID отделения</tspan>
+</text>
+<path d="M 1026.0 1023 H 1254.0" stroke="black" stroke-width="2"/>
+<polyline points="1341.6666666666667,870.0 1416.0450124949134,959.254014993896" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="1450" cy="1000" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="1450" y="1009.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1450" dy="0">Код</tspan>
+</text>
+<polyline points="273.8888888888889,870.0 209.64546858081286,958.9524281188745" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="180" cy="1000" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="180" y="1009.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="180" dy="0">ID сотрудника</tspan>
+</text>
+<path d="M 60.0 1023 H 300.0" stroke="black" stroke-width="2"/>
+<polyline points="360.0,870.0 449.77129602071165,959.7712960207116" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="490" cy="1000" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="490" y="1009.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="490" dy="0">Роль</tspan>
+</text>
+<rect x="1810.0" y="320.0" width="350" height="100" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1985" y="379.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black" font-weight="bold">
+<tspan x="1985" dy="0">Счёт</tspan>
+</text>
+<rect x="2955.0" y="320.0" width="350" height="100" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="3130" y="379.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black" font-weight="bold">
+<tspan x="3130" dy="0">Банковская карта</tspan>
+</text>
+<rect x="1810.0" y="770.0" width="350" height="100" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1985" y="829.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black" font-weight="bold">
+<tspan x="1985" dy="0">Перевод</tspan>
+</text>
+<rect x="2955.0" y="770.0" width="350" height="100" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="3130" y="829.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black" font-weight="bold">
+<tspan x="3130" dy="0">Сотрудник</tspan>
+</text>
+<polyline points="2160,370 2430,370" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="2680.0,365.0 2955.0,365.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="2680.0,375.0 2955.0,375.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polygon points="2555,303.0 2680.0,370 2555,437.0 2430.0,370" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="2555" y="359.20" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2555" dy="0">имеет</tspan>
+<tspan x="2555" dy="40.32000000000001">карту</tspan>
+</text>
+<rect x="2224.0" y="307.84" width="32.0" height="44.32000000000001" fill="white"/>
+<text x="2240" y="339.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2240" dy="0">1</tspan>
+</text>
+<rect x="2861.0" y="307.84" width="38.0" height="44.32000000000001" fill="white"/>
+<text x="2880" y="339.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2880" dy="0">N</tspan>
+</text>
+<polyline points="1895,420 1865,465 1865,528" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="1870.0,662.0 1869.6947389322859,713.8028696732986 1899.389477864572,767.6057393465971" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="1860.0,662.0 1860.3052610677141,716.1971303267014 1890.610522135428,772.3942606534029" fill="none" stroke="black" stroke-width="2.5"/>
+<polygon points="1865,528.0 1990.0,595 1865,662.0 1740.0,595" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="1865" y="584.20" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1865" dy="0">списа-</tspan>
+<tspan x="1865" dy="40.32000000000001">ние</tspan>
+</text>
+<rect x="1799.0" y="442.84" width="32.0" height="44.32000000000001" fill="white"/>
+<text x="1815" y="474.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1815" dy="0">1</tspan>
+</text>
+<rect x="1796.0" y="697.84" width="38.0" height="44.32000000000001" fill="white"/>
+<text x="1815" y="729.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1815" dy="0">N</tspan>
+</text>
+<polyline points="2075,420 2160,465 2160,528" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="2165.0,662.0 2163.858128195393,717.0989253928803 2077.7162563907864,774.1978507857608" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="2155.0,662.0 2156.141871804607,712.9010746071197 2072.2837436092136,765.8021492142392" fill="none" stroke="black" stroke-width="2.5"/>
+<polygon points="2160,528.0 2285.0,595 2160,662.0 2035.0,595" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="2160" y="584.20" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2160" dy="0">зачис-</tspan>
+<tspan x="2160" dy="40.32000000000001">ление</tspan>
+</text>
+<rect x="2204.0" y="442.84" width="32.0" height="44.32000000000001" fill="white"/>
+<text x="2220" y="474.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2220" dy="0">1</tspan>
+</text>
+<rect x="2201.0" y="697.84" width="38.0" height="44.32000000000001" fill="white"/>
+<text x="2220" y="729.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2220" dy="0">N</tspan>
+</text>
+<polyline points="3130,770 3130,662" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="3125.0,528.0 3125.0,420.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="3135.0,528.0 3135.0,420.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polygon points="3130,528.0 3255.0,595 3130,662.0 3005.0,595" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="3130" y="584.20" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="3130" dy="0">регист-</tspan>
+<tspan x="3130" dy="40.32000000000001">рирует</tspan>
+</text>
+<rect x="3164.0" y="692.84" width="32.0" height="44.32000000000001" fill="white"/>
+<text x="3180" y="724.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="3180" dy="0">1</tspan>
+</text>
+<rect x="3161.0" y="452.84" width="38.0" height="44.32000000000001" fill="white"/>
+<text x="3180" y="484.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="3180" dy="0">N</tspan>
+</text>
+<polyline points="2955,820 2680,820" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="2430.0,825.0 2160.0,825.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="2430.0,815.0 2160.0,815.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polygon points="2555,753.0 2680.0,820 2555,887.0 2430.0,820" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="2555" y="829.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2555" dy="0">создаёт</tspan>
+</text>
+<rect x="2864.0" y="757.84" width="32.0" height="44.32000000000001" fill="white"/>
+<text x="2880" y="789.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2880" dy="0">1</tspan>
+</text>
+<rect x="2221.0" y="757.84" width="38.0" height="44.32000000000001" fill="white"/>
+<text x="2240" y="789.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2240" dy="0">N</tspan>
+</text>
+<polyline points="1947.5,320.0 1880.7317073170732,230.97560975609755" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="1850" cy="190" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="1850" y="199.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1850" dy="0">ID счёта</tspan>
+</text>
+<path d="M 1774.0 213 H 1926.0" stroke="black" stroke-width="2"/>
+<polyline points="2033.611111111111,320.0 2120.8,230.32" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="2160" cy="190" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="2160" y="199.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2160" dy="0">Номер</tspan>
+</text>
+<polyline points="3073.0555555555557,320.0 2970.264253923939,229.7442229576051" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="2925" cy="190" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="2925" y="199.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2925" dy="0">ID карты</tspan>
+</text>
+<path d="M 2849.0 213 H 3001.0" stroke="black" stroke-width="2"/>
+<polyline points="3159.1666666666665,320.0 3210.866753554685,231.37127962053958" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="3235" cy="190" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="3235" y="199.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="3235" dy="0">Номер</tspan>
+</text>
+<polyline points="1947.5,870.0 1880.7317073170732,959.0243902439024" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="1850" cy="1000" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="1850" y="1009.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1850" dy="0">ID перевода</tspan>
+</text>
+<path d="M 1745.5 1023 H 1954.5" stroke="black" stroke-width="2"/>
+<polyline points="2033.611111111111,870.0 2120.8,959.68" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="2160" cy="1000" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="2160" y="1009.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2160" dy="0">Сумма</tspan>
+</text>
+<polyline points="3073.0555555555557,870.0 2970.264253923939,960.2557770423949" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="2925" cy="1000" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="2925" y="1009.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2925" dy="0">ID сотрудника</tspan>
+</text>
+<path d="M 2805.0 1023 H 3045.0" stroke="black" stroke-width="2"/>
+<polyline points="3159.1666666666665,870.0 3210.866753554685,958.6287203794604" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="3235" cy="1000" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="3235" y="1009.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="3235" dy="0">Роль</tspan>
+</text>
+<rect x="135.0" y="1400.0" width="350" height="100" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="310" y="1459.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black" font-weight="bold">
+<tspan x="310" dy="0">Счёт</tspan>
+</text>
+<rect x="1125.0" y="1400.0" width="350" height="100" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1300" y="1439.20" text-anchor="middle" font-family="Arial" font-size="36" fill="black" font-weight="bold">
+<tspan x="1300" dy="0">Кредитный</tspan>
+<tspan x="1300" dy="40.32000000000001">договор</tspan>
+</text>
+<rect x="135.0" y="1880.0" width="350" height="100" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="310" y="1939.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black" font-weight="bold">
+<tspan x="310" dy="0">Сотрудник</tspan>
+</text>
+<rect x="1125.0" y="1880.0" width="350" height="100" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<rect x="1133.0" y="1888.0" width="334" height="84" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="1300" y="1939.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black" font-weight="bold">
+<tspan x="1300" dy="0">Плановый платёж</tspan>
+</text>
+<polyline points="485,1450 680,1450" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="930.0,1445.0 1125.0,1445.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="930.0,1455.0 1125.0,1455.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polygon points="805,1383.0 930.0,1450 805,1517.0 680.0,1450" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="805" y="1439.20" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="805" dy="0">относится</tspan>
+<tspan x="805" dy="40.32000000000001">к счёту</tspan>
+</text>
+<rect x="529.0" y="1387.84" width="32.0" height="44.32000000000001" fill="white"/>
+<text x="545" y="1419.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="545" dy="0">1</tspan>
+</text>
+<rect x="1051.0" y="1387.84" width="38.0" height="44.32000000000001" fill="white"/>
+<text x="1070" y="1419.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1070" dy="0">N</tspan>
+</text>
+<polyline points="485,1930 590,1930 590,1740 680,1740" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="930.0,1735.0 1117.5,1737.5 1115.5794468010065,1558.3995390008388 1166.1588936020132,1496.7990780016776" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="930.0,1745.0 1122.5,1742.5 1124.4205531989935,1561.6004609991612 1173.8411063979868,1503.2009219983224" fill="none" stroke="black" stroke-width="2.5"/>
+<polygon points="805,1673.0 930.0,1740 805,1807.0 680.0,1740" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="805" y="1729.20" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="805" dy="0">регист-</tspan>
+<tspan x="805" dy="40.32000000000001">рирует</tspan>
+</text>
+<rect x="529.0" y="1867.84" width="32.0" height="44.32000000000001" fill="white"/>
+<text x="545" y="1899.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="545" dy="0">1</tspan>
+</text>
+<rect x="1061.0" y="1597.84" width="38.0" height="44.32000000000001" fill="white"/>
+<text x="1080" y="1629.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1080" dy="0">N</tspan>
+</text>
+<polyline points="1305.0,1500.0 1305.0,1623.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="1295.0,1500.0 1295.0,1623.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="1305.0,1757.0 1305.0,1880.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="1295.0,1757.0 1295.0,1880.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polygon points="1300,1623.0 1425.0,1690 1300,1757.0 1175.0,1690" fill="white" stroke="black" stroke-width="2.5"/>
+<polygon points="1300,1632.0 1416.0,1690 1300,1748.0 1184.0,1690" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="1300" y="1699.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1300" dy="0">содержит</tspan>
+</text>
+<rect x="1334.0" y="1537.84" width="32.0" height="44.32000000000001" fill="white"/>
+<text x="1350" y="1569.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1350" dy="0">1</tspan>
+</text>
+<rect x="1331.0" y="1792.84" width="38.0" height="44.32000000000001" fill="white"/>
+<text x="1350" y="1824.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1350" dy="0">N</tspan>
+</text>
+<polyline points="273.8888888888889,1400.0 209.64546858081286,1311.0475718811256" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="180" cy="1270" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="180" y="1279.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="180" dy="0">ID счёта</tspan>
+</text>
+<path d="M 104.0 1293 H 256.0" stroke="black" stroke-width="2"/>
+<polyline points="360.0,1400.0 449.77129602071165,1310.2287039792884" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="490" cy="1270" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="490" y="1279.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="490" dy="0">Номер</tspan>
+</text>
+<polyline points="1255.5555555555557,1400.0 1176.0727710784465,1310.5818674632524" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="1140" cy="1270" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="1140" y="1279.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1140" dy="0">ID договора</tspan>
+</text>
+<path d="M 1035.5 1293 H 1244.5" stroke="black" stroke-width="2"/>
+<polyline points="1341.6666666666667,1400.0 1416.0450124949134,1310.7459850061039" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="1450" cy="1270" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="1450" y="1259.20" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1450" dy="0">Номер</tspan>
+<tspan x="1450" dy="40.32000000000001">договора</tspan>
+</text>
+<polyline points="273.8888888888889,1980.0 209.64546858081286,2068.9524281188746" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="180" cy="2110" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="180" y="2119.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="180" dy="0">ID сотрудника</tspan>
+</text>
+<path d="M 60.0 2133 H 300.0" stroke="black" stroke-width="2"/>
+<polyline points="360.0,1980.0 449.77129602071165,2069.771296020712" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="490" cy="2110" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="490" y="2119.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="490" dy="0">Роль</tspan>
+</text>
+<polyline points="1341.6666666666667,1980.0 1416.0450124949134,2069.254014993896" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="1450" cy="2110" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="1450" y="2119.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1450" dy="0">Дата платежа</tspan>
+</text>
+<polyline points="1255.5555555555557,1980.0 1176.0727710784465,2069.4181325367476" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="1140" cy="2110" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="1140" y="2119.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1140" dy="0">№ платежа</tspan>
+</text>
+<path d="M 1054.5 2133 H 1225.5" stroke="black" stroke-width="2" stroke-dasharray="10 6"/>
+<rect x="1875.0" y="1400.0" width="350" height="100" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="2050" y="1459.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black" font-weight="bold">
+<tspan x="2050" dy="0">Сотрудник</tspan>
+</text>
+<rect x="2925.0" y="1400.0" width="350" height="100" rx="0" fill="white" stroke="black" stroke-width="2"/>
+<text x="3100" y="1459.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black" font-weight="bold">
+<tspan x="3100" dy="0">Событие аудита</tspan>
+</text>
+<polyline points="2225,1450 2450,1450" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="2700.0,1445.0 2925.0,1445.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polyline points="2700.0,1455.0 2925.0,1455.0" fill="none" stroke="black" stroke-width="2.5"/>
+<polygon points="2575,1383.0 2700.0,1450 2575,1517.0 2450.0,1450" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="2575" y="1459.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2575" dy="0">совершает</tspan>
+</text>
+<rect x="2274.0" y="1387.84" width="32.0" height="44.32000000000001" fill="white"/>
+<text x="2290" y="1419.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2290" dy="0">1</tspan>
+</text>
+<rect x="2841.0" y="1387.84" width="38.0" height="44.32000000000001" fill="white"/>
+<text x="2860" y="1419.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2860" dy="0">N</tspan>
+</text>
+<polyline points="2005.5555555555557,1400.0 1926.0727710784465,1310.5818674632524" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="1890" cy="1270" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="1890" y="1279.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1890" dy="0">ID сотрудника</tspan>
+</text>
+<path d="M 1770.0 1293 H 2010.0" stroke="black" stroke-width="2"/>
+<polyline points="2091.6666666666665,1400.0 2166.0450124949134,1310.7459850061039" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="2200" cy="1270" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="2200" y="1279.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2200" dy="0">Роль</tspan>
+</text>
+<polyline points="3051.3888888888887,1400.0 2964.2,1310.32" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="2925" cy="1270" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="2925" y="1279.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2925" dy="0">ID события</tspan>
+</text>
+<path d="M 2830.0 1293 H 3020.0" stroke="black" stroke-width="2"/>
+<polyline points="3137.5,1400.0 3204.268292682927,1310.9756097560976" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="3235" cy="1270" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="3235" y="1279.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="3235" dy="0">Действие</tspan>
+</text>
+<polyline points="3063.6363636363635,1500.0 2969.8433905303414,1628.9653380207803" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="2940" cy="1670" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="2940" y="1679.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2940" dy="0">Тип объекта</tspan>
+</text>
+<polyline points="3129.5454545454545,1500.0 3205.562824685553,1628.64478023709" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="3230" cy="1670" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="3230" y="1679.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="3230" dy="0">ID объекта</tspan>
+</text>
+<polyline points="2997.7272727272725,1500.0 2723.2222707793626,1634.202445396756" fill="none" stroke="black" stroke-width="2.5"/>
+<ellipse cx="2650" cy="1670" rx="140" ry="42" fill="white" stroke="black" stroke-width="2.5"/>
+<text x="2650" y="1679.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2650" dy="0">Время</tspan>
+</text>
+<text x="2555" y="2009.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2555" dy="0">Тип и ID объекта задают предмет аудита;</tspan>
+</text>
+<text x="2555" y="2059.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="2555" dy="0">универсальная FK-связь с ним не вводится.</tspan>
+</text>
+<text x="1700" y="2219.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1700" dy="0">Прямоугольник — сущность; ромб — связь; овал — атрибут; подчёркнутый атрибут — ключ. 1:N — кратность.</tspan>
+</text>
+<text x="1700" y="2269.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1700" dy="0">Двойная линия — обязательное участие; двойные рамки — слабая сущность и идентифицирующая связь; пунктир — частичный ключ.</tspan>
+</text>
+<text x="1700" y="2319.36" text-anchor="middle" font-family="Arial" font-size="36" fill="black">
+<tspan x="1700" dy="0">Повторённые сущности во фрагментах тождественны. Показаны основные атрибуты; полный состав и типы — на логической ER-модели.</tspan>
+</text></svg>

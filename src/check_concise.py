@@ -3,10 +3,11 @@ from pathlib import Path
 import json,re,hashlib,sys,subprocess
 from collections import Counter
 from docx import Document
+from docx.oxml.ns import qn
 from pypdf import PdfReader
 from lxml import etree
 import pdfplumber
-from project_model import ROOT,SRC,FIG,OUT,AUTHOR,GROUP,TEACHER,ENTITIES,validate_model
+from project_model import ROOT,SRC,FIG,OUT,AUTHOR,GROUP,TEACHER,ENTITIES,FK,validate_model
 from concise_catalog import FIGURES
 from concise_content import HEADING_LIST
 from check_project import arithmetic,check_contracts,check_module_tasks
@@ -33,8 +34,12 @@ def run():
  apps=[p.text for p in d.paragraphs if p.style.name=='Heading 1' and p.text.startswith('ПРИЛОЖЕНИЕ ')]
  assert apps==['ПРИЛОЖЕНИЕ '+x for x in 'АБВГД']
  captions=[p.text for p in d.paragraphs if p.style.name=='Caption']
- assert captions==[x['caption'] for x in FIGURES] and len(d.inline_shapes)==20
+ assert captions==[x['caption'] for x in FIGURES] and len(d.inline_shapes)==len(FIGURES)
  manifest=json.loads((SRC/'concise_figures_manifest.json').read_text(encoding='utf-8'))
+ chen=next(item for item in manifest if item['name']=='C_A0_chen')
+ assert chen['entities']==9
+ assert {(r['from'],r['field'],r['to'],r['target']) for r in chen['relationships']}==set(FK)
+ assert {a['entity'] for a in chen['attributes']}=={e[0] for e in ENTITIES}
  for shape,spec,item in zip(d.inline_shapes,FIGURES,manifest):
   rid=shape._inline.graphic.graphicData.pic.blipFill.blip.embed
   image=d.part.rels[rid].target_part.blob
@@ -47,9 +52,9 @@ def run():
  assert len([p for p in d.paragraphs if p.text.startswith('Продолжение таблицы ')])==len(d.tables)-8
  assert all(t.rows[0]._tr.xpath('./w:trPr/w:tblHeader') for t in d.tables)
  body=list(d.element.body)
- bodytext=[''.join(e.xpath('.//w:t/text()')) for e in body]
+ bodytext=[''.join(node.text or '' for node in e.iter(qn('w:t'))) for e in body]
  assert next(i for i,t in enumerate(bodytext) if 'ЦП1' in t)<next(i for i,t in enumerate(bodytext) if 'F1' in t)
- for token in ['ЦП1','ЦП2','ЦП3','ЦП4','u=L/Q','неизвестный исход','недостаточно свидетельств','book_opened_at','contract_ref','post_transfer','/api/v1/transfers/{id}/post','П1.','П9.']:
+ for token in ['Архитектура системы —','Архитектура программного обеспечения —','нотации Чена','ЦП1','ЦП2','ЦП3','ЦП4','u=L/Q','неизвестный исход','недостаточно свидетельств','book_opened_at','contract_ref','post_transfer','/api/v1/transfers/{id}/post','П1.','П9.']:
   assert normalize(token) in normalize(alltext),token
  for i in range(1,12):assert f'М{i:02}' in alltext
  # Сопровождающие задания относятся к текущей нумерации, а не к снятой редакции.
@@ -98,7 +103,7 @@ def run():
      for word in page.extract_words():
       assert word['x0']>=30/25.4*72-2 and word['x1']<=page.width-15/25.4*72+2,(n,word['text'])
      images.extend((n,x) for x in page.images)
-   assert len(images)==20
+   assert len(images)==len(FIGURES)
    for item,(page,x) in zip(manifest,images):
     minimum=item['min_font_px']*(x['x1']-x['x0'])/item['width']
     assert abs(minimum-item['min_font_on_paper_pt'])<.02,(item['name'],minimum)
@@ -110,7 +115,7 @@ def run():
  result={'model':validate_model(),'dfd':validate_dfd(),'reference_arithmetic':arithmetic(),'quality_formula':check_reference(),
   'cross_document_consistency':{'active_module_references_current':True,'schedule_arguments_match_T09_M07':True},
   'contracts':check_contracts(),'module_tasks':check_module_tasks(),'printed_document':{
-   'chapters':7,'numbered_headings':27,'appendices':5,'figures':20,'logical_tables':8,
+   'chapters':7,'numbered_headings':27,'appendices':5,'figures':len(FIGURES),'logical_tables':8,
    'body_font_pt':14,'table_font_pt':12,'all_images_match_code':True,'all_64_fields_present_on_er':True,
    'all_15_operations_covered':True,'layout':print_layout},'pdfs':pdfs,
    'scope':'Проверка проектных документов и расчётных эталонов. Приёмочные испытания реализации не проводились.'}

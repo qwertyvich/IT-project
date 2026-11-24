@@ -66,7 +66,7 @@
     "chapters": 7,
     "numbered_headings": 27,
     "appendices": 5,
-    "figures": 20,
+    "figures": 21,
     "logical_tables": 8,
     "body_font_pt": 14,
     "table_font_pt": 12,
@@ -74,109 +74,114 @@
     "all_64_fields_present_on_er": true,
     "all_15_operations_covered": true,
     "layout": {
-      "main_pages": 46,
+      "main_pages": 47,
       "main_before_appendices": 23,
-      "appendix_pages": 23,
-      "a3_pages": 4,
+      "appendix_pages": 24,
+      "a3_pages": 5,
       "figures": [
         {
-          "figure": "C_A1_data",
+          "figure": "C_A0_chen",
           "page": 24,
-          "font_pt": 8.852
+          "font_pt": 9.594
+        },
+        {
+          "figure": "C_A1_data",
+          "page": 25,
+          "font_pt": 8.853
         },
         {
           "figure": "C_A2_quality",
-          "page": 25,
-          "font_pt": 10.204
+          "page": 26,
+          "font_pt": 10.205
         },
         {
           "figure": "C_B1_context",
-          "page": 26,
-          "font_pt": 12.136
+          "page": 27,
+          "font_pt": 12.138
         },
         {
           "figure": "C_B2_dfd",
-          "page": 27,
-          "font_pt": 8.883
+          "page": 28,
+          "font_pt": 8.884
         },
         {
           "figure": "C_B9_resources",
-          "page": 28,
-          "font_pt": 10.856
+          "page": 29,
+          "font_pt": 10.857
         },
         {
           "figure": "C_B3_tree",
-          "page": 29,
+          "page": 30,
           "font_pt": 9.023
         },
         {
           "figure": "C_B6_transfers",
-          "page": 30,
-          "font_pt": 9.022
+          "page": 31,
+          "font_pt": 9.023
         },
         {
           "figure": "C_B7_loans",
-          "page": 31,
-          "font_pt": 9.797
+          "page": 32,
+          "font_pt": 9.798
         },
         {
           "figure": "C_V1_service",
-          "page": 32,
-          "font_pt": 9.355
-        },
-        {
-          "figure": "C_V2_clients",
           "page": 33,
           "font_pt": 9.355
         },
         {
-          "figure": "C_V3_cards",
+          "figure": "C_V2_clients",
           "page": 34,
-          "font_pt": 8.994
+          "font_pt": 9.355
+        },
+        {
+          "figure": "C_V3_cards",
+          "page": 35,
+          "font_pt": 8.995
         },
         {
           "figure": "C_V4_transfers",
-          "page": 35,
-          "font_pt": 8.994
+          "page": 36,
+          "font_pt": 8.995
         },
         {
           "figure": "C_V5_loans",
-          "page": 36,
-          "font_pt": 8.994
+          "page": 37,
+          "font_pt": 8.995
         },
         {
           "figure": "C_V6_reports",
-          "page": 37,
+          "page": 38,
           "font_pt": 9.355
         },
         {
           "figure": "C_V7_states",
-          "page": 38,
-          "font_pt": 9.524
+          "page": 39,
+          "font_pt": 9.525
         },
         {
           "figure": "C_G1_architecture",
-          "page": 39,
+          "page": 40,
           "font_pt": 9.715
         },
         {
           "figure": "C_D2_realization",
-          "page": 40,
-          "font_pt": 9.259
+          "page": 41,
+          "font_pt": 9.26
         },
         {
           "figure": "C_D3_transfer",
-          "page": 41,
-          "font_pt": 11.735
+          "page": 42,
+          "font_pt": 11.736
         },
         {
           "figure": "C_D4_schedule",
-          "page": 42,
+          "page": 43,
           "font_pt": 8.516
         },
         {
           "figure": "C_D7_component",
-          "page": 43,
+          "page": 44,
           "font_pt": 10.63
         }
       ]
@@ -185,8 +190,8 @@
   "pdfs": [
     {
       "file": "Банковская система — Пояснительная записка.pdf",
-      "pages": 46,
-      "sha256": "c138988a68112201c3fbee98c0acd3615e456637fdc8e7300839b40bf6c17787",
+      "pages": 47,
+      "sha256": "7bd1a0356096eb69645825e21632830f27dc6030d197a65a40900d9fbb6b7c0c",
       "no_blank_pages": true,
       "fonts_embedded": true,
       "page_numbers_sequential": true
@@ -194,7 +199,7 @@
     {
       "file": "Защита за 3 минуты и пояснения.pdf",
       "pages": 2,
-      "sha256": "06e89249b57e6be0a38a0684b2cca981f4bc86b8d0dfb0891e5d372264430c07",
+      "sha256": "24d89cc3aed04ae49c3bdf60a8d3470013b349472a13cdac17e8d51e1b4e38fb",
       "no_blank_pages": true,
       "fonts_embedded": true,
       "page_numbers_sequential": true

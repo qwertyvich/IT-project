@@ -6,6 +6,7 @@ GROUPS=[('А','Диаграммы сущность–связь'),('Б','Диа�
 
 # Источник, приложение, название, бумага, ориентация, высота изображения.
 SPEC=[
+ ('C_A0_chen','А','Концептуальная модель данных в нотации Чена','A3','landscape',220),
  ('C_A1_data','А','Логическая модель данных банковской системы','A4','landscape',145),
  ('C_A2_quality','А','Декларативная модель оценивания качества','A4','landscape',145),
  ('B1_context','Б','Контекстная диаграмма DFD','A4','landscape',135),
@@ -38,7 +39,7 @@ for source,letter,title,paper,orientation,height in SPEC:
   orientation=orientation,max_height_mm=height,
   max_width_mm=375 if paper=='A3' else (252 if orientation=='landscape' else 165)))
 
-REFS={'data':'рисунок А.1','quality':'рисунок А.2','context':'рисунок Б.1',
+REFS={'chen':'рисунок А.1','data':'рисунок А.2','quality':'рисунок А.3','context':'рисунок Б.1',
  'dfd':'рисунки Б.2–Б.3 и Б.5–Б.6','function_tree':'рисунок Б.4',
  'process_service':'рисунки В.1–В.7','process_transfer':'рисунок В.4',
  'process_loan':'рисунок В.5','architecture':'рисунок Г.1',
