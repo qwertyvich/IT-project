@@ -1,7 +1,7 @@
 """Проектные задания модулей: данные для документации, не реализация и не полная РКД.
 
-signature печатается в существующей таблице Д; task экспортируется в JSON.
-Типы отношений и предельные длины заданы словарём И. Политики канонизации
+Краткие задания печатаются в таблице Г.1; task экспортируется в JSON.
+Типы отношений и предельные длины заданы ENTITIES в src/project_model.py. Политики канонизации
 контактов и реквизитов применяются до проверок уникальности согласно общим
 правилам проекта; здесь альтернативная нормализация не вводится.
 """
@@ -14,7 +14,7 @@ _CTX = {
 
 
 _FORMAT = 'В Python деньги — Decimal, даты — date, моменты — timezone-aware datetime. В JSON деньги — строки с двумя знаками, даты ISO 8601, моменты RFC 3339 со смещением.'
-_VIEW = 'View содержит только разрешённые поля соответствующего отношения из И; password/password_hash, cookie и внутренний SQL исключены. Полный PAN не передаётся в отображаемый View: только последние четыре цифры.'
+_VIEW = 'View содержит только разрешённые поля соответствующего отношения из src/project_model.py.ENTITIES; password/password_hash, cookie и внутренний SQL исключены. Полный PAN не передаётся в отображаемый View: только последние четыре цифры.'
 
 
 DETAILS = {
@@ -45,7 +45,7 @@ DETAILS = {
                 'Внешний JSON не принимает password_hash. При create employee М10 получает password и возвращает внутренний хеш с солью и параметрами; пароль не сохраняется.',
             ],
             'postconditions': {
-                'returns': 'ClientView/BranchView/EmployeeView: разрешённые поля соответствующей строки И, включая исходный ID; EmployeeView без password/password_hash.',
+                'returns': 'ClientView/BranchView/EmployeeView: разрешённые поля по ENTITIES в src/project_model.py и MEANINGS в src/specifications.py, включая исходный ID; EmployeeView без password/password_hash.',
                 'effects': [
                     'Создание выдаёт новый ID; registered_at клиента задаётся сервером. PATCH сохраняет неизменяемые поля.',
                     'Предметная запись и audit_event фиксируются одной транзакцией; автор — ctx.employee_id. При отказе нет частичного изменения.',
@@ -114,7 +114,7 @@ DETAILS = {
                     'Q6': 'Плановые платежи с due_on в календарном period: дата, principal_part, interest_part, сумма; соединение с loan/account. Не выводить факт оплаты или просрочки, которых модель не хранит.',
                     'Q7': 'Когорта transferred_at в period; на общем as_of считать pending/completed/cancelled отдельно. Доля completed = completed/all*100, при all=0 равна 0; as_of обязателен. По finished_at денежную статистику не смешивать с этой когортой.',
                 },
-                'ReconciliationDTO': 'as_of; accounts[{account_id,stored_balance:Decimal,calculated_balance:Decimal,difference:Decimal}]; inconsistent_loans[{loan_id,reason}]; audit_events с разрешёнными полями И без секретов; totals{account_count,mismatch_count,inconsistent_loan_count}. calculated_balance использует только opening_balance+completed текущей книги; read-only, без автоматической правки расхождений.',
+                'ReconciliationDTO': 'as_of; accounts[{account_id,stored_balance:Decimal,calculated_balance:Decimal,difference:Decimal}]; inconsistent_loans[{loan_id,reason}]; audit_events с разрешёнными полями audit_event без секретов; totals{account_count,mismatch_count,inconsistent_loan_count}. calculated_balance использует только opening_balance+completed текущей книги; read-only, без автоматической правки расхождений.',
                 'representation': _FORMAT,
             },
             'errors': {'AUTH/401': 'нет сеанса', 'BT001/404': 'не найден заданный объект', 'BT002/403': 'запрещён отчёт/объект', 'BT004/422': 'недоступный/обратный период, неверный фильтр или тип; вернуть book_opened_at при нарушении границы', 'BT099/503': 'снимок/БД недоступны; не выдавать частичный документ за полный'},
@@ -140,12 +140,12 @@ DETAILS = {
         'task': {
             'signature': ['authenticate(login:str,password:str) -> ActorContext / AUTH', 'authorize(ctx:ActorContext,action:Action) -> allow / BT002', 'hash_password(password:str) -> str [внутренний вызов только для создания employee из М01]'],
             'inputs': {'ActorContext': _CTX, 'login': 'str, до 80; общая канонизация', 'password': 'непустой секрет write_only; политика хеширования и её параметры версионируются', 'Action': 'фиксированный код действия и целевого объекта, а не произвольный SQL/путь; неизвестное действие запрещено'},
-            'preconditions': ['authenticate сопоставляет login с employee и проверяет пароль библиотечной функцией scrypt по политике 6.4, с индивидуальной солью и фиксированными параметрами; не сравнивает открытый пароль с хешем как строки.', 'authorize принимает только серверный контекст действующего сеанса; на каждом действии повторно читает is_active и актуальную role_code.', 'hash_password вызывается из доверенной ветви создания employee администратором; внешний JSON никогда не задаёт password_hash.'],
+            'preconditions': ['authenticate сопоставляет login с employee и проверяет пароль библиотечной функцией scrypt по версионируемой политике: индивидуальная соль, параметры и формат хеша фиксируются в конфигурации сборки и сохраняются с хешем; не сравнивает открытый пароль с хешем как строки.', 'authorize принимает только серверный контекст действующего сеанса; на каждом действии повторно читает is_active и актуальную role_code.', 'hash_password вызывается из доверенной ветви создания employee администратором; внешний JSON никогда не задаёт password_hash.'],
             'postconditions': {
                 'authenticate': 'При верных данных активного сотрудника возвращает employee_id, актуальную role и UUID request_id; формирует защищённый сеанс. Иначе одинаковый AUTH/401 без раскрытия существования login.',
                 'authorize': 'allow только при действующем сеансе, active и разрешённой паре role/action. Переданная клиентом роль/actor_id не принимается. После отключения сотрудник получает отказ и через прежний сеанс.',
                 'authorization_scope': {'operator': 'ведение клиентов/счетов/карт и переводов; разрешённые рабочие документы', 'credit': 'регистрация/закрытие утверждённых договоров и чтение необходимого контекста/плана', 'controller': 'разрешённое чтение, отчётность, аудит и независимая сверка без предметных изменений', 'admin': 'справочники, учётные записи, запуск/восстановление; это не автоматическое право проводить переводы/менять договоры'},
-                'credential_creation': 'М10 создаёт scrypt-хеш по политике 6.4 с индивидуальной солью и записанными фиксированными параметрами, возвращает его только внутреннему М01. М01 сохраняет employee и аудит одной транзакцией; открытый пароль не сохраняется, не логируется и не попадает в audit_event. Обычный PATCH password/password_hash запрещает.',
+                'credential_creation': 'М10 создаёт scrypt-хеш с индивидуальной солью; параметры и формат хеша фиксируются в конфигурации сборки и сохраняются с хешем, возвращает его только внутреннему М01. М01 сохраняет employee и аудит одной транзакцией; открытый пароль не сохраняется, не логируется и не попадает в audit_event. Обычный PATCH password/password_hash запрещает.',
                 'secrets': 'ActorContext, EmployeeView, ответы ошибок, журналы и аудит не содержат пароль, password_hash или cookie. Проверки не зависят от присланного actor_id.',
             },
             'errors': {'AUTH/401': 'нет сеанса либо неверные/неактивные учётные данные', 'BT002/403': 'нет разрешённого действия или активность отозвана', 'BT004/422': 'неверный формат входа', 'BT099/503': 'невозможно достоверно проверить сеанс/БД; deny by default'},
@@ -154,39 +154,39 @@ DETAILS = {
     },
 }
 
-# Для этих пяти модулей точный синтаксис уже напечатан в И/алгоритмах Д.
+# Для этих пяти модулей синтаксис задан в CONTRACTS и алгоритмах приложения Г.
 # JSON связывает его с индивидуальным заданием без повторной печати.
 from project_model import MODULES
 _EXISTING = {
  'М04': (
   'prepare(cmd,ctx)→TransferView; cancel(id,ctx)→TransferView; resolve_repeat(key,cmd,ctx)→TransferView',
   ['prepare(cmd:TransferCommand,ctx:ActorContext)->TransferView', 'cancel(id:int,ctx:ActorContext)->TransferView', 'resolve_repeat(key:UUID,cmd:TransferCommand,ctx:ActorContext)->TransferView'],
-  'TransferCommand и TransferView — contracts/openapi.json; ctx — ActorContext; И Т01–Т02.',
+  'TransferCommand и TransferView — contracts/openapi.json; ctx — ActorContext; контракты Т01–Т02 в src/specifications.py.',
   'Сравнить request_key, параметры и исходного автора. Совпавший повтор возвращает тот же ID и текущее состояние; конфликт — BT005. Создание pending и отмена не меняют деньги; отменяется только pending.',
   ['AUTH','BT001','BT002','BT004','BT005','BT099']),
  'М05': (
   'post(id,ctx)→PostingResult; post_transfer(transfer_id,actor_id,request_id)→jsonb',
   ['post(id:int,ctx:ActorContext)->PostingResult', 'SELECT post_transfer(%s::integer,%s::integer,%s::uuid)'],
-  'Положительные transfer_id/actor_id и UUID request_id; actor из сеанса. SQL-граница И Т03–Т08.',
+  'Положительные transfer_id/actor_id и UUID request_id; actor из сеанса. SQL-граница: контракты Т03–Т08 в src/specifications.py.',
   'Заблокировать перевод и счета в согласованном порядке; повторно проверить состояние, активность и деньги. Остатки, completed, finished_at и аудит фиксируются вместе. Успех возвращается после COMMIT; при потере его подтверждения — сверка того же ID. 40P01/40001: не более трёх попыток с прежним ключом.',
   ['AUTH','BT001','BT002','BT003','BT004','BT005','BT099','INTERNAL']),
  'М06': (
   'validate(cmd)→ValidatedLoan; save(cmd,ctx)→LoanView; close(id,close_ref,ctx)→LoanView',
   ['validate(cmd:LoanCommand)->ValidatedLoan', 'save(cmd:LoanCommand,ctx:ActorContext)->LoanView', 'close(id:int,close_ref:str,ctx:ActorContext)->LoanView'],
-  'LoanCommand/LoanView — OpenAPI; ctx — ActorContext; И Т09. Валидированные поля имеют те же типы, что LoanCommand.',
+  'LoanCommand/LoanView — OpenAPI; ctx — ActorContext; контракт Т09 в src/specifications.py. Валидированные поля имеют те же типы, что LoanCommand.',
   'Полный договор и график сохраняются атомарно. Уникальный contract_ref сравнивается с утверждёнными условиями: повтор возвращает исходный ID/created_by и текущее состояние, включая closed. Новый договор требует active-счёта; совпавший повтор разрешён и после его отключения. Закрытие требует непустого close_ref, условий и плана не меняет.',
   ['AUTH','BT001','BT002','BT004','BT005','BT006','BT099']),
  'М07': (
   'build(principal,rate,issued_on,due_on,payment_dates)→ScheduleItem[]',
   ['build(principal:Decimal,annual_rate:Decimal,issued_on:date,due_on:date,payment_dates:list[date])->list[ScheduleItem]'],
-  'Типы/пределы LoanCommand и ScheduleItem — OpenAPI; алгоритм Д.4 и 6.4.',
+  'Типы/пределы LoanCommand и ScheduleItem — OpenAPI; алгоритм Г.4, разделы 4.4 и 6.3.',
   'Principal положителен, ставка 0…999,99 %, даты строго возрастают после issued_on и заканчиваются due_on. Первые N−1 доли floor(principal*100/N) копеек, последняя — остаток; каждая положительна. Проценты по остатку до платежа, фактические дни/365, HALF_UP. Чистый расчёт без записи в БД.',
   ['BT006']),
  'М11': (
   'audit_row(OLD,NEW,actor_id,request_key)→audit_event',
   ['SQL trigger: audit_row(OLD,NEW,transaction_local_actor_id,transaction_local_request_key)'],
-  'OLD/NEW предметной строки; доверенные actor_id/request_key из контекста транзакции; И Т05–Т06.',
-  'Событие пишется в транзакции предметного изменения и откатывается вместе с ним. Поля audit_event — словарь И; OLD отсутствует для create, NEW содержит результат. Пароли, хеши и cookie исключены; прямые UPDATE/DELETE аудита запрещены. Ошибка записи аудита не подавляется.',
+  'OLD/NEW предметной строки; доверенные actor_id/request_key из контекста транзакции; контракты Т05–Т06 в src/specifications.py.',
+  'Событие пишется в транзакции предметного изменения и откатывается вместе с ним. Поля audit_event — ENTITIES в src/project_model.py; OLD отсутствует для create, NEW содержит результат. Пароли, хеши и cookie исключены; прямые UPDATE/DELETE аудита запрещены. Ошибка записи аудита не подавляется.',
   ['BT099','INTERNAL']),
 }
 import re

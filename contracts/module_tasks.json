@@ -3,7 +3,7 @@
   "implementation_present": false,
   "scope": "Задания технического проекта; не полный комплект РКД и не реализованные модули.",
   "normalization": {
-    "text": "trim; предел длины из словаря И",
+    "text": "trim; предел длины по ENTITIES в src/project_model.py",
     "email": "trim и lower",
     "phone": "trim; удалить пробелы, скобки и дефисы; затем + и 7–15 цифр, иначе BT004/422",
     "phone_pattern": "^\\+[0-9]{7,15}$"
@@ -14,7 +14,7 @@
       "component": "К1",
       "inputs": "Карточка клиента, отделения или сотрудника",
       "result": "Идентификатор и сохранённые реквизиты",
-      "rules": "Контакты нормализуются до UQ по правилам приложения Д; проверить обязательность и права. Сотрудников и отделения изменяет администратор. Не менять идентификаторы.",
+      "rules": "Контакты нормализуются до UQ по правилам канонизации спецификации; проверить обязательность и права. Сотрудников и отделения изменяет администратор. Не менять идентификаторы.",
       "checks": "И01, И03",
       "detail": {
         "signature": [
@@ -56,12 +56,12 @@
           "Внешний JSON не принимает password_hash. При create employee М10 получает password и возвращает внутренний хеш с солью и параметрами; пароль не сохраняется."
         ],
         "postconditions": {
-          "returns": "ClientView/BranchView/EmployeeView: разрешённые поля соответствующей строки И, включая исходный ID; EmployeeView без password/password_hash.",
+          "returns": "ClientView/BranchView/EmployeeView: разрешённые поля по ENTITIES в src/project_model.py и MEANINGS в src/specifications.py, включая исходный ID; EmployeeView без password/password_hash.",
           "effects": [
             "Создание выдаёт новый ID; registered_at клиента задаётся сервером. PATCH сохраняет неизменяемые поля.",
             "Предметная запись и audit_event фиксируются одной транзакцией; автор — ctx.employee_id. При отказе нет частичного изменения.",
             "Отключение сотрудника запрещает последующие действия и через прежний сеанс; М10 читает актуальные активность и роль.",
-            "View содержит только разрешённые поля соответствующего отношения из И; password/password_hash, cookie и внутренний SQL исключены. Полный PAN не передаётся в отображаемый View: только последние четыре цифры."
+            "View содержит только разрешённые поля соответствующего отношения из src/project_model.py.ENTITIES; password/password_hash, cookie и внутренний SQL исключены. Полный PAN не передаётся в отображаемый View: только последние четыре цифры."
           ]
         },
         "errors": {
@@ -173,7 +173,7 @@
             "Разрешены active→blocked, blocked→active, active/blocked→closed; closed окончателен. Повтор текущего состояния не создаёт новую смену состояния.",
             "availability возвращает true ровно при card.status=active, account.status=active и issued_on≤date≤expires_on. Проверка вычисляется, не меняя состояние и не создавая операцию оплаты.",
             "Номер, счёт и даты зарегистрированной карты не изменяются методом change_status; отказ не меняет строку.",
-            "View содержит только разрешённые поля соответствующего отношения из И; password/password_hash, cookie и внутренний SQL исключены. Полный PAN не передаётся в отображаемый View: только последние четыре цифры."
+            "View содержит только разрешённые поля соответствующего отношения из src/project_model.py.ENTITIES; password/password_hash, cookie и внутренний SQL исключены. Полный PAN не передаётся в отображаемый View: только последние четыре цифры."
           ]
         },
         "errors": {
@@ -206,7 +206,7 @@
           "resolve_repeat(key:UUID,cmd:TransferCommand,ctx:ActorContext)->TransferView"
         ],
         "inputs": {
-          "types": "TransferCommand и TransferView — contracts/openapi.json; ctx — ActorContext; И Т01–Т02.",
+          "types": "TransferCommand и TransferView — contracts/openapi.json; ctx — ActorContext; контракты Т01–Т02 в src/specifications.py.",
           "domain_input": "Счета; сумма; request_key; пользователь"
         },
         "preconditions": [
@@ -243,7 +243,7 @@
           "SELECT post_transfer(%s::integer,%s::integer,%s::uuid)"
         ],
         "inputs": {
-          "types": "Положительные transfer_id/actor_id и UUID request_id; actor из сеанса. SQL-граница И Т03–Т08.",
+          "types": "Положительные transfer_id/actor_id и UUID request_id; actor из сеанса. SQL-граница: контракты Т03–Т08 в src/specifications.py.",
           "domain_input": "transfer_id; доверенный пользователь"
         },
         "preconditions": [
@@ -287,7 +287,7 @@
           "close(id:int,close_ref:str,ctx:ActorContext)->LoanView"
         ],
         "inputs": {
-          "types": "LoanCommand/LoanView — OpenAPI; ctx — ActorContext; И Т09. Валидированные поля имеют те же типы, что LoanCommand.",
+          "types": "LoanCommand/LoanView — OpenAPI; ctx — ActorContext; контракт Т09 в src/specifications.py. Валидированные поля имеют те же типы, что LoanCommand.",
           "domain_input": "Стабильный contract_ref; счёт; principal; annual_rate; даты; основание"
         },
         "preconditions": [
@@ -326,7 +326,7 @@
           "build(principal:Decimal,annual_rate:Decimal,issued_on:date,due_on:date,payment_dates:list[date])->list[ScheduleItem]"
         ],
         "inputs": {
-          "types": "Типы/пределы LoanCommand и ScheduleItem — OpenAPI; алгоритм Д.4 и 6.4.",
+          "types": "Типы/пределы LoanCommand и ScheduleItem — OpenAPI; алгоритм Г.4, разделы 4.4 и 6.3.",
           "domain_input": "Сумма; ставка; дата начала договора; даты платежей"
         },
         "preconditions": [
@@ -432,7 +432,7 @@
             "Q6": "Плановые платежи с due_on в календарном period: дата, principal_part, interest_part, сумма; соединение с loan/account. Не выводить факт оплаты или просрочки, которых модель не хранит.",
             "Q7": "Когорта transferred_at в period; на общем as_of считать pending/completed/cancelled отдельно. Доля completed = completed/all*100, при all=0 равна 0; as_of обязателен. По finished_at денежную статистику не смешивать с этой когортой."
           },
-          "ReconciliationDTO": "as_of; accounts[{account_id,stored_balance:Decimal,calculated_balance:Decimal,difference:Decimal}]; inconsistent_loans[{loan_id,reason}]; audit_events с разрешёнными полями И без секретов; totals{account_count,mismatch_count,inconsistent_loan_count}. calculated_balance использует только opening_balance+completed текущей книги; read-only, без автоматической правки расхождений.",
+          "ReconciliationDTO": "as_of; accounts[{account_id,stored_balance:Decimal,calculated_balance:Decimal,difference:Decimal}]; inconsistent_loans[{loan_id,reason}]; audit_events с разрешёнными полями audit_event без секретов; totals{account_count,mismatch_count,inconsistent_loan_count}. calculated_balance использует только opening_balance+completed текущей книги; read-only, без автоматической правки расхождений.",
           "representation": "В Python деньги — Decimal, даты — date, моменты — timezone-aware datetime. В JSON деньги — строки с двумя знаками, даты ISO 8601, моменты RFC 3339 со смещением."
         },
         "errors": {
@@ -531,7 +531,7 @@
           "Action": "фиксированный код действия и целевого объекта, а не произвольный SQL/путь; неизвестное действие запрещено"
         },
         "preconditions": [
-          "authenticate сопоставляет login с employee и проверяет пароль библиотечной функцией scrypt по политике 6.4, с индивидуальной солью и фиксированными параметрами; не сравнивает открытый пароль с хешем как строки.",
+          "authenticate сопоставляет login с employee и проверяет пароль библиотечной функцией scrypt по версионируемой политике: индивидуальная соль, параметры и формат хеша фиксируются в конфигурации сборки и сохраняются с хешем; не сравнивает открытый пароль с хешем как строки.",
           "authorize принимает только серверный контекст действующего сеанса; на каждом действии повторно читает is_active и актуальную role_code.",
           "hash_password вызывается из доверенной ветви создания employee администратором; внешний JSON никогда не задаёт password_hash."
         ],
@@ -544,7 +544,7 @@
             "controller": "разрешённое чтение, отчётность, аудит и независимая сверка без предметных изменений",
             "admin": "справочники, учётные записи, запуск/восстановление; это не автоматическое право проводить переводы/менять договоры"
           },
-          "credential_creation": "М10 создаёт scrypt-хеш по политике 6.4 с индивидуальной солью и записанными фиксированными параметрами, возвращает его только внутреннему М01. М01 сохраняет employee и аудит одной транзакцией; открытый пароль не сохраняется, не логируется и не попадает в audit_event. Обычный PATCH password/password_hash запрещает.",
+          "credential_creation": "М10 создаёт scrypt-хеш с индивидуальной солью; параметры и формат хеша фиксируются в конфигурации сборки и сохраняются с хешем, возвращает его только внутреннему М01. М01 сохраняет employee и аудит одной транзакцией; открытый пароль не сохраняется, не логируется и не попадает в audit_event. Обычный PATCH password/password_hash запрещает.",
           "secrets": "ActorContext, EmployeeView, ответы ошибок, журналы и аудит не содержат пароль, password_hash или cookie. Проверки не зависят от присланного actor_id."
         },
         "errors": {
@@ -571,7 +571,7 @@
           "SQL trigger: audit_row(OLD,NEW,transaction_local_actor_id,transaction_local_request_key)"
         ],
         "inputs": {
-          "types": "OLD/NEW предметной строки; доверенные actor_id/request_key из контекста транзакции; И Т05–Т06.",
+          "types": "OLD/NEW предметной строки; доверенные actor_id/request_key из контекста транзакции; контракты Т05–Т06 в src/specifications.py.",
           "domain_input": "Объект до/после; actor; ключ; транзакция"
         },
         "preconditions": [
@@ -579,7 +579,7 @@
         ],
         "postconditions": {
           "result": "Неизменяемое audit_event",
-          "rules": "Событие пишется в транзакции предметного изменения и откатывается вместе с ним. Поля audit_event — словарь И; OLD отсутствует для create, NEW содержит результат. Пароли, хеши и cookie исключены; прямые UPDATE/DELETE аудита запрещены. Ошибка записи аудита не подавляется."
+          "rules": "Событие пишется в транзакции предметного изменения и откатывается вместе с ним. Поля audit_event — ENTITIES в src/project_model.py; OLD отсутствует для create, NEW содержит результат. Пароли, хеши и cookie исключены; прямые UPDATE/DELETE аудита запрещены. Ошибка записи аудита не подавляется."
         },
         "errors": {
           "BT099": "Исчерпание повторов / недоступность инфраструктуры; HTTP 503; Нет подтверждённого успеха; безопасно запросить прежний результат",

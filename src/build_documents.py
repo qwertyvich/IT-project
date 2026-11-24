@@ -67,11 +67,11 @@ QUERIES=[
 
 def write_module_tasks():
  tasks={id:{'name':title,'component':k,'inputs':inp,'result':out,'rules':rules,'checks':tests,
-            **({'detail':DETAILS[id]['task']} if id in DETAILS else {'detail_ref':'Приложение И: Т01–Т11; алгоритмы Д.3–Д.7'})}
+            **({'detail':DETAILS[id]['task']} if id in DETAILS else {'detail_ref':'src/specifications.py: CONTRACTS Т01–Т11; рисунки Г.3–Г.5'})}
         for id,title,k,inp,out,rules,tests in MODULES}
  (ROOT/'contracts/module_tasks.json').write_text(json.dumps({'kind':'technical_design_tasks','implementation_present':False,
   'scope':'Задания технического проекта; не полный комплект РКД и не реализованные модули.',
-  'normalization':{'text':'trim; предел длины из словаря И','email':'trim и lower',
+  'normalization':{'text':'trim; предел длины по ENTITIES в src/project_model.py','email':'trim и lower',
   'phone':'trim; удалить пробелы, скобки и дефисы; затем + и 7–15 цифр, иначе BT004/422', 'phone_pattern':r'^\+[0-9]{7,15}$'},
   'modules':tasks},ensure_ascii=False,indent=2),encoding='utf-8')
 

@@ -206,8 +206,8 @@ def renamed_primitive(fn,old,new,replacements):
 
 def schedule_algorithm():
  s=Picture('D4_schedule',1600,1110)
- s.box(80,20,580,65,'Начало',26,'terminal');s.box(80,130,580,95,'principal, annual_rate,\nissued_on, даты платежей',26,'io')
- s.box(160,290,420,130,'Первая дата позже\nначала договора;\nввод корректен?',26,'diamond')
+ s.box(80,20,580,65,'Начало',26,'terminal');s.box(80,130,580,95,'principal, annual_rate,\nissued_on, due_on, даты',26,'io')
+ s.box(160,290,420,130,'Ввод\nкорректен?',26,'diamond')
  s.box(80,485,580,95,'Вычислить базовую долю\nв целых копейках',26)
  s.box(80,645,580,105,'Для каждой даты: проценты HALF_UP;\nпоследней доле — остаток',25)
  s.box(160,825,420,130,'Сумма и сроки\nсогласованы?',26,'diamond')

@@ -167,7 +167,7 @@
     {
       "file": "Банковская система — Пояснительная записка.pdf",
       "pages": 46,
-      "sha256": "877150eada58cd61d019fc708276ac612b99e0caafe3e71279a8df70cf2a422d",
+      "sha256": "c138988a68112201c3fbee98c0acd3615e456637fdc8e7300839b40bf6c17787",
       "no_blank_pages": true,
       "fonts_embedded": true,
       "page_numbers_sequential": true
@@ -175,7 +175,7 @@
     {
       "file": "Защита за 3 минуты и пояснения.pdf",
       "pages": 2,
-      "sha256": "a7bfd5ee33397ff9b2655e95e16da92e34d83b160d48355874b4bfce8734256c",
+      "sha256": "06e89249b57e6be0a38a0684b2cca981f4bc86b8d0dfb0891e5d372264430c07",
       "no_blank_pages": true,
       "fonts_embedded": true,
       "page_numbers_sequential": true
@@ -213,5 +213,6 @@
       "Шапки узких кодовых столбцов сокращены до «Код»"
     ],
     "scope": "Проверка проектных документов и расчётных эталонов. Приёмочные испытания реализации не проводились."
-  }
+  },
+  "latest_independent_teacher_audit": "teacher_requirements_independent.json"
 }

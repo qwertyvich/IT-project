@@ -1,0 +1,574 @@
+{
+  "date": "2026-11-24",
+  "verdict": "PASS_FOR_DECLARED_TECHNICAL_DESIGN",
+  "independent_reviews": 3,
+  "requirements_reconstructed_blind": true,
+  "requirements_basis": "Пользовательская расшифровка и локальные ASR с таймкодами; нормализация смысла, не дословная стенограмма",
+  "sources": {
+    "A": {
+      "type": "provided_transcript",
+      "file": "Вставленный текст.txt"
+    },
+    "B": {
+      "file": "Новая запись 11.m4a",
+      "sha256": "4d569868e1575612a9f456e683f74efc142cb392102aeed45bfb71bb76bb064c",
+      "duration_seconds": 557.248,
+      "method": "Повторное локальное ASR faster-whisper small"
+    },
+    "C": {
+      "file": "Запись совещания 195.mp3",
+      "sha256": "40b2b40e90ea3b68bebb44afacd0a6e66036d8b132524081bb0efd378bc0fbfd",
+      "duration_seconds": 1914.571425,
+      "method": "Локальное ASR; первый доступный сегмент 297.41 с, есть дальнейшие промежутки без сегментов"
+    }
+  },
+  "requirements": [
+    {
+      "id": "T01",
+      "requirement": "Внятно определить назначение системы и назначение программного комплекса.",
+      "scope": "current_design",
+      "evidence": [
+        {
+          "source": "B",
+          "start": 0.18,
+          "end": 14.22
+        },
+        {
+          "source": "C",
+          "start": 1271.0,
+          "end": 1288.2
+        }
+      ],
+      "report_pages": "5–6",
+      "report_locations": [
+        "Введение",
+        "1.1",
+        "1.2"
+      ],
+      "finding": "Подтверждено для заявленного технического проекта"
+    },
+    {
+      "id": "T02",
+      "requirement": "Раскрыть интерес организатора бизнеса, системную проблему и существенные противоречия, если они есть в задаче.",
+      "scope": "current_design",
+      "evidence": [
+        {
+          "source": "B",
+          "start": 60.77,
+          "end": 92.96
+        },
+        {
+          "source": "B",
+          "start": 208.08,
+          "end": 248.18
+        }
+      ],
+      "report_pages": "5–6",
+      "report_locations": [
+        "Введение",
+        "1.1"
+      ],
+      "finding": "Подтверждено для заявленного технического проекта"
+    },
+    {
+      "id": "T03",
+      "requirement": "Определить качество, критерии достижения назначения и меру удовлетворенности потребителя при выполнении функций.",
+      "scope": "current_design",
+      "evidence": [
+        {
+          "source": "B",
+          "start": 15.86,
+          "end": 32.94
+        },
+        {
+          "source": "C",
+          "start": 1198.15,
+          "end": 1254.5
+        },
+        {
+          "source": "C",
+          "start": 1611.45,
+          "end": 1632.83
+        }
+      ],
+      "report_pages": "6–7, 25",
+      "report_locations": [
+        "1.2",
+        "Таблица 1",
+        "Рисунок А.2"
+      ],
+      "finding": "Подтверждено для заявленного технического проекта"
+    },
+    {
+      "id": "T04",
+      "requirement": "Вывести функции и функциональные требования из назначения, показать их происхождение.",
+      "scope": "current_design",
+      "evidence": [
+        {
+          "source": "B",
+          "start": 168.62,
+          "end": 207.78
+        },
+        {
+          "source": "C",
+          "start": 1271.0,
+          "end": 1288.2
+        }
+      ],
+      "report_pages": "7, 10–11, 29",
+      "report_locations": [
+        "1.2",
+        "3.2",
+        "Рисунок Б.4"
+      ],
+      "finding": "Подтверждено для заявленного технического проекта"
+    },
+    {
+      "id": "T05",
+      "requirement": "Раскрыть процессы, операции и группы операций с учетом реализуемых функций.",
+      "scope": "current_design",
+      "evidence": [
+        {
+          "source": "B",
+          "start": 290.01,
+          "end": 306.48
+        },
+        {
+          "source": "B",
+          "start": 427.51,
+          "end": 440.76
+        },
+        {
+          "source": "C",
+          "start": 1288.36,
+          "end": 1306.04
+        }
+      ],
+      "report_pages": "12–13, 32–38",
+      "report_locations": [
+        "4.1–4.5",
+        "Приложение В"
+      ],
+      "finding": "Подтверждено для заявленного технического проекта"
+    },
+    {
+      "id": "T06",
+      "requirement": "Получить из анализа процессов частные требования к компонентам ПО.",
+      "scope": "current_design",
+      "evidence": [
+        {
+          "source": "B",
+          "start": 298.52,
+          "end": 306.48
+        },
+        {
+          "source": "C",
+          "start": 1297.34,
+          "end": 1311.37
+        }
+      ],
+      "report_pages": "10–14",
+      "report_locations": [
+        "Таблицы 3–4",
+        "Глава 4"
+      ],
+      "finding": "Подтверждено для заявленного технического проекта"
+    },
+    {
+      "id": "T07",
+      "requirement": "Обосновать архитектуру целой системы и необходимый состав компонентов через функции и назначение.",
+      "scope": "current_design",
+      "evidence": [
+        {
+          "source": "B",
+          "start": 284.65,
+          "end": 306.48
+        },
+        {
+          "source": "B",
+          "start": 441.56,
+          "end": 455.44
+        },
+        {
+          "source": "C",
+          "start": 1312.94,
+          "end": 1327.22
+        }
+      ],
+      "report_pages": "14–15, 39",
+      "report_locations": [
+        "5.1–5.2",
+        "Рисунок Г.1"
+      ],
+      "finding": "Подтверждено для заявленного технического проекта"
+    },
+    {
+      "id": "T08",
+      "requirement": "Раскрыть переход от концептуальных компонентов к техническим модулям и условия их совместного функционирования.",
+      "scope": "current_design",
+      "evidence": [
+        {
+          "source": "C",
+          "start": 1329.04,
+          "end": 1351.11
+        },
+        {
+          "source": "C",
+          "start": 1375.42,
+          "end": 1417.52
+        },
+        {
+          "source": "C",
+          "start": 1640.09,
+          "end": 1660.65
+        }
+      ],
+      "report_pages": "14, 40, 43",
+      "report_locations": [
+        "Таблица 4",
+        "Рисунки Г.2, Г.5"
+      ],
+      "finding": "Подтверждено для заявленного технического проекта"
+    },
+    {
+      "id": "T09",
+      "requirement": "Детально раскрыть необходимые элементы технического проекта и их внутреннее устройство.",
+      "scope": "current_technical_design_depth_not_fully_specified",
+      "evidence": [
+        {
+          "source": "B",
+          "start": 468.12,
+          "end": 479.2
+        },
+        {
+          "source": "C",
+          "start": 1486.48,
+          "end": 1503.7
+        }
+      ],
+      "report_pages": "16–18, 41–43",
+      "report_locations": [
+        "6.2–6.3",
+        "Рисунки Г.3–Г.5"
+      ],
+      "finding": "Подтверждено для заявленного технического проекта",
+      "qualification": "Техническая детализация есть; полный комплект РКД не заявлен и его точный текущий состав по речи не установлен"
+    },
+    {
+      "id": "T10",
+      "requirement": "Указать содержание связей, синтаксис и семантику взаимодействия, выбранный способ обмена и формат данных.",
+      "scope": "current_technical_design",
+      "evidence": [
+        {
+          "source": "B",
+          "start": 481.12,
+          "end": 507.42
+        }
+      ],
+      "report_pages": "16–18, 43",
+      "report_locations": [
+        "Таблица 5",
+        "Рисунок Г.5"
+      ],
+      "finding": "Подтверждено для заявленного технического проекта"
+    },
+    {
+      "id": "T11",
+      "requirement": "Обеспечить прослеживаемость от технических элементов к концептуальным компонентам, процессам, функциям, назначению и качеству.",
+      "scope": "current_design",
+      "evidence": [
+        {
+          "source": "C",
+          "start": 1480.38,
+          "end": 1530.98
+        },
+        {
+          "source": "C",
+          "start": 1632.83,
+          "end": 1660.65
+        }
+      ],
+      "report_pages": "7–21, 24–46",
+      "report_locations": [
+        "Последовательность глав 1–7 и модели"
+      ],
+      "finding": "Подтверждено для заявленного технического проекта"
+    },
+    {
+      "id": "T12",
+      "requirement": "Предусмотреть проверку заранее определенного качества по программе и методикам испытаний.",
+      "scope": "current_verification_design_future_actual_acceptance",
+      "evidence": [
+        {
+          "source": "B",
+          "start": 328.89,
+          "end": 414.88
+        },
+        {
+          "source": "C",
+          "start": 1558.04,
+          "end": 1632.83
+        }
+      ],
+      "report_pages": "19–21, 45–46",
+      "report_locations": [
+        "Глава 7",
+        "Приложение Д"
+      ],
+      "finding": "Методика предусмотрена; фактические испытания не заявлены"
+    },
+    {
+      "id": "T13",
+      "requirement": "Обосновывать технические решения требованиями, а не ощущением правильности стека.",
+      "scope": "current_design",
+      "evidence": [
+        {
+          "source": "B",
+          "start": 290.01,
+          "end": 306.48
+        },
+        {
+          "source": "C",
+          "start": 1417.98,
+          "end": 1480.38
+        }
+      ],
+      "report_pages": "14–18",
+      "report_locations": [
+        "Главы 5–6"
+      ],
+      "finding": "Подтверждено для заявленного технического проекта"
+    },
+    {
+      "id": "T14",
+      "requirement": "Переработать собранный материал в выводы и показать недостающие связи с качеством в соответствующих частях работы.",
+      "scope": "current_revision",
+      "evidence": [
+        {
+          "source": "C",
+          "start": 976.2,
+          "end": 1042.16
+        },
+        {
+          "source": "C",
+          "start": 1076.89,
+          "end": 1171.3
+        },
+        {
+          "source": "C",
+          "start": 1672.61,
+          "end": 1720.41
+        }
+      ],
+      "report_pages": "6–22",
+      "report_locations": [
+        "Выводы и их использование в главах 1–7",
+        "Заключение"
+      ],
+      "finding": "Подтверждено для заявленного технического проекта"
+    },
+    {
+      "id": "T15",
+      "requirement": "Сделать проект достаточным для постановки конкретной задачи программисту и организации разработки заданной функции для заданного процесса.",
+      "scope": "current_design_with_working_detail_boundary_uncertain",
+      "evidence": [
+        {
+          "source": "B",
+          "start": 517.02,
+          "end": 537.93
+        },
+        {
+          "source": "C",
+          "start": 391.8,
+          "end": 402.12
+        }
+      ],
+      "report_pages": "16, 40, 43–44",
+      "report_locations": [
+        "6.1",
+        "Рисунки Г.2, Г.5",
+        "Таблица Г.1",
+        "contracts/module_tasks.json"
+      ],
+      "finding": "Подтверждено для заявленного технического проекта",
+      "qualification": "Техническая детализация есть; полный комплект РКД не заявлен и его точный текущий состав по речи не установлен"
+    }
+  ],
+  "limitations": [
+    {
+      "id": "U01",
+      "evidence": "B 00:00–00:14 and A beginning",
+      "issue": "Exact initial terminology is unreliable; do not quote external or inactive definition as a teacher term."
+    },
+    {
+      "id": "U02",
+      "evidence": "C 06:09–06:42",
+      "issue": "Appendix numbers, pages, quantities, and precise working-document set cannot be reconstructed."
+    },
+    {
+      "id": "U03",
+      "evidence": "B 07:40–08:58; C 22:33–22:54",
+      "issue": "Technical detail is directly required, but exact current depth and boundary with full RKD remain unspecified."
+    },
+    {
+      "id": "U04",
+      "evidence": "C segment coverage",
+      "issue": "No segments before 04:57.41 and several long gaps; missing transcript is not proof of silence or absence of requirements."
+    },
+    {
+      "id": "U05",
+      "evidence": "C 19:33–28:40",
+      "issue": "Unseen board gestures and unknown addressees limit interpretation of this/there and group-specific details."
+    },
+    {
+      "id": "U06",
+      "evidence": "B and C quality discussion",
+      "issue": "No concrete numeric quality thresholds, compulsory diagram notation, page count, or current complete PMИ inventory established."
+    }
+  ],
+  "full_rkd_required_now": "not_established",
+  "acceptance_guaranteed": false,
+  "companions": {
+    "module_count": 11,
+    "source_test_ids": 25,
+    "openapi_schemas": 8,
+    "http_operations": 5,
+    "resolved_local_refs": 46,
+    "tasks_sha256": "5dde4c4364d2b63e325459ecef0bd6b7c3562dc82af1398d3b31bc6320f3d3e6",
+    "openapi_sha256": "bbf6139344f4523a4c22245297d94ae663822f572b6ef49856843ece3a531a5a"
+  },
+  "fixed_findings": [
+    "П1: отключение счёта при ненулевом/нулевом остатке",
+    "П5: независимая сверка повреждённой фикстуры без исправления",
+    "Т09/М07/Г.4: все пять аргументов, включая due_on",
+    "14 старых ссылочных строк заданий и 2 фразы исходных испытаний",
+    "Точные имена JSON и полный GET-путь",
+    "Отличие человеко-минут от длительности обращения"
+  ],
+  "final_documents": [
+    {
+      "file": "Банковская система — Пояснительная записка.pdf",
+      "pages": 46,
+      "sha256": "c138988a68112201c3fbee98c0acd3615e456637fdc8e7300839b40bf6c17787",
+      "no_blank_pages": true,
+      "fonts_embedded": true,
+      "page_numbers_sequential": true
+    },
+    {
+      "file": "Защита за 3 минуты и пояснения.pdf",
+      "pages": 2,
+      "sha256": "06e89249b57e6be0a38a0684b2cca981f4bc86b8d0dfb0891e5d372264430c07",
+      "no_blank_pages": true,
+      "fonts_embedded": true,
+      "page_numbers_sequential": true
+    }
+  ],
+  "layout": {
+    "main_pages": 46,
+    "main_before_appendices": 23,
+    "appendix_pages": 23,
+    "a3_pages": 4,
+    "figures": [
+      {
+        "figure": "C_A1_data",
+        "page": 24,
+        "font_pt": 8.852
+      },
+      {
+        "figure": "C_A2_quality",
+        "page": 25,
+        "font_pt": 10.204
+      },
+      {
+        "figure": "C_B1_context",
+        "page": 26,
+        "font_pt": 12.136
+      },
+      {
+        "figure": "C_B2_dfd",
+        "page": 27,
+        "font_pt": 8.883
+      },
+      {
+        "figure": "C_B9_resources",
+        "page": 28,
+        "font_pt": 10.856
+      },
+      {
+        "figure": "C_B3_tree",
+        "page": 29,
+        "font_pt": 9.023
+      },
+      {
+        "figure": "C_B6_transfers",
+        "page": 30,
+        "font_pt": 9.022
+      },
+      {
+        "figure": "C_B7_loans",
+        "page": 31,
+        "font_pt": 9.797
+      },
+      {
+        "figure": "C_V1_service",
+        "page": 32,
+        "font_pt": 9.355
+      },
+      {
+        "figure": "C_V2_clients",
+        "page": 33,
+        "font_pt": 9.355
+      },
+      {
+        "figure": "C_V3_cards",
+        "page": 34,
+        "font_pt": 8.994
+      },
+      {
+        "figure": "C_V4_transfers",
+        "page": 35,
+        "font_pt": 8.994
+      },
+      {
+        "figure": "C_V5_loans",
+        "page": 36,
+        "font_pt": 8.994
+      },
+      {
+        "figure": "C_V6_reports",
+        "page": 37,
+        "font_pt": 9.355
+      },
+      {
+        "figure": "C_V7_states",
+        "page": 38,
+        "font_pt": 9.524
+      },
+      {
+        "figure": "C_G1_architecture",
+        "page": 39,
+        "font_pt": 9.715
+      },
+      {
+        "figure": "C_D2_realization",
+        "page": 40,
+        "font_pt": 9.259
+      },
+      {
+        "figure": "C_D3_transfer",
+        "page": 41,
+        "font_pt": 11.735
+      },
+      {
+        "figure": "C_D4_schedule",
+        "page": 42,
+        "font_pt": 8.516
+      },
+      {
+        "figure": "C_D7_component",
+        "page": 43,
+        "font_pt": 10.63
+      }
+    ]
+  }
+}

@@ -571,7 +571,7 @@
     "width": 1600,
     "height": 1110,
     "min_font_px": 23,
-    "sha256_svg": "c1c45903542042f307e3c1a56a0169ad0b3aeb6177bf7b876687089c811996cf",
+    "sha256_svg": "2a108478a680e8f73325058d9bff04cf79401e5e22fbe087507bcdfa22e02c53",
     "source": "svg",
     "paper": "A4",
     "caption": "Рисунок Д.4 — Алгоритм расчёта планового графика",
@@ -579,7 +579,7 @@
     "max_width_mm": 252,
     "max_height_mm": 145,
     "min_font_on_paper_pt": 8.52,
-    "sha256_png": "5d8ad7addb07790d2caa3b9d3f758dba29e6de384d1c9e47e71e4a48c39cec4a"
+    "sha256_png": "33b85c6cbf9aef823f8ebb208e9ae6601be76a154361d0caf5f0af8277e474f6"
   },
   {
     "name": "D5_concurrency",

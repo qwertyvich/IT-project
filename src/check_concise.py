@@ -12,6 +12,8 @@ from concise_content import HEADING_LIST
 from check_project import arithmetic,check_contracts,check_module_tasks
 from dfd_model import validate_dfd
 from quality_metrics import check_reference
+from specifications import CONTRACTS
+from developer_tasks import DETAILS
 
 MAIN=OUT/'Банковская система — Пояснительная записка.docx'
 GUIDE=OUT/'Защита за 3 минуты и пояснения.docx'
@@ -50,6 +52,14 @@ def run():
  for token in ['ЦП1','ЦП2','ЦП3','ЦП4','u=L/Q','неизвестный исход','недостаточно свидетельств','book_opened_at','contract_ref','post_transfer','/api/v1/transfers/{id}/post','П1.','П9.']:
   assert normalize(token) in normalize(alltext),token
  for i in range(1,12):assert f'М{i:02}' in alltext
+ # Сопровождающие задания относятся к текущей нумерации, а не к снятой редакции.
+ module_text=(ROOT/'contracts/module_tasks.json').read_text(encoding='utf-8')
+ assert not re.search(r'приложени[еяию]\s+[ЕЖИ]|словар[ьяю]\s+И|строки\s+И\b|из\s+И[;.]|\bИ\s+Т\d|политике\s+6\.4|алгоритм\s+Д\.4',module_text)
+ # Одно межмодульное взаимодействие не должно терять аргументы между спецификациями.
+ def build_args(signature):
+  args=re.search(r'build\(([^)]*)\)',signature)[1]
+  return [item.split(':',1)[0].strip() for item in args.split(',')]
+ assert build_args(next(row[3] for row in CONTRACTS if row[0]=='Т09'))==build_args(DETAILS['М07']['task']['signature'][0])
  svgtext=''
  for item in manifest:
   svg=etree.fromstring((FIG/(item['path']+'.svg')).read_bytes())
@@ -98,6 +108,7 @@ def run():
      'a3_pages':sum(float(p.mediabox.width)>1000 for p in r.pages),'figures':bounds}
   else:assert len(r.pages)==2,len(r.pages)
  result={'model':validate_model(),'dfd':validate_dfd(),'reference_arithmetic':arithmetic(),'quality_formula':check_reference(),
+  'cross_document_consistency':{'active_module_references_current':True,'schedule_arguments_match_T09_M07':True},
   'contracts':check_contracts(),'module_tasks':check_module_tasks(),'printed_document':{
    'chapters':7,'numbered_headings':27,'appendices':5,'figures':20,'logical_tables':8,
    'body_font_pt':14,'table_font_pt':12,'all_images_match_code':True,'all_64_fields_present_on_er':True,
